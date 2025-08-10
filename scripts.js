@@ -232,6 +232,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Perfecting-Imperfect-Software-Creators.md",
         "Manipulacao-em-Redes-Sociais.md"
       ],
+      "front-end": [
+        "Categoria-de-Cores.md",
+        "Design-System.md",
+        "A-Importancia-da-Tipografia.md",
+        "8-Criterios-de-Scapin-and-Bastien.md"
+      ],
+      "gerenciador-de-pacotes": [
+        "asdf-gerenciador-de-versoes-universal.md",
+      ],
+      "hospedagem": [
+        "Hospedagem-compartilhadas-e-opcoes-semi-dedicas.md",
+        "Heroku.md",
+      ]
     };
 
     const menuContainer = document.getElementById("menu-hierarquia");
