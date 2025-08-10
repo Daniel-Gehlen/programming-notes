@@ -261,6 +261,27 @@ document.addEventListener("DOMContentLoaded", async () => {
         "MJPEG-Motion-JPEG.md",
         "RAW.md"
       ],
+      html: ["Entendendo-Comunicacao-Client-x-Server.md",
+      "Trabalhando-com-tabelas.md",
+        "Trabalhando-com-midias.md",
+        "Trabalhando-com-Formularios.md",
+        "HTML-Recursos-Especiais.md",
+        "HTML-Semantico-e-Acessibilidade.md",
+        "HTML-na-pratica.md",
+        "HTML-Formatacoes.md"
+      ],
+      IDEs: ["Atalhos-essenciais-no-VS-Code.md",
+      "Trae-IDE-Cursor-e-Windmill.md",
+      ],
+      infra: ["Criar-um-servidor-local-que-funcione-como-um-servidor-em-nuvem-compartilhado.md",
+      "Tipo-de-Hospedagem.md",
+        "Mautic-marketing-automation-open-source.md",
+        "Portainer-gerenciamento-de-conteineres.md",
+        "HTML-Recursos-Especiais.md",
+        "HTML-Semantico-e-Acessibilidade.md",
+        "HTML-na-pratica.md",
+        "HTML-Formatacoes.md"
+      ]
     };
 
     const menuContainer = document.getElementById("menu-hierarquia");
