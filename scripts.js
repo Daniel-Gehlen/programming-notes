@@ -230,21 +230,29 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Commerce-Headless-Overview-and-Code.md",
         "Tiers-das-Empresas-de-TI.md",
         "Perfecting-Imperfect-Software-Creators.md",
-        "Manipulacao-em-Redes-Sociais.md"
+        "Manipulacao-em-Redes-Sociais.md",
       ],
       "front-end": [
         "Categoria-de-Cores.md",
         "Design-System.md",
         "A-Importancia-da-Tipografia.md",
-        "8-Criterios-de-Scapin-and-Bastien.md"
+        "8-Criterios-de-Scapin-and-Bastien.md",
+        "UX-Design.md",
+        "Wireframes.md",
+        "Criando-Frontend-com-Imagens.md",
+        "Highcharts-biblioteca-de-graficos-JS.md",
+        "Color-Science-in-Computing.md",
+        "Um-novo-formato-de-midia-chamado-Lava.md",
+        "Detalhes-interativos-animacoes-ou-feedbacks-UIUX-mais-envolvente-e-agradavel.md",
+        "SVGs-gratuitos-que-podem-ser-modificados.md",
+        "FastHTML-Python-aplicativos-web.md"
       ],
-      "gerenciador-de-pacotes": [
-        "asdf-gerenciador-de-versoes-universal.md",
-      ],
-      "hospedagem": [
+      "gerenciador-de-pacotes": ["asdf-gerenciador-de-versoes-universal.md"],
+      hospedagem: [
         "Hospedagem-compartilhadas-e-opcoes-semi-dedicas.md",
         "Heroku.md",
-      ]
+      ],
+      freelancers: ["Plataformas-Freelancer-para-DEVs-em-2025.md"],
     };
 
     const menuContainer = document.getElementById("menu-hierarquia");
