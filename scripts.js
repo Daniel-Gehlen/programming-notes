@@ -253,6 +253,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Heroku.md",
       ],
       freelancers: ["Plataformas-Freelancer-para-DEVs-em-2025.md"],
+      "formatos-de-arquivos": ["GIF-Graphics-Interchange-Format.md",
+        "PNG-Portable-Network-Graphics.md",
+        "APNG-Animated-Portable-Network-Graphics.md",
+        "Formato-WebP.md",
+        "JPEG-Joint-Photographic-Experts-Group.md",
+        "MJPEG-Motion-JPEG.md",
+        "RAW.md"
+      ],
     };
 
     const menuContainer = document.getElementById("menu-hierarquia");
