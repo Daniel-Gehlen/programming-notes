@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Um-novo-formato-de-midia-chamado-Lava.md",
         "Detalhes-interativos-animacoes-ou-feedbacks-UIUX-mais-envolvente-e-agradavel.md",
         "SVGs-gratuitos-que-podem-ser-modificados.md",
-        "FastHTML-Python-aplicativos-web.md"
+        "FastHTML-Python-aplicativos-web.md",
       ],
       "gerenciador-de-pacotes": ["asdf-gerenciador-de-versoes-universal.md"],
       hospedagem: [
@@ -253,28 +253,32 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Heroku.md",
       ],
       freelancers: ["Plataformas-Freelancer-para-DEVs-em-2025.md"],
-      "formatos-de-arquivos": ["GIF-Graphics-Interchange-Format.md",
+      "formatos-de-arquivos": [
+        "GIF-Graphics-Interchange-Format.md",
         "PNG-Portable-Network-Graphics.md",
         "APNG-Animated-Portable-Network-Graphics.md",
         "Formato-WebP.md",
         "JPEG-Joint-Photographic-Experts-Group.md",
         "MJPEG-Motion-JPEG.md",
-        "RAW.md"
+        "RAW.md",
       ],
-      html: ["Entendendo-Comunicacao-Client-x-Server.md",
-      "Trabalhando-com-tabelas.md",
+      html: [
+        "Entendendo-Comunicacao-Client-x-Server.md",
+        "Trabalhando-com-tabelas.md",
         "Trabalhando-com-midias.md",
         "Trabalhando-com-Formularios.md",
         "HTML-Recursos-Especiais.md",
         "HTML-Semantico-e-Acessibilidade.md",
         "HTML-na-pratica.md",
-        "HTML-Formatacoes.md"
+        "HTML-Formatacoes.md",
       ],
-      IDEs: ["Atalhos-essenciais-no-VS-Code.md",
-      "Trae-IDE-Cursor-e-Windmill.md",
+      IDEs: [
+        "Atalhos-essenciais-no-VS-Code.md",
+        "Trae-IDE-Cursor-e-Windmill.md",
       ],
-      infra: ["Criar-um-servidor-local-que-funcione-como-um-servidor-em-nuvem-compartilhado.md",
-      "Tipo-de-Hospedagem.md",
+      infra: [
+        "Criar-um-servidor-local-que-funcione-como-um-servidor-em-nuvem-compartilhado.md",
+        "Tipo-de-Hospedagem.md",
         "Mautic-marketing-automation-open-source.md",
         "Portainer-gerenciamento-de-conteineres.md",
         "Tipo-de-Hospedagem.md",
@@ -297,8 +301,26 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Ataque-DDoS-Distributed-Denial-of-Service-e-como-lidar-com-ele.md",
         "IaaS-ou-Infraestrutura-como-Servico-Infrastructure-as-a-Service.md",
         "FaaS-Function-as-a-Service-Funcao-como-Servico.md",
-        "Virtualizacao-e-Hospedagem-Evolucao.md"
-      ]
+        "Virtualizacao-e-Hospedagem-Evolucao.md",
+      ],
+      IoT: [
+        "Tecnicas-de-Seguranca-para-Redes-IoT.md",
+        "Sistemas-Embarcados-Criticos.md",
+        "Fundamentos-para-Redes-de-Classificacao.md",
+        "Sensores-Sistemas-Embarcados-e-Hardware.md",
+        "Seguranca-para-IoT-Principais-riscos-e-protocolos.md",
+        "Seguranca-de-Redes-para-IoT.md",
+        "Redes-de-Deep-Learning-para-IoT.md",
+        "Protocolos-IoT-na-Camada-Fisica.md",
+        "Protocolos-IoT-na-Camada-de-Transporte.md",
+        "Protocolos-IoT-na-Camada-de-Aplicacao.md",
+        "Protocolos-de-Comunicacao-e-Seguranca-para-IoT.md",
+        "IoT-e-suas-Aplicacoes.md",
+        "Interacao-Humano-Computador-IHC-e-Humano-Maquina-IHM.md",
+        "Eletronica-Basica-para-Prototipacao.md",
+        "Internet-das-Coisas-IoT.md",
+        "Cidades-Inteligentes.md"
+      ],
     };
 
     const menuContainer = document.getElementById("menu-hierarquia");
