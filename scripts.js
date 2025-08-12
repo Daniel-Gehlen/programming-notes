@@ -321,6 +321,36 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Internet-das-Coisas-IoT.md",
         "Cidades-Inteligentes.md"
       ],
+      java: [
+        "Java-solucoes-simples-ate-sistemas-complexos.md",
+        "Lista-de-excecoes-comuns-em-Java.md",
+        "Vaadin-aplicacoes-web-modernas.md",
+        "Apache-Spark-processamento-de-dados-em-lote-streaming.md",
+        "Apache-Kafka-para-mensageria-processamento-de-streams.md",
+        "Quarkus-apps-Java-rapidas-escalaveis-e-eficientes-em-nuvem-e-microsservicos.md",
+        "Okta-gerenciamento-de-identidade-e-acesso-IAM.md",
+        "JHipster-gerador-de-aplicacoes.md",
+        "Lista-referencia-de-projetos-Java-open-source.md",
+        "Setup-Java-OpenSource-Full-Cyclo.md",
+        "Sistemas-bancarios-a-precisao-nos-calculos-em-Java.md",
+        "Arquiteturas-de-software-em-Java.md",
+        "Cursos-de-Java-mais-assistidos-no-YouTube.md",
+        "Escolha-mais-estavel-segura-e-economica-para-o-Java-em-2025.md",
+        "Principais-conceitos-de-POO.md",
+        "Java-Basico.md",
+        "Fundamentos-de-Qualidade-de-Software.md",
+        "Padroes-de-Projetos-com-Java.md",
+        "Persistencia-de-Dados-JPA-com-Hibernate.md",
+        "Springboot.md",
+        "Funcoes-em-Kotlin.md",
+        "OO-e-Tipos-de-Classes-com-Kotlin.md",
+        "Depurando-Apps-Android.md",
+        "Controle-de-Fluxo-e-Colecoes-em-Kotlin.md",
+        "Configurando-o-Android-Studio.md",
+        "Programacao-Kotlin-Intro.md",
+        "Visao-Geral-do-Mercado-de-Desenvolvimento-Mobile.md",
+        "Conhecendo-o-Kotlin-e-Sua-Documentacao-Oficial.md"
+        ],
     };
 
     const menuContainer = document.getElementById("menu-hierarquia");
