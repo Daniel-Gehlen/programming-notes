@@ -277,10 +277,27 @@ document.addEventListener("DOMContentLoaded", async () => {
       "Tipo-de-Hospedagem.md",
         "Mautic-marketing-automation-open-source.md",
         "Portainer-gerenciamento-de-conteineres.md",
-        "HTML-Recursos-Especiais.md",
-        "HTML-Semantico-e-Acessibilidade.md",
-        "HTML-na-pratica.md",
-        "HTML-Formatacoes.md"
+        "Tipo-de-Hospedagem.md",
+        "Nao-precisa-de-uma-hospedagem-externa.md",
+        "Configurar-um-servidor-web-como-Nginx-ou-Apache-como-proxy-reverso.md",
+        "Ferramentas-Open-Source-para-Implantacao-de-Aplicacoes.md",
+        "Autohospedagem-e-Alternativas-a-Nuvem.md",
+        "Capistrano-deploy-de-software.md",
+        "Chef-e-OpsWorks-ferramentas-populares-de-automacao-DevOps.md",
+        "DSL-Domain-Specific-Language.md",
+        "Puppet-automacao-de-TI.md",
+        "CFEngine-3-gerenciar-e-configurar-grandes-infraestruturas.md",
+        "VPS-Virtual-Private-Server.md",
+        "AMDV-Advanced-Micro-Devices-Virtualization.md",
+        "Virtualizacao-e-Hipervisor.md",
+        "Sysadmins-administradores-de-sistemas.md",
+        "cPanel-painel-de-controle-baseado-na-web.md",
+        "Virtual-host-ou-host-virtual.md",
+        "Data-Centers.md",
+        "Ataque-DDoS-Distributed-Denial-of-Service-e-como-lidar-com-ele.md",
+        "IaaS-ou-Infraestrutura-como-Servico-Infrastructure-as-a-Service.md",
+        "FaaS-Function-as-a-Service-Funcao-como-Servico.md",
+        "Virtualizacao-e-Hospedagem-Evolucao.md"
       ]
     };
 
