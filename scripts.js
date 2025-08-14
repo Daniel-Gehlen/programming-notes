@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Selecao-de-estatistica-de-ordem.md",
         "Teoria-Formal-de-Algoritmos.md",
         "Ultimo-item-comprado.md",
+        "Deflate-e-LZ-compressao-de-dados.md",
+        "Algoritmo-de-Huffman.md"
       ],
       "analise-de-sinais": [
         "DFT-em-bits.md",
@@ -261,6 +263,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         "JPEG-Joint-Photographic-Experts-Group.md",
         "MJPEG-Motion-JPEG.md",
         "RAW.md",
+        "Formato-RAR.md",
+        "TAR-Tape-Archive.md",
+        "GZIP.md"
       ],
       html: [
         "Entendendo-Comunicacao-Client-x-Server.md",
@@ -546,7 +551,41 @@ document.addEventListener("DOMContentLoaded", async () => {
             "IOCP-IO-Completion-Ports.md",
             "Erlang.md",
             "Multitarefa-ou-multitasking.md",
-            "PHP-em-2024.md"
+            "PHP-em-2024.md",
+            "Artigo-do-Google-seguranca-da-memoria.md",
+            "Linguagem-de-programacao-Zig.md",
+            "path.md",
+            "Lossy-e-lossless.md",
+            "Diff-tool-in-computing.md",
+            "Entendendo-o-Commit-Git.md",
+            "monorepo-monolithic-repository.md",
+            "streams-e-libs-em-Ruby.md",
+            "Garbage-Collector-Overview.md",
+            "Concorrencia-em-Go.md",
+            "Akka-para-sistemas-concorrentes.md",
+            "scheduler-de-green-threads.md",
+            "Green-threads-lightweight-threads.md",
+            "free-thread.md",
+            "background-jobs.md",
+            "JMS-Java-Message-Service-e-Sidekiq.md",
+            "Filas-threads-e-pools.md",
+            "Connection-pools.md",
+            "thread-pools.md",
+            "Fibers-e-Generators.md",
+            "Coroutine-rotina-cooperativa-ou-corotina.md",
+            "EventMachine-biblioteca-Ruby.md",
+            "GIL-Global-Interpreter-Lock.md",
+            "kernel.md",
+            "context-switching-troca-de-contexto.md",
+            "OpenMP-e-OpenMPI.md",
+            "UTF-8.md",
+            "protobuf.md",
+            "IP-TCP-HTTP.md",
+            "Sockets.md",
+            "Named-pipes-ou-FIFOs.md",
+            "SIGINT.md",
+            "Encadear-processos-com-pipes-or.md",
+            "STDIN-STDOUT-e-STDERR.md"
         ]
     };
 
