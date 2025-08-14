@@ -442,7 +442,49 @@ document.addEventListener("DOMContentLoaded", async () => {
             "Redes-Neurais-Artificiais.md",
             "Metodos-de-Machine-Learning-Bioinspirados.md",
             "Machine-Learning-e-Inteligencia-Artificial.md"
-        ]
+        ],
+        mobile: [
+            "Apps-Android-sem-usar-o-Android-Studio.md",
+          ],
+        multiplataforma: [
+            "Apps-Android-sem-usar-o-Android-Studio.md",
+          ],
+        observability: [
+            "Prometheus-Grafana.md",
+        ],
+        OOP: [
+            "Criacao-de-classes-e-objetos-em-JavaScript.md",
+        ],
+        PaaS: [
+            "Cloudflare-Cloudflare-Workers.md",
+        ],
+        "padrões-de-projetos": [
+            "9-padroes-de-design.md",
+            "Overengineering.md",
+            "Design-Patterns-ou-Padroes-de-Projeto.md"
+        ],
+        solid: [
+            "Pesquisa-sobre-Principios-SOLID.md"
+        ],
+        "power-bi": [
+            "Storytelling-com-Power-BI.md",
+            "Relatorios-com-Foco-em-Experiencia-do-Usuario.md",
+            "Otimizando-modelos-com-foco-em-performance-no-Power-BI.md",
+            "Modelagem-de-dados-com-Power-BI.md",
+            "Limpeza-e-Transformacao-de-dados.md",
+            "Introducao-a-Modelagem-Dimensional.md",
+            "FS-com-DAX-e-Calculos-com-Power-BI.md",
+            "Gerenciando-Workspaces-no-Power-BI-Service.md",
+            "Fundamentos-de-BI-KPIs-e-Metricas-de-Negocios.md",
+            "Data-Analytics-com-Power-BI.md",
+            "Fundamentos-de-Analise-de-Dados-em-Power-BI.md",
+            "Fundamentos-de-Processamento-de-Dados.md",
+            "SQL-Analytics.md",
+            "Fundamentos-de-Inteligencia-de-Dados.md",
+            "Criando-dashboards-com-Power-BI.md",
+            "Coleta-e-extracao-de-dados-com-Power-BI.md",
+            "Guia-PEP-8-para-Programacao-em-Python.md"
+        ],
     };
 
     const menuContainer = document.getElementById("menu-hierarquia");
