@@ -683,9 +683,41 @@ document.addEventListener("DOMContentLoaded", async () => {
             "Introduction-to-Haskell.md",
             "Modelagem-de-Software-Complexa.md",
             "Backend-Rinha.md",
-            "Git-Blame-Command-Explanation.md"
-
+            "Git-Blame-Command-Explanation.md",
+            "First-Principles-Thinking.md",
+            "Sistema-Operacional-UNIX.md",
+            "Abrir-uma-Pull-Request-PR.md",
+            "Ilustracoes-AMS-Application-Management-Services.md",
+            "SAP-Integration-and-Benefits.md",
+            "Sistema-BAP-SAP-e-VBA.md",
+            "SAP-BAP-Business-Application-Programming-Workflow.md",
+        ],
+        QA: [
+            "Qase-e-TestLink.md",
+            "Diferencas-Entre-BDD-TDD-e-DD.md",
+            "O-Dia-a-Dia-de-um-QA.md",
+            "Mercado-de-Qualidade-de-Software.md",
+            "Fundamentos-de-automacao-de-testes.md",
+            "Selenium-WebDriver-e-Java.md",
+            "Cypress-e-Integracao-Continua.md",
+            "Primeiros-passos-Cypress.md",
+            "Quality-Assurance-QA.md",
+            "Test-Driven-Development-Topics.md",
+            "Complexidade-e-Testes.md"
+        ],
+        redes: [
+            "Fundamentos-de-Redes-de-Computadores.md",
+            "Switches-Roteadores-e-Access-Points.md",
+            "Redes-de-Computadores-para-Iniciantes.md",
+            "switch-ou-comutador.md",
+            "bandwidth-largura-de-banda.md",
+            "RAID-0-Redundant-Array-of-Independent-Disks-nivel-0.md",
+            "Curso-Redes-Tanenbaum-explicado.md",
+            "Sockets-e-Portas-em-Rede.md",
+            "One-liners-em-programacao.md",
+            "VPN-TUN-TAP-Explained.md"
         ]
+
     };
 
     const menuContainer = document.getElementById("menu-hierarquia");
