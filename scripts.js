@@ -9,8 +9,17 @@ marked.setOptions({
 
 const FOLDER_VARIANTS = {
   "Data-Base": ["Data-Base", "Data Base", "DataBase", "data-base"],
-  "C#": ["C%23", "C#", "c%23", "c-sharp"],
+  "C#": ["C%23", "C#", "c%23", "c-sharp", "CSharp"],
   QA: ["QA", "qa", "Qa", "Q&A"],
+};
+
+const REVERSE_FOLDER_MAPPING = {
+  "c%23": "C#",
+  "c-sharp": "C#",
+  csharp: "C#",
+  "data base": "Data-Base",
+  database: "Data-Base",
+  "q&a": "QA",
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -19,8 +28,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!response.ok) throw new Error("Erro ao carregar estrutura");
     const structure = await response.json();
 
-    renderMenu(structure, false);
-    setupSearch(structure);
+    const normalizedStructure = normalizeStructure(structure);
+
+    renderMenu(normalizedStructure, false);
+    setupSearch(normalizedStructure);
 
     if (window.location.hash) {
       const path = decodeURIComponent(window.location.hash.substring(1));
@@ -62,6 +73,38 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
+function normalizeStructure(structure) {
+  const normalized = {};
+
+  for (const [folder, files] of Object.entries(structure)) {
+    let normalizedFolder = folder;
+
+    for (const [standardName, variants] of Object.entries(FOLDER_VARIANTS)) {
+      if (variants.includes(folder)) {
+        normalizedFolder = standardName;
+        break;
+      }
+    }
+
+    const lowerFolder = folder.toLowerCase();
+    if (REVERSE_FOLDER_MAPPING[lowerFolder]) {
+      normalizedFolder = REVERSE_FOLDER_MAPPING[lowerFolder];
+    }
+
+    if (!normalized[normalizedFolder]) {
+      normalized[normalizedFolder] = [];
+    }
+
+    for (const file of files) {
+      if (!normalized[normalizedFolder].includes(file)) {
+        normalized[normalizedFolder].push(file);
+      }
+    }
+  }
+
+  return normalized;
+}
+
 function renderMenu(structure, openAll = false) {
   const menuContainer = document.getElementById("menu-hierarquia");
   let html = "<ul>";
@@ -70,6 +113,7 @@ function renderMenu(structure, openAll = false) {
 
   for (const folder of sortedFolders) {
     const files = structure[folder].sort();
+    const encodedFolder = encodeFolderName(folder);
 
     html += `
             <li class="folder">
@@ -80,9 +124,9 @@ function renderMenu(structure, openAll = false) {
                           .map(
                             (file) => `
                             <li>
-                                <a href="#" class="doc-link" data-path="${encodeURIComponent(
-                                  folder
-                                )}/${encodeURIComponent(file)}">
+                                <a href="#" class="doc-link" data-path="${encodedFolder}/${encodeURIComponent(
+                              file
+                            )}">
                                     ${formatName(file.replace(".md", ""))}
                                 </a>
                             </li>
@@ -107,6 +151,20 @@ function renderMenu(structure, openAll = false) {
   });
 }
 
+function encodeFolderName(folderName) {
+  if (folderName === "C#") return "C%23";
+  if (folderName === "Data-Base") return "Data-Base";
+  if (folderName === "QA") return "QA";
+  return encodeURIComponent(folderName);
+}
+
+function decodeFolderName(encodedName) {
+  if (encodedName === "C%23") return "C#";
+  if (encodedName === "Data-Base") return "Data-Base";
+  if (encodedName === "QA") return "QA";
+  return decodeURIComponent(encodedName);
+}
+
 function formatName(name) {
   return name
     .replace(/-/g, " ")
@@ -127,28 +185,31 @@ async function loadDocument(path) {
   }
 
   const parts = path.split("/");
-  const folder = decodeURIComponent(parts[0]);
+  const folder = decodeFolderName(parts[0]);
   const file = decodeURIComponent(parts[1]);
 
   let success = false;
   let finalPath = path;
 
-  // Primeiro tenta o caminho original (já codificado)
   try {
-    const response = await fetch(`docs/${path}`);
+    const encodedPath =
+      encodeFolderName(folder) + "/" + encodeURIComponent(file);
+    const response = await fetch(`docs/${encodedPath}`);
     if (response.ok) {
       const markdown = await response.text();
       renderDocument(markdown, path);
       success = true;
+      finalPath = encodedPath;
     }
   } catch (error) {
     console.log(`Falha no caminho original: ${path}`);
   }
 
-  // Se falhou, tenta as variantes da pasta
   if (!success && FOLDER_VARIANTS[folder]) {
     for (const variant of FOLDER_VARIANTS[folder]) {
       try {
+        if (variant === encodeFolderName(folder)) continue;
+
         const variantPath = `${variant}/${encodeURIComponent(file)}`;
         const response = await fetch(`docs/${variantPath}`);
         if (response.ok) {
@@ -172,11 +233,14 @@ async function loadDocument(path) {
         <p>Documento não encontrado: ${path}</p>
         <p>Tentativas realizadas:</p>
         <ul>
-          <li>docs/${path}</li>
+          <li>docs/${encodeFolderName(folder)}/${encodeURIComponent(file)}</li>
           ${
             FOLDER_VARIANTS[folder]
               ? FOLDER_VARIANTS[folder]
-                  .map((variant) => `<li>docs/${variant}/${file}</li>`)
+                  .map(
+                    (variant) =>
+                      `<li>docs/${variant}/${encodeURIComponent(file)}</li>`
+                  )
                   .join("")
               : ""
           }
@@ -248,7 +312,7 @@ async function searchDocuments(structure, searchTerm) {
   const allFiles = [];
   for (const [folder, files] of Object.entries(structure)) {
     for (const file of files) {
-      const encodedPath = `${encodeURIComponent(folder)}/${encodeURIComponent(
+      const encodedPath = `${encodeFolderName(folder)}/${encodeURIComponent(
         file
       )}`;
       allFiles.push({
@@ -264,7 +328,6 @@ async function searchDocuments(structure, searchTerm) {
   for (const item of allFiles) {
     let success = false;
 
-    // Tenta caminho codificado primeiro
     try {
       const response = await fetch(`docs/${item.path}`);
       if (response.ok) {
@@ -275,13 +338,14 @@ async function searchDocuments(structure, searchTerm) {
         success = true;
       }
     } catch (error) {
-      console.log(`Busca falha no caminho codificado: ${item.path}`);
+      console.log(`Busca falha no caminho: ${item.path}`);
     }
 
-    // Se falhou, tenta variantes
     if (!success && FOLDER_VARIANTS[item.folder]) {
       for (const variant of FOLDER_VARIANTS[item.folder]) {
         try {
+          if (variant === encodeFolderName(item.folder)) continue;
+
           const variantPath = `${variant}/${encodeURIComponent(item.file)}`;
           const response = await fetch(`docs/${variantPath}`);
           if (response.ok) {
