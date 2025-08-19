@@ -1,63 +1,64 @@
-// Configuração do Marked
 marked.setOptions({
   breaks: true,
   gfm: true,
   highlight: function (code, lang) {
-    const validLang = ["javascript", "python", "bash"].includes(lang)
-      ? lang
-      : "plaintext";
-    const codeBlock = `<pre><code class="language-${validLang}">${code}</code></pre>`;
-    return codeBlock;
+    const validLang = hljs.getLanguage(lang) ? lang : "plaintext";
+    return hljs.highlight(code, { language: validLang }).value;
   },
 });
 
+const FOLDER_VARIANTS = {
+  "Data-Base": ["Data-Base", "Data Base", "DataBase", "data-base"],
+  "C#": ["C%23", "C#", "c%23", "c-sharp"],
+  QA: ["QA", "qa", "Qa", "Q&A"],
+};
+
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    // Carrega a estrutura de documentos
     const response = await fetch("docs/structure.json");
-    if (!response.ok)
-      throw new Error("Erro ao carregar estrutura de documentos");
+    if (!response.ok) throw new Error("Erro ao carregar estrutura");
     const structure = await response.json();
 
-    // Renderiza o menu com pastas fechadas por padrão
     renderMenu(structure, false);
-
-    // Configura a busca
     setupSearch(structure);
 
-    // Verifica se há hash na URL
     if (window.location.hash) {
-      const path = window.location.hash.substring(1);
+      const path = decodeURIComponent(window.location.hash.substring(1));
       loadDocument(path);
     } else {
-      // Mostra apenas a página inicial se não houver hash
       showWelcomePage();
     }
 
-    // Configura botões de copiar código
     document.addEventListener("click", function (e) {
       if (e.target.classList.contains("copy-btn")) {
         const code = e.target.parentNode.querySelector("code").textContent;
         navigator.clipboard.writeText(code).then(() => {
-          e.target.textContent = "Copiado!";
-          setTimeout(() => (e.target.textContent = "Copiar"), 2000);
+          const originalText = e.target.textContent;
+          e.target.textContent = "✓ Copiado!";
+          e.target.style.background = "var(--color-success)";
+          setTimeout(() => {
+            e.target.textContent = originalText;
+            e.target.style.background = "var(--color-highlight)";
+          }, 2000);
         });
       }
     });
 
-    // Configura o popstate para voltar à página inicial
     window.addEventListener("popstate", (event) => {
       if (!window.location.hash) {
         showWelcomePage();
+      } else {
+        const path = decodeURIComponent(window.location.hash.substring(1));
+        loadDocument(path);
       }
     });
   } catch (error) {
     console.error("Erro:", error);
     document.getElementById("menu-hierarquia").innerHTML = `
-      <div class="error">
-        Erro ao carregar documentos: ${error.message}
-      </div>
-    `;
+            <div class="error">
+                Erro ao carregar documentos: ${error.message}
+            </div>
+        `;
   }
 });
 
@@ -65,44 +66,38 @@ function renderMenu(structure, openAll = false) {
   const menuContainer = document.getElementById("menu-hierarquia");
   let html = "<ul>";
 
-  // Ordena as pastas alfabeticamente
   const sortedFolders = Object.keys(structure).sort();
 
   for (const folder of sortedFolders) {
-    // Ordena os arquivos alfabeticamente
     const files = structure[folder].sort();
 
     html += `
-      <li class="folder">
-        <details ${openAll ? "open" : ""}>
-          <summary>${folder
-            .replace(/-/g, " ")
-            .replace(/\b\w/g, (l) => l.toUpperCase())}</summary>
-          <ul>
-            ${files
-              .map(
-                (file) => `
-              <li>
-                <a href="#" class="doc-link" data-path="${folder}/${file}">
-                  ${file
-                    .replace(".md", "")
-                    .replace(/-/g, " ")
-                    .replace(/\b\w/g, (l) => l.toUpperCase())}
-                </a>
-              </li>
-            `
-              )
-              .join("")}
-          </ul>
-        </details>
-      </li>
-    `;
+            <li class="folder">
+                <details ${openAll ? "open" : ""}>
+                    <summary>${formatName(folder)}</summary>
+                    <ul>
+                        ${files
+                          .map(
+                            (file) => `
+                            <li>
+                                <a href="#" class="doc-link" data-path="${encodeURIComponent(
+                                  folder
+                                )}/${encodeURIComponent(file)}">
+                                    ${formatName(file.replace(".md", ""))}
+                                </a>
+                            </li>
+                        `
+                          )
+                          .join("")}
+                    </ul>
+                </details>
+            </li>
+        `;
   }
 
   html += "</ul>";
   menuContainer.innerHTML = html;
 
-  // Adiciona event listeners para os links
   document.querySelectorAll(".doc-link").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -112,55 +107,112 @@ function renderMenu(structure, openAll = false) {
   });
 }
 
-function loadDocument(path) {
-  document.getElementById("doc-content").innerHTML =
-    '<div class="loading">Carregando...</div>';
+function formatName(name) {
+  return name
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (l) => l.toUpperCase())
+    .replace(/C\#/g, "C#")
+    .replace(/Ai/g, "AI")
+    .replace(/Ml/g, "ML")
+    .replace(/Data Base/g, "Data-Base");
+}
 
-  fetch(`docs/${path}`)
-    .then((response) => {
-      if (!response.ok) throw new Error("Documento não encontrado");
-      return response.text();
-    })
-    .then((markdown) => {
-      // Atualiza a URL sem adicionar ao histórico
-      window.history.replaceState({}, "", `#${path}`);
+async function loadDocument(path) {
+  const docContent = document.getElementById("doc-content");
+  docContent.innerHTML =
+    '<div class="loading">📖 Carregando documento...</div>';
 
-      // Converte markdown para HTML
-      const html = marked.parse(markdown);
+  if (!path.endsWith(".md")) {
+    path += ".md";
+  }
 
-      // Adiciona botões de copiar para blocos de código
-      const docContent = document.getElementById("doc-content");
-      docContent.innerHTML = html;
+  const parts = path.split("/");
+  const folder = decodeURIComponent(parts[0]);
+  const file = decodeURIComponent(parts[1]);
 
-      // Adiciona botões de copiar
-      docContent.querySelectorAll("pre").forEach((pre) => {
-        if (!pre.querySelector(".copy-btn")) {
-          const button = document.createElement("button");
-          button.className = "copy-btn";
-          button.textContent = "Copiar";
-          pre.style.position = "relative";
-          pre.appendChild(button);
+  let success = false;
+  let finalPath = path;
+
+  // Primeiro tenta o caminho original (já codificado)
+  try {
+    const response = await fetch(`docs/${path}`);
+    if (response.ok) {
+      const markdown = await response.text();
+      renderDocument(markdown, path);
+      success = true;
+    }
+  } catch (error) {
+    console.log(`Falha no caminho original: ${path}`);
+  }
+
+  // Se falhou, tenta as variantes da pasta
+  if (!success && FOLDER_VARIANTS[folder]) {
+    for (const variant of FOLDER_VARIANTS[folder]) {
+      try {
+        const variantPath = `${variant}/${encodeURIComponent(file)}`;
+        const response = await fetch(`docs/${variantPath}`);
+        if (response.ok) {
+          const markdown = await response.text();
+          renderDocument(markdown, path);
+          success = true;
+          finalPath = variantPath;
+          console.log(`Sucesso com variante: ${variantPath}`);
+          break;
         }
-      });
-    })
-    .catch((error) => {
-      document.getElementById("doc-content").innerHTML = `
-        <div class="error">
-          <h3>Erro ao carregar documento</h3>
-          <p>${error.message}</p>
-        </div>
-      `;
-    });
+      } catch (error) {
+        console.log(`Falha na variante: ${variant}/${file}`);
+      }
+    }
+  }
+
+  if (!success) {
+    docContent.innerHTML = `
+      <div class="error">
+        <h3>❌ Erro ao carregar documento</h3>
+        <p>Documento não encontrado: ${path}</p>
+        <p>Tentativas realizadas:</p>
+        <ul>
+          <li>docs/${path}</li>
+          ${
+            FOLDER_VARIANTS[folder]
+              ? FOLDER_VARIANTS[folder]
+                  .map((variant) => `<li>docs/${variant}/${file}</li>`)
+                  .join("")
+              : ""
+          }
+        </ul>
+      </div>
+    `;
+  }
+}
+
+function renderDocument(markdown, originalPath) {
+  window.history.replaceState({}, "", `#${encodeURIComponent(originalPath)}`);
+  const html = marked.parse(markdown);
+  const docContent = document.getElementById("doc-content");
+  docContent.innerHTML = html;
+
+  docContent.querySelectorAll("pre").forEach((pre) => {
+    if (!pre.querySelector(".copy-btn")) {
+      const button = document.createElement("button");
+      button.className = "copy-btn";
+      button.textContent = "Copiar";
+      pre.style.position = "relative";
+      pre.appendChild(button);
+    }
+  });
+
+  hljs.highlightAll();
 }
 
 function showWelcomePage() {
   document.getElementById("doc-content").innerHTML = `
-    <div class="welcome-content">
-      <h2>Bem-vindo às Notas de Programação de Daniel Gehlen</h2>
-      <p>Selecione um documento no menu ao lado ou utilize a busca para encontrar conteúdo específico.</p>
-      <p>Este repositório contém documentação técnica sobre diversos tópicos de programação e tecnologia.</p>
-    </div>
-  `;
+        <div class="welcome-content">
+            <h2>👋 Bem-vindo às Notas de Programação</h2>
+            <p>Selecione um documento no menu ao lado ou utilize a busca para encontrar conteúdo específico.</p>
+            <p>Este repositório contém documentação técnica sobre diversos tópicos de programação e tecnologia.</p>
+        </div>
+    `;
   window.history.replaceState({}, "", window.location.pathname);
 }
 
@@ -172,10 +224,7 @@ function setupSearch(structure) {
       const searchTerm = e.target.value.toLowerCase().trim();
 
       if (searchTerm.length < 2) {
-        // Se a busca for muito curta, mostra a página inicial
-        if (!window.location.hash) {
-          showWelcomePage();
-        }
+        if (!window.location.hash) showWelcomePage();
         return;
       }
 
@@ -194,36 +243,61 @@ function debounce(func, wait) {
 
 async function searchDocuments(structure, searchTerm) {
   const docContent = document.getElementById("doc-content");
-  docContent.innerHTML = '<div class="loading">Buscando documentos...</div>';
+  docContent.innerHTML = '<div class="loading">🔍 Buscando documentos...</div>';
 
-  // Coleta todos os arquivos
   const allFiles = [];
   for (const [folder, files] of Object.entries(structure)) {
     for (const file of files) {
-      allFiles.push({ folder, file, path: `${folder}/${file}` });
+      const encodedPath = `${encodeURIComponent(folder)}/${encodeURIComponent(
+        file
+      )}`;
+      allFiles.push({
+        folder,
+        file,
+        path: encodedPath,
+        originalPath: `${folder}/${file}`,
+      });
     }
   }
 
-  // Realiza a busca
   const results = [];
   for (const item of allFiles) {
+    let success = false;
+
+    // Tenta caminho codificado primeiro
     try {
       const response = await fetch(`docs/${item.path}`);
-      if (!response.ok) continue;
-      const text = await response.text();
-
-      if (text.toLowerCase().includes(searchTerm)) {
-        results.push({
-          ...item,
-          content: text,
-        });
+      if (response.ok) {
+        const text = await response.text();
+        if (text.toLowerCase().includes(searchTerm)) {
+          results.push({ ...item, content: text });
+        }
+        success = true;
       }
     } catch (error) {
-      console.error(`Error loading ${item.path}:`, error);
+      console.log(`Busca falha no caminho codificado: ${item.path}`);
+    }
+
+    // Se falhou, tenta variantes
+    if (!success && FOLDER_VARIANTS[item.folder]) {
+      for (const variant of FOLDER_VARIANTS[item.folder]) {
+        try {
+          const variantPath = `${variant}/${encodeURIComponent(item.file)}`;
+          const response = await fetch(`docs/${variantPath}`);
+          if (response.ok) {
+            const text = await response.text();
+            if (text.toLowerCase().includes(searchTerm)) {
+              results.push({ ...item, content: text });
+            }
+            break;
+          }
+        } catch (error) {
+          console.log(`Busca falha na variante: ${variant}/${item.file}`);
+        }
+      }
     }
   }
 
-  // Exibe os resultados
   displaySearchResults(results, searchTerm);
 }
 
@@ -232,57 +306,52 @@ function displaySearchResults(results, searchTerm) {
 
   if (results.length === 0) {
     docContent.innerHTML = `
-      <div class="search-results">
-        <h2>Nenhum resultado encontrado para "${searchTerm}"</h2>
-        <p>Tente usar termos diferentes ou mais específicos.</p>
-      </div>
-    `;
+            <div class="search-results">
+                <h2>🔍 Nenhum resultado encontrado</h2>
+                <p>Nenhum documento encontrado para "${searchTerm}"</p>
+                <p>Tente usar termos diferentes ou mais específicos.</p>
+            </div>
+        `;
     return;
   }
 
   let html = `
-    <div class="search-results">
-      <h2>Resultados da busca por "${searchTerm}"</h2>
-      <p>${results.length} documentos encontrados:</p>
-  `;
+        <div class="search-results">
+            <h2>📋 Resultados da busca</h2>
+            <p>Encontrados ${results.length} documentos para "${searchTerm}":</p>
+    `;
 
   for (const doc of results) {
-    // Extrai um trecho do conteúdo com o termo buscado
     const contentLower = doc.content.toLowerCase();
     const termPos = contentLower.indexOf(searchTerm);
     let snippet = doc.content.substring(
-      Math.max(0, termPos - 50),
-      termPos + 50
+      Math.max(0, termPos - 60),
+      termPos + 60
     );
 
-    // Destaca o termo buscado
     snippet = snippet.replace(
       new RegExp(searchTerm, "gi"),
       (match) => `<span class="search-highlight">${match}</span>`
     );
 
     html += `
-      <div class="search-result">
-        <h3>
-          <a href="#" class="doc-link" data-path="${doc.path}">
-            ${doc.file
-              .replace(".md", "")
-              .replace(/-/g, " ")
-              .replace(/\b\w/g, (l) => l.toUpperCase())}
-          </a>
-          <small>(${doc.folder
-            .replace(/-/g, " ")
-            .replace(/\b\w/g, (l) => l.toUpperCase())})</small>
-        </h3>
-        <div class="search-snippet">${snippet}...</div>
-      </div>
-    `;
+            <div class="search-result">
+                <h3>
+                    <a href="#" class="doc-link" data-path="${
+                      doc.originalPath
+                    }">
+                        ${formatName(doc.file.replace(".md", ""))}
+                    </a>
+                    <small>(${formatName(doc.folder)})</small>
+                </h3>
+                <div class="search-snippet">${snippet}...</div>
+            </div>
+        `;
   }
 
   html += `</div>`;
   docContent.innerHTML = html;
 
-  // Adiciona event listeners para os links dos resultados
   document.querySelectorAll("#doc-content .doc-link").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
