@@ -659,7 +659,12 @@
     "Visual-Basic.md",
     "Web-service-e-SOAP.md",
     "wget.md",
-    "XML-e-X-tensible-M-arkup-L-anguage.md"
+    "XML-e-X-tensible-M-arkup-L-anguage.md",
+    "Definicao-de-Problema.md",
+    "Logica-Principios-e-Metodos-de-Inferencia.md",
+    "Descartes-Metodo-Cientifico-Alma-Corpo-e-Conhecimento.md",
+    "Pensar-Estrategicamente-Conceitos-e-Aplicacoes.md",
+    "Pensamento-Sistemico-e-Teoria-de-Sistemas.md"
   ],
   "QA": [
     "Complexidade-e-Testes.md",
