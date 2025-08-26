@@ -182,7 +182,8 @@
     "Exploracao-de-Falhas-em-Sistemas.md",
     "OSINT-Inteligencia-de-Fontes-Abertas.md",
     "Pos-Exploracao-em-Sistemas.md",
-    "Varreduras-de-rede.md"
+    "Varreduras-de-rede.md",
+    "Hacking-na-Programacao.md"
   ],
   "Data-Base": ["SQLite-nao-requer-um-servidor.md"],
   "data-structure": ["Listas-Encadeadas-com-Java.md"],
@@ -289,7 +290,10 @@
     "Virtual-host-ou-host-virtual.md",
     "Virtualizacao-e-Hipervisor.md",
     "Virtualizacao-e-Hospedagem-Evolucao.md",
-    "VPS-Virtual-Private-Server.md"
+    "VPS-Virtual-Private-Server.md",
+    "Aumentar-capacidade-de-gpu-no-meu-notebook.md",
+    "Departamento-de-TI-em-uma-unica-maquina.md",
+    "Help-Desk-vs-Service-Desk.md"
   ],
   "IoT": [
     "Cidades-Inteligentes.md",
@@ -379,7 +383,8 @@
     "Situacao-Fiscal-e-Regularizacao-Perante-o-Fisco.md",
     "Software-genericos-com-demanda-de-mercado.md",
     "Stripe-Plataforma-de-Pagamentos-Online.md",
-    "Tabela-de-Complexidade-e-Tempo-Gasto.md"
+    "Tabela-de-Complexidade-e-Tempo-Gasto.md",
+    "Modelos-de-recorrencia-mensal.md"
   ],
   "ML-e-AI": [
     "Agentes-autonomos.md",
@@ -664,7 +669,16 @@
     "Logica-Principios-e-Metodos-de-Inferencia.md",
     "Descartes-Metodo-Cientifico-Alma-Corpo-e-Conhecimento.md",
     "Pensar-Estrategicamente-Conceitos-e-Aplicacoes.md",
-    "Pensamento-Sistemico-e-Teoria-de-Sistemas.md"
+    "Pensamento-Sistemico-e-Teoria-de-Sistemas.md",
+    "O-que-e-um-sistema.md",
+    "Ferramenta-para-melhorar-a-produtividade.md",
+    "CLP-Controlador-Logico-Programavel.md",
+    "Dendron.md",
+    "backends-para-hospedar-com-custos-variados.md",
+    "HTTP-Explicado-de-Forma-Simples.md",
+    "Spring-AI.md",
+    "DTO-Data-Transfer-Object.md",
+    "Enviando-Ola-de-um-arquivo-para-outro.md"
   ],
   "QA": [
     "Complexidade-e-Testes.md",
