@@ -437,7 +437,16 @@
     "Segmentacao-de-imagens.md",
     "Speech-to-Text.md",
     "Text-to-Speech.md",
-    "Tipos-de-Validacao-em-ML.md"
+    "Tipos-de-Validacao-em-ML.md",
+    "BrazilWeather-Insights.md",
+    "Deteccao-Facial-no-Dataset-COCO-2017.md",
+    "Desenvolvimento-de-uma-API-REST-Flask-para-Visualizacao-de-Dados-JSON.md",
+    "Reconhecimento-de-Digitos-Manuscritos-com-Redes-Neurais.md",
+    "Sistema-de-Recomendação-de-Produtos-com-Rede-Neural-Convolucional-CNN-e-TensorFlow.md",
+    "Assistente-Virtual-para-Automacao-Residencial.md",
+    "Transfer-Learning-com-MobileNetV2-no-CIFAR-10-usando-TensorFlow-e-Keras.md",
+    "Assistente-Virtual-com-Reconhecimento-de-Texto-e-Comandos-de-Voz.md",
+    "Deteccao-de-Objetos-com-YOLO-no-Dataset-COCO.md"
   ],
   "multiplataforma": ["App-multiplataforma-Flet-em-Python.md"],
   "observability": ["Prometheus-Grafana.md"],
