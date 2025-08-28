@@ -60,8 +60,16 @@ Empresa X (Loja Virtual):
 
 **Resultado**: Aumento de 300% no tráfego com custo controlado
 
-## 🔗 Recursos Essenciais
+🔗 **Recursos Essenciais**
 
-- [PHP vs Node.js Benchmark](https://benchmarks.tec)
-- [Custos AWS para PHP](https://aws.amazon.com/php/)
-- [Guia de Otimização PHP](https://php.watch/performance)
+• [**PHP vs Node.js Benchmark**](https://www.techempower.com/benchmarks/) - Testes de desempenho comparativos
+
+• [**Custos AWS para PHP**](https://aws.amazon.com/pt/ec2/pricing/) - Preços da infraestrutura AWS para PHP
+
+• [**Guia de Otimização PHP**](https://www.php.net/manual/en/features.opcache.php) - Documentação oficial de otimização com OPcache
+
+• [**AWS Lambda Pricing**](https://aws.amazon.com/pt/lambda/pricing/) - Preços para execução serverless
+
+• [**Node.js Performance Guide**](https://nodejs.org/en/docs/guides/simple-profiling/) - Guia oficial de performance do Node.js
+
+• [**Comparativo Técnico PHP vs Node.js**](https://kinsta.com/pt/blog/php-8-0/) - Análise técnica detalhada das performances
