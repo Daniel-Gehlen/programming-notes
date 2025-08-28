@@ -113,6 +113,10 @@ GROUP BY repo_name
 
 > _"Dados são como petróleo bruto – só têm valor quando refinados."_ — Adaptado de Clive Humby
 
-![Power BI Data Sources](https://learn.microsoft.com/pt-br/power-bi/connect-data/media/power-bi-data-sources.png)
+**Recursos Adicionais Úteis:**
+
+- **[Usar o DirectQuery no Power BI](https://learn.microsoft.com/pt-br/power-bi/connect-data/desktop-use-directquery)**: Documentação detalhada sobre o modo DirectQuery.
+- [Fontes de Dados no Power BI](https://learn.microsoft.com/pt-br/power-bi/connect-data/)
+- **[Usar conjuntos de dados compostos no Power BI](https://learn.microsoft.com/pt-br/power-bi/transform-model/desktop-composite-models)**: Explica como funcionam e como configurar modelos compostos.
 
 > Domine a coleta de dados para construir análises confiáveis! ⚙️📊
