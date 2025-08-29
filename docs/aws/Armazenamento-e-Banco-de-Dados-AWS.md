@@ -18,7 +18,7 @@ Conhecer os principais serviços de Armazenamento e Banco de Dados da AWS e comp
 
 🔗 **Links úteis**:
 [Armazenamento em Nuvem](https://aws.amazon.com/storage/)
-[Armazenamento de Arquivos](https://aws.amazon.com/storage/file/)
+[Armazenamento de Arquivos](https://aws.amazon.com/pt/efs/)
 [Armazenamento de Objetos](https://aws.amazon.com/s3/)
 [Armazenamento de Blocos](https://aws.amazon.com/ebs/)
 
