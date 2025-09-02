@@ -452,6 +452,7 @@
     "Deteccao-de-Objetos-com-YOLO-no-Dataset-COCO.md"
   ],
   "multiplataforma": ["App-multiplataforma-Flet-em-Python.md"],
+  "music": ["VSTs.md"],
   "observability": ["Prometheus-Grafana.md"],
   "OOP": ["Criacao-de-classes-e-objetos-em-JavaScript.md"],
   "PaaS": ["Cloudflare-Cloudflare-Workers.md"],
