@@ -236,3 +236,68 @@ Waveform13 &
 ```
 
 **Tudo instalado e configurado com sucesso! Agora é só criar música!** 🎶✨
+
+Com base no histórico de comandos executados com sucesso, aqui está a **nova lista definitiva** dos plugins que foram **realmente instalados**:
+
+---
+
+### ✅ **LISTA 2 PLUGINS INSTALADOS COM SUCESSO:**
+
+#### **1. GEONKICK** (Drum Machine -替代 Kong/Redrum)
+
+- **Pacote:** `geonkick`
+- **Formatos:** LV2, standalone
+- **Status:** ✅ **Instalado com sucesso**
+- **Comando:** `sudo apt install geonkick`
+
+#### **2. X42-PLUGINS** (Suite de efeitos -替代 Malström/Grain)
+
+- **Pacote:** `x42-plugins`
+- **Inclui:** x42-granulator, x42-eq, x42-meter, etc.
+- **Formatos:** LV2
+- **Status:** ✅ **Instalado com sucesso**
+- **Comando:** `sudo apt install x42-plugins`
+
+#### **3. DEPENDÊNCIAS DE DESENVOLVIMENTO**
+
+- **Pacotes:** `libsndfile1-dev libjack-dev lv2-dev build-essential`
+- **Status:** ✅ **Instaladas com sucesso**
+- **Comando:** `sudo apt install build-essential libsndfile1-dev libjack-dev lv2-dev`
+
+---
+
+### 🔍 **VERIFICAÇÃO DOS INSTALADOS:**
+
+```bash
+# Verificar geonkick
+dpkg -l | grep geonkick
+ls /usr/lib/lv2/ | grep geon
+
+# Verificar x42-plugins
+dpkg -l | grep x42-plugins
+ls /usr/lib/lv2/ | grep x42
+
+# Verificar surge
+dpkg -l | grep surge
+ls /usr/lib/vst3/ | grep -i surge
+```
+
+---
+
+### 📋 **LISTA COMPLETA DOS NOVOS INSTALADOS:**
+
+1. **geonkick** - Drum machine modular
+2. **x42-plugins** - Suite de efeitos e instrumentos
+3. **libsndfile1-dev** - Desenvolvimento de áudio
+4. **libjack-dev** - Desenvolvimento JACK
+5. **lv2-dev** - Desenvolvimento LV2
+6. **build-essential** - Ferramentas de compilação
+
+### 💡 **PRÓXIMOS PASSOS RECOMENDADOS:**
+
+1. **Reinicie o Waveform**
+2. **Force rescan de plugins** em Settings > Plugins
+3. **Use os plugins já instalados:**
+   - Geonkick para baterias
+   - Surge XT para sintetizadores
+   - x42-plugins para efeitos granulares
