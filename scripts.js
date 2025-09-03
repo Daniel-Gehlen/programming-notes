@@ -25,6 +25,7 @@ const REVERSE_FOLDER_MAPPING = {
 // Variáveis para otimização da busca
 let searchIndex = [];
 let normalizedStructure = {};
+let searchIndexBuilt = false;
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -34,9 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     normalizedStructure = normalizeStructure(structure);
 
-    // Pré-carregar índice de busca
-    await buildSearchIndex(normalizedStructure);
-
+    // Renderizar menu imediatamente sem construir índice de busca
     renderMenu(normalizedStructure, false);
     setupSearch(normalizedStructure);
 
@@ -70,6 +69,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         loadDocument(path);
       }
     });
+
+    // Iniciar construção do índice em segundo plano
+    setTimeout(() => buildSearchIndex(normalizedStructure), 1000);
   } catch (error) {
     console.error("Erro:", error);
     document.getElementById("menu-hierarquia").innerHTML = `
@@ -80,9 +82,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-// Função para construir índice de busca
+// Função para construir índice de busca em segundo plano
 async function buildSearchIndex(structure) {
-  searchIndex = [];
+  if (searchIndexBuilt) return;
+
+  console.log("Iniciando construção do índice de busca em segundo plano...");
+
+  const tempIndex = [];
 
   for (const [folder, files] of Object.entries(structure)) {
     for (const file of files) {
@@ -95,7 +101,7 @@ async function buildSearchIndex(structure) {
         const response = await fetch(`docs/${encodedPath}`);
         if (response.ok) {
           const content = await response.text();
-          searchIndex.push({
+          tempIndex.push({
             folder,
             file,
             path: encodedPath,
@@ -118,7 +124,7 @@ async function buildSearchIndex(structure) {
             const response = await fetch(`docs/${variantPath}`);
             if (response.ok) {
               const content = await response.text();
-              searchIndex.push({
+              tempIndex.push({
                 folder,
                 file,
                 path: variantPath,
@@ -134,6 +140,9 @@ async function buildSearchIndex(structure) {
       }
     }
   }
+
+  searchIndex = tempIndex;
+  searchIndexBuilt = true;
 
   console.log(
     `Índice de busca construído com ${searchIndex.length} documentos`
@@ -356,11 +365,34 @@ function showWelcomePage() {
 
 function setupSearch() {
   const searchInput = document.getElementById("search-input");
-  searchInput.addEventListener("input", (e) => {
+  let searchTimeout = null;
+
+  searchInput.addEventListener("input", async (e) => {
     const searchTerm = e.target.value.toLowerCase().trim();
 
     if (searchTerm.length < 2) {
       if (!window.location.hash) showWelcomePage();
+      return;
+    }
+
+    // Se o índice ainda não foi construído, mostrar mensagem de carregamento
+    if (!searchIndexBuilt) {
+      document.getElementById("doc-content").innerHTML = `
+        <div class="search-results">
+          <h2>🔍 Construindo índice de busca...</h2>
+          <p>Por favor, aguarde enquanto preparamos a busca. Isso acontece apenas uma vez.</p>
+        </div>
+      `;
+
+      // Aguardar a construção do índice se ainda não estiver pronto
+      if (!searchIndexBuilt) {
+        const checkIndex = setInterval(() => {
+          if (searchIndexBuilt) {
+            clearInterval(checkIndex);
+            displaySearchResults(searchIndex, searchTerm);
+          }
+        }, 500);
+      }
       return;
     }
 
