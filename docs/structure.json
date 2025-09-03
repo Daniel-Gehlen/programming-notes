@@ -720,5 +720,17 @@
     "switch-ou-comutador.md",
     "VPN-TUN-TAP-Explained.md"
   ],
-  "solid": ["Pesquisa-sobre-Principios-SOLID.md"]
+  "solid": ["Pesquisa-sobre-Principios-SOLID.md"],
+  "ads": ["ATabela-de-Algoritmos-e-Programacao-Estruturada.md",
+    "Tabela-Engenharia-de-Software.md",
+    "Tabela-Linguagem-de-Programacao.md",
+    "Tabela-Logica-e-Matematica-Computacional.md",
+    "Tabela-Analise-Orientada-a-Objetos.md",
+    "Tabela-Linguagem-Orientada-a-Objetos.md",
+    "Tabela-Modelagem-de-Dados.md",
+    "Tabela-Sistemas-Operacionais.md",
+    "Tabela-Desenvolvimento-de-Software.md",
+    "Tabela-Governanca-de-Tecnologia.md",
+    "Tabela-Programacao-Web.md"
+  ]
 }
