@@ -22,13 +22,20 @@ const REVERSE_FOLDER_MAPPING = {
   "q&a": "QA",
 };
 
+// Variáveis para otimização da busca
+let searchIndex = [];
+let normalizedStructure = {};
+
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("docs/structure.json");
     if (!response.ok) throw new Error("Erro ao carregar estrutura");
     const structure = await response.json();
 
-    const normalizedStructure = normalizeStructure(structure);
+    normalizedStructure = normalizeStructure(structure);
+
+    // Pré-carregar índice de busca
+    await buildSearchIndex(normalizedStructure);
 
     renderMenu(normalizedStructure, false);
     setupSearch(normalizedStructure);
@@ -72,6 +79,66 @@ document.addEventListener("DOMContentLoaded", async () => {
         `;
   }
 });
+
+// Função para construir índice de busca
+async function buildSearchIndex(structure) {
+  searchIndex = [];
+
+  for (const [folder, files] of Object.entries(structure)) {
+    for (const file of files) {
+      const encodedPath = `${encodeFolderName(folder)}/${encodeURIComponent(
+        file
+      )}`;
+      let success = false;
+
+      try {
+        const response = await fetch(`docs/${encodedPath}`);
+        if (response.ok) {
+          const content = await response.text();
+          searchIndex.push({
+            folder,
+            file,
+            path: encodedPath,
+            originalPath: `${folder}/${file}`,
+            content: content.toLowerCase(),
+          });
+          success = true;
+        }
+      } catch (error) {
+        console.log(`Falha ao indexar: ${encodedPath}`);
+      }
+
+      // Tentar variantes de pasta se falhou
+      if (!success && FOLDER_VARIANTS[folder]) {
+        for (const variant of FOLDER_VARIANTS[folder]) {
+          if (variant === encodeFolderName(folder)) continue;
+
+          try {
+            const variantPath = `${variant}/${encodeURIComponent(file)}`;
+            const response = await fetch(`docs/${variantPath}`);
+            if (response.ok) {
+              const content = await response.text();
+              searchIndex.push({
+                folder,
+                file,
+                path: variantPath,
+                originalPath: `${folder}/${file}`,
+                content: content.toLowerCase(),
+              });
+              break;
+            }
+          } catch (error) {
+            console.log(`Falha ao indexar variante: ${variant}/${file}`);
+          }
+        }
+      }
+    }
+  }
+
+  console.log(
+    `Índice de busca construído com ${searchIndex.length} documentos`
+  );
+}
 
 function normalizeStructure(structure) {
   const normalized = {};
@@ -252,7 +319,14 @@ async function loadDocument(path) {
 
 function renderDocument(markdown, originalPath) {
   window.history.replaceState({}, "", `#${encodeURIComponent(originalPath)}`);
-  const html = marked.parse(markdown);
+
+  // Processar tabelas para adicionar container com rolagem
+  const processedMarkdown = markdown.replace(
+    /<table>[\s\S]*?<\/table>/g,
+    (match) => `<div class="table-container">${match}</div>`
+  );
+
+  const html = marked.parse(processedMarkdown);
   const docContent = document.getElementById("doc-content");
   docContent.innerHTML = html;
 
@@ -280,89 +354,26 @@ function showWelcomePage() {
   window.history.replaceState({}, "", window.location.pathname);
 }
 
-function setupSearch(structure) {
+function setupSearch() {
   const searchInput = document.getElementById("search-input");
-  searchInput.addEventListener(
-    "input",
-    debounce((e) => {
-      const searchTerm = e.target.value.toLowerCase().trim();
+  searchInput.addEventListener("input", (e) => {
+    const searchTerm = e.target.value.toLowerCase().trim();
 
-      if (searchTerm.length < 2) {
-        if (!window.location.hash) showWelcomePage();
-        return;
-      }
-
-      searchDocuments(structure, searchTerm);
-    }, 300)
-  );
-}
-
-function debounce(func, wait) {
-  let timeout;
-  return function (...args) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, args), wait);
-  };
-}
-
-async function searchDocuments(structure, searchTerm) {
-  const docContent = document.getElementById("doc-content");
-  docContent.innerHTML = '<div class="loading">🔍 Buscando documentos...</div>';
-
-  const allFiles = [];
-  for (const [folder, files] of Object.entries(structure)) {
-    for (const file of files) {
-      const encodedPath = `${encodeFolderName(folder)}/${encodeURIComponent(
-        file
-      )}`;
-      allFiles.push({
-        folder,
-        file,
-        path: encodedPath,
-        originalPath: `${folder}/${file}`,
-      });
-    }
-  }
-
-  const results = [];
-  for (const item of allFiles) {
-    let success = false;
-
-    try {
-      const response = await fetch(`docs/${item.path}`);
-      if (response.ok) {
-        const text = await response.text();
-        if (text.toLowerCase().includes(searchTerm)) {
-          results.push({ ...item, content: text });
-        }
-        success = true;
-      }
-    } catch (error) {
-      console.log(`Busca falha no caminho: ${item.path}`);
+    if (searchTerm.length < 2) {
+      if (!window.location.hash) showWelcomePage();
+      return;
     }
 
-    if (!success && FOLDER_VARIANTS[item.folder]) {
-      for (const variant of FOLDER_VARIANTS[item.folder]) {
-        try {
-          if (variant === encodeFolderName(item.folder)) continue;
+    // Busca instantânea usando o índice pré-carregado
+    const results = searchIndex.filter(
+      (item) =>
+        item.content.includes(searchTerm) ||
+        item.file.toLowerCase().includes(searchTerm) ||
+        item.folder.toLowerCase().includes(searchTerm)
+    );
 
-          const variantPath = `${variant}/${encodeURIComponent(item.file)}`;
-          const response = await fetch(`docs/${variantPath}`);
-          if (response.ok) {
-            const text = await response.text();
-            if (text.toLowerCase().includes(searchTerm)) {
-              results.push({ ...item, content: text });
-            }
-            break;
-          }
-        } catch (error) {
-          console.log(`Busca falha na variante: ${variant}/${item.file}`);
-        }
-      }
-    }
-  }
-
-  displaySearchResults(results, searchTerm);
+    displaySearchResults(results, searchTerm);
+  });
 }
 
 function displaySearchResults(results, searchTerm) {
@@ -386,7 +397,7 @@ function displaySearchResults(results, searchTerm) {
     `;
 
   for (const doc of results) {
-    const contentLower = doc.content.toLowerCase();
+    const contentLower = doc.content;
     const termPos = contentLower.indexOf(searchTerm);
     let snippet = doc.content.substring(
       Math.max(0, termPos - 60),

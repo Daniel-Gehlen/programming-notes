@@ -721,7 +721,8 @@
     "VPN-TUN-TAP-Explained.md"
   ],
   "solid": ["Pesquisa-sobre-Principios-SOLID.md"],
-  "ads": ["ATabela-de-Algoritmos-e-Programacao-Estruturada.md",
+  "ADS": [
+    "Tabela-de-Algoritmos-e-Programacao-Estruturada.md",
     "Tabela-Engenharia-de-Software.md",
     "Tabela-Linguagem-de-Programacao.md",
     "Tabela-Logica-e-Matematica-Computacional.md",
