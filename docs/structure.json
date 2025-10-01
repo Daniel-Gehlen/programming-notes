@@ -471,7 +471,12 @@
     "resumos-2-historia-da-musica.md",
     "Caderno-de-Estudos-Primeiro-Semestre-Teoria-Historia-e-Pratica-Musical-n1.md",
     "Caderno-de-Estudos-Segundo-Semestre-Teoria-Historia-e-Pratica-Musical-n2.md",
-    "Caderno-de-Analise-Musical-e-Composicao-Transcricao-e-Analise-Completa.md"
+    "Caderno-de-Analise-Musical-e-Composicao-Transcricao-e-Analise-Completa.md",
+    "Caderno-de-Notas.md",
+    "Caderno-2-de-Notas.md",
+    "Caderno-3-de-Notas.md",
+    "Funcoes-Harmonicas-e-Simbologia.md",
+    "Historia-da-Musica-Ocidental-Periodo-Medieval.md"
   ],
   "observability": ["Prometheus-Grafana.md"],
   "OOP": ["Criacao-de-classes-e-objetos-em-JavaScript.md"],
