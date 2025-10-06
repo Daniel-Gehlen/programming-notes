@@ -4,15 +4,29 @@
 
 A DFT transforma uma sequência temporal discreta `x[n]` de tamanho `N` em seu espectro de frequências `X[k]`:
 
-### Equação de Análise (Domínio do Tempo → Frequência)
-$$
-X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-j\frac{2\pi kn}{N}}
-$$
+**Definição Matemática em Formato Linear**
 
-### Equação de Síntese (Domínio da Frequência → Tempo)
-$$
-x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] \cdot e^{j\frac{2\pi kn}{N}}
-$$
+**Equação de Análise (Tempo → Frequência):**
+X[k] = Σ[n=0 até N-1] x[n] · e^(-j·2π·k·n/N)
+
+**Equação de Síntese (Frequência → Tempo):**
+x[n] = (1/N) · Σ[k=0 até N-1] X[k] · e^(j·2π·k·n/N)
+
+**Forma Alternativa com Cossenos e Senos:**
+
+**Análise:**
+X[k] = Σ[n=0 até N-1] x[n] · [cos(2πkn/N) - j·sin(2πkn/N)]
+
+**Síntese:**
+x[n] = (1/N) · Σ[k=0 até N-1] X[k] · [cos(2πkn/N) + j·sin(2πkn/N)]
+
+**Componentes Real e Imaginária:**
+
+**Parte Real de X[k]:**
+Re{X[k]} = Σ[n=0 até N-1] x[n] · cos(2πkn/N)
+
+**Parte Imaginária de X[k]:**
+Im{X[k]} = -Σ[n=0 até N-1] x[n] · sin(2πkn/N)
 
 ## Variáveis e Notação
 
