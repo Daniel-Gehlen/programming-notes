@@ -4,13 +4,30 @@
 
 A DFT transforma uma sequência temporal discreta `x[n]` de tamanho `N` em seu espectro de frequências `X[k]`:
 
+### Equação de Análise (Domínio do Tempo → Frequência)
 $$
-X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-j2\pi kn/N} \quad \text{(Análise)}
+X[k] = \sum_{n=0}^{N-1} x[n] \cdot e^{-j\frac{2\pi kn}{N}}
 $$
 
+### Equação de Síntese (Domínio da Frequência → Tempo)
 $$
-x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] \cdot e^{j2\pi kn/N} \quad \text{(Síntese)}
+x[n] = \frac{1}{N} \sum_{k=0}^{N-1} X[k] \cdot e^{j\frac{2\pi kn}{N}}
 $$
+
+## Variáveis e Notação
+
+- **`x[n]`**: Sinal de entrada no domínio do tempo (sequência discreta)
+- **`X[k]`**: Sinal de saída no domínio da frequência (coeficientes espectrais)
+- **`N`**: Número total de amostras
+- **`n`**: Índice temporal (0 ≤ n ≤ N-1)
+- **`k`**: Índice de frequência (0 ≤ k ≤ N-1)
+- **`j`**: Unidade imaginária (j² = -1)
+
+## Propriedades Importantes
+
+- **Periodicidade**: `X[k + N] = X[k]`
+- **Simetria**: Para sinais reais `x[n]`, `X[k] = X*[N-k]`
+- **Resolução de frequência**: Δf = Fs/N, onde Fs é a frequência de amostragem
 
 ## Implementação Direta em Python
 
