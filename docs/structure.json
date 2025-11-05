@@ -82,7 +82,8 @@
   "back-end": [
     "Backends-para-hospedar.md",
     "PHP-Analise-de-Custo-Beneficio-para-Hospedagem.md",
-    "PHP-e-uma-linguagem-barata-de-hospedar.md"
+    "PHP-e-uma-linguagem-barata-de-hospedar.md",
+    "ORMs-Object-Relational-Mappers.md"
   ],
   "C#": [
     "Arquitetura-orientada-a-servicos-Service-Oriented-Architecture-SOA.md",
