@@ -454,7 +454,8 @@
     "Deteccao-de-Objetos-com-YOLO-no-Dataset-COCO.md"
   ],
   "multiplataforma": ["App-multiplataforma-Flet-em-Python.md"],
-  "music": ["VSTs.md",
+  "music": [
+    "VSTs.md",
     "A-Musica-Medieval-Do-Gregoriano-às-Vozes-Superpostas.md",
     "Musica-da-Renascenca-e-a-Transicao-para-o-Barroco.md",
     "Musica-Instrumental-e-Vocal-no-Periodo-Barroco.md",
@@ -509,6 +510,7 @@
     "SQL-Analytics.md",
     "Storytelling-com-Power-BI.md"
   ],
+
   "programming": [
     "Abrir-uma-Pull-Request-PR.md",
     "Akka-para-sistemas-concorrentes.md",
@@ -725,9 +727,7 @@
     "ECMAScript.md",
     "TOON-A-Nova-Forma-de-Economizar-Tokens-em-IA.md"
   ],
-    "JS": [
-    "Fundamentos-da-linguagem.md"
-    ],
+  "JS": ["Fundamentos-da-linguagem.md"],
   "QA": [
     "Complexidade-e-Testes.md",
     "Cypress-e-Integracao-Continua.md",
