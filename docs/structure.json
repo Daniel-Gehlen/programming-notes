@@ -739,7 +739,9 @@
     "Web-APIs-do-navegador.md",
     "Manipulacao-de-dados.md",
     "Modulos-e-organizacao.md",
-    "Erros-e-debug.md"
+    "Erros-e-debug.md",
+    "Meta-programacao.md",
+    "Novas-funcionalidades-(ES6+).md"
   ],
   "QA": [
     "Complexidade-e-Testes.md",
