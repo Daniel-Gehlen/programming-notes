@@ -725,6 +725,9 @@
     "ECMAScript.md",
     "TOON-A-Nova-Forma-de-Economizar-Tokens-em-IA.md"
   ],
+    "JS": [
+    "Fundamentos-da-linguagem.md"
+    ],
   "QA": [
     "Complexidade-e-Testes.md",
     "Cypress-e-Integracao-Continua.md",
