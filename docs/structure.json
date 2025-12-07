@@ -391,6 +391,7 @@
     "Construindo-e-Publicando-seu-Primer-App-sem-Custos.md",
     "Como-Usar-o-IA-para-Conseguir-um-Emprego-10x-Mais-Rapido.md"
   ],
+  "mobile": [],
   "ML-e-AI": [
     "Agentes-autonomos.md",
     "Ajustes-de-Hiperparametros.md",
@@ -727,7 +728,19 @@
     "ECMAScript.md",
     "TOON-A-Nova-Forma-de-Economizar-Tokens-em-IA.md"
   ],
-  "JS": ["Fundamentos-da-linguagem.md"],
+  "JS": [
+    "Fundamentos-da-linguagem.md",
+    "Funcoes.md",
+    "Objetos-e-OOP.md",
+    "Arrays-e-iteracao.md",
+    "Manipulacao-do-DOM.md",
+    "Eventos.md",
+    "Assincronismo.md",
+    "Web-APIs-do-navegador.md",
+    "Manipulacao-de-dados.md",
+    "Modulos-e-organizacao.md",
+    "Erros-e-debug.md"
+  ],
   "QA": [
     "Complexidade-e-Testes.md",
     "Cypress-e-Integracao-Continua.md",
