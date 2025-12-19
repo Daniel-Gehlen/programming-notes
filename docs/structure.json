@@ -235,7 +235,10 @@
     "RAW.md",
     "TAR-Tape-Archive.md"
   ],
-  "freelancers": ["Plataformas-Freelancer-para-DEVs-em-2025.md"],
+  "freelancers": [
+    "Plataformas-Freelancer-para-DEVs-em-2025.md",
+    "Mercado-Freelancer-em-2025-IA-Adaptacao-e-Posicionamento-Estrategico.md"
+  ],
   "front-end": [
     "8-Criterios-de-Scapin-and-Bastien.md",
     "A-Importancia-da-Tipografia.md",
