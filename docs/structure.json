@@ -456,7 +456,8 @@
     "Assistente-Virtual-para-Automacao-Residencial.md",
     "Transfer-Learning-com-MobileNetV2-no-CIFAR-10-usando-TensorFlow-e-Keras.md",
     "Assistente-Virtual-com-Reconhecimento-de-Texto-e-Comandos-de-Voz.md",
-    "Deteccao-de-Objetos-com-YOLO-no-Dataset-COCO.md"
+    "Deteccao-de-Objetos-com-YOLO-no-Dataset-COCO.md",
+    "LLMs.txt.md"
   ],
   "multiplataforma": ["App-multiplataforma-Flet-em-Python.md"],
   "music": [
