@@ -51,7 +51,9 @@
     "APIs-bastante-comuns-no-frontend.md",
     "MuleSoft-Anypoint-Platform.md"
   ],
-  "assets": ["Gerar-e-books.md", "memes-populares.md"],
+  "configs-e-outras-coias": ["Gerar-e-books.md",
+  "memes-populares.md",
+  "configuracao-do-microfone.md"],
   "audio-em-computacao": [
     "Convencao-de-amostragem-de-CDs.md",
     "onda-mais-pura.md",
