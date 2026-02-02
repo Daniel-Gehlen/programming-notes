@@ -53,7 +53,8 @@
   ],
   "configs-e-outras-coias": ["Gerar-e-books.md",
   "memes-populares.md",
-  "configuracao-do-microfone.md"],
+  "configuracao-do-microfone.md",
+  "easyfx-control.sh.md"],
   "audio-em-computacao": [
     "Convencao-de-amostragem-de-CDs.md",
     "onda-mais-pura.md",
