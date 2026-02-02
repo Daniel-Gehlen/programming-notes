@@ -54,7 +54,8 @@
   "configs-e-outras-coias": ["Gerar-e-books.md",
   "memes-populares.md",
   "configuracao-do-microfone.md",
-  "easyfx-control.sh.md"],
+  "easyfx-control.sh.md",
+  "led-invertido-microfone.md"],
   "audio-em-computacao": [
     "Convencao-de-amostragem-de-CDs.md",
     "onda-mais-pura.md",
