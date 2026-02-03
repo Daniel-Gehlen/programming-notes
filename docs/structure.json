@@ -776,7 +776,8 @@
     "Normalizacao-de-dados.md",
     "Funcoes-e-recurssividade.md",
     "Excecoes-em-java.md",
-    "Frameworks-mobile.md"
+    "Frameworks-mobile.md",
+    "Modelagem-uml-estados-interacoes.md"
   ],
   "JS": [
     "Fundamentos-da-linguagem.md",
