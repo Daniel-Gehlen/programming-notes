@@ -55,7 +55,10 @@
   "memes-populares.md",
   "configuracao-do-microfone.md",
   "easyfx-control.sh.md",
-  "led-invertido-microfone.md"],
+  "led-invertido-microfone.md",
+  "Presets_audacity.md"
+
+],
   "audio-em-computacao": [
     "Convencao-de-amostragem-de-CDs.md",
     "onda-mais-pura.md",
@@ -780,6 +783,7 @@
     "Modelagem-uml-estados-interacoes.md",
     "Anytype-Um-Notion.md",
     "Programacao-php.md"
+
   ],
   "JS": [
     "Fundamentos-da-linguagem.md",
