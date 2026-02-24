@@ -51,14 +51,14 @@
     "APIs-bastante-comuns-no-frontend.md",
     "MuleSoft-Anypoint-Platform.md"
   ],
-  "configs-e-outras-coias": ["Gerar-e-books.md",
-  "memes-populares.md",
-  "configuracao-do-microfone.md",
-  "easyfx-control.sh.md",
-  "led-invertido-microfone.md",
-  "Presets_audacity.md"
-
-],
+  "configs-e-outras-coias": [
+    "Gerar-e-books.md",
+    "memes-populares.md",
+    "configuracao-do-microfone.md",
+    "easyfx-control.sh.md",
+    "led-invertido-microfone.md",
+    "Presets_audacity.md"
+  ],
   "audio-em-computacao": [
     "Convencao-de-amostragem-de-CDs.md",
     "onda-mais-pura.md",
@@ -787,7 +787,6 @@
     "Seguranca-web-mobile-e-defesa.md",
     "Governanca-de-TI-e-Riscos.md",
     "Arquitetura-de-Computadores-e-Memoria.md"
-
   ],
   "JS": [
     "Fundamentos-da-linguagem.md",
@@ -846,5 +845,6 @@
     "Tabela-Redes-de-Computadores.md",
     "Tabela-Seguranca-e-Auditoria-de-Sistemas.md",
     "Tabela-Frameworks-Para-Desenvolvimento-de-Software.md"
-  ]
+  ],
+  "ux-ui": ["principais-tipos-de-design-de-sites.md"]
 }
