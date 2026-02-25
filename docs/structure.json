@@ -847,5 +847,6 @@
     "Tabela-Seguranca-e-Auditoria-de-Sistemas.md",
     "Tabela-Frameworks-Para-Desenvolvimento-de-Software.md"
   ],
-  "ux-ui": ["principais-tipos-de-design-de-sites.md"]
+  "ux-ui": ["principais-tipos-de-design-de-sites.md"],
+  "comunication": ["Comunicacao-Pt-Ing-Google-Meet-Tempo-Real.md"]
 }
