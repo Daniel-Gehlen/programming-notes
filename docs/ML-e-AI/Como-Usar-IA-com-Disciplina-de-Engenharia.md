@@ -2,7 +2,7 @@
 
 ## Introdução: A Surpresa Sobre IA
 
-Recentemente, uma live do canal Mano Devin sobre desenvolvimento de software gerou grande repercussão. Muitas pessoas ficaram surpresas ao descobrir que alguém, Akita on Rails, conhecido por ser crítico em relação à inteligência artificial na verdade não odeia IA — o que Akita realmente critica é a mediocridade que tem sido vendida como "programação com IA".
+Recentemente, uma live do canal [Mano Devin](https://www.youtube.com/watch?v=cWY7iBafw7I) sobre desenvolvimento de software gerou grande repercussão. Muitas pessoas ficaram surpresas ao descobrir que alguém, Akita on Rails, conhecido por ser crítico em relação à inteligência artificial na verdade não odeia IA — o que Akita realmente critica é a mediocridade que tem sido vendida como "programação com IA".
 
 O que parecia ser uma postura contra tecnologias de IA revelou-se, na verdade, uma defesa do uso disciplinado e consciente dessas ferramentas. O método apresentado propõe algo completamente diferente do chamado "vibe coding" — aquela prática de simplesmente pedir para a IA gerar código e aceitar tudo sem questionar.
 
@@ -760,6 +760,10 @@ Ao final dos 7 dias, a expectativa não é apenas ter um projeto funcionando. É
 
 O desafio está lançado: uma semana de imersão total no método disciplinado de uso de IA. A promessa é que, após essa experiência, a visão sobre "programação com IA" muda completamente.
 
+[Do Zero à Pós-Produção em 1 Semana - Como usar IA em Projetos de Verdade | Bastidores do The M.Akita Chronicles - Akita on Rails](https://akitaonrails.com/2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles/#o-claudemd-a-spec-que-evolui)
+
 Não se trata de aceitar cegamente o que a ferramenta produz, mas de construir uma relação onde o desenvolvedor define a estrutura, a arquitetura e as regras, e a IA preenche os detalhes com eficiência — sempre validada por uma rede de segurança de testes automatizados.
 
 O resultado não é "código gerado", mas **software construído** com disciplina, qualidade e o melhor dos dois mundos: a visão estratégica humana e a capacidade operacional da máquina.
+
+[RANT: o Akita abriu as pernas pra IA??](https://akitaonrails.com/2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia/)
