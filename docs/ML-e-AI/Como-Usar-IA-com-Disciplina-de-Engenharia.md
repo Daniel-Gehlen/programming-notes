@@ -2,7 +2,7 @@
 
 ## Introdução: A Surpresa Sobre IA
 
-Recentemente, uma live do canal [Mano Devin](https://www.youtube.com/watch?v=cWY7iBafw7I) sobre desenvolvimento de software gerou grande repercussão. Muitas pessoas ficaram surpresas ao descobrir que alguém, Akita on Rails, conhecido por ser crítico em relação à inteligência artificial na verdade não odeia IA — o que Akita realmente critica é a mediocridade que tem sido vendida como "programação com IA".
+Recentemente, uma live do canal [Mano Deyvin](https://www.youtube.com/watch?v=cWY7iBafw7I) sobre desenvolvimento de software gerou grande repercussão. Muitas pessoas ficaram surpresas ao descobrir que alguém, Akita on Rails, conhecido por ser crítico em relação à inteligência artificial na verdade não odeia IA — o que Akita realmente critica é a mediocridade que tem sido vendida como "programação com IA".
 
 O que parecia ser uma postura contra tecnologias de IA revelou-se, na verdade, uma defesa do uso disciplinado e consciente dessas ferramentas. O método apresentado propõe algo completamente diferente do chamado "vibe coding" — aquela prática de simplesmente pedir para a IA gerar código e aceitar tudo sem questionar.
 
