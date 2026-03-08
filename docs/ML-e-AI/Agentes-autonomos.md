@@ -4,7 +4,7 @@ Existem várias ferramentas e softwares **open-source** ou disponíveis diretame
 
 ---
 
-### **Ferramentas Open-Source**
+## **Ferramentas Open-Source**
 
 #### **AutoGPT**
 
