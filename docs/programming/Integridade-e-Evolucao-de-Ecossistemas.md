@@ -2,7 +2,7 @@
 
 Manter ecossistemas de software vivos, seguros e alinhados às necessidades do negócio vai muito além de aplicar patches. Envolve um ciclo contínuo de **auditoria, manutenção estratégica e reengenharia** — práticas que aplico para transformar sistemas legados em ativos modernos, confiáveis e preparados para o futuro.
 
-![Texto alternativo](/assets/Guia-de-Ciencia-de-Dados.png)
+![Texto alternativo](/assets/Integridade-e-Evolucao-de-Ecossistemas.png)
 
 🔹 **O Ciclo da Auditoria Analítica**
 A auditoria que implemento não é burocrática — é uma investigação técnica que garante conformidade, segurança e performance:
