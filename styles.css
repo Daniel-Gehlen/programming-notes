@@ -379,12 +379,26 @@ body {
 
 #doc-content code:not(pre code) {
   font-family: "Fira Code", monospace;
-  background-color: rgba(226, 232, 240, 0.5);
-  padding: 0.2em 0.4em;
-  border-radius: 0.375em;
-  font-size: 0.85em;
+  background-color: var(--color-highlight);
   color: var(--color-primary);
-  font-weight: 500;
+  padding: 0.2em 0.45em;
+  border-radius: 0.4em;
+  font-size: 0.88em;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+[data-theme="dark"] #doc-content code:not(pre code) {
+  background-color: rgba(var(--h-highlight), var(--s-highlight), var(--l-highlight), 0.15);
+  color: var(--color-highlight);
+  border: 1px solid rgba(var(--h-highlight), var(--s-highlight), var(--l-highlight), 0.3);
+  text-shadow: 0 0 10px rgba(var(--h-highlight), var(--s-highlight), var(--l-highlight), 0.5);
+}
+
+#doc-content code:not(pre code):hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
 }
 
 #doc-content a {
