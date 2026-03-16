@@ -45,9 +45,12 @@ export function renderMenu(structure, onLinkClick, openAll = false) {
   });
 }
 
-export function renderDocument(markdown, htmlContent, onCopy) {
+export function renderDocument(markdown, htmlContent, onCopy, path) {
   const docContent = document.getElementById("doc-content");
   docContent.innerHTML = htmlContent;
+
+  renderBreadcrumbs(path);
+  renderTOC(markdown);
 
   docContent.querySelectorAll("pre").forEach((pre) => {
     if (!pre.querySelector(".copy-btn")) {
@@ -97,4 +100,94 @@ export function showError(message, path, variations = []) {
         }
       </div>
     `;
+}
+
+function renderBreadcrumbs(path) {
+  const breadcrumbsContainer = document.createElement("div");
+  breadcrumbsContainer.className = "breadcrumbs";
+
+  const parts = path.split("/");
+  const folder = formatName(decodeURIComponent(parts[0]));
+  const file = formatName(decodeURIComponent(parts[1]).replace(".md", ""));
+
+  breadcrumbsContainer.innerHTML = `
+    <span>📚 Notas</span>
+    <span>${folder}</span>
+    <span>${file}</span>
+  `;
+
+  const docContent = document.getElementById("doc-content");
+  docContent.insertBefore(breadcrumbsContainer, docContent.firstChild);
+}
+
+function renderTOC(markdown) {
+  const headers = markdown.match(/^##\s+.+$/gm);
+  if (!headers || headers.length < 2) return;
+
+  const tocContainer = document.createElement("div");
+  tocContainer.className = "toc-container";
+  tocContainer.innerHTML = "<h4>Índice</h4><ul class='toc-list'></ul>";
+
+  const tocList = tocContainer.querySelector(".toc-list");
+
+  headers.forEach((header) => {
+    const title = header.replace(/^##\s+/, "");
+    const id = title.toLowerCase().replace(/[^\w]+/g, "-");
+
+    const li = document.createElement("li");
+    li.className = "toc-item";
+    li.innerHTML = `<a href="#${id}" class="toc-link">${title}</a>`;
+    tocList.appendChild(li);
+
+    // Adicionar IDs aos cabeçalhos reais no DOM
+    const docHeaders = document.querySelectorAll("#doc-content h2");
+    docHeaders.forEach((h) => {
+      if (h.textContent === title) h.id = id;
+    });
+  });
+
+  const docContent = document.getElementById("doc-content");
+  // Inserir após breadcrumbs
+  const breadcrumbs = docContent.querySelector(".breadcrumbs");
+  if (breadcrumbs) {
+    breadcrumbs.after(tocContainer);
+  } else {
+    docContent.insertBefore(tocContainer, docContent.firstChild);
+  }
+}
+
+export function setupThemeToggle() {
+  const toggle = document.createElement("button");
+  toggle.className = "theme-toggle";
+  toggle.innerHTML = "🌓";
+  toggle.title = "Alternar Tema";
+  document.body.appendChild(toggle);
+
+  const currentTheme = localStorage.getItem("theme") || "light";
+  document.documentElement.setAttribute("data-theme", currentTheme);
+
+  toggle.addEventListener("click", () => {
+    const theme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  });
+}
+
+export function setupScrollTop() {
+  const btn = document.createElement("div");
+  btn.className = "scroll-top";
+  btn.innerHTML = "↑";
+  document.body.appendChild(btn);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btn.classList.add("visible");
+    } else {
+      btn.classList.remove("visible");
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 }

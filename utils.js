@@ -1,5 +1,3 @@
-import { FOLDER_VARIANTS } from "./constants.js";
-
 export function encodeFolderName(folderName) {
   if (folderName === "C#") return "C%23";
   if (folderName === "Data-Base") return "Data-Base";

@@ -1,4 +1,4 @@
-import { encodeFolderName, decodeFolderName, Logger } from "./utils.js";
+import { encodeFolderName, decodeFolderName } from "./utils.js";
 import { FOLDER_VARIANTS } from "./constants.js";
 
 const docCache = new Map();
