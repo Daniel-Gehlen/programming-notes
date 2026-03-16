@@ -26,6 +26,7 @@ const REVERSE_FOLDER_MAPPING = {
 let searchIndex = [];
 let normalizedStructure = {};
 let searchIndexBuilt = false;
+const docCache = new Map();
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -99,6 +100,7 @@ async function buildSearchIndex(structure) {
         const response = await fetch(`docs/${encodedPath}`);
         if (response.ok) {
           const content = await response.text();
+          docCache.set(encodedPath, content);
           tempIndex.push({
             folder,
             file,
@@ -122,6 +124,7 @@ async function buildSearchIndex(structure) {
             const response = await fetch(`docs/${variantPath}`);
             if (response.ok) {
               const content = await response.text();
+              docCache.set(variantPath, content);
               tempIndex.push({
                 folder,
                 file,
@@ -249,7 +252,6 @@ function formatName(name) {
 
 async function loadDocument(path) {
   const docContent = document.getElementById("doc-content");
-  docContent.innerHTML = '<div class="loading">📖 Carregando documento...</div>';
 
   if (!path.endsWith(".md")) {
     path += ".md";
@@ -259,6 +261,15 @@ async function loadDocument(path) {
   const folder = decodeFolderName(parts[0]);
   const file = decodeURIComponent(parts[1]);
 
+  // Verificar cache primeiro
+  const cachedContent = docCache.get(path);
+  if (cachedContent) {
+    renderDocument(cachedContent, path);
+    return;
+  }
+
+  docContent.innerHTML = '<div class="loading">📖 Carregando documento...</div>';
+
   let success = false;
 
   try {
@@ -266,6 +277,7 @@ async function loadDocument(path) {
     const response = await fetch(`docs/${encodedPath}`);
     if (response.ok) {
       const markdown = await response.text();
+      docCache.set(encodedPath, markdown);
       renderDocument(markdown, path);
       success = true;
     }
@@ -282,6 +294,7 @@ async function loadDocument(path) {
         const response = await fetch(`docs/${variantPath}`);
         if (response.ok) {
           const markdown = await response.text();
+          docCache.set(variantPath, markdown);
           renderDocument(markdown, path);
           success = true;
           console.log(`Sucesso com variante: ${variantPath}`);
