@@ -132,17 +132,31 @@ function renderTOC(markdown) {
 
   headers.forEach((header) => {
     const title = header.replace(/^##\s+/, "");
-    const id = title.toLowerCase().replace(/[^\w]+/g, "-");
+    const id = title
+      .toLowerCase()
+      .trim()
+      .replace(/[^\w]+/g, "-");
 
     const li = document.createElement("li");
     li.className = "toc-item";
     li.innerHTML = `<a href="#${id}" class="toc-link">${title}</a>`;
     tocList.appendChild(li);
 
-    // Adicionar IDs aos cabeçalhos reais no DOM
+    // Adicionar IDs aos cabeçalhos reais no DOM de forma mais robusta
     const docHeaders = document.querySelectorAll("#doc-content h2");
     docHeaders.forEach((h) => {
-      if (h.textContent === title) h.id = id;
+      if (h.textContent.trim() === title.trim()) h.id = id;
+    });
+  });
+
+  tocList.querySelectorAll(".toc-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
     });
   });
 
