@@ -4,3 +4,8 @@ node_modules/
 .vscode/
 .idea/
 package-lock.json
+.agents/
+brain/
+temp/
+dist/
+build/
