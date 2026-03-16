@@ -185,12 +185,10 @@ Quando um contêiner é executado em **modo bridge**, ele recebe uma interface d
 ## Cenários de Comunicação
 
 - **Contêiner 1 (Host) para Contêiner 2 (Bridge)**:
-
   - O contêiner no modo host pode se comunicar com o contêiner no modo bridge usando o endereço IP do contêiner na rede **bridge**.
   - Exemplo: `ping 172.17.0.x` onde `172.17.0.x` é o IP do contêiner no modo bridge.
 
 - **Contêiner 2 (Bridge) para Contêiner 1 (Host)**:
-
   - O contêiner no modo bridge pode se comunicar com o host diretamente pelo seu IP (por exemplo, `ping 192.168.1.x` onde `192.168.1.x` é o IP do host na rede física).
   - Para serviços específicos no host, o contêiner no modo bridge pode acessar serviços na porta específica mapeada pelo host.
 

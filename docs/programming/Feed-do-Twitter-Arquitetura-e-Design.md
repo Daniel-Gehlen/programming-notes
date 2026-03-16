@@ -103,28 +103,23 @@ A arquitetura do feed do Twitter é um exemplo clássico de um sistema de alto d
 ### Explicação do Fluxo
 
 1. **Usuário faz login**:
-
    - Passa pelo Serviço de Autenticação.
    - Detalhes são verificados e tokens são gerados.
 
 2. **Usuário posta um tweet**:
-
    - Tweet é enviado para o Serviço de Publicação de Tweets.
    - Metadados são armazenados no Banco de Dados Relacional.
    - Tweet é armazenado no Banco de Dados NoSQL.
 
 3. **Distribuição do tweet**:
-
    - Fila de Mensagens (Kafka) transmite a publicação para todos os serviços interessados (ex: Serviço de Feed, Serviço de Notificações).
 
 4. **Construção do feed**:
-
    - Serviço de Feed agrega tweets dos usuários seguidos.
    - Uso de Cache para armazenamento rápido de dados frequentemente acessados.
    - Serviço de Indexação ajuda na rápida recuperação de tweets relevantes.
 
 5. **Notificações**:
-
    - Serviço de Notificações informa os seguidores sobre novos tweets, interações, etc.
 
 6. **Exibição do feed**:

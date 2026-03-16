@@ -79,12 +79,10 @@
 **Estratégias**:
 
 1. **Produção de Conteúdo**
-
    - Posts no Instagram/LinkedIn sobre automação
    - Cases de sucesso em vídeo
 
 2. **Automação de Prospecção**
-
    - Bots para identificar leads
    - CRM para gestão de contatos
 
@@ -100,11 +98,9 @@
 ## 7. Técnicas Avançadas de Prospecção
 
 1. **Definição do Público**
-
    - Filtro por: Localização, tamanho da clínica, volume de atendimento
 
 2. **Ferramentas**
-
    - LinkedIn Sales Navigator
    - Google Alerts para novas clínicas
 

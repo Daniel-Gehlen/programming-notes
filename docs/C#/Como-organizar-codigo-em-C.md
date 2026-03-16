@@ -71,32 +71,26 @@ Um panorama sobre como organizar código em C# visando reutilização, agilidade
 ### Modelar e Consumir APIs utilizando C#
 
 1. **Seleção e Análise da API**:
-
    - Exemplo: **Open Banking Brasil** (documentação detalhada e bem organizada).
    - Estrutura e campos das APIs já definidos simplificam a modelagem no código.
 
 2. **Organização de Projetos**:
-
    - Separação lógica de modelos em namespaces e pastas (ex.: pasta para **Enums**).
    - Uso de **public enum** para definir constantes ou categorias (ex.: tipos de telefone).
 
 3. **Criação de Classes e Propriedades**:
-
    - Ferramentas como **Json2CSharp** convertem objetos JSON em classes C# com propriedades em PascalCase.
    - Adição de atributos como `[Display(Name = "Nome do Campo")]` e `[MaxLength(2)]` para validação e documentação.
 
 4. **Validação e Anotações de Dados**:
-
    - Uso de **Data Annotations** do C# (`[Required]`, `[Phone]`, `[StringLength]`).
    - Exploração de **nullable reference types** (`string?`) para campos opcionais (C# 8.0).
 
 5. **Documentação do Código**:
-
    - Uso de **XML comments** (`///`) para descrever propriedades e classes.
    - Análise de namespaces para explorar anotações e validações disponíveis no .NET.
 
 6. **Customização para o Contexto da API**:
-
    - Ajustes para refletir especificidades (ex.: campos obrigatórios e tamanhos máximos).
    - Configuração de valores padrão para campos (ex.: código do país).
 

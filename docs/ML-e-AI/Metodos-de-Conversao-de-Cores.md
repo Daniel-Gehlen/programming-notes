@@ -119,13 +119,11 @@ Fenômeno onde cores com espectros diferentes parecem iguais sob certa iluminaç
 ## Ferramentas Recomendadas
 
 1. **Python**:
-
    - `colorsys` (conversões básicas)
    - `colormath` (conversões avançadas)
    - `OpenCV` (processamento de imagem)
 
 2. **Online**:
-
    - Adobe Color Wheel
    - ColorSpace (gerador de paletas)
 

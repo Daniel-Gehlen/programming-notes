@@ -13,12 +13,7 @@
 ### Sintaxe Básica
 
 ```html
-<img
-  src="caminho/da/imagem.jpg"
-  alt="Descrição acessível"
-  width="800"
-  height="600"
-/>
+<img src="caminho/da/imagem.jpg" alt="Descrição acessível" width="800" height="600" />
 ```
 
 ### Atributos Essenciais
@@ -86,13 +81,7 @@
 ### Uso com Vídeos
 
 ```html
-<track
-  src="legendas_pt.vtt"
-  kind="subtitles"
-  srclang="pt"
-  label="Português"
-  default
-/>
+<track src="legendas_pt.vtt" kind="subtitles" srclang="pt" label="Português" default />
 ```
 
 ### Tipos de Faixas

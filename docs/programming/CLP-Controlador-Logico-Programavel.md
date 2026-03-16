@@ -5,19 +5,16 @@
 ### **Principais Características do CLP:**
 
 1. **Hardware Robustez**
-
    - Projetado para ambientes industriais (resistente a vibrações, umidade, temperaturas extremas e interferências elétricas).
    - Possui entradas/saídas digitais (ON/OFF) e analógicas (valores contínuos, como pressão, temperatura).
 
 2. **Linguagens de Programação**
-
    - **Ladder (LD):** Baseada em diagramas de relés, comum em elétrica.
    - **Structured Text (ST):** Similar a linguagens de programação como Pascal.
    - **Function Block Diagram (FBD):** Usa blocos lógicos para representar funções.
    - **Sequential Function Chart (SFC):** Ideal para processos sequenciais (ex.: engarrafamento de bebidas).
 
 3. **Aplicações na Indústria de Bebidas**
-
    - Controle de **dosagem de ingredientes** (água, açúcar, aromatizantes).
    - Automação de **linhas de enchimento e tamponamento**.
    - Monitoramento de **temperatura em pasteurização**.

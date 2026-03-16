@@ -3,22 +3,18 @@
 ## Objetivos da Pesquisa
 
 1. **Compreensão dos princípios SOLID**
-
    - Investigar cada princípio (SRP, OCP, LSP, ISP, DIP) em profundidade.
    - Analisar como eles melhoram a manutenibilidade e escalabilidade do código.
 
 2. **Evolução histórica**
-
    - Traçar o desenvolvimento da organização de classes desde o paradigma procedural até a POO moderna.
    - Examinar como os princípios SOLID emergiram como resposta a problemas comuns.
 
 3. **Impacto na qualidade do software**
-
    - Avaliar como a aplicação dos princípios afeta métricas de qualidade (acoplamento, coesão, complexidade).
    - Comparar sistemas que seguem vs. não seguem esses princípios.
 
 4. **Padrões de projeto relacionados**
-
    - Explorar como padrões como Factory, Strategy e Observer implementam os princípios SOLID.
 
 5. **Casos práticos**

@@ -58,17 +58,14 @@ _"Todo KPI é uma métrica, mas nem toda métrica é um KPI."_
 ## Boas Práticas para KPIs Eficazes
 
 1. **Simplicidade**
-
    - Máximo 5-7 KPIs por departamento
    - Exemplo claro: "Reduzir custos logísticos em 10% até Q4"
 
 2. **Comunicação**
-
    - Dashboards visuais no Power BI/Tableau
    - Revisões trimestrais com stakeholders
 
 3. **Evolução**
-
    - Refinar KPIs com base em:
      ```mermaid
      graph LR

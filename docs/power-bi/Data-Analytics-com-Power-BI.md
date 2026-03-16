@@ -3,6 +3,7 @@
 ## Análise de Dados com Power BI
 
 ### Visão Geral
+
 > "A análise avançada reduz trabalho manual e apoia decisões estratégicas com insights acionáveis." — Microsoft
 
 **Evolução**:
@@ -13,6 +14,7 @@ De tarefa complexa (exclusiva de engenheiros) para processo democratizado com fe
 ## Recursos Essenciais para Análise
 
 ### 1. Estatística Descritiva
+
 - **Resumo Estatístico Automático**:
   - Média, mediana, desvio padrão
   - Identificação de outliers
@@ -24,14 +26,17 @@ De tarefa complexa (exclusiva de engenheiros) para processo democratizado com fe
   ```
 
 ### 2. Técnicas Avançadas
-| Técnica | Função no Power BI | Aplicação |
-|---------|---------------------|-----------|
-| **Clustering** | Agrupamento automático | Segmentação de clientes |
-| **Série Temporal** | Forecast com IA | Previsão de vendas |
+
+| Técnica            | Função no Power BI             | Aplicação                   |
+| ------------------ | ------------------------------ | --------------------------- |
+| **Clustering**     | Agrupamento automático         | Segmentação de clientes     |
+| **Série Temporal** | Forecast com IA                | Previsão de vendas          |
 | **Quick Insights** | Geração automática de insights | Detecção de padrões ocultos |
 
 ### 3. DAX para Análise Profunda
+
 **Exemplo TOPN**:
+
 ```dax
 Top 3 Produtos =
 TOPN(
@@ -44,7 +49,8 @@ TOPN(
     DESC
 )
 ```
-*Retorna os 3 produtos mais vendidos com seus valores.*
+
+_Retorna os 3 produtos mais vendidos com seus valores._
 
 ---
 
@@ -76,18 +82,21 @@ TOPN(
 ## Recursos Avançados
 
 ### Inteligência Artificial
+
 - **Análise de Sentimento** (integração com Azure Cognitive Services)
 - **AutoML** para previsões personalizadas
 
 ### Linguagens Adicionais
-| Linguagem | Uso | Exemplo |
-|-----------|-----|---------|
-| **R** | Análise estatística avançada | Modelos preditivos |
-| **Python** | Machine Learning | Clusterização com scikit-learn |
+
+| Linguagem  | Uso                          | Exemplo                        |
+| ---------- | ---------------------------- | ------------------------------ |
+| **R**      | Análise estatística avançada | Modelos preditivos             |
+| **Python** | Machine Learning             | Clusterização com scikit-learn |
 
 ---
 
 ## Checklist para Análise Eficaz
+
 - [ ] Validar qualidade dos dados na origem
 - [ ] Usar hierarquias para drill-down
 - [ ] Combinar visuais padrão e personalizados
@@ -95,7 +104,7 @@ TOPN(
 - [ ] Testar insights com usuários-chave
 
 **Dica Pro**:
-*"Use o botão 'Analisar' (lupa) no Power BI Desktop para descoberta rápida de padrões!"*
+_"Use o botão 'Analisar' (lupa) no Power BI Desktop para descoberta rápida de padrões!"_
 
 [Documentação Oficial](https://learn.microsoft.com/power-bi/transform-model/) | [Galeria de Visualizações](https://appsource.microsoft.com/power-bi-visuals)
 

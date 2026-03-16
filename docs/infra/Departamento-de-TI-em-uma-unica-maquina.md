@@ -5,7 +5,9 @@ Montar um departamento de TI em uma única máquina para estudos e práticas é 
 ---
 
 ### **1. Definir o Escopo do "Departamento de TI"**
+
 Você pode simular um ambiente corporativo com os seguintes componentes:
+
 - **Servidores** (Windows Server, Linux)
 - **Rede interna** (DNS, DHCP, Firewall)
 - **Active Directory (AD)** para gerenciamento de usuários
@@ -20,7 +22,9 @@ Você pode simular um ambiente corporativo com os seguintes componentes:
 ---
 
 ### **2. Configurar a Máquina Host**
+
 Recomendações para a máquina física:
+
 - **CPU**: Pelo menos 4 núcleos (melhor se tiver suporte a virtualização)
 - **RAM**: Mínimo 8GB (ideal 16GB+ para múltiplas VMs)
 - **Armazenamento**: SSD de 256GB+ (para melhor desempenho)
@@ -29,12 +33,15 @@ Recomendações para a máquina física:
 ---
 
 ### **3. Virtualizar o Ambiente**
+
 Use um **hypervisor** para criar máquinas virtuais (VMs) que simulem servidores e estações de trabalho:
+
 - **VirtualBox** (gratuito, multiplataforma)
 - **VMware Workstation Player** (versão gratuita disponível)
 - **Hyper-V** (se estiver no Windows Pro)
 
 **Exemplo de configuração de VMs:**
+
 - **1x Active Directory (Windows Server 2019/2022)**
 - **1x Servidor Linux (Ubuntu/Debian) para serviços**
 - **1x Estação de trabalho (Windows 10/11) para testes**
@@ -44,7 +51,9 @@ Use um **hypervisor** para criar máquinas virtuais (VMs) que simulem servidores
 ---
 
 ### **4. Criar uma Rede Interna**
+
 Configure uma rede isolada no virtualizador (modo "Rede NAT" ou "Rede Interna") para simular um ambiente corporativo:
+
 - Ative **DHCP** ou configure IPs estáticos.
 - Use o **Windows Server como DC (Domain Controller)** para gerenciar usuários via Active Directory.
 - No Linux, use **Samba** para integrar com o AD ou **OpenLDAP** para diretório alternativo.
@@ -52,6 +61,7 @@ Configure uma rede isolada no virtualizador (modo "Rede NAT" ou "Rede Interna") 
 ---
 
 ### **5. Implementar Serviços Básicos**
+
 - **Active Directory (AD)**: Gerencie usuários, grupos e políticas.
 - **DNS e DHCP**: Use o Windows Server ou `dnsmasq` no Linux.
 - **Servidor de Arquivos**: Configure compartilhamentos Samba (Linux) ou File Server (Windows).
@@ -61,6 +71,7 @@ Configure uma rede isolada no virtualizador (modo "Rede NAT" ou "Rede Interna") 
 ---
 
 ### **6. Automatizar e Gerenciar Infraestrutura**
+
 - **Docker**: Crie containers para serviços isolados (ex.: WordPress, MySQL).
 - **Kubernetes (Minikube/K3s)**: Simule um cluster de containers.
 - **Ansible/Puppet**: Automatize configurações em várias VMs.
@@ -69,6 +80,7 @@ Configure uma rede isolada no virtualizador (modo "Rede NAT" ou "Rede Interna") 
 ---
 
 ### **7. Monitoramento e Segurança**
+
 - **Zabbix/Prometheus + Grafana**: Monitore recursos das VMs.
 - **Snort/OpenVAS**: Simule detecção de intrusões.
 - **Firewall (iptables/Windows Firewall)**: Configure regras de rede.
@@ -77,6 +89,7 @@ Configure uma rede isolada no virtualizador (modo "Rede NAT" ou "Rede Interna") 
 ---
 
 ### **8. Projetos Práticos para Treinar**
+
 - **Criar um domínio corporativo** (ex: `empresa.local`).
 - **Gerenciar usuários e políticas no AD**.
 - **Subir um servidor WordPress com Docker**.
@@ -87,6 +100,7 @@ Configure uma rede isolada no virtualizador (modo "Rede NAT" ou "Rede Interna") 
 ---
 
 ### **9. Ferramentas Úteis**
+
 - **Wireshark**: Analisar tráfego de rede.
 - **GNS3**: Simular redes complexas (roteadores/switches).
 - **Kali Linux**: Pentesting e segurança.
@@ -95,6 +109,7 @@ Configure uma rede isolada no virtualizador (modo "Rede NAT" ou "Rede Interna") 
 ---
 
 ### **10. Limitações de uma Única Máquina**
+
 - **Desempenho**: Muitas VMs podem consumir recursos rapidamente.
 - **Escalabilidade**: Não substitui um ambiente distribuído real.
 - **Redundância**: Não é possível simular alta disponibilidade (HA) avançada.
@@ -102,6 +117,7 @@ Configure uma rede isolada no virtualizador (modo "Rede NAT" ou "Rede Interna") 
 ---
 
 ### **Conclusão**
+
 Você pode montar um **mini datacenter** em uma única máquina para estudar:
 ✔ Redes
 ✔ Sysadmin (Windows/Linux)

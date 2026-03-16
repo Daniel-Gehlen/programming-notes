@@ -70,7 +70,6 @@ Fluxo de trabalho entre atividades (similar a fluxograma)
 ## Melhores Práticas
 
 1. **Escolha os diagramas certos** - Use conforme a necessidade:
-
    - Arquitetura: Diagrama de Componentes
    - Comportamento: Diagrama de Sequência
    - Requisitos: Diagrama de Casos de Uso

@@ -1,6 +1,7 @@
 # Fundamentos da Blockchain e Bitcoin
 
 ## Objetivo Geral
+
 Explorar as características da plataforma pioneira no uso confiável da Blockchain. Entender seu funcionamento e inovações.
 
 ---
@@ -8,12 +9,14 @@ Explorar as características da plataforma pioneira no uso confiável da Blockch
 ## Percurso do Curso
 
 ### 1. Origens da Blockchain
+
 - **Contexto histórico**: Por que surgiu com Satoshi Nakamoto?
 - **Mecanismo de consenso**: Proof of Work (PoW)
 - **Problema do Double Spending** e solução via PoW
 - **Inovação do Bitcoin**: Eliminação de partes confiáveis
 
 ### 2. Whitepaper de Nakamoto
+
 - Implementação original do Bitcoin
 - **Estrutura das transações**:
   - Hash criptográfico
@@ -24,11 +27,13 @@ Explorar as características da plataforma pioneira no uso confiável da Blockch
   - Construção de confiança descentralizada
 
 ### 3. Funcionamento do Bitcoin
+
 - **Fluxo completo** de transações
 - **Prevenção de Double Spending**
 - **Estrutura da rede** P2P
 
 ### 4. Mineração de Bitcoin
+
 - **Proof of Work**: Conceito e função
 - **Processo de mineração**:
   - Puzzle matemático
@@ -39,6 +44,7 @@ Explorar as características da plataforma pioneira no uso confiável da Blockch
   - Impacto do poder computacional
 
 ### 5. Bifurcações (Forks)
+
 - **Hard Forks** notáveis:
   - Bitcoin Cash
   - Bitcoin Gold
@@ -47,6 +53,7 @@ Explorar as características da plataforma pioneira no uso confiável da Blockch
 - **Impactos** na rede e usuários
 
 ### 6. Análise de Transações
+
 - **Ferramentas**: BTCScan e similares
 - **Estrutura de blocos**:
   - Tamanho e peso
@@ -56,6 +63,7 @@ Explorar as características da plataforma pioneira no uso confiável da Blockch
 ---
 
 ## Recursos Adicionais
+
 1. [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
 2. Artigos sobre consumo energético do Bitcoin
 3. Soluções para Blockchain verde

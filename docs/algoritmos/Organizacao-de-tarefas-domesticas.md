@@ -76,6 +76,7 @@ public class OrganizacaoTarefas {
 ```
 
 **Explicação do código:**
+
 - A classe `Tarefa` representa cada tarefa doméstica com um nome e um nível de urgência.
 - O método `compareTo` é implementado para permitir a ordenação das tarefas por urgência (decrescente).
 - No método `main`, as tarefas são adicionadas a uma lista, ordenadas por urgência usando `Collections.sort`, e exibidas antes e após a organização.

@@ -3,6 +3,7 @@
 O profissional de **Quality Assurance (QA)** desempenha um papel fundamental no ciclo de desenvolvimento de software, garantindo a qualidade e confiabilidade dos produtos. O dia a dia de um QA pode variar dependendo da metodologia de desenvolvimento, das necessidades da empresa e do estágio do projeto, mas geralmente inclui as seguintes atividades:
 
 ## Atividades do QA
+
 - **Análise de Requisitos**:
   Revisão e entendimento dos requisitos do projeto para identificar cenários de teste.
 
@@ -34,6 +35,7 @@ O profissional de **Quality Assurance (QA)** desempenha um papel fundamental no 
   Trabalho próximo com equipes de desenvolvimento, product owners e outros stakeholders para garantir uma compreensão clara dos requisitos e expectativas.
 
 ## Ferramentas Comuns Usadas por QA
+
 - **Ferramentas de Gerenciamento de Testes**:
   Jira, TestRail, Zephyr.
 

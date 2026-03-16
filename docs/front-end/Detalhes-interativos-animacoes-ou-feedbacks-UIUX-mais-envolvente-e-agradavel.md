@@ -97,7 +97,6 @@ ScrollReveal().reveal(".feature-card", {
 ## 💡 Boas Práticas
 
 1. **Performance First**
-
    - Preferir CSS animations sobre JS
    - Usar `will-change` para elementos animados
 
@@ -108,7 +107,6 @@ ScrollReveal().reveal(".feature-card", {
    ```
 
 2. **Acessibilidade**
-
    - Respeitar `prefers-reduced-motion`
    - Manter tempos de animação ≤ 500ms
 

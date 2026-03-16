@@ -7,7 +7,6 @@
 ### **Hiperparâmetros vs. Parâmetros**
 
 - **Hiperparâmetros**:
-
   - São **configurados antes do treinamento** do modelo.
   - Controlam o **processo de aprendizado**.
   - _Exemplos_:

@@ -704,11 +704,7 @@ export class Button {
     button.disabled = this.options.desabilitado;
 
     // Adicionar classes CSS
-    button.classList.add(
-      "btn",
-      `btn-${this.options.estilo}`,
-      `btn-${this.options.tamanho}`
-    );
+    button.classList.add("btn", `btn-${this.options.estilo}`, `btn-${this.options.tamanho}`);
 
     // Adicionar evento
     button.addEventListener("click", (e) => {
@@ -1139,9 +1135,8 @@ class Aplicacao {
     });
 
     // Botão de login/logout
-    this.botaoAuth = new Button(
-      this.auth.isAuthenticated() ? "Sair" : "Entrar",
-      () => this.tratarAutenticacao()
+    this.botaoAuth = new Button(this.auth.isAuthenticated() ? "Sair" : "Entrar", () =>
+      this.tratarAutenticacao()
     );
 
     cabecalho.appendChild(logo);
@@ -1294,8 +1289,7 @@ class Aplicacao {
         break;
 
       case "produtos":
-        conteudo.innerHTML =
-          '<div class="loading">Carregando produtos...</div>';
+        conteudo.innerHTML = '<div class="loading">Carregando produtos...</div>';
         await this.carregarProdutos();
         break;
 
@@ -1351,9 +1345,7 @@ class Aplicacao {
                     <div class="product-card">
                         <h3>${produto.nome}</h3>
                         <p>${produto.descricao}</p>
-                        <span class="price">R$ ${produto.preco.toFixed(
-                          2
-                        )}</span>
+                        <span class="price">R$ ${produto.preco.toFixed(2)}</span>
                     </div>
                 `;
       });
@@ -1554,9 +1546,7 @@ class ModuleLoader {
     }
 
     // Tentar como diretório com index.js
-    const indexPaths = extensions.map((ext) =>
-      path.join(modulePath, "index" + ext)
-    );
+    const indexPaths = extensions.map((ext) => path.join(modulePath, "index" + ext));
 
     for (const indexPath of indexPaths) {
       if (fs.existsSync(indexPath)) {
@@ -1833,10 +1823,7 @@ class LazyModuleLoader {
 
   preload(moduleName, modulePath) {
     // Pré-carregar módulo em background
-    if (
-      !this.loadedModules.has(moduleName) &&
-      !this.loadingPromises.has(moduleName)
-    ) {
+    if (!this.loadedModules.has(moduleName) && !this.loadingPromises.has(moduleName)) {
       this.load(moduleName, modulePath).catch(() => {
         // Ignorar erros em pré-carregamento
       });
@@ -2033,10 +2020,7 @@ class DynamicComponentLoader {
   }
 
   preloadComponent(componentName) {
-    if (
-      this.components.has(componentName) &&
-      !this.componentCache.has(componentName)
-    ) {
+    if (this.components.has(componentName) && !this.componentCache.has(componentName)) {
       this.loadComponent(componentName).catch(() => {
         // Ignorar erros em pré-carregamento
       });
@@ -2052,28 +2036,16 @@ class DynamicComponentLoader {
 const componentLoader = new DynamicComponentLoader();
 
 // Registrar componentes com carregamento dinâmico
-componentLoader.registerComponent("UserProfile", () =>
-  import("./components/UserProfile.js")
-);
-componentLoader.registerComponent("ProductList", () =>
-  import("./components/ProductList.js")
-);
-componentLoader.registerComponent("ShoppingCart", () =>
-  import("./components/ShoppingCart.js")
-);
+componentLoader.registerComponent("UserProfile", () => import("./components/UserProfile.js"));
+componentLoader.registerComponent("ProductList", () => import("./components/ProductList.js"));
+componentLoader.registerComponent("ShoppingCart", () => import("./components/ShoppingCart.js"));
 
 // Carregar e renderizar componente
-document
-  .getElementById("profile-section")
-  .addEventListener("click", async () => {
-    await componentLoader.renderComponent(
-      "UserProfile",
-      document.getElementById("content"),
-      {
-        userId: 123,
-      }
-    );
+document.getElementById("profile-section").addEventListener("click", async () => {
+  await componentLoader.renderComponent("UserProfile", document.getElementById("content"), {
+    userId: 123,
   });
+});
 
 // Sistema de carregamento de rotas lazy para SPA
 class LazyRouteLoader {
@@ -2130,9 +2102,7 @@ class LazyRouteLoader {
 
       // Executar middleware se existir
       if (this.routes[routeName].middleware) {
-        const middlewareResult = await this.routes[routeName].middleware(
-          params
-        );
+        const middlewareResult = await this.routes[routeName].middleware(params);
         if (middlewareResult === false) {
           return; // Middleware bloqueou navegação
         }
@@ -2142,11 +2112,7 @@ class LazyRouteLoader {
       await this.renderRoute(route.component, params);
 
       // Atualizar histórico
-      window.history.pushState(
-        { route: routeName, params },
-        "",
-        `#${routeName}`
-      );
+      window.history.pushState({ route: routeName, params }, "", `#${routeName}`);
 
       // Disparar evento
       window.dispatchEvent(
@@ -2413,10 +2379,7 @@ const FabricaUsuario = (function () {
 
 // Uso
 const admin = FabricaUsuario.criarUsuario("João", FabricaUsuario.tipos.ADMIN);
-const usuario = FabricaUsuario.criarUsuario(
-  "Maria",
-  FabricaUsuario.tipos.USUARIO
-);
+const usuario = FabricaUsuario.criarUsuario("Maria", FabricaUsuario.tipos.USUARIO);
 
 console.log(admin.getInfo()); // João (admin)
 console.log(admin.podeGerenciar); // true
@@ -2504,9 +2467,7 @@ const ChatMediator = (function () {
 
     // Log da mensagem
     console.log(
-      `[${new Date().toISOString()}] ${remetente.nome} -> ${
-        destinatario.nome
-      }: ${mensagem}`
+      `[${new Date().toISOString()}] ${remetente.nome} -> ${destinatario.nome}: ${mensagem}`
     );
   }
 
@@ -2687,17 +2648,13 @@ class ServicoUsuario {
 }
 
 // Aplicar decoradores
-const ServicoUsuarioDecorado = DecoradorCache(
-  DecoradorValidacao(DecoradorBase(ServicoUsuario))
-);
+const ServicoUsuarioDecorado = DecoradorCache(DecoradorValidacao(DecoradorBase(ServicoUsuario)));
 
 // Uso
 const servico = new ServicoUsuarioDecorado();
 servico.log("Serviço iniciado");
 servico.validar();
-const usuario = servico.getComCache("user_123", () =>
-  servico.buscarUsuario(123)
-);
+const usuario = servico.getComCache("user_123", () => servico.buscarUsuario(123));
 
 // 9. Composite Pattern
 class ComponenteArquivo {
@@ -3032,10 +2989,7 @@ class PluginArchitecture {
           sucesso: true,
         });
       } catch (error) {
-        console.error(
-          `Erro na extensão "${extensao}" do plugin "${plugin}":`,
-          error
-        );
+        console.error(`Erro na extensão "${extensao}" do plugin "${plugin}":`, error);
         resultados.push({
           plugin,
           error,
@@ -3136,10 +3090,7 @@ arquitetura.triggerHook("app:start").then((resultados) => {
 });
 
 // Aplicar extensão
-const resultadosFormat = arquitetura.applyExtension(
-  "format:text",
-  "hello world"
-);
+const resultadosFormat = arquitetura.applyExtension("format:text", "hello world");
 resultadosFormat.then((resultados) => {
   resultados.forEach((r) => {
     if (r.sucesso) {
@@ -3254,10 +3205,7 @@ class BundlerSimulator {
 
     // Import statements (convertidos para requires)
     dependencias.forEach((dep) => {
-      codigo += `    const ${dep.replace(
-        /[^a-zA-Z0-9_$]/g,
-        "_"
-      )} = require('${dep}');\n`;
+      codigo += `    const ${dep.replace(/[^a-zA-Z0-9_$]/g, "_")} = require('${dep}');\n`;
     });
 
     codigo += "\n";
@@ -3346,8 +3294,7 @@ class TreeShaker {
 
   analisar() {
     // Extrair imports
-    const importRegex =
-      /import\s+(?:(?:\{[^}]*\}|\*\s+as\s+\w+|\w+)\s+from\s+)?['"]([^'"]+)['"]/g;
+    const importRegex = /import\s+(?:(?:\{[^}]*\}|\*\s+as\s+\w+|\w+)\s+from\s+)?['"]([^'"]+)['"]/g;
     let match;
 
     while ((match = importRegex.exec(this.codigo)) !== null) {
@@ -3356,8 +3303,7 @@ class TreeShaker {
     }
 
     // Extrair exports (simplificado)
-    const exportRegex =
-      /export\s+(?:const|let|var|function|class|default)\s+(\w+)/g;
+    const exportRegex = /export\s+(?:const|let|var|function|class|default)\s+(\w+)/g;
 
     while ((match = exportRegex.exec(this.codigo)) !== null) {
       this.exports.add(match[1]);
@@ -3381,9 +3327,7 @@ class TreeShaker {
     console.log("Exports detectados:", Array.from(this.exports));
     console.log("Exports usados:", Array.from(this.usado));
 
-    const exportsNaoUsados = Array.from(this.exports).filter(
-      (e) => !this.usado.has(e)
-    );
+    const exportsNaoUsados = Array.from(this.exports).filter((e) => !this.usado.has(e));
     console.log("Exports para remover (tree shaking):", exportsNaoUsados);
 
     return {

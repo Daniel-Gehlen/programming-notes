@@ -10,7 +10,6 @@ Em Java, a execução de threads é gerenciada principalmente pelo pacote `java.
 
 - **ThreadPoolExecutor**:
   Implementa um pool de threads configurável, permitindo especificar parâmetros como:
-
   - Tamanho máximo e mínimo do pool
   - Políticas de rejeição de tarefas
   - Tempo máximo de vida das threads ociosas
@@ -63,7 +62,6 @@ Em C#, o namespace `System.Threading` fornece classes para manipulação de thre
 
 - **ThreadPool**:
   Classe estática que gerencia um pool de threads reutilizáveis.
-
   - `QueueUserWorkItem`: Enfileira tarefas para execução
   - Controle automático de escalonamento
 

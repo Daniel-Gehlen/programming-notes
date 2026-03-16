@@ -50,11 +50,9 @@
 ## Configuração de Vozes no Windows
 
 1. Adicionar idioma:
-
    - `Win + I` > Tempo e Idioma > Adicionar idioma (ex: Português Brasil)
 
 2. Instalar vozes:
-
    - Selecionar idioma > Opções > Adicionar voz
 
 3. Usar com Balabolka:

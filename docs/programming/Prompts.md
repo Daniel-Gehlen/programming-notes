@@ -50,14 +50,12 @@ Crie um script Python que gera um card moderno e minimalista com as seguintes es
 ### Seções do Card
 
 1. **Cabeçalho**
-
    - Título centralizado em caixa alta, fonte `Sans Serif bold` (36px, cor `#333333`).
    - Subtítulo em `Sans Serif regular` (18px, cor monocromática aleatória).
    - Altura: 150px.
    - Linha divisória horizontal (2px, cor monocromática aleatória).
 
 2. **Corpo do Texto**
-
    - Texto alinhado à esquerda, margens de 40px.
    - Fonte `Sans Serif regular` (24px, cor monocromática aleatória).
    - Largura máxima do texto: 600px.

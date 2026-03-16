@@ -129,7 +129,6 @@ Técnica para hospedar múltiplos sites em um único servidor físico, diferenci
 ## **Melhores Práticas**
 
 1. **Padronize estruturas de diretórios**
-
    - `/var/www/<site>/public_html`
 
 2. **Habilite logging separado**

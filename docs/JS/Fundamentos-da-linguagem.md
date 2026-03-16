@@ -1151,9 +1151,7 @@ async function processarParalelo(lista) {
 async function comTimeout(promise, timeout) {
   return Promise.race([
     promise,
-    new Promise((_, reject) =>
-      setTimeout(() => reject(new Error("Timeout")), timeout)
-    ),
+    new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), timeout)),
   ]);
 }
 ```

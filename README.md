@@ -33,6 +33,7 @@ Coleção organizada de materiais sobre fundamentos teóricos e históricos da C
    - Exemplos práticos
 
 ## 📝 Padrões de Contribuição
+
 - Documentos em Markdown (.md)
 - Códigos exemplares em Python/Java
 - Referências acadêmicas validadas

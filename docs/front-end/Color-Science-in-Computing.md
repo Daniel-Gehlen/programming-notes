@@ -85,7 +85,6 @@ V = 0.615R - 0.515G - 0.100B
 ## 🛠️ Ferramentas Práticas
 
 1. **Calibração de Monitor:**
-
    - Datacolor SpyderX
    - X-Rite i1Display
 
@@ -94,7 +93,7 @@ V = 0.615R - 0.515G - 0.100B
    ```javascript
    // Conversão RGB para HSL
    function rgbToHsl(r, g, b) {
-     (r /= 255), (g /= 255), (b /= 255);
+     ((r /= 255), (g /= 255), (b /= 255));
      // ... implementação completa
    }
    ```

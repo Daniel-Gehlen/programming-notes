@@ -54,7 +54,6 @@ tf.keras.layers.ReLU(max_value=None, negative_slope=0.0, threshold=0.0)
 ### Fluxo de Trabalho:
 
 1. **Pré-processamento**:
-
    - Normalização de dados de sensores
    - Redimensionamento de imagens (ex: 64x64 pixels)
 

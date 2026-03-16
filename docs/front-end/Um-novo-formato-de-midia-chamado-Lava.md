@@ -58,13 +58,11 @@ const animation = new LavaPlayer({
 ## 🏆 Vantagens Competitivas
 
 1. **Qualidade Visual:**
-
    - Texturas realistas
    - Efeitos 3D simulados
    - Transições ultra-suaves
 
 2. **Performance:**
-
    - 40% mais eficiente que VP9 em mobile
    - Decodificação otimizada para ARM
 

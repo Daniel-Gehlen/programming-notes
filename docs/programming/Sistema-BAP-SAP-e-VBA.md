@@ -7,12 +7,10 @@
 ### Componentes do Sistema SAP BAP:
 
 1. **ABAP (Advanced Business Application Programming)**:
-
    - Linguagem de programação específica da SAP
    - Usada para criar relatórios, interfaces e lógica de negócio
 
 2. **SAP GUI (Graphical User Interface)**:
-
    - Interface para interação com o sistema SAP
    - Suporta Dynpro, Web Dynpro e Fiori
 
@@ -44,12 +42,10 @@
 ### Componentes do Sistema VBA:
 
 1. **Editor VBA**:
-
    - Ambiente de desenvolvimento integrado
    - Permite escrever e depurar código
 
 2. **Objetos e Coleções**:
-
    - Representam componentes dos aplicativos
    - Ex: planilhas, células no Excel
 
@@ -87,7 +83,6 @@
 ### Integração:
 
 1. **RFC e API**:
-
    - SAP expõe dados via RFC/APIs
    - VBA consome esses dados
 
@@ -111,19 +106,15 @@
 ### Componentes do ABAP:
 
 1. **ABAP Development Workbench (SE80)**:
-
    - IDE completo para desenvolvimento
 
 2. **Data Dictionary (DDIC)**:
-
    - Repositório central de definições de dados
 
 3. **Modularização**:
-
    - Programas, Function Modules, Classes
 
 4. **Reports e ALV**:
-
    - Geração de relatórios
 
 5. **Dynpro**:

@@ -44,11 +44,13 @@ public class MinMaxFinder {
 ```
 
 **Explicação do algoritmo:**
+
 - O algoritmo percorre a lista de números apenas uma vez, comparando cada elemento com os valores atuais de `min` e `max`.
 - Se um número for menor que `min`, `min` é atualizado.
 - Se um número for maior que `max`, `max` é atualizado.
 - Ao final, o menor e o maior valor da lista são impressos.
 
 **Complexidade:**
+
 - **Tempo:** O(n), onde `n` é o número de elementos na lista, pois cada elemento é visitado uma única vez.
 - **Espaço:** O(1), pois utiliza apenas duas variáveis adicionais (`min` e `max`), independentemente do tamanho da lista.

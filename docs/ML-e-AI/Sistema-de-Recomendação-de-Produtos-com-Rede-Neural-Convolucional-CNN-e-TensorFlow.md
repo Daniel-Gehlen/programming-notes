@@ -1,14 +1,17 @@
 # Relatório: Sistema de Recomendação de Produtos usando Rede Neural Convolucional (CNN) e TensorFlow
 
 ## Introdução
+
 Este relatório aborda o desenvolvimento de um sistema de recomendação de produtos usando técnicas de deep learning, especificamente uma Rede Neural Convolucional (CNN), implementada com a biblioteca TensorFlow. A aplicação prática do sistema foca na classificação de imagens de produtos do dataset CIFAR-10, que inclui 10 classes diferentes.
 
 ## Tecnologias Utilizadas
 
 ### Linguagem de Programação
+
 - **Python 3.8+**
 
 ### Bibliotecas Principais
+
 ```python
 # Deep Learning
 import tensorflow as tf
@@ -34,22 +37,27 @@ warnings.filterwarnings('ignore')
 ## Métodos
 
 ### 1. Carregamento e Pré-processamento de Dados
+
 - O dataset CIFAR-10 foi carregado e dividido em conjuntos de treinamento e teste
 - As imagens foram normalizadas para o intervalo [0, 1] para facilitar o treinamento da rede
 
 ### 2. Construção da Rede Neural Convolucional (CNN)
+
 - A CNN foi projetada com três camadas convolucionais seguidas por camadas de pooling para extrair características relevantes das imagens
 - Camadas totalmente conectadas foram usadas para a tomada de decisão final
 - A função de ativação 'relu' foi empregada para introduzir não-linearidades
 
 ### 3. Compilação e Treinamento do Modelo
+
 - O modelo foi compilado usando o otimizador 'adam' e a função de perda 'SparseCategoricalCrossentropy', adequada para problemas de classificação com rótulos inteiros
 - O treinamento foi realizado por 10 épocas, monitorando a acurácia tanto no conjunto de treinamento quanto no teste
 
 ### 4. Avaliação do Modelo
+
 - A acurácia do modelo foi avaliada no conjunto de teste, resultando em uma acurácia final de aproximadamente 70.31%
 
 ### 5. Previsões e Visualizações
+
 - O modelo foi usado para fazer previsões nas primeiras 5 imagens do conjunto de teste
 - As previsões foram impressas, incluindo o produto previsto, a classe verdadeira e a confiança associada à previsão
 - Imagens junto com previsões foram visualizadas em um gráfico
@@ -379,9 +387,11 @@ print("="*50)
 ```
 
 ## Resultados
+
 Os resultados demonstram que o modelo treinado alcançou uma acurácia de aproximadamente 70%, indicando sua capacidade de fazer previsões razoavelmente precisas sobre a classe do produto nas imagens. Previsões individuais para as primeiras 5 imagens no conjunto de teste mostram a capacidade do modelo de identificar corretamente diferentes classes de produtos, ao mesmo tempo que refletem a confiança associada a cada previsão.
 
 ## Conclusão
+
 O desenvolvimento e implementação do sistema de recomendação de produtos usando uma CNN mostram resultados promissores na classificação de imagens de produtos. Este modelo pode ser expandido e adaptado para diferentes datasets e domínios de aplicação, fornecendo uma base sólida para a construção de sistemas de recomendação mais sofisticados. A combinação de tecnologias como TensorFlow e redes neurais convolucionais oferece uma abordagem robusta para problemas de visão computacional e classificação de imagens, demonstrando grande potencial em várias indústrias e comércio.
 
 **Repositório GitHub:** https://github.com/Daniel-Gehlen/PythonProgrammingProjects1/blob/main/Product_Visionary_CNN.ipynb

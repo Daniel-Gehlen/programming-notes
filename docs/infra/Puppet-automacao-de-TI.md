@@ -1,7 +1,9 @@
 # Puppet: Automação de TI
 
 ## **O que é Puppet?**
+
 Ferramenta de automação para gerenciamento de configuração de sistemas, utilizando abordagem **declarativa**:
+
 - Define o **estado desejado** da infraestrutura
 - Automatiza provisionamento e manutenção
 - Garante consistência em ambientes complexos
@@ -9,17 +11,19 @@ Ferramenta de automação para gerenciamento de configuração de sistemas, util
 ---
 
 ## **Funcionalidades Principais**
-| **Recurso**               | **Descrição**                                                                 |
-|---------------------------|-------------------------------------------------------------------------------|
-| **Modelagem Declarativa**  | Usa DSL própria para especificar configurações (arquivos, serviços, usuários) |
-| **Infraestrutura como Código** | Versionamento e gerenciamento de configurações como código-fonte          |
-| **Orquestração**          | Gerencia milhares de nós de forma escalável                                   |
-| **Monitoramento**         | Relatórios detalhados para auditoria e conformidade                           |
-| **Integração DevOps**     | Compatível com pipelines CI/CD                                                |
+
+| **Recurso**                    | **Descrição**                                                                 |
+| ------------------------------ | ----------------------------------------------------------------------------- |
+| **Modelagem Declarativa**      | Usa DSL própria para especificar configurações (arquivos, serviços, usuários) |
+| **Infraestrutura como Código** | Versionamento e gerenciamento de configurações como código-fonte              |
+| **Orquestração**               | Gerencia milhares de nós de forma escalável                                   |
+| **Monitoramento**              | Relatórios detalhados para auditoria e conformidade                           |
+| **Integração DevOps**          | Compatível com pipelines CI/CD                                                |
 
 ---
 
 ## **Componentes do Puppet**
+
 1. **Puppet Master**
    - Servidor central que armazena configurações (manifestos)
    - Distribui políticas para agentes
@@ -47,32 +51,40 @@ Ferramenta de automação para gerenciamento de configuração de sistemas, util
 ---
 
 ## **Casos de Uso**
+
 ✅ **Provisionamento Automatizado**
-   - Configura novos servidores em segundos
+
+- Configura novos servidores em segundos
 
 ✅ **Gestão de Configuração**
-   - Mantém uniformidade em ambientes híbridos
+
+- Mantém uniformidade em ambientes híbridos
 
 ✅ **Atualizações**
-   - Aplica patches de segurança automaticamente
+
+- Aplica patches de segurança automaticamente
 
 ✅ **Controle de Acesso**
-   - Gerencia usuários e permissões centralizadamente
+
+- Gerencia usuários e permissões centralizadamente
 
 ---
 
 ## **Vantagens**
-| **Benefício**      | **Impacto**                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| **Consistência**   | Elimina "configurações manuais" e desvios                                   |
-| **Eficiência**     | Reduz tempo em tarefas operacionais repetitivas                             |
-| **Escalabilidade** | Gerencia desde dezenas até milhares de servidores                           |
-| **Segurança**      | Aplica políticas de segurança de forma padronizada                          |
+
+| **Benefício**      | **Impacto**                                        |
+| ------------------ | -------------------------------------------------- |
+| **Consistência**   | Elimina "configurações manuais" e desvios          |
+| **Eficiência**     | Reduz tempo em tarefas operacionais repetitivas    |
+| **Escalabilidade** | Gerencia desde dezenas até milhares de servidores  |
+| **Segurança**      | Aplica políticas de segurança de forma padronizada |
 
 ---
 
 ## **Conclusão**
+
 O Puppet é essencial para:
+
 - **Automatizar** infraestruturas complexas
 - **Garantir conformidade** com políticas
 - **Integrar-se** a fluxos DevOps modernos

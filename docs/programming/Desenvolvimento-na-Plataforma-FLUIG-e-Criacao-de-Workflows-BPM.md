@@ -35,7 +35,6 @@ Plataforma **low-code** da TOTVS para:
 ### Passo a Passo
 
 1. **Modelagem do Processo**
-
    - Uso de **BPMN 2.0** (gateways, eventos, subprocessos)
 
    ```mermaid
@@ -47,7 +46,6 @@ Plataforma **low-code** da TOTVS para:
    ```
 
 2. **Configurações Chave**
-
    - **Prazos**: Definir SLAs por etapa
    - **Permissões**: Campos editáveis por fase
    - **Notificações**: Alertas por e-mail

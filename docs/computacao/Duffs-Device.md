@@ -55,7 +55,6 @@ void duff_device(const short *from, short *to, int count) {
 ### **3. Explicação Detalhada**
 
 1. **Cálculo de Blocos:**
-
    - `n = (count + 7) / 8`: Número de blocos completos de 8 iterações.
    - `count % 8`: Itens restantes para cópia inicial (0 a 7).
 

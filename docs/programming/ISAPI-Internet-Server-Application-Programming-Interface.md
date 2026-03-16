@@ -38,7 +38,6 @@
 ### Casos de Uso Típicos
 
 1. **Extensões de Servidor**
-
    - Suporte a novos formatos de arquivo
    - Mecanismos de autenticação customizados
    - Processamento especializado de requisições

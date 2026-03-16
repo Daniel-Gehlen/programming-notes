@@ -55,7 +55,6 @@
 ### Desenvolvimento de Jogos
 
 - **C# (Unity)**: US$50-150/hora
-
   - Jogos mobile (2-6 meses de desenvolvimento)
   - Realidade aumentada para negócios
 

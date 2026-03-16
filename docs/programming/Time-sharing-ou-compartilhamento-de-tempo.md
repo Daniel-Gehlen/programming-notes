@@ -26,12 +26,10 @@ sequenceDiagram
 ## Políticas de Escalonamento
 
 1. **Round Robin**
-
    - Quantum fixo para todos
    - Exemplo: Sistemas de terminal antigos
 
 2. **Prioridades Dinâmicas**
-
    - Ajusta quantum baseado no tipo de processo
    - Exemplo: Processos interativos recebem mais tempo
 

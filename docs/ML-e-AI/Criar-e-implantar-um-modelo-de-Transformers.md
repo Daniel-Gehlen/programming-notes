@@ -64,7 +64,6 @@ print(f"Número de parâmetros: {model.num_parameters():,}")
 ### Otimização do Processo
 
 - **Hardware recomendado**:
-
   - GPU NVIDIA com pelo menos 8GB VRAM
   - TPUs para grandes conjuntos de dados
 
@@ -176,13 +175,11 @@ graph TD
 ## Boas Práticas
 
 1. **Versionamento**:
-
    - Modelos (Hugging Face Hub)
    - Dados (DVC)
    - Código (Git)
 
 2. **Monitoramento**:
-
    - Latência das requisições
    - Uso de memória
    - Drift de dados

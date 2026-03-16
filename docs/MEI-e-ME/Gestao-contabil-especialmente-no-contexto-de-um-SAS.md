@@ -5,13 +5,11 @@
 ### 🔍 Opções Disponíveis:
 
 - **MEI (Microempreendedor Individual)**:
-
   - ❌ Não adequado para SAS
   - Limitações em CNAEs permitidos
   - Não cobre serviços como consultoria ou venda de produtos digitais
 
 - **Microempresa (ME)**:
-
   - ✅ Recomendada para iniciantes
   - Faturamento anual até R$ 4 milhões
   - Carga tributária menor comparada ao CPF
@@ -108,27 +106,22 @@
 ## Fluxo Lógico Encadeado
 
 1. **Escolha da Estrutura Jurídica**
-
    - Avaliar atividades e faturamento projetado
    - Optar por ME (Microempresa) para SAS
 
 2. **Processos Fiscais**
-
    - Implementar emissão sistemática de notas
    - Definir política de timing (pós-garantia)
 
 3. **Gestão Tributária**
-
    - Operar prioritariamente com CNPJ
    - Aproveitar programas como REFIS
 
 4. **Estruturação Empresarial**
-
    - Avaliar necessidade de múltiplos CNPJs
    - Considerar segmentação por produtos
 
 5. **Otimização Fiscal**
-
    - Classificação estratégica de produtos
    - Avaliação de estruturas offshore
 

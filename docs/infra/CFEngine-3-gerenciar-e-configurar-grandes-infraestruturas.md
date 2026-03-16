@@ -25,17 +25,14 @@
 ## **Arquitetura do CFEngine 3**
 
 1. **Policy Server**
-
    - Armazena e distribui políticas para todos os nós
    - Funciona como fonte central de verdade
 
 2. **Agentes CFEngine**
-
    - Instalados em cada servidor/dispositivo
    - Aplicam políticas localmente
 
 3. **Promises (Promessas)**
-
    - Código declarativo que define estados desejados
    - Exemplo:
      ```cfengine

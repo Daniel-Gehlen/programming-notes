@@ -38,7 +38,6 @@ graph LR
 ## Fluxo de Comunicação
 
 1. **Frontend (React)**:
-
    - Faz requisições HTTP para endpoints API
    - Gerencia estado da aplicação
    - Renderiza componentes dinâmicos
@@ -75,7 +74,6 @@ useEffect(() => {
 ## Configuração Básica
 
 1. **Backend**:
-
    - Instale Django REST Framework
    - Configure CORS headers
    - Crie serializers para modelos

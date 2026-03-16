@@ -3,6 +3,7 @@
 O **Spring AI** é um projeto relativamente novo que visa integrar facilmente modelos de inteligência artificial (IA) em aplicações Spring, permitindo que desenvolvedores Java utilizem LLMs (Large Language Models) como o ChatGPT, LLaMA, Claude e outros de forma simples e padronizada.
 
 ### **Principais Funcionalidades do Spring AI**
+
 1. **Chat Models** – Interação com modelos de conversação (como OpenAI, Azure OpenAI, Anthropic Claude, etc.).
 2. **Embedding Models** – Geração de vetores de embeddings para tarefas como busca semântica.
 3. **Prompt Engineering** – Criação de prompts estruturados para melhorar respostas de IA.
@@ -13,10 +14,13 @@ O **Spring AI** é um projeto relativamente novo que visa integrar facilmente mo
 ---
 
 ### **Como Funciona?**
+
 O Spring AI abstrai a comunicação com APIs de IA, permitindo que você interaja com diferentes provedores usando uma interface comum.
 
 #### **1. Configuração Básica**
+
 Adicione a dependência no `pom.xml` (se estiver usando Maven):
+
 ```xml
 <dependency>
     <groupId>org.springframework.ai</groupId>
@@ -24,12 +28,15 @@ Adicione a dependência no `pom.xml` (se estiver usando Maven):
     <version>0.8.1</version> <!-- Verifique a versão mais recente -->
 </dependency>
 ```
+
 Configure a chave da OpenAI no `application.properties`:
+
 ```properties
 spring.ai.openai.api-key=SUA_CHAVE_DA_OPENAI
 ```
 
 #### **2. Usando o ChatClient para Interagir com um LLM**
+
 ```java
 import org.springframework.ai.chat.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,11 +56,13 @@ public class AIController {
     }
 }
 ```
+
 Ao chamar `/chat?prompt="Explique o Spring AI"`, o sistema usará a OpenAI para gerar uma resposta.
 
 ---
 
 #### **3. Trabalhando com Embeddings**
+
 ```java
 import org.springframework.ai.embedding.EmbeddingClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,12 +79,15 @@ public class EmbeddingController {
     }
 }
 ```
+
 Isso retornará um vetor de embeddings do texto, útil para buscas semânticas.
 
 ---
 
 #### **4. Extraindo Respostas Estruturadas (JSON)**
+
 Você pode definir um `Record` em Java e pedir para o LLM retornar dados no formato desejado:
+
 ```java
 record Person(String name, int age) {}
 
@@ -92,12 +104,14 @@ public Person generatePerson(@RequestParam String description) {
 ---
 
 ### **Vantagens do Spring AI**
+
 ✅ **Padronização** – Troque modelos (OpenAI, LLaMA, Claude) sem alterar o código.
 ✅ **Integração com Spring** – Funciona nativamente com Spring Boot, DI, etc.
 ✅ **Prompt Templates** – Gerencie prompts de forma organizada.
 ✅ **Vector Search** – Facilita a criação de sistemas RAG (Retrieval-Augmented Generation).
 
 ### **Provedores Suportados**
+
 - OpenAI / Azure OpenAI
 - Anthropic Claude
 - HuggingFace
@@ -108,7 +122,9 @@ public Person generatePerson(@RequestParam String description) {
 ---
 
 ### **Exemplo Avançado: RAG (Retrieval-Augmented Generation)**
+
 Com Spring AI, você pode:
+
 1. Gerar embeddings de documentos.
 2. Armazenar em um banco de dados vetorial (ex: Pinecone).
 3. Buscar os documentos mais relevantes e usá-los como contexto em um prompt.
@@ -123,7 +139,9 @@ String answer = chatClient.call("Responda com base nestes documentos: " + releva
 ---
 
 ### **Conclusão**
+
 O Spring AI simplifica o uso de IA em aplicações Java/Spring, abstraindo a complexidade das APIs de LLMs e fornecendo ferramentas para:
+
 - **Chatbots**
 - **Busca Semântica**
 - **Geração de Conteúdo**

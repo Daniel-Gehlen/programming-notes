@@ -12,12 +12,10 @@
 ## Componentes Principais
 
 1. **Amostragem & Quantização**
-
    - Teorema de Nyquist-Shannon
    - Resolução em bits
 
 2. **Transformadas**
-
    - DFT/FFT (análise de frequência)
    - DCT (compressão)
 

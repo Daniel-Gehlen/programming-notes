@@ -3,6 +3,7 @@
 Aqui está uma lista categorizada de memes populares que têm grande apelo e engajamento nas redes sociais:
 
 ## Memes Clássicos e Atemporais
+
 - **Distracted Boyfriend** (Namorado Distraído)
   Representa situações de escolha ou conflito.
 - **Drake Hotline Bling** (Drake Aprovando/Rejeitando)
@@ -15,6 +16,7 @@ Aqui está uma lista categorizada de memes populares que têm grande apelo e eng
   Representa dilemas ou escolhas difíceis.
 
 ## Memes de Humor Absurdo
+
 - **Surprised Pikachu** (Pikachu Surpreso)
   Usado para expressar surpresa ou ironia.
 - **Big Smoke Order** (Pedido do Big Smoke - GTA San Andreas)
@@ -27,6 +29,7 @@ Aqui está uma lista categorizada de memes populares que têm grande apelo e eng
   Usado para expressar raiva ou frustração.
 
 ## Memes de Cultura Pop
+
 - **Willy Wonka** (Willy Wonka Sarcástico)
   Usado para comentários irônicos ou sarcásticos.
 - **Spider-Man Pointing at Spider-Man** (Homem-Aranha Apontando para Si Mesmo)
@@ -38,6 +41,7 @@ Aqui está uma lista categorizada de memes populares que têm grande apelo e eng
 - **Avengers Endgame** (Cenas como "I Am Iron Man" ou "Whatever It Takes").
 
 ## Memes de Situações Cotidianas
+
 - **Karen** (A Clássica "Karen")
   Representa pessoas exigentes ou problemáticas.
 - **Woman Calculating** (Mulher Calculando)
@@ -50,6 +54,7 @@ Aqui está uma lista categorizada de memes populares que têm grande apelo e eng
   Usado para situações de confusão ou identificação errada.
 
 ## Memes de Animais
+
 - **Doge** (O Shiba Inu)
   Um dos memes mais icônicos da internet.
 - **Grumpy Cat** (Gato Mal-Humorado)
@@ -62,6 +67,7 @@ Aqui está uma lista categorizada de memes populares que têm grande apelo e eng
   Usado para representar pensamentos internos ou verdades inconvenientes.
 
 ## Memes de Tendências Atuais
+
 - **Sigma Male** (Memes sobre o arquétipo "Sigma")
   Usado para humor sobre personalidades introvertidas ou independentes.
 - **Skibidi Toilet** (Tendência recente de humor absurdo)
@@ -74,6 +80,7 @@ Aqui está uma lista categorizada de memes populares que têm grande apelo e eng
   Popular entre fãs de jogos e humor nostálgico.
 
 ## Dicas para Pesquisar Memes
+
 - Use termos como **"viral memes"**, **"trending memes"**, ou **"popular memes 2023"**.
 - Explore plataformas como **Reddit**, **TikTok**, e **Twitter** para ver o que está em alta.
 - Verifique se o meme tem versatilidade para se adaptar a diferentes contextos.

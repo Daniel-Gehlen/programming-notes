@@ -75,12 +75,10 @@ impl NaviAdapter {
 ## Fluxo de Trabalho
 
 1. **Carregamento de Modelos**:
-
    - Suporte a formatos nativos (.pb, .pt, .onnx)
    - Verificação de compatibilidade
 
 2. **Conversão Opcional**:
-
    - ONNX como formato intermediário
    - Validação de esquemas
 

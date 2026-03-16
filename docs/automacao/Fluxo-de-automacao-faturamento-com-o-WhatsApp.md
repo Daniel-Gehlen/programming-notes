@@ -73,13 +73,11 @@ def whatsapp_webhook():
    ```
 
 2. **Conectar Odoo**
-
    - Habilitar API REST no Odoo
    - Criar usuário de serviço
    - Configurar webhooks para faturas
 
 3. **Integrar WhatsApp**
-
    - Criar conta na Twilio
    - Obter SID e Token
    - Verificar número WhatsApp
@@ -101,12 +99,10 @@ def whatsapp_webhook():
 ## 🚀 Melhores Práticas
 
 1. **Tratamento de Erros**
-
    - Configurar dead-letter queue para mensagens falhas
    - Implementar retry automático
 
 2. **Segurança**
-
    - Validar assinatura webhook
    - Criptografar dados sensíveis
    - Usar variáveis de ambiente

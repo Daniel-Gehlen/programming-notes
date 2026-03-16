@@ -31,7 +31,6 @@ Método mais comum para compressão lossy em croma:
 ## Impacto na Qualidade
 
 - **Vantagens**:
-
   - Redução de 25-50% no tamanho
   - Pouco perceptível para o olho humano na maioria dos casos
 

@@ -57,12 +57,10 @@ Linguagem de consulta para APIs
 ## Planejamento de Testes
 
 1. **Revisão de Especificações**
-
    - Documentação OpenAPI/Swagger
    - Regras de negócio
 
 2. **Definição de Cenários**
-
    - Happy paths
    - Edge cases
    - Tratamento de erros

@@ -1553,9 +1553,7 @@ Funcionario.prototype.trabalhar = function () {
 // Object.getPrototypeOf() - obtém prototype
 const func = new Funcionario("João", "Dev");
 console.log(Object.getPrototypeOf(func) === Funcionario.prototype); // true
-console.log(
-  Object.getPrototypeOf(Object.getPrototypeOf(func)) === Pessoa.prototype
-); // true
+console.log(Object.getPrototypeOf(Object.getPrototypeOf(func)) === Pessoa.prototype); // true
 ```
 
 ### Object.hasOwn(), Object.getOwnPropertyDescriptor()
@@ -1599,10 +1597,7 @@ const descritores = Object.getOwnPropertyDescriptors(obj3);
 console.log(descritores);
 
 // Clonagem exata com descritores
-const cloneExato = Object.defineProperties(
-  {},
-  Object.getOwnPropertyDescriptors(obj3)
-);
+const cloneExato = Object.defineProperties({}, Object.getOwnPropertyDescriptors(obj3));
 
 // Com símbolos
 const sym = Symbol("id");

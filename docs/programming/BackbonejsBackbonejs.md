@@ -105,12 +105,10 @@ user.fetch(); // GET /api/users/1
 ## 🚀 Alternativas Recomendadas
 
 1. **React Native**:
-
    - JavaScript + componentes nativos
    - Expo para prototipagem rápida
 
 2. **Flutter**:
-
    - Dart + widgets customizáveis
    - Alta performance
 

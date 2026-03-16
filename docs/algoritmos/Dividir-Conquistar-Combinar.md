@@ -99,11 +99,9 @@ def hybrid_sort(arr, k):
 ## Caso de Uso: Organização de Biblioteca
 
 1. **Divisão**:
-
    - Separar livros em √n prateleiras com √n livros cada
 
 2. **Ordenação local**:
-
    - Ordenar cada prateleira: O((√n)²) = O(n)
 
 3. **Intercalação**:

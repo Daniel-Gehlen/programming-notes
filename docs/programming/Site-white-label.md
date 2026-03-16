@@ -50,12 +50,10 @@ graph LR
 **Opções populares**:
 
 1. **GitHub Pages**
-
    - Integração nativa com repositórios Git
    - Limite: 1GB de armazenamento
 
 2. **Netlify**
-
    - Deploy contínuo via Git
    - Recursos extras: Forms, Lambda Functions
 
@@ -73,12 +71,10 @@ graph LR
 ## Fluxo de Implementação White Label
 
 1. **Desenvolvimento Core**
-
    - Código base com módulos customizáveis
    - API de branding (cores, logos, textos)
 
 2. **Painel de Controle**
-
    - Upload de assets de marca
    - Seletor de temas CSS
 

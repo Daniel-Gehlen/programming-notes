@@ -74,12 +74,10 @@ response = client.analyze_sentiment(documents=documents)
 ## Casos de Uso Empresariais
 
 1. **Atendimento ao Cliente**:
-
    - Chatbots com compreensão contextual
    - Análise de sentimentos em avaliações
 
 2. **Processamento de Documentos**:
-
    - Extração automática de contratos
    - Detecção de cláusulas críticas
 

@@ -140,8 +140,8 @@ public static void radixSortTarefas(List<Tarefa> tarefas) {
 
 ## Tabela de Complexidade
 
-| Operação            | Complexidade  | Observação                          |
-|---------------------|--------------|------------------------------------|
-| Ordenação           | O(n log n)   | Usando Collections.sort            |
-| Execução            | O(n)         | Percorre lista uma vez             |
-| Radix Sort          | O(dn)        | d = número de dígitos nas datas    |
+| Operação   | Complexidade | Observação                      |
+| ---------- | ------------ | ------------------------------- |
+| Ordenação  | O(n log n)   | Usando Collections.sort         |
+| Execução   | O(n)         | Percorre lista uma vez          |
+| Radix Sort | O(dn)        | d = número de dígitos nas datas |

@@ -13,17 +13,14 @@
 ## Observações Importantes
 
 1. **Flexibilidade de Técnicas**:
-
    - As técnicas podem ser combinadas conforme necessário
    - A seleção depende do tipo de projeto e metodologia (ágil, cascata, etc.)
 
 2. **Envolvimento de Stakeholders**:
-
    - Fundamental em todas as fases
    - Garante alinhamento entre expectativas e resultados
 
 3. **Documentação**:
-
    - Deve ser:
      - Clara e concisa
      - Completa
@@ -37,7 +34,6 @@
 ## Informações Adicionais
 
 - **Adaptabilidade**:
-
   - Esta fórmula serve como guia geral
   - Deve ser adaptada às necessidades específicas de cada projeto
 

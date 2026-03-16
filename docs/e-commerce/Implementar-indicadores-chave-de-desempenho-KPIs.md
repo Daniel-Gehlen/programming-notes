@@ -97,12 +97,14 @@ get_github_metrics("torvalds/linux")
 **Formas de Compartilhar Resultados**:
 
 1. **Relatórios no `README.md`**:
+
    ```markdown
    ## 📊 Métricas (Julho 2023)
 
    - Novos contribuidores: 12
    - Issues resolvidas: 45/60 (75%)
    ```
+
 2. **Discussões no GitHub**:
    Criar tópicos mensais com análises.
 3. **Newsletters**: Usar Mailchimp para atualizações trimestrais.

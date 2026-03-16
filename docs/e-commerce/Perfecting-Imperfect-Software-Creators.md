@@ -5,7 +5,6 @@
 ### **1. Introdução ao Software Livre e GPL**
 
 - **Definição**:
-
   - Software livre respeita 4 liberdades: uso, estudo, modificação e distribuição.
   - GPL (GNU General Public License) garante essas liberdades via copyleft.
 

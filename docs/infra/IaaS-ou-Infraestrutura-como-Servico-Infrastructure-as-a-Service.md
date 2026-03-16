@@ -128,17 +128,14 @@ kubectl autoscale deploy nginx --min=2 --max=5
 ## **Checklist para Escolha Tecnológica**
 
 1. **Requisitos de Segurança:**
-
    - [ ] Isolamento nível VM (Kata)
    - [ ] Compliance setorial
 
 2. **Portabilidade:**
-
    - [ ] Multi-cloud
    - [ ] Hybrid cloud
 
 3. **Ecosistema:**
-
    - [ ] CNCF Graduated
    - [ ] Suporte comercial
 

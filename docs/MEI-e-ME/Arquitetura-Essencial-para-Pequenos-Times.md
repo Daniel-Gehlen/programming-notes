@@ -114,9 +114,7 @@ const users = [
 
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
-  const user = users.find(
-    (u) => u.username === username && u.password === password
-  );
+  const user = users.find((u) => u.username === username && u.password === password);
   if (user) {
     const token = jwt.sign({ userId: user.id }, "secret_key", {
       expiresIn: "1h",

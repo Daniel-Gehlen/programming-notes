@@ -1,15 +1,17 @@
 # Chatbot no WhatsApp Business: Guia Completo
 
 ## 📌 Visão Geral
+
 **Solução Oficial vs Alternativas**
-| Método               | Custo Mensal Estimado | Complexidade | Personalização |
+| Método | Custo Mensal Estimado | Complexidade | Personalização |
 |----------------------|-----------------------|--------------|----------------|
-| API WhatsApp + n8n   | R$30-R$50             | Média        | Limitada       |
-| API WhatsApp + Python| R$10-R$30             | Alta         | Total          |
+| API WhatsApp + n8n | R$30-R$50 | Média | Limitada |
+| API WhatsApp + Python| R$10-R$30 | Alta | Total |
 
 ## 🔧 Implementação com Python + Vercel
 
 ### Pré-requisitos
+
 - Número de telefone novo (R$10-R$20)
 - Conta no Facebook Developers
 - Python 3.8+ instalado
@@ -17,6 +19,7 @@
 ### Passo a Passo Técnico
 
 1. **Configuração Inicial**
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
@@ -25,6 +28,7 @@ pip install flask requests
 ```
 
 2. **Código Base (app.py)**
+
 ```python
 from flask import Flask, request
 import requests
@@ -52,6 +56,7 @@ def handle_message():
 ```
 
 3. **Deploy na Vercel**
+
 ```bash
 npm install -g vercel
 vercel login
@@ -65,16 +70,18 @@ vercel
 
 ## 💰 Modelo de Custos (Exemplo para 100 usuários/mês)
 
-| Item                  | Custo Unitário | Custo Total |
-|-----------------------|----------------|-------------|
-| Chip SIM              | R$15           | R$15        |
-| 200 mensagens utilitárias | US$0.005/cada | R$5.20      |
-| Vercel (plano free)   | Grátis         | R$0         |
-| **Total**             |                | **R$20.20** |
+| Item                      | Custo Unitário | Custo Total |
+| ------------------------- | -------------- | ----------- |
+| Chip SIM                  | R$15           | R$15        |
+| 200 mensagens utilitárias | US$0.005/cada  | R$5.20      |
+| Vercel (plano free)       | Grátis         | R$0         |
+| **Total**                 |                | **R$20.20** |
 
 ## 🚀 Melhorias Recomendadas
+
 1. **Persistência de Dados**
    - Adicionar MongoDB Atlas (free tier)
+
    ```python
    from pymongo import MongoClient
    client = MongoClient("sua_string_conexao")
@@ -83,6 +90,7 @@ vercel
 
 2. **Processamento Avançado**
    - Integrar com GPT-3.5-turbo (US$0.002/1k tokens)
+
    ```python
    response = openai.ChatCompletion.create(
        model="gpt-3.5-turbo",
@@ -95,8 +103,9 @@ vercel
    - Usar Sentry (free tier)
 
 ## ⚠️ Limitações Importantes
+
 - **Tempo de Resposta**: Máx. 5s na Vercel free
 - **Webhooks**: Necessário endpoint HTTPS
 - **Tarifação WhatsApp**: Cobrança por sessão (24h)
 
-*Documentação Oficial: [WhatsApp Business API](https://developers.facebook.com/docs/whatsapp/cloud-api/)*
+_Documentação Oficial: [WhatsApp Business API](https://developers.facebook.com/docs/whatsapp/cloud-api/)_

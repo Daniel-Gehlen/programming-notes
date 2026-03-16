@@ -147,8 +147,7 @@ function sql(strings, ...values) {
     }
 
     // Escapar valores para SQL (simplificado)
-    const escaped =
-      typeof value === "string" ? `'${value.replace(/'/g, "''")}'` : value;
+    const escaped = typeof value === "string" ? `'${value.replace(/'/g, "''")}'` : value;
 
     return result + str + escaped;
   }, "");
@@ -489,11 +488,7 @@ function mostrarUsuario({ nome, idade, email }) {
 mostrarUsuario(usuario);
 
 // Com valores padrão
-function criarUsuario({
-  nome = "Anônimo",
-  idade = 0,
-  email = "sem-email",
-} = {}) {
+function criarUsuario({ nome = "Anônimo", idade = 0, email = "sem-email" } = {}) {
   return { nome, idade, email };
 }
 
@@ -598,8 +593,7 @@ class DestructuringSystem {
 
       // Aplicar valor padrão
       if (value === undefined && defaultValue !== undefined) {
-        value =
-          typeof defaultValue === "function" ? defaultValue() : defaultValue;
+        value = typeof defaultValue === "function" ? defaultValue() : defaultValue;
       }
 
       // Aplicar transformação
@@ -667,12 +661,7 @@ class DestructuringSystem {
         ) {
           return handler(value);
         }
-      } else if (
-        typeof pattern === "object" &&
-        pattern &&
-        typeof value === "object" &&
-        value
-      ) {
+      } else if (typeof pattern === "object" && pattern && typeof value === "object" && value) {
         const match = Object.keys(pattern).every((key) => {
           const patternValue = pattern[key];
           const actualValue = value[key];
@@ -746,10 +735,7 @@ console.log(seguro);
 // Pattern matching
 const resultadoMatch = DestructuringSystem.match(usuarios[0], [
   [{ nome: "Ana", idade: 22 }, (user) => `Encontrou Ana: ${user.nome}`],
-  [
-    { idade: (age) => age > 30 },
-    (user) => `Usuário com mais de 30: ${user.nome}`,
-  ],
+  [{ idade: (age) => age > 30 }, (user) => `Usuário com mais de 30: ${user.nome}`],
   ["default", () => "Nenhum padrão correspondente"],
 ]);
 
@@ -818,10 +804,7 @@ class ValidatorWithDestructuring {
       }
 
       // Se não é obrigatório e está vazio, pular validação
-      if (
-        !required &&
-        (value === undefined || value === null || value === "")
-      ) {
+      if (!required && (value === undefined || value === null || value === "")) {
         validData[field] = value;
         return;
       }
@@ -1973,11 +1956,7 @@ const userConfig = {
   autoSave: false,
 };
 
-const finalConfig = DefaultValueSystem.hierarchicalConfig(
-  userConfig,
-  appConfig,
-  appDefaults
-);
+const finalConfig = DefaultValueSystem.hierarchicalConfig(userConfig, appConfig, appDefaults);
 
 console.log("Config final:", finalConfig);
 
@@ -2036,9 +2015,7 @@ class FeatureFlags {
 
     // 1. Verificar ambiente
     const envEnabled =
-      flag.environments?.[this.currentEnv] ??
-      flag.default?.[this.currentEnv] ??
-      false;
+      flag.environments?.[this.currentEnv] ?? flag.default?.[this.currentEnv] ?? false;
 
     if (!envEnabled) {
       return false;
@@ -2137,20 +2114,11 @@ featureFlags.setFlag("premium-features", {
 
 // Verificar flags
 console.log("new-ui para user1:", featureFlags.isEnabled("new-ui", "user1"));
-console.log(
-  "dark-mode para user1:",
-  featureFlags.isEnabled("dark-mode", "user1")
-);
-console.log(
-  "premium-features para user2:",
-  featureFlags.isEnabled("premium-features", "user2")
-);
+console.log("dark-mode para user1:", featureFlags.isEnabled("dark-mode", "user1"));
+console.log("premium-features para user2:", featureFlags.isEnabled("premium-features", "user2"));
 
 console.log("Valor de new-ui:", featureFlags.getValue("new-ui", "v1", "user1"));
-console.log(
-  "Valor de premium-features:",
-  featureFlags.getValue("premium-features", {}, "admin")
-);
+console.log("Valor de premium-features:", featureFlags.getValue("premium-features", {}, "admin"));
 
 // 9. Sistema de tradução com fallback
 class I18nSystem {
@@ -2212,11 +2180,7 @@ class I18nSystem {
         const lastTwoDigits = count % 100;
 
         if (lastDigit === 1 && lastTwoDigits !== 11) return 0;
-        if (
-          lastDigit >= 2 &&
-          lastDigit <= 4 &&
-          !(lastTwoDigits >= 12 && lastTwoDigits <= 14)
-        )
+        if (lastDigit >= 2 && lastDigit <= 4 && !(lastTwoDigits >= 12 && lastTwoDigits <= 14))
           return 1;
         return 2;
       },
@@ -2357,9 +2321,7 @@ class ResilientCache {
           throw error;
         }
 
-        await new Promise((resolve) =>
-          setTimeout(resolve, this.retryDelay * Math.pow(2, i))
-        );
+        await new Promise((resolve) => setTimeout(resolve, this.retryDelay * Math.pow(2, i)));
       }
     }
   }
@@ -2714,9 +2676,7 @@ class ErrorHandler {
     return async (...args) => {
       return Promise.race([
         fn(...args),
-        new Promise((_, reject) =>
-          setTimeout(() => reject(timeoutError), timeoutMs)
-        ),
+        new Promise((_, reject) => setTimeout(() => reject(timeoutError), timeoutMs)),
       ]);
     };
   }
@@ -2957,13 +2917,10 @@ class RetrySystem {
         // Calcular delay com exponential backoff e jitter
         const delay = this.calculateDelay(attempt);
 
-        console.log(
-          `Tentativa ${attempt} falhou, tentando novamente em ${delay}ms...`,
-          {
-            error: error.message,
-            context,
-          }
-        );
+        console.log(`Tentativa ${attempt} falhou, tentando novamente em ${delay}ms...`, {
+          error: error.message,
+          context,
+        });
 
         // Aguardar
         await new Promise((resolve) => setTimeout(resolve, delay));
@@ -2976,8 +2933,7 @@ class RetrySystem {
   shouldRetry(error) {
     const errorStr = error.toString();
     return this.retryableErrors.some(
-      (retryableError) =>
-        errorStr.includes(retryableError) || error.name === retryableError
+      (retryableError) => errorStr.includes(retryableError) || error.name === retryableError
     );
   }
 
@@ -3030,10 +2986,7 @@ async function testRetrySystem() {
       });
       console.log(`Tentativa ${i}:`, result.data);
     } catch (error) {
-      console.log(
-        `Tentativa ${i} falhou após todas as retentativas:`,
-        error.message
-      );
+      console.log(`Tentativa ${i} falhou após todas as retentativas:`, error.message);
     }
   }
 }
@@ -3046,9 +2999,7 @@ class HierarchicalFallback {
     this.providers = providers;
     this.options = {
       timeout: options.timeout ?? 5000,
-      validate:
-        options.validate ??
-        ((result) => result !== null && result !== undefined),
+      validate: options.validate ?? ((result) => result !== null && result !== undefined),
       fallbackValue: options.fallbackValue ?? null,
     };
   }

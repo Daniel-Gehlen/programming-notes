@@ -1,9 +1,11 @@
 # DFT em Representação Binária ("DFT em bits")
 
 ## Conceito Fundamental
+
 Aplicação da Transformada Discreta de Fourier (DFT) diretamente sobre sinais digitais representados em formato binário puro, onde cada amostra é um valor inteiro codificado em bits.
 
 ## Representação de Sinais Binários
+
 ```mermaid
 flowchart LR
     A[Sinal Analógico] --> B[Amostragem]
@@ -14,6 +16,7 @@ flowchart LR
 ```
 
 ## Implementação Básica em Python
+
 ```python
 import numpy as np
 
@@ -41,6 +44,7 @@ print(np.round(spectrum, 2))
 ```
 
 ## Características Especiais
+
 1. **Aritmética Inteira**:
    - Operações diretamente sobre valores binários
    - Elimina erros de arredondamento em sistemas embarcados
@@ -55,14 +59,16 @@ print(np.round(spectrum, 2))
    - Análise de sinais em hardware dedicado
 
 ## Comparativo DFT Binária vs Tradicional
-| Aspecto               | DFT Binária          | DFT Tradicional       |
-|-----------------------|----------------------|-----------------------|
-| Tipo de Dado          | Inteiros (uint8/16)  | Ponto flutuante       |
-| Precisão              | Exata (bit-perfect)  | Precisão numérica     |
-| Complexidade          | O(N²)                | O(N²) ou O(N log N)   |
-| Hardware Indicado     | FPGAs/ASICs          | CPUs/GPUs             |
+
+| Aspecto           | DFT Binária         | DFT Tradicional     |
+| ----------------- | ------------------- | ------------------- |
+| Tipo de Dado      | Inteiros (uint8/16) | Ponto flutuante     |
+| Precisão          | Exata (bit-perfect) | Precisão numérica   |
+| Complexidade      | O(N²)               | O(N²) ou O(N log N) |
+| Hardware Indicado | FPGAs/ASICs         | CPUs/GPUs           |
 
 ## Caso Prático: Análise de Sinal Digital
+
 ```python
 # Gerando sinal PWM (Modulação por Largura de Pulso)
 bits_pwm = [1 if i < 5 else 0 for i in range(8)] * 4  # Duty cycle 50%
@@ -74,6 +80,7 @@ print(f"Frequência fundamental: {freq_principal} ciclos/amostra")
 ```
 
 ## Limitações e Soluções
+
 1. **Resolução Limitada**:
    - Problema: Quantização fixa (ex: 8 bits)
    - Solução: Usar palavras maiores (16/32 bits)
@@ -87,6 +94,7 @@ print(f"Frequência fundamental: {freq_principal} ciclos/amostra")
    - Solução: Técnicas de dithering digital
 
 ## Aplicações Avançadas
+
 - **Processamento de Sinais RF** em SDR (Rádio Definido por Software)
 - **Análise de Barramentos Digitais** (protocolos I2C, SPI)
 - **Sistemas Embarcados Críticos** (áudio digital, controle industrial)
@@ -94,6 +102,7 @@ print(f"Frequência fundamental: {freq_principal} ciclos/amostra")
 **Exemplo Prático**: O código demonstra a análise espectral de um sinal PWM binário, identificando corretamente sua frequência fundamental mesmo na representação discreta de 0s e 1s.
 
 ### Destaques:
+
 1. **Diagrama explicativo** do fluxo de processamento
 2. **Implementação vetorizada** com NumPy para melhor performance
 3. **Caso real** com análise de sinal PWM

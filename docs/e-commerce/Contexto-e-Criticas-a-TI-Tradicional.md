@@ -5,7 +5,6 @@
 ### **1. Contexto e Críticas à TI Tradicional**
 
 - **Indignação com a TI Tradicional**
-
   - Crítica sobre a ineficiência da TI tradicional para colocar algo em produção em 15 dias.
   - Excesso de burocracia: testes, documentações, histórias de usuários, compliance.
 
@@ -18,7 +17,6 @@
 ### **2. Metodologia Ágil e a Execução Rápida**
 
 - **Execução Ágil**
-
   - Experiência de cursos intensivos e a satisfação dos alunos em executar sem a necessidade da TI tradicional.
   - Utilização de técnicas avançadas como redes neurais e SVMs sem depender da TI.
 
@@ -31,7 +29,6 @@
 ### **3. Críticas ao Ágil Industrializado**
 
 - **Agile "Industrializado"**
-
   - A crítica de que o ágil se tornou muito burocrático, com reuniões e processos padronizados (ex: Daily de 15 minutos).
 
 - **Scrum Master e Documentação**
@@ -43,7 +40,6 @@
 ### **4. Desenvolvimento de Aplicativos Móveis: Android vs iOS**
 
 - **Linguagens e Plataformas**
-
   - **Swift (iOS)**
     - Restrito ao desenvolvimento para plataformas da Apple (iOS, MacOS, tvOS).
     - Vantagens: controle total do hardware e software, menor variedade de dispositivos.
@@ -64,7 +60,6 @@
 ### **5. Especialização vs Generalização**
 
 - **Frameworks Cross-Platform**
-
   - Discussão sobre desenvolvedores que usam frameworks como React Native e Flutter serem especialistas nesses frameworks, mas não necessariamente especialistas em ambas as plataformas nativas.
 
 - **Desafios de Especialização**

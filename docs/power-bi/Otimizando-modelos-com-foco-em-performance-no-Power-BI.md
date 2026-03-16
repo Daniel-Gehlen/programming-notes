@@ -36,19 +36,16 @@
 ## Processo de Otimização (Checklist)
 
 1. **Estrutura de Dados**
-
    - [ ] Usar tipos de dados apropriados
    - [ ] Eliminar colunas/linhas não utilizadas
    - [ ] Reduzir cardinalidade (ex: substituir IDs textuais por numéricos)
 
 2. **DAX**
-
    - [ ] Substituir colunas calculadas por medidas
    - [ ] Usar variáveis (`VAR`) para otimizar consultas
    - [ ] Limitar uso de funções complexas (`ITERATE`, `EARLIER`)
 
 3. **Armazenamento**
-
    - Escolher modo adequado:
      - **Importar**: Melhor performance (dados na memória)
      - **DirectQuery**: Dados em tempo real (performance variável)
@@ -72,13 +69,11 @@
 ### Soluções Aplicadas
 
 1. **Análise de Gargalos**
-
    - Uso do Performance Analyzer para identificar:
      - Medidas com execução >120ms
      - Visuais com alto consumo de recursos
 
 2. **Ações Corretivas**
-
    - Redução de 30% no número de visuais
    - Conversão de colunas calculadas para medidas
    - Criação de agregações para tabelas grandes

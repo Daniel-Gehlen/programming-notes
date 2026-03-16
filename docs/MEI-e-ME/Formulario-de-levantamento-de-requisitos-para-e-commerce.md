@@ -48,7 +48,7 @@
   - [ ] Preço
   - [ ] Marca
   - [ ] Avaliação
-- Customização: [ ] Sim (descrever: ******\_\_\_******)
+- Customização: [ ] Sim (descrever: **\*\***\_\_\_**\*\***)
 
 ## 7. Pagamentos e Entregas
 
@@ -61,7 +61,7 @@
 ## 8. Controle de Estoque
 
 - [ ] Alertas automáticos
-- Sistema referência: ********\_\_\_********
+- Sistema referência: **\*\*\*\***\_\_\_**\*\*\*\***
 
 ## 9. Integrações
 
@@ -75,7 +75,7 @@
 - **Canais**:
   - [ ] Meta Ads
   - [ ] Google Ads
-  - Concorrente referência: ******\_\_\_******
+  - Concorrente referência: **\*\***\_\_\_**\*\***
 
 ## 11. Painel Administrativo
 

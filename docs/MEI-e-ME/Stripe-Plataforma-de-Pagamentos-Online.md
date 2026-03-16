@@ -14,6 +14,7 @@
   - Assinaturas e cobrança recorrente
   - Suporte a marketplaces via Stripe Connect
 - **Linguagens suportadas**:
+
   ```python,javascript,ruby,php,java
 
   ```

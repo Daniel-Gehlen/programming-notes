@@ -54,7 +54,6 @@ print(f"Tempo com GIL: {time.time() - start:.2f}s")
    ```
 
 2. **Extensões em C**:
-
    - Bibliotecas como NumPy liberam o GIL durante operações intensivas
 
 3. **Async I/O**:

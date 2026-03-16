@@ -36,7 +36,6 @@ Um **software** pode ser considerado um **sistema**, especialmente quando é com
 ### Por que o software é um sistema?
 
 1. **Elementos ou componentes**:
-
    - Módulos ou funções.
    - Bibliotecas.
    - Interfaces de usuário.
@@ -44,29 +43,23 @@ Um **software** pode ser considerado um **sistema**, especialmente quando é com
    - APIs (Interfaces de Programação de Aplicativos).
 
 2. **Interação**:
-
    - Os componentes do software se comunicam entre si (ex.: uma função chama outra).
    - O software interage com o hardware, outros softwares e o usuário.
 
 3. **Objetivo**:
-
    - Realizar tarefas específicas, como processar dados, gerenciar informações ou fornecer funcionalidades (ex.: um editor de texto, um navegador web ou um sistema operacional).
 
 4. **Estrutura**:
-
    - O software é organizado em camadas ou arquiteturas (ex.: front-end, back-end, banco de dados).
 
 5. **Entradas (inputs)**:
-
    - Dados fornecidos pelo usuário (ex.: cliques, textos digitados).
    - Informações de outros sistemas ou dispositivos.
 
 6. **Processamento**:
-
    - O software processa as entradas por meio de algoritmos e lógica de programação.
 
 7. **Saídas (outputs)**:
-
    - Resultados gerados (ex.: uma página renderizada, um relatório, uma mensagem).
 
 8. **Feedback**:
@@ -76,20 +69,16 @@ Um **software** pode ser considerado um **sistema**, especialmente quando é com
 ### Exemplos de sistemas de software:
 
 1. **Sistema operacional** (ex.: Windows, Linux):
-
    - Gerencia hardware e software do computador.
    - É um sistema complexo com múltiplos subsistemas (gerenciamento de memória, processos, arquivos, etc.).
 
 2. **Aplicativos** (ex.: Microsoft Word, Photoshop):
-
    - São sistemas projetados para tarefas específicas, como edição de texto ou imagens.
 
 3. **Sistemas embarcados** (ex.: software em um carro ou smartwatch):
-
    - Controlam dispositivos específicos e são integrados ao hardware.
 
 4. **Sistemas distribuídos** (ex.: aplicações em nuvem como Google Drive):
-
    - Funcionam em múltiplos dispositivos ou servidores interconectados.
 
 5. **Sistemas de inteligência artificial** (ex.: ChatGPT):
@@ -106,31 +95,24 @@ Um software é um **sistema abstrato e funcional** que envolve componentes inter
 ### Características principais do Java:
 
 1. **Orientação a objetos**:
-
    - Java segue o paradigma de programação orientada a objetos (POO), com conceitos como classes, objetos, herança, polimorfismo e encapsulamento.
 
 2. **Multiplataforma (portabilidade)**:
-
    - O código Java é compilado para um formato intermediário chamado **bytecode**, que pode ser executado em qualquer dispositivo com uma **Java Virtual Machine (JVM)**. Isso permite o famoso lema: **"Write Once, Run Anywhere"** (escreva uma vez, execute em qualquer lugar).
 
 3. **Gerenciamento de memória**:
-
    - Java possui coleta de lixo (**garbage collection**), que automaticamente gerencia a alocação e liberação de memória, reduzindo erros comuns como vazamentos de memória.
 
 4. **Sintaxe simples e familiar**:
-
    - A sintaxe do Java é inspirada em C e C++, mas com menos complexidade, tornando-a mais acessível para programadores.
 
 5. **Segurança**:
-
    - Java foi projetada com foco em segurança, incluindo mecanismos como o **sandboxing** (execução de código em um ambiente restrito) e verificação de bytecode.
 
 6. **Grande ecossistema**:
-
    - Java possui uma vasta biblioteca padrão (**Java Standard Library**) e um ecossistema rico de frameworks e ferramentas, como Spring, Hibernate, Maven e Gradle.
 
 7. **Concorrência**:
-
    - Java oferece suporte nativo para programação concorrente, com classes e interfaces como `Thread`, `Runnable`, e pacotes como `java.util.concurrent`.
 
 8. **Comunidade ativa**:
@@ -141,23 +123,18 @@ Um software é um **sistema abstrato e funcional** que envolve componentes inter
 ### Onde o Java é utilizado?
 
 1. **Aplicações empresariais**:
-
    - Sistemas de grande porte, como ERPs e CRMs, são frequentemente desenvolvidos em Java, usando frameworks como **Spring** e **Java EE**.
 
 2. **Desenvolvimento Android**:
-
    - Java foi a principal linguagem para desenvolvimento de aplicativos Android (hoje compartilha espaço com Kotlin).
 
 3. **Web**:
-
    - Java é usado para criar aplicações web com tecnologias como **Servlets**, **JSP**, **JSF** e frameworks como **Spring Boot**.
 
 4. **Big Data**:
-
    - Ferramentas populares de processamento de grandes volumes de dados, como **Hadoop** e **Apache Spark**, são escritas em Java.
 
 5. **Sistemas embarcados e IoT**:
-
    - Java é utilizado em dispositivos embarcados, graças a plataformas como **Java ME** (Micro Edition).
 
 6. **Jogos**:

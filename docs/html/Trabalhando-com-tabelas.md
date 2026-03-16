@@ -83,7 +83,6 @@ tr:hover {
 ### 🚀 Boas Práticas
 
 1. **Acessibilidade**:
-
    - Use `<caption>` para descrições
    - Atributo `scope` em `<th>`
 

@@ -91,9 +91,7 @@ const deSP = pessoas.filter((pessoa) => pessoa.cidade === "SP");
 console.log(deSP); // João e Pedro
 
 // Combinação de condições
-const adultosSP = pessoas.filter(
-  (pessoa) => pessoa.idade >= 30 && pessoa.cidade === "SP"
-);
+const adultosSP = pessoas.filter((pessoa) => pessoa.idade >= 30 && pessoa.cidade === "SP");
 console.log(adultosSP); // Apenas Pedro
 
 // Remover valores falsy
@@ -103,9 +101,7 @@ console.log(verdades); // [1, 2, 3, 4]
 
 // Filtrar elementos únicos
 const duplicados = [1, 2, 2, 3, 4, 4, 5];
-const unicos = duplicados.filter(
-  (valor, indice, array) => array.indexOf(valor) === indice
-);
+const unicos = duplicados.filter((valor, indice, array) => array.indexOf(valor) === indice);
 console.log(unicos); // [1, 2, 3, 4, 5]
 
 // Com thisArg
@@ -398,9 +394,7 @@ const ultimoDebito = transacoes.findLast((t) => t.tipo === "debito");
 console.log(ultimoDebito); // { id: 3, tipo: 'debito', valor: 50 }
 
 // Índice da última transação de crédito acima de 250
-const ultimoCreditoAlto = transacoes.findLastIndex(
-  (t) => t.tipo === "credito" && t.valor > 250
-);
+const ultimoCreditoAlto = transacoes.findLastIndex((t) => t.tipo === "credito" && t.valor > 250);
 console.log(ultimoCreditoAlto); // 3
 ```
 
@@ -957,16 +951,10 @@ Array.prototype.meuSplice = function (inicio, deleteCount, ...items) {
   const arr = this;
 
   // Ajustar início negativo
-  inicio =
-    inicio < 0
-      ? Math.max(arr.length + inicio, 0)
-      : Math.min(inicio, arr.length);
+  inicio = inicio < 0 ? Math.max(arr.length + inicio, 0) : Math.min(inicio, arr.length);
 
   // Ajustar deleteCount
-  deleteCount = Math.min(
-    deleteCount ?? arr.length - inicio,
-    arr.length - inicio
-  );
+  deleteCount = Math.min(deleteCount ?? arr.length - inicio, arr.length - inicio);
 
   // Remover elementos
   for (let i = 0; i < deleteCount; i++) {

@@ -3,10 +3,12 @@
 ## Algoritmo para Organização de Tarefas
 
 ### Definição do Problema
+
 Problema comum: dificuldade em organizar tarefas diárias de forma eficiente.
 Solução: algoritmo para planejamento baseado em prioridade e tempo estimado.
 
 ### Estrutura de Dados
+
 ```java
 class Task implements Comparable<Task> {
     String name;
@@ -27,6 +29,7 @@ class Task implements Comparable<Task> {
 ```
 
 ### Fluxo do Algoritmo
+
 1. **Entrada**:
    - Lista de tarefas (nome, prioridade, tempo estimado)
    - Horário inicial do dia (ex: 8:00 AM)
@@ -39,6 +42,7 @@ class Task implements Comparable<Task> {
    - Cronograma com horário de início para cada tarefa
 
 ### Implementação em Java
+
 ```java
 import java.util.*;
 
@@ -70,6 +74,7 @@ public class DailyPlanner {
 ```
 
 ### Saída Esperada
+
 ```
 08:00 - Estudar para o exame (120 min)
 10:00 - Fazer exercícios (60 min)
@@ -79,8 +84,10 @@ public class DailyPlanner {
 ```
 
 ### Melhorias Possíveis
+
 1. **Restrições de Horário**:
    - Adicionar verificações para evitar tarefas fora do horário útil
+
    ```java
    if (currentTime + task.timeRequired > 18 * 60) {
        System.out.println("Não há tempo suficiente para: " + task.name);

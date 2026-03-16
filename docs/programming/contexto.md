@@ -38,12 +38,10 @@ flowchart TD
 ## Aplicações Críticas
 
 1. **Sistemas de Tempo Real**
-
    - Context switching determinístico
    - Ex: `PREEMPT_RT` no Linux
 
 2. **Contêineres**
-
    - Namespaces mantêm contexto isolado
 
    ```bash

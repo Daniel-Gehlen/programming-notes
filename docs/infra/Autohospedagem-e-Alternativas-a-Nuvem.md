@@ -3,32 +3,26 @@
 ## **Tópicos Principais**
 
 1. **Introdução ao Autohospedagem e Alternativas à Nuvem**
-
    - Questionamento da dependência excessiva de provedores de nuvem.
    - Proposta de uso de ferramentas simples e open-source.
 
 2. **Configuração do Ambiente de Desenvolvimento**
-
    - Escolha do sistema operacional **NixOS** para configuração declarativa.
    - Instalação do Linux via USB e configuração básica.
 
 3. **Utilização do Docker e Docker Compose**
-
    - Explicação sobre a escolha do Docker para simplificar o gerenciamento de containers.
    - Uso do Docker Compose para configurar e rodar múltiplos containers.
 
 4. **Configuração de Serviços com Caddy**
-
    - Implementação de um servidor web usando **Caddy** como proxy reverso.
    - Automatização da configuração HTTPS através do Caddy.
 
 5. **Implantação e Atualização Contínua**
-
    - Estratégias para implantação contínua usando scripts shell.
    - Uso de cron jobs para automatizar implantações baseadas em mudanças no repositório Git.
 
 6. **Considerações sobre Multi-Nodalidade e Escalabilidade**
-
    - Discussão sobre Docker Swarm e Kubernetes para escalabilidade.
    - A multi-nodalidade não é sempre necessária para todas as aplicações.
 

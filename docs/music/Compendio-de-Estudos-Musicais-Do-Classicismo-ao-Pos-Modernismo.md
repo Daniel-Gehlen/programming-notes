@@ -17,7 +17,6 @@ O Classicismo surge como uma reação à complexidade e ao emocionalismo exacerb
 A Forma-Sonata não é uma peça, mas uma **estrutura de composição** utilizada em um movimento (geralmente o primeiro) de sonatas, sinfonias e concertos. É um princípio dramático de exposição, conflito e resolução.
 
 - **Estrutura Interna de um Movimento de Sonata (Allegro de Sonata):**
-
   - **Exposição:** Apresentação do material temático.
     - **1º Tema:** Na tônica (T).
     - **Ponte Modulante:** Transita para a dominante.

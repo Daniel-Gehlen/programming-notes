@@ -400,13 +400,7 @@ function configurarAntigo(width, height, color, border, margin) {
 }
 
 // Usar objeto com destructuring
-function configurarNovo({
-  width,
-  height,
-  color = "black",
-  border = false,
-  margin = 10,
-}) {
+function configurarNovo({ width, height, color = "black", border = false, margin = 10 }) {
   console.log(`Largura: ${width}, Altura: ${height}`);
 }
 
@@ -1321,11 +1315,7 @@ async function paralelo() {
 // Promise.all - falha rápido se alguma falhar
 async function comPromiseAll() {
   try {
-    const resultados = await Promise.all([
-      fetch("/api/1"),
-      fetch("/api/2"),
-      fetch("/api/3"),
-    ]);
+    const resultados = await Promise.all([fetch("/api/1"), fetch("/api/2"), fetch("/api/3")]);
     return resultados;
   } catch (erro) {
     // Se qualquer fetch falhar, cai aqui
@@ -1341,20 +1331,14 @@ async function comAllSettled() {
     Promise.resolve("outro sucesso"),
   ]);
 
-  const sucessos = resultados
-    .filter((r) => r.status === "fulfilled")
-    .map((r) => r.value);
+  const sucessos = resultados.filter((r) => r.status === "fulfilled").map((r) => r.value);
 
-  const falhas = resultados
-    .filter((r) => r.status === "rejected")
-    .map((r) => r.reason);
+  const falhas = resultados.filter((r) => r.status === "rejected").map((r) => r.reason);
 }
 
 // Promise.race - primeiro que resolver (ou rejeitar)
 async function comRace() {
-  const timeout = new Promise((_, reject) =>
-    setTimeout(() => reject(new Error("Timeout")), 5000)
-  );
+  const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), 5000));
 
   const dados = await Promise.race([fetch("/api/dados"), timeout]);
 
@@ -1570,9 +1554,7 @@ async function tap(promise, fn) {
 }
 
 // Exemplo de uso:
-const dados = await tap(buscarDados(), (dados) =>
-  console.log("Dados obtidos:", dados)
-);
+const dados = await tap(buscarDados(), (dados) => console.log("Dados obtidos:", dados));
 ```
 
 ### Performance Considerations

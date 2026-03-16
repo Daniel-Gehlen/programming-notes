@@ -1,0 +1,28 @@
+{
+  "name": "programming-notes",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Coleção organizada de materiais sobre fundamentos teóricos e históricos da Ciência da Computação, com foco em:",
+  "main": "scripts.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "check-links": "linkinator ./index.html --recurse",
+    "test": "npm run lint && npm run check-links"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.4.0",
+    "linkinator": "^7.6.1",
+    "prettier": "^3.8.1"
+  }
+}

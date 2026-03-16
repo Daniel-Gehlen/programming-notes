@@ -1,9 +1,11 @@
 # Relatório: Detecção de Objetos com YOLO no Dataset COCO
 
 ## Introdução
+
 A detecção de objetos em imagens é uma tarefa crucial em visão computacional e aprendizado de máquina. YOLO (You Only Look Once) é uma arquitetura popular para detecção de objetos em tempo real em imagens. Este relatório aborda a implementação do YOLO no Google Colab para detectar objetos em imagens do conjunto de dados Common Objects in Context (COCO). O COCO contém uma variedade de objetos em cenas complexas, tornando-o um conjunto de dados desafiador para tarefas de detecção.
 
 ## Métodos
+
 O código começa baixando e preparando o conjunto de dados COCO, incluindo anotações e imagens. Em seguida, utiliza a biblioteca YOLO para realizar a detecção de objetos em imagens selecionadas. O YOLO é configurado com o arquivo de configuração yolov3.cfg e os pesos pré-treinados yolov3.weights. As imagens processadas são exibidas com caixas delimitadoras e classes dos objetos detectados.
 
 ## Implementação Completa
@@ -205,9 +207,11 @@ print(metrics)
 ```
 
 ## Resultados
+
 A detecção de objetos nas 10 imagens de validação do COCO resultou em previsões para várias classes de objetos, acompanhadas de probabilidades de confiança. Algumas classes comuns incluem "pessoa", "mesa de jantar", "tigela", "copo", "cadeira", "geladeira", "forno", "microondas", "vaso de planta" e "semáforo". As previsões foram visualizadas junto com as imagens originalmente selecionadas.
 
 ## Conclusão
+
 O YOLO demonstra sua eficácia na detecção de objetos em imagens complexas do conjunto de dados COCO. A arquitetura YOLO, dividindo a imagem em grades e fazendo previsões para cada célula, fornece uma abordagem eficiente para detecção em tempo real. No entanto, a implementação pode ser aprimorada, por exemplo, ajustando parâmetros, treinando o modelo em um conjunto de dados específico ou usando uma versão mais recente do YOLO. Este relatório fornece uma base para expandir e personalizar a detecção de objetos usando YOLO no Google Colab.
 
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Daniel-Gehlen/PythonProgrammingProjects1/blob/main/YOLO_Detection_Analysis.ipynb)

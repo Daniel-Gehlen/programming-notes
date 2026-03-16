@@ -301,10 +301,7 @@ pip install python-fast-html
 2. Use componentes de bibliotecas de UI, como DaisyUI:
 
 ```html
-<link
-  href="https://cdn.jsdelivr.net/npm/daisyui@3.0.0/dist/full.css"
-  rel="stylesheet"
-/>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.0/dist/full.css" rel="stylesheet" />
 ```
 
 3. Crie componentes estilizados:

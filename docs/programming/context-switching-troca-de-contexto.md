@@ -7,13 +7,11 @@ A troca de contexto é o mecanismo pelo qual um sistema operacional alterna a ex
 ## Como Funciona
 
 1. **Interrupção do Processo Atual**
-
    - Por timeout do scheduler
    - Por chamada de sistema
    - Por interrupção de hardware
 
 2. **Salvamento do Estado**
-
    - Registradores da CPU
    - Contador de programa
    - Ponteiro de pilha
@@ -21,12 +19,10 @@ A troca de contexto é o mecanismo pelo qual um sistema operacional alterna a ex
      → Armazenado no **PCB** (Process Control Block)
 
 3. **Seleção do Novo Processo**
-
    - Baseado no algoritmo de escalonamento
    - Prioridade, tempo restante, etc.
 
 4. **Restauração do Estado**
-
    - Carrega contexto do novo processo
    - Registradores, memória, estado
 

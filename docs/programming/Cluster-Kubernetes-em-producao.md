@@ -71,7 +71,6 @@ eksctl create cluster \
 ## 🔒 Boas Práticas para Produção
 
 1. **Segurança**:
-
    - RBAC ativado
    - Network Policies
    - Pod Security Policies
@@ -91,7 +90,6 @@ eksctl create cluster \
    ```
 
 2. **Monitoramento**:
-
    - Prometheus + Grafana
    - EFK Stack (Elasticsearch, Fluentd, Kibana)
 

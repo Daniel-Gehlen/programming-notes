@@ -51,12 +51,10 @@
 
 ```markdown
 1. **Seleção inteligente**:
-
    - `Ctrl + L` → Seleciona linha inteira
    - `Ctrl + Shift + Espaço` → Mostra parâmetros de função
 
 2. **Formatação**:
-
    - `Shift + Alt + F` → Formatar documento
    - `Ctrl + K Ctrl + F` → Formatar seleção
 

@@ -46,7 +46,6 @@ Linguagem de fórmula para criação de cálculos personalizados no Power BI, co
 ### Tipos de Contexto
 
 1. **Linha**:
-
    - Acesso a valores da linha atual
    - Exemplo:
      ```dax
@@ -54,7 +53,6 @@ Linguagem de fórmula para criação de cálculos personalizados no Power BI, co
      ```
 
 2. **Filtro**:
-
    - Controlado por segmentadores/visuais
    - Função chave:
      ```dax

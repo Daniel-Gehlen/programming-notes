@@ -27,18 +27,15 @@
 ## Políticas de Escalonamento
 
 1. **FCFS** (First-Come, First-Served)
-
    - Ordem de chegada na fila
    - Simples mas pode causar starvation
 
 2. **Round-Robin**
-
    - Fatias de tempo iguais (time slices)
    - Alternância circular entre threads
    - Equitativo para tarefas similares
 
 3. **Por Prioridade**
-
    - Threads prioritárias executam primeiro
    - Pode ser dinâmico (ajustável durante execução)
 

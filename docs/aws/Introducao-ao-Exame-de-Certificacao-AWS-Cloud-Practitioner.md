@@ -24,17 +24,14 @@ Validar a compreensão fundamental dos conceitos da AWS Cloud, serviços e casos
 ### Domínios e Peso
 
 1. **Conceitos da Nuvem** (28%)
-
    - Modelos de serviço (IaaS, PaaS, SaaS)
    - Modelos de implantação (nuvem híbrida, pública, privada)
 
 2. **Segurança e Conformidade** (24%)
-
    - Modelo de responsabilidade compartilhada
    - AWS IAM e MFA
 
 3. **Tecnologia** (36%)
-
    - Serviços essenciais (EC2, S3, RDS)
    - Conceitos de escalabilidade e elasticidade
 

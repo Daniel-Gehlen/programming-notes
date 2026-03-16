@@ -36,12 +36,10 @@ O **MJPEG (Motion JPEG)** é um método de compressão de vídeo que codifica ca
 ### Principais Usos
 
 1. **Vigilância e Segurança**
-
    - Câmeras IP antigas
    - Sistemas DVR/NVR legados
 
 2. **Médico**
-
    - Endoscopias digitais
    - Equipamentos de ultrassom
 
@@ -106,11 +104,9 @@ subprocess.run([
 ### Problemas Comuns
 
 1. **Tamanho de Arquivo**
-
    - _Solução_: Usar armazenamento cíclico
 
 2. **Falta de Áudio**
-
    - _Solução_: Adicionar trilha de áudio separada
 
 3. **Compatibilidade**

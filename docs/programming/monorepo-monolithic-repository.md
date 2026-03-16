@@ -102,21 +102,18 @@ commands:
 ## Como Usar Mani
 
 1. **Instalar Mani**:
-
    - Primeiro, você precisa instalar a ferramenta Mani. A instalação pode ser feita via Homebrew (para macOS) ou baixando diretamente do repositório oficial.
      ```bash
      brew install mani
      ```
 
 2. **Inicializar Mani no Repositório**:
-
    - No diretório raiz do seu monorepo, inicialize o Mani:
      ```bash
      mani init
      ```
 
 3. **Configurar o Arquivo `mani.yaml`**:
-
    - Edite o arquivo `mani.yaml` para definir seus projetos e comandos.
 
 4. **Executar Comandos com Mani**:
@@ -136,14 +133,12 @@ commands:
 ## Exemplos Práticos
 
 1. **Sincronizar Todos os Projetos**:
-
    - Para sincronizar todos os projetos definidos no arquivo `mani.yaml`:
      ```bash
      mani sync
      ```
 
 2. **Executar um Comando de Build**:
-
    - Para executar um comando de build em todos os projetos:
      ```bash
      mani build

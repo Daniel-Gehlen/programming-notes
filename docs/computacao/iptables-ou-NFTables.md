@@ -12,14 +12,12 @@
 ### Estrutura Comum
 
 1. **Tabelas**:
-
    - `filter`: Filtragem básica de pacotes
    - `nat`: Tradução de endereços de rede
    - `mangle`: Modificação de pacotes
    - `raw`: Processamento especial de pacotes
 
 2. **Cadeias (Chains)**:
-
    - `INPUT`: Pacotes destinados ao sistema
    - `FORWARD`: Pacotes em roteamento
    - `OUTPUT`: Pacotes originados localmente
