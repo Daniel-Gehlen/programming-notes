@@ -113,8 +113,13 @@
   "candidaturas-e-afins": [
     "Artigo-A-Contratacao-em-Tecnologia-Esta-Terrivel.md"
   ],
-  "certificados-valorizados": ["certificados-Cisco.md"],
-  "compiladores": ["Bitcode.md", "bits.md"],
+  "certificados-valorizados": [
+    "certificados-Cisco.md"
+  ],
+  "compiladores": [
+    "Bitcode.md",
+    "bits.md"
+  ],
   "compressao": [
     "Algoritmo-DEFLATE.md",
     "Arvore-Binaria-de-Frequencias-Arvore-de-Huffman.md",
@@ -193,8 +198,12 @@
     "Varreduras-de-rede.md",
     "Hacking-na-Programacao.md"
   ],
-  "Data-Base": ["SQLite-nao-requer-um-servidor.md"],
-  "data-structure": ["Listas-Encadeadas-com-Java.md"],
+  "Data-Base": [
+    "SQLite-nao-requer-um-servidor.md"
+  ],
+  "data-structure": [
+    "Listas-Encadeadas-com-Java.md"
+  ],
   "e-commerce": [
     "A-arte-do-feedback.md",
     "API-do-WhatsApp-para-automatizar-atendimento-Zenvia-solucao-integrada.md",
@@ -261,7 +270,9 @@
     "UX-Design.md",
     "Wireframes.md"
   ],
-  "gerenciador-de-pacotes": ["asdf-gerenciador-de-versoes-universal.md"],
+  "gerenciador-de-pacotes": [
+    "asdf-gerenciador-de-versoes-universal.md"
+  ],
   "hospedagem": [
     "Heroku.md",
     "Hospedagem-compartilhadas-e-opcoes-semi-dedicas.md"
@@ -276,7 +287,10 @@
     "Trabalhando-com-midias.md",
     "Trabalhando-com-tabelas.md"
   ],
-  "IDEs": ["Atalhos-essenciais-no-VS-Code.md", "Trae-IDE-Cursor-e-Windmill.md"],
+  "IDEs": [
+    "Atalhos-essenciais-no-VS-Code.md",
+    "Trae-IDE-Cursor-e-Windmill.md"
+  ],
   "infra": [
     "AMDV-Advanced-Micro-Devices-Virtualization.md",
     "Ataque-DDoS-Distributed-Denial-of-Service-e-como-lidar-com-ele.md",
@@ -469,7 +483,9 @@
     "Como-Usar-IA-com-Disciplina-de-Engenharia.md",
     "Skills-para-Antigravity.md"
   ],
-  "multiplataforma": ["App-multiplataforma-Flet-em-Python.md"],
+  "multiplataforma": [
+    "App-multiplataforma-Flet-em-Python.md"
+  ],
   "music": [
     "VSTs.md",
     "A-Musica-Medieval-Do-Gregoriano-às-Vozes-Superpostas.md",
@@ -499,9 +515,15 @@
     "Compendio-de-Estudos-Musicais-Do-Classicismo-ao-Pos-Modernismo.md",
     "PROMPT-COMPLETO-DE-REINSTALACAO-AUDIO-PRODUCTION-LINUX-MINT.md"
   ],
-  "observability": ["Prometheus-Grafana.md"],
-  "OOP": ["Criacao-de-classes-e-objetos-em-JavaScript.md"],
-  "PaaS": ["Cloudflare-Cloudflare-Workers.md"],
+  "observability": [
+    "Prometheus-Grafana.md"
+  ],
+  "OOP": [
+    "Criacao-de-classes-e-objetos-em-JavaScript.md"
+  ],
+  "PaaS": [
+    "Cloudflare-Cloudflare-Workers.md"
+  ],
   "padrões-de-projetos": [
     "9-padroes-de-design.md",
     "Design-Patterns-ou-Padroes-de-Projeto.md",
@@ -526,7 +548,6 @@
     "SQL-Analytics.md",
     "Storytelling-com-Power-BI.md"
   ],
-
   "programming": [
     "Apache-Lucene.md",
     "Apache.md",
@@ -791,7 +812,8 @@
     "Dominando-o-Gerenciamento-de-Redes.md",
     "Guia-de-Ciencia-de-Dados.md",
     "Integridade-e-Evolucao-de-Ecossistemas.md",
-    "Guia-de-Tabela-Verdade-Analytics-md"
+    "Guia-de-Tabela-Verdade-Analytics-md",
+    "Otimizacao-de-Memoria-e-Dispositivos.md"
   ],
   "JS": [
     "Fundamentos-da-linguagem.md",
@@ -833,7 +855,9 @@
     "switch-ou-comutador.md",
     "VPN-TUN-TAP-Explained.md"
   ],
-  "solid": ["Pesquisa-sobre-Principios-SOLID.md"],
+  "solid": [
+    "Pesquisa-sobre-Principios-SOLID.md"
+  ],
   "ADS": [
     "Tabela-de-Algoritmos-e-Programacao-Estruturada.md",
     "Tabela-Engenharia-de-Software.md",
@@ -851,6 +875,10 @@
     "Tabela-Seguranca-e-Auditoria-de-Sistemas.md",
     "Tabela-Frameworks-Para-Desenvolvimento-de-Software.md"
   ],
-  "ux-ui": ["principais-tipos-de-design-de-sites.md"],
-  "comunication": ["Comunicacao-Pt-Ing-Google-Meet-Tempo-Real.md"]
+  "ux-ui": [
+    "principais-tipos-de-design-de-sites.md"
+  ],
+  "comunication": [
+    "Comunicacao-Pt-Ing-Google-Meet-Tempo-Real.md"
+  ]
 }
