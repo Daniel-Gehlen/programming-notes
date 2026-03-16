@@ -1,6 +1,6 @@
 import { fetchStructure, fetchDocument } from "./api.js";
 import { FOLDER_VARIANTS, REVERSE_FOLDER_MAPPING } from "./constants.js";
-import { encodeFolderName, decodeFolderName, sanitizeInput } from "./utils.js";
+import { sanitizeInput, Logger } from "./utils.js";
 import { renderMenu, renderDocument, showWelcomePage, showLoading, showError } from "./ui.js";
 import {
   buildSearchIndex,
@@ -47,9 +47,15 @@ async function init() {
       }
     });
 
+    window.addEventListener("error", (event) => {
+      Logger.error("Erro global capturado:", event.error);
+      showError("Ocorreu um erro inesperado. Por favor, recarregue a página.");
+    });
+
+    Logger.info("Aplicação inicializada com sucesso");
     setTimeout(() => buildSearchIndex(normalizedStructure), 1000);
   } catch (error) {
-    console.error("Erro:", error);
+    Logger.error("Erro na inicialização:", error);
     document.getElementById("menu-hierarquia").innerHTML = `
             <div class="error">Erro ao carregar documentos: ${error.message}</div>
         `;
