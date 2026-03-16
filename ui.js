@@ -68,10 +68,16 @@ export function renderDocument(markdown, htmlContent, onCopy, path, onLinkClick)
 
   docContent.querySelectorAll("a").forEach((a) => {
     const href = a.getAttribute("href");
-    if (href && !href.startsWith("http") && !href.startsWith("#")) {
+    if (!href) return;
+
+    if (href.startsWith("http")) {
+      // Links externos abrem em nova aba
+      a.setAttribute("target", "_blank");
+      a.setAttribute("rel", "noopener noreferrer");
+    } else if (!href.startsWith("#")) {
+      // Links internos intercedidos para SPA
       a.addEventListener("click", (e) => {
         e.preventDefault();
-        // Se for um link relativo (ex: arquivo.md), tenta resolver baseado no path atual
         let newPath = href;
         if (!href.includes("/") && path.includes("/")) {
           const currentFolder = path.split("/")[0];
