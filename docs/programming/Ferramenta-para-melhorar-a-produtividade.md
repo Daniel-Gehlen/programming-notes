@@ -166,6 +166,7 @@ Se você quer hospedar sites localmente (como um Apache/Nginx compartilhado), po
   - Oferece armazenamento de arquivos local compatível com S3.
 
 - **PocketBase** (Banco de dados + autenticação + API):
+
   ```bash
   ./pocketbase serve
   ```

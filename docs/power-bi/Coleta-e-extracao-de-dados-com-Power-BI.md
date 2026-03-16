@@ -65,6 +65,7 @@ WHERE Discontinued = 0
 - **Problema**: Lentidão no carregamento
   **Solução**:
   - Particione dados com filtros no Power Query
+
   ```powerquery
   = Table.SelectRows(#"Passo Anterior", each [Ano] = 2023)
   ```
