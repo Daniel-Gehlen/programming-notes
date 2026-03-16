@@ -45,7 +45,7 @@ export function renderMenu(structure, onLinkClick, openAll = false) {
   });
 }
 
-export function renderDocument(markdown, htmlContent, onCopy, path) {
+export function renderDocument(markdown, htmlContent, onCopy, path, onLinkClick) {
   const docContent = document.getElementById("doc-content");
   docContent.innerHTML = htmlContent;
 
@@ -62,6 +62,22 @@ export function renderDocument(markdown, htmlContent, onCopy, path) {
       button.addEventListener("click", () => {
         const code = pre.querySelector("code").textContent;
         onCopy(code, button);
+      });
+    }
+  });
+
+  docContent.querySelectorAll("a").forEach((a) => {
+    const href = a.getAttribute("href");
+    if (href && !href.startsWith("http") && !href.startsWith("#")) {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Se for um link relativo (ex: arquivo.md), tenta resolver baseado no path atual
+        let newPath = href;
+        if (!href.includes("/") && path.includes("/")) {
+          const currentFolder = path.split("/")[0];
+          newPath = `${currentFolder}/${href}`;
+        }
+        onLinkClick(newPath);
       });
     }
   });

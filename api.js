@@ -10,13 +10,23 @@ export async function fetchStructure() {
 }
 
 export async function fetchDocument(path) {
+  if (!path || !path.includes("/")) {
+    throw new Error("Caminho de documento inválido");
+  }
+
   if (!path.endsWith(".md")) {
     path += ".md";
   }
 
   const parts = path.split("/");
   const folder = decodeFolderName(parts[0]);
-  const file = decodeURIComponent(parts[1]);
+  const fileName = parts[1];
+
+  if (!fileName || fileName === "undefined") {
+    throw new Error(`Arquivo inválido no caminho: ${path}`);
+  }
+
+  const file = decodeURIComponent(fileName);
 
   // Check cache
   const cached = docCache.get(path);

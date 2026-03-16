@@ -41,18 +41,21 @@ async function init() {
     setupThemeToggle();
     setupScrollTop();
 
-    if (window.location.hash) {
-      const path = decodeURIComponent(window.location.hash.substring(1));
+    const hash = window.location.hash.substring(1);
+    if (hash && hash.includes("/")) {
+      const path = decodeURIComponent(hash);
       loadDoc(path);
     } else {
       showWelcomePage();
     }
 
     window.addEventListener("popstate", () => {
-      if (!window.location.hash) {
+      const hash = window.location.hash.substring(1);
+      if (!hash) {
         showWelcomePage();
-      } else {
-        const path = decodeURIComponent(window.location.hash.substring(1));
+      } else if (hash.includes("/")) {
+        // Apenas carrega documento se houver uma barra (indicando pasta/arquivo)
+        const path = decodeURIComponent(hash);
         loadDoc(path);
       }
     });
@@ -84,7 +87,7 @@ async function loadDoc(path) {
     );
 
     const html = marked.parse(processedMarkdown);
-    renderDocument(content, html, handleCopy, path);
+    renderDocument(content, html, handleCopy, path, loadDoc);
   } catch (error) {
     showError(error.message, path);
   }
