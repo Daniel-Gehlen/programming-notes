@@ -169,6 +169,7 @@ Se você quer hospedar sites localmente (como um Apache/Nginx compartilhado), po
   ```bash
   ./pocketbase serve
   ```
+
   - Banco SQLite embutido + painel admin.
 
 ---
@@ -186,7 +187,6 @@ Se você quer que outros acessem seu servidor local (como um HostGator privado):
    - Gera um link público temporário (ex: `https://abc123.ngrok.io`).
 
 2. **Usar Tailscale/ZeroTier** (VPN simples):
-
    - Cria uma rede privada entre seus dispositivos (como se estivessem na mesma LAN).
 
 3. **Configurar um DNS local (Pi-hole ou similar)** para domínios internos.

@@ -9,6 +9,7 @@ T(n) = a·T(n/b) + f(n)
 ```
 
 Onde:
+
 - `a ≥ 1`: número de subproblemas
 - `b > 1`: fator de redução do problema
 - `f(n)`: custo para dividir e combinar
@@ -16,20 +17,24 @@ Onde:
 ## Casos do Teorema Mestre
 
 ### Caso 1: Dominância do Custo das Folhas
+
 **Condição**: f(n) = O(n<sup>log<sub>b</sub>a - ε</sup>) para ε > 0
 **Solução**: T(n) = Θ(n<sup>log<sub>b</sub>a</sup>)
 
 ### Caso 2: Custo Balanceado
+
 **Condição**: f(n) = Θ(n<sup>log<sub>b</sub>a</sup>)
 **Solução**: T(n) = Θ(n<sup>log<sub>b</sub>a</sup> · log n)
 
 ### Caso 3: Dominância do Custo da Divisão/Combinação
+
 **Condição**: f(n) = Ω(n<sup>log<sub>b</sub>a + ε</sup>) e af(n/b) ≤ cf(n) para c < 1
 **Solução**: T(n) = Θ(f(n))
 
 ## Exemplos de Aplicação
 
 1. **Merge Sort**:
+
    ```
    T(n) = 2T(n/2) + Θ(n)
    a=2, b=2 → n<sup>log<sub>2</sub>2</sup> = n
@@ -37,6 +42,7 @@ Onde:
    ```
 
 2. **Busca Binária**:
+
    ```
    T(n) = T(n/2) + Θ(1)
    a=1, b=2 → n<sup>log<sub>2</sub>1</sup> = 1
@@ -84,11 +90,13 @@ public class TeoremaMestre {
 ## Aplicação Prática: Organização de Eventos
 
 **Problema**: Planejamento de uma festa com três tarefas:
+
 1. Preparar convites: `T(n) = 5n`
 2. Compras: `T(n) = 10n`
 3. Organizar atividades: `T(n) = 15n`
 
 **Análise**:
+
 - Todas as tarefas têm complexidade linear (Θ(n))
 - Usando paralelismo (3 "subproblemas"):
   ```
@@ -98,6 +106,7 @@ public class TeoremaMestre {
   ```
 
 ## Limitações do Teorema Mestre
+
 - Não aplicável quando:
   - `a` não é constante
   - `f(n)` não é polinomial
@@ -106,8 +115,8 @@ public class TeoremaMestre {
 
 ## Tabela Resumo
 
-| Caso | Condição | Complexidade | Exemplo |
-|------|----------|--------------|---------|
-| 1 | f(n) ≪ n<sup>log<sub>b</sub>a</sup> | Θ(n<sup>log<sub>b</sub>a</sup>) | Multiplicação de Matrizes |
-| 2 | f(n) ≈ n<sup>log<sub>b</sub>a</sup> | Θ(n<sup>log<sub>b</sub>a</sup> log n) | Merge Sort |
-| 3 | f(n) ≫ n<sup>log<sub>b</sub>a</sup> | Θ(f(n)) | Quick Sort (pior caso) |
+| Caso | Condição                            | Complexidade                          | Exemplo                   |
+| ---- | ----------------------------------- | ------------------------------------- | ------------------------- |
+| 1    | f(n) ≪ n<sup>log<sub>b</sub>a</sup> | Θ(n<sup>log<sub>b</sub>a</sup>)       | Multiplicação de Matrizes |
+| 2    | f(n) ≈ n<sup>log<sub>b</sub>a</sup> | Θ(n<sup>log<sub>b</sub>a</sup> log n) | Merge Sort                |
+| 3    | f(n) ≫ n<sup>log<sub>b</sub>a</sup> | Θ(f(n))                               | Quick Sort (pior caso)    |

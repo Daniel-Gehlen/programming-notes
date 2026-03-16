@@ -53,12 +53,10 @@ Formato de imagem que armazena **dados brutos do sensor** da câmera sem compres
 ### Aplicações Comuns
 
 - **Armazenamento**
-
   - Dispositivos sem sistema de arquivos (ex: pendrive recém-fabricado)
   - Particionamento de discos
 
 - **Recuperação de Dados**
-
   - Acesso direto a setores do disco após falha do sistema de arquivos
 
 - **Processamento de Dados**

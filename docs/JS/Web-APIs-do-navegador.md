@@ -483,9 +483,7 @@ class AnimacaoCanvas {
             this.ctx.beginPath();
             this.ctx.moveTo(obj.x, obj.y);
             this.ctx.lineTo(other.x, other.y);
-            this.ctx.strokeStyle = `rgba(100, 100, 100, ${
-              0.2 - distance / 500
-            })`;
+            this.ctx.strokeStyle = `rgba(100, 100, 100, ${0.2 - distance / 500})`;
             this.ctx.lineWidth = 1;
             this.ctx.stroke();
           }
@@ -615,10 +613,7 @@ class GraficoCanvas {
 
     this.dados.forEach((ponto, i) => {
       const x = padding + (width / (this.dados.length - 1)) * i;
-      const y =
-        this.canvas.height -
-        padding -
-        ((ponto.valor - minValor) / range) * height;
+      const y = this.canvas.height - padding - ((ponto.valor - minValor) / range) * height;
 
       if (i === 0) {
         this.ctx.moveTo(x, y);
@@ -643,10 +638,7 @@ class GraficoCanvas {
 
     this.dados.forEach((ponto, i) => {
       const x = padding + (width / (this.dados.length - 1)) * i;
-      const y =
-        this.canvas.height -
-        padding -
-        ((ponto.valor - minValor) / range) * height;
+      const y = this.canvas.height - padding - ((ponto.valor - minValor) / range) * height;
 
       this.ctx.beginPath();
       this.ctx.arc(x, y, 6, 0, Math.PI * 2);
@@ -813,13 +805,7 @@ class ImageProcessor {
 ```javascript
 // sw.js - Service Worker
 const CACHE_NAME = "meu-app-v1";
-const urlsToCache = [
-  "/",
-  "/index.html",
-  "/styles.css",
-  "/app.js",
-  "/imagens/icon.png",
-];
+const urlsToCache = ["/", "/index.html", "/styles.css", "/app.js", "/imagens/icon.png"];
 
 // Instalação
 self.addEventListener("install", (event) => {
@@ -1223,13 +1209,9 @@ class ChatApp {
       messageElement.innerHTML = `
                 <div class="message-header">
                     <span class="username">${message.username || "Você"}</span>
-                    <span class="timestamp">${this.formatTime(
-                      message.timestamp
-                    )}</span>
+                    <span class="timestamp">${this.formatTime(message.timestamp)}</span>
                 </div>
-                <div class="message-content">${this.escapeHtml(
-                  message.content
-                )}</div>
+                <div class="message-content">${this.escapeHtml(message.content)}</div>
             `;
     } else {
       messageElement.innerHTML = `
@@ -1260,10 +1242,7 @@ class ChatApp {
   }
 
   getUsername() {
-    return (
-      localStorage.getItem("chat_username") ||
-      "Usuário" + Math.floor(Math.random() * 1000)
-    );
+    return localStorage.getItem("chat_username") || "Usuário" + Math.floor(Math.random() * 1000);
   }
 
   formatTime(timestamp) {
@@ -1333,10 +1312,7 @@ class LazyLoader {
   }
 
   init() {
-    this.observer = new IntersectionObserver(
-      this.handleIntersection.bind(this),
-      this.options
-    );
+    this.observer = new IntersectionObserver(this.handleIntersection.bind(this), this.options);
 
     // Encontrar elementos lazy
     this.findElements();
@@ -1346,9 +1322,7 @@ class LazyLoader {
   }
 
   findElements() {
-    const lazyElements = document.querySelectorAll(
-      "[data-src], [data-srcset], [data-background]"
-    );
+    const lazyElements = document.querySelectorAll("[data-src], [data-srcset], [data-background]");
 
     lazyElements.forEach((element) => {
       this.addElement(element);
@@ -1490,13 +1464,10 @@ class ScrollAnimator {
   }
 
   init() {
-    this.observer = new IntersectionObserver(
-      this.handleIntersection.bind(this),
-      {
-        threshold: this.options.threshold,
-        rootMargin: this.options.rootMargin,
-      }
-    );
+    this.observer = new IntersectionObserver(this.handleIntersection.bind(this), {
+      threshold: this.options.threshold,
+      rootMargin: this.options.rootMargin,
+    });
 
     this.findElements();
     this.observeDynamicContent();
@@ -1622,13 +1593,10 @@ class InfiniteScroll {
   }
 
   init() {
-    this.observer = new IntersectionObserver(
-      this.handleIntersection.bind(this),
-      {
-        threshold: this.options.threshold,
-        rootMargin: this.options.rootMargin,
-      }
-    );
+    this.observer = new IntersectionObserver(this.handleIntersection.bind(this), {
+      threshold: this.options.threshold,
+      rootMargin: this.options.rootMargin,
+    });
 
     this.observer.observe(this.loader);
 
@@ -1954,10 +1922,7 @@ class AplicacaoCompleta {
       registration.addEventListener("updatefound", () => {
         const newWorker = registration.installing;
         newWorker.addEventListener("statechange", () => {
-          if (
-            newWorker.state === "installed" &&
-            navigator.serviceWorker.controller
-          ) {
+          if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
             // Nova versão disponível
             this.mostrarAtualizacaoDisponivel();
           }
@@ -1971,9 +1936,7 @@ class AplicacaoCompleta {
   configurarRotas() {
     this.router.addRoute("/", () => this.carregarPaginaHome());
     this.router.addRoute("/perfil", () => this.carregarPaginaPerfil());
-    this.router.addRoute("/configuracoes", () =>
-      this.carregarPaginaConfiguracoes()
-    );
+    this.router.addRoute("/configuracoes", () => this.carregarPaginaConfiguracoes());
     this.router.addRoute("/chat", () => this.carregarPaginaChat());
     this.router.addRoute("404", () => this.carregarPagina404());
   }

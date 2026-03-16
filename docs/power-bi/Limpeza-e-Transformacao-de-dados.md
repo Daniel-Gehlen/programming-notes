@@ -36,7 +36,6 @@
 ### Checklist de Transformações Essenciais
 
 1. **Correção de Tipos de Dados**
-
    - Converter números como texto para tipo `Inteiro/Decimal`
    - Padronizar datas (`Date.ToText` + cultura específica)
 
@@ -48,7 +47,6 @@
    ```
 
 3. **Eliminação de Duplicatas**
-
    - Identificar chaves únicas → `Remover Duplicatas`
 
 4. **Desmembramento de Colunas Complexas**

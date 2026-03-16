@@ -5,7 +5,6 @@ O **ASP.NET** também segue uma abordagem de **código aberto** e possui uma lic
 ## Licença do ASP.NET
 
 - **Licença**: O ASP.NET é licenciado sob a **Licença MIT** e a **Licença Apache 2.0**, dependendo da parte específica do framework. Ambas as licenças são permissivas e amplamente aceitas na comunidade de código aberto.
-
   - A **Licença MIT** é a mesma que o MudBlazor e permite que você use, modifique e distribua o código sem restrições.
   - A **Licença Apache 2.0** oferece permissões semelhantes, mas com algumas diferenças, como a proteção contra patentes e o requisito de atribuição do software. No entanto, para a maioria dos usos, ela é igualmente permissiva.
 

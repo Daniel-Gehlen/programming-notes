@@ -141,10 +141,7 @@ class JSONUtils {
 
   static diff(obj1, obj2) {
     const diffs = [];
-    const allKeys = new Set([
-      ...Object.keys(obj1 || {}),
-      ...Object.keys(obj2 || {}),
-    ]);
+    const allKeys = new Set([...Object.keys(obj1 || {}), ...Object.keys(obj2 || {})]);
 
     allKeys.forEach((key) => {
       const val1 = obj1?.[key];
@@ -462,20 +459,7 @@ class DateUtils {
         "Novembro",
         "Dezembro",
       ],
-      short: [
-        "Jan",
-        "Fev",
-        "Mar",
-        "Abr",
-        "Mai",
-        "Jun",
-        "Jul",
-        "Ago",
-        "Set",
-        "Out",
-        "Nov",
-        "Dez",
-      ],
+      short: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
     };
 
     return meses[formato][data.getMonth()];
@@ -497,16 +481,8 @@ class Calendario {
   }
 
   gerarCalendario() {
-    const primeiroDia = new Date(
-      this.data.getFullYear(),
-      this.data.getMonth(),
-      1
-    );
-    const ultimoDia = new Date(
-      this.data.getFullYear(),
-      this.data.getMonth() + 1,
-      0
-    );
+    const primeiroDia = new Date(this.data.getFullYear(), this.data.getMonth(), 1);
+    const ultimoDia = new Date(this.data.getFullYear(), this.data.getMonth() + 1, 0);
     const diasNoMes = ultimoDia.getDate();
     const diaInicial = primeiroDia.getDay(); // 0 = Domingo
 
@@ -912,8 +888,7 @@ class RegexUtils {
   }
 
   static validarURL(url) {
-    const regex =
-      /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+    const regex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
     return regex.test(url);
   }
 
@@ -943,10 +918,7 @@ class RegexUtils {
   }
 
   static sanitizarHTML(html) {
-    return html.replace(
-      /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
-      ""
-    );
+    return html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "");
   }
 
   static camelCaseParaSnakeCase(texto) {
@@ -967,8 +939,7 @@ class RegexUtils {
 
   static validarSenhaForte(senha) {
     // Mínimo 8 caracteres, pelo menos uma letra maiúscula, uma minúscula, um número e um caractere especial
-    const regex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     return regex.test(senha);
   }
 
@@ -978,10 +949,7 @@ class RegexUtils {
     if (tipo === "cpf") {
       return numeros.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
     } else if (tipo === "cnpj") {
-      return numeros.replace(
-        /(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/,
-        "$1.$2.$3/$4-$5"
-      );
+      return numeros.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, "$1.$2.$3/$4-$5");
     }
 
     return documento;
@@ -991,9 +959,7 @@ class RegexUtils {
 // Exemplos de uso
 console.log(RegexUtils.validarEmail("teste@exemplo.com")); // true
 console.log(RegexUtils.validarCPF("123.456.789-09")); // false (CPF inválido)
-console.log(
-  RegexUtils.extrairEmails("Contato: email@teste.com, outro@exemplo.org")
-);
+console.log(RegexUtils.extrairEmails("Contato: email@teste.com, outro@exemplo.org"));
 console.log(RegexUtils.mascaraDocumento("12345678909", "cpf"));
 
 // Construtor de regex dinâmico
@@ -1201,9 +1167,7 @@ class FormularioAvancado {
     this.form.querySelectorAll("[type='number']").forEach((campo) => {
       const min = campo.getAttribute("min");
       const max = campo.getAttribute("max");
-      this.validators.set(campo.name, (valor) =>
-        this.validarNumero(valor, min, max)
-      );
+      this.validators.set(campo.name, (valor) => this.validarNumero(valor, min, max));
     });
   }
 
@@ -1283,9 +1247,7 @@ class FormularioAvancado {
     const validacao = this.validar();
 
     if (!validacao.valido) {
-      throw new Error(
-        "Formulário inválido: " + JSON.stringify(validacao.erros)
-      );
+      throw new Error("Formulário inválido: " + JSON.stringify(validacao.erros));
     }
 
     const config = {
@@ -1705,12 +1667,8 @@ class URLUtils {
 
 // Exemplos de uso
 console.log(URLUtils.validar("https://exemplo.com"));
-console.log(
-  URLUtils.obterParametros("https://exemplo.com?page=1&search=teste")
-);
-console.log(
-  URLUtils.adicionarParametros("https://exemplo.com", { novo: "param" })
-);
+console.log(URLUtils.obterParametros("https://exemplo.com?page=1&search=teste"));
+console.log(URLUtils.adicionarParametros("https://exemplo.com", { novo: "param" }));
 
 // Router baseado em URL
 class URLRouter {
@@ -1825,9 +1783,7 @@ router.adicionarRota("/usuarios/:id", (params) => {
 });
 
 router.adicionarRota("/produtos/:categoria/:id?", (params) => {
-  console.log(
-    `Categoria: ${params.categoria}, Produto: ${params.id || "todos"}`
-  );
+  console.log(`Categoria: ${params.categoria}, Produto: ${params.id || "todos"}`);
 });
 
 router.adicionarRota("404", (params) => {
@@ -1939,17 +1895,7 @@ class URLAnalyzer {
     const partes = caminho.split(".");
     if (partes.length > 1) {
       const ext = partes[partes.length - 1].toLowerCase();
-      const extensoesComuns = [
-        "html",
-        "htm",
-        "php",
-        "asp",
-        "jsp",
-        "js",
-        "css",
-        "json",
-        "xml",
-      ];
+      const extensoesComuns = ["html", "htm", "php", "asp", "jsp", "js", "css", "json", "xml"];
 
       return {
         valor: ext,
@@ -1989,9 +1935,7 @@ class URLAnalyzer {
     }
 
     if (this.analise.parametros.quantidade > 5) {
-      sugestoes.push(
-        "Muitos parâmetros na query string, considere simplificar"
-      );
+      sugestoes.push("Muitos parâmetros na query string, considere simplificar");
     }
 
     if (this.analise.caminho.completo.length > 100) {
@@ -2308,10 +2252,7 @@ class SistemaDados {
           valor = new Date(valor);
         }
         // Tentar converter para booleano
-        else if (
-          valor.toLowerCase() === "true" ||
-          valor.toLowerCase() === "false"
-        ) {
+        else if (valor.toLowerCase() === "true" || valor.toLowerCase() === "false") {
           valor = valor.toLowerCase() === "true";
         }
 
@@ -2355,9 +2296,7 @@ class SistemaDados {
         else if (typeof valor === "object") tipoContagem.object++;
       });
 
-      const tipoPredominante = Object.entries(tipoContagem).sort(
-        (a, b) => b[1] - a[1]
-      )[0][0];
+      const tipoPredominante = Object.entries(tipoContagem).sort((a, b) => b[1] - a[1])[0][0];
 
       tipos[chave] = {
         tipo: tipoPredominante,
@@ -2473,8 +2412,7 @@ class SistemaDados {
 
   calcularDesvioPadrao(valores) {
     const media = valores.reduce((a, b) => a + b, 0) / valores.length;
-    const variancia =
-      valores.reduce((a, b) => a + Math.pow(b - media, 2), 0) / valores.length;
+    const variancia = valores.reduce((a, b) => a + Math.pow(b - media, 2), 0) / valores.length;
     return Math.sqrt(variancia);
   }
 

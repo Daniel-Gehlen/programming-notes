@@ -3,6 +3,7 @@
 ## 🛠️ Ferramentas de Automação Inteligente
 
 ### AutoGPT
+
 - **Função**: Agente autônomo baseado em GPT-4 para tarefas complexas
 - **Tipo**: Open-Source (Python)
 - **Casos de uso**:
@@ -12,6 +13,7 @@
 - [Repositório GitHub](https://github.com/Significant-Gravitas/AutoGPT)
 
 ### BabyAGI
+
 - **Função**: Sistema de gerenciamento de tarefas autônomas
 - **Diferencial**: Cria cadeias de tarefas inteligentes
 - **Integração**: Compatível com APIs OpenAI
@@ -20,6 +22,7 @@
 ## 📊 Plataformas de Análise de Dados
 
 ### Jupyter Notebooks
+
 - **Stack**: Python/R/Julia
 - **Vantagens**:
   - Ambiente interativo para análise
@@ -28,6 +31,7 @@
 - [Site Oficial](https://jupyter.org)
 
 ### Streamlit
+
 - **Destaque**: Transforma scripts Python em apps web
 - **Exemplo de uso**:
   ```python
@@ -40,6 +44,7 @@
 ## 🤖 Frameworks para Desenvolvimento com IA
 
 ### LangChain
+
 - **Funcionalidade**: Construção de pipelines de IA
 - **Componentes chave**:
   - Modelos de linguagem
@@ -48,6 +53,7 @@
 - [Guia de Implementação](https://langchain.readthedocs.io)
 
 ### Rasa
+
 - **Foco**: Chatbots inteligentes
 - **Fluxo típico**:
   1. Treinamento de modelo NLU
@@ -57,11 +63,11 @@
 
 ## 🔗 Ferramentas Web para Automação
 
-| Ferramenta       | Melhor Para              | Integração Notável      |
-|------------------|--------------------------|-------------------------|
-| Zapier           | Workflows entre apps     | +2.000 conectores       |
-| Make (Integromat)| Automações complexas     | Interface visual        |
-| Hugging Face     | Modelos pré-treinados    | Transformers library    |
+| Ferramenta        | Melhor Para           | Integração Notável   |
+| ----------------- | --------------------- | -------------------- |
+| Zapier            | Workflows entre apps  | +2.000 conectores    |
+| Make (Integromat) | Automações complexas  | Interface visual     |
+| Hugging Face      | Modelos pré-treinados | Transformers library |
 
 ## 📌 Comparativo Técnico
 
@@ -87,4 +93,4 @@ graph TD
    - Zapier para integração entre SaaS
    - AutoGPT para tarefas cognitivas
 
-*Documentação completa e tutoriais disponíveis nos links mencionados.*
+_Documentação completa e tutoriais disponíveis nos links mencionados._

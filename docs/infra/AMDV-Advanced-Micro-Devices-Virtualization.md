@@ -24,11 +24,9 @@ Tecnologia de virtualização da AMD para processadores, equivalente ao **Intel 
 ## **Tecnologias-Chave**
 
 1. **VMCS (Virtual Machine Control Structure)**
-
    - Estruturas de dados que gerenciam a execução de VMs
 
 2. **EPT (Extended Page Tables)**
-
    - Tradução direta de endereços de memória → +30% performance em cargas de trabalho virtualizadas
 
 3. **AMD-Vi (IOMMU)**

@@ -54,16 +54,13 @@ Pense passo a passo:
 ## Fluxo de Trabalho Recomendado
 
 1. **Definição**
-
    - Tarefa clara + critérios de sucesso
 
 2. **Prototipagem**
-
    - Versões simples → complexas
    - Testes com casos reais
 
 3. **Otimização**
-
    - Adicionar exemplos
    - Refinar estrutura
    - Implementar técnicas avançadas

@@ -1,9 +1,11 @@
 # Transformada Rápida de Fourier (FFT)
 
 ## Conceito Fundamental
+
 Algoritmo otimizado para cálculo da Transformada Discreta de Fourier (DFT) que reduz a complexidade computacional de O(N²) para O(N log N)
 
 ## Princípio de Funcionamento
+
 ```mermaid
 flowchart TD
     A[DFT Clássica] -->|N² operações| B(Problema: Ineficiente)
@@ -14,6 +16,7 @@ flowchart TD
 ```
 
 ## Implementação Prática (Python)
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -45,14 +48,16 @@ plt.show()
 ```
 
 ## Comparativo DFT vs FFT
-| Característica | DFT Clássica | FFT |
-|---------------|-------------|-----|
-| Complexidade | O(N²) | O(N log N) |
-| Tempo (N=1024) | ~1ms | ~50μs |
-| Memória | N² | N |
-| Implementação | Direta | Recursiva |
+
+| Característica | DFT Clássica | FFT        |
+| -------------- | ------------ | ---------- |
+| Complexidade   | O(N²)        | O(N log N) |
+| Tempo (N=1024) | ~1ms         | ~50μs      |
+| Memória        | N²           | N          |
+| Implementação  | Direta       | Recursiva  |
 
 ## Aplicações Principais
+
 1. **Análise Espectral**
    - Identificação de frequências dominantes
    - Detecção de padrões periódicos
@@ -70,6 +75,7 @@ plt.show()
    - Análise de canais
 
 ## Otimizações Chave
+
 - **Algoritmo Base 2**: Funciona melhor com N = 2ⁿ
 - **Memorização**: Reutilização de cálculos intermediários
 - **Vetorização**: Uso de instruções SIMD (AVX/NEON)
@@ -77,6 +83,7 @@ plt.show()
 **Exemplo de saída**: O código demonstra como a FFT identifica claramente as componentes de 50Hz e 120Hz mesmo com ruído adicionado, mostrando sua utilidade para análise espectral.
 
 ## Detalhes Técnicos Adicionais
+
 1. **Tipos de FFT**:
    - Radix-2 (mais comum)
    - Radix-4 (para vetores maiores)
@@ -93,6 +100,7 @@ plt.show()
    - Normalização correta dos resultados
 
 ## Caso de Uso Avançado
+
 ```python
 # Análise de áudio em tempo real
 import sounddevice as sd
@@ -108,6 +116,7 @@ stream.start()
 ```
 
 ## Referências Importantes
+
 - Cooley, J. W.; Tukey, J. W. (1965). "An algorithm for the machine calculation of complex Fourier series"
 - Numerical Recipes in C (Capítulo 12)
 - IEEE Transactions on Signal Processing

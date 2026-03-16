@@ -44,7 +44,6 @@
    ```
 
 2. **Plano de Migração**
-
    - Java 21 → Adoção imediata em 2025
    - Java 25 → Avaliar a partir de Q4/2025
    - Atualizações intermediárias (non-LTS) → Apenas para testes

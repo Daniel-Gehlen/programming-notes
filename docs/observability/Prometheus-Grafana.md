@@ -7,7 +7,6 @@
 ### **O que você precisa para começar:**
 
 - **Ambiente de teste**:
-
   - Computador local (Windows/Mac/Linux)
   - Máquina virtual gratuita (AWS/Google Cloud)
   - Servidor caseiro (Raspberry Pi)

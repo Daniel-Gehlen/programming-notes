@@ -55,12 +55,10 @@ Object* pool = malloc(1000 * sizeof(Object));
 ## Casos Críticos
 
 1. **Virtualização**:
-
    - Overhead de hypervisor (5-15% CPU)
    - Solução: Paravirtualização (Xen) ou KVM
 
 2. **Microserviços**:
-
    - Serialização/deserialização repetida
    - Solução: Formatos binários (Avro, Cap'n Proto)
 

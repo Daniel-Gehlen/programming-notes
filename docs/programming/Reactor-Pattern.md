@@ -16,15 +16,12 @@ Padrão arquitetural para manipulação eficiente de eventos e I/O concorrente, 
 ## Fluxo de Operação
 
 1. **Registro**
-
    - Handles são registrados no Reactor com seus handlers correspondentes
 
 2. **Monitoramento**
-
    - Demultiplexer observa handles por eventos (bloqueante)
 
 3. **Despacho**
-
    - Quando eventos ocorrem, Reactor aciona o handler apropriado
 
 4. **Ciclo Contínuo**

@@ -60,7 +60,6 @@ puts sum.call(3, 4)  # Output: 7
 ### Características Chave:
 
 1. **Verificação de Argumentos**
-
    - Lambdas exigem o número exato de argumentos
    - Procs são mais flexíveis (aceitam argumentos faltantes ou extras)
 

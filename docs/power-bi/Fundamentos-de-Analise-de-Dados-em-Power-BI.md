@@ -14,17 +14,14 @@
 ### Níveis de Análise Suportados
 
 1. **Descritiva** (O que aconteceu?)
-
    - Dashboards com KPIs históricos
    - Exemplo: Vendas mensais por região
 
 2. **Diagnóstica** (Por que aconteceu?)
-
    - Drill-through em gráficos
    - Exemplo: Análise de queda nas vendas
 
 3. **Preditiva** (O que vai acontecer?)
-
    - Integração com Azure Machine Learning
    - Exemplo: Forecast de demanda
 

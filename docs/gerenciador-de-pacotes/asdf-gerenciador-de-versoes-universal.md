@@ -1,6 +1,7 @@
 # asdf: Gerenciador de Versões Universal
 
 ## O que é o asdf?
+
 O **asdf** é um **gerenciador de versões universal** para linguagens de programação, ferramentas e pacotes. Ele permite instalar e alternar entre diferentes versões de linguagens (como Node.js, Python, Ruby, Go, etc.) e outras ferramentas de desenvolvimento em um único ambiente, sem conflitos.
 
 ---
@@ -15,6 +16,7 @@ O **asdf** é um **gerenciador de versões universal** para linguagens de progra
 ---
 
 ## Como instalar?
+
 **No Linux/macOS (via Git):**
 
 ```bash
@@ -37,4 +39,3 @@ node --version
 ---
 
 > O **asdf** é uma ótima ferramenta para desenvolvedores que trabalham com múltiplas linguagens. 🚀
-

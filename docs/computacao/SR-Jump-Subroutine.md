@@ -9,12 +9,10 @@ A instrução **JSR** (Jump Subroutine) é um comando em linguagem Assembly que 
 ## 🔄 **Funcionamento do JSR**
 
 1. **Chamada da Sub-rotina**
-
    - Salva o **endereço de retorno** na pilha (stack).
    - Salta para o início da sub-rotina.
 
 2. **Execução da Sub-rotina**
-
    - Processa as instruções internas.
 
 3. **Retorno ao Chamador**

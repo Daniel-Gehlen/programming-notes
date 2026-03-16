@@ -3,16 +3,13 @@
 ## Pseudoaigoritmo: Calculadora de Despesas Mensais
 
 1. **Descrição do Problema:**
-
    - Uma pessoa comum deseja controlar suas despesas mensais para garantir que está dentro do orçamento.
 
 2. **Entradas:**
-
    - Lista de despesas mensais (por exemplo, alimentação, transporte, moradia, entretenimento, etc.).
    - Valores correspondentes a cada despesa.
 
 3. **Saída:**
-
    - O total das despesas mensais.
 
 4. **Pseudoaigoritmo:**

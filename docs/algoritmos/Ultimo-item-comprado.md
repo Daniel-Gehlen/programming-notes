@@ -64,6 +64,7 @@ Substitua o comentário `/* Condição para último item comprado */` pela lógi
 # RANDOMIZED-SELECT (Pior Caso)
 
 ## Análise do pior caso:
+
 - O pior caso ocorre quando a partição sempre seleciona o maior elemento restante como pivô.
 - Para o arranjo `(3, 2, 9, 0, 7, 5, 4, 8, 6, 1)`, isso resultaria em partições ineficientes.
 - Complexidade: O(n²) no pior caso.
@@ -122,6 +123,7 @@ public class RandomizedSelectWorstCase {
 # Algoritmo SELECT
 
 ## Descrição:
+
 - Seleciona o i-ésimo menor elemento com tempo O(n) no pior caso.
 - Utiliza a "mediana das medianas" para garantir boas partições.
 
@@ -174,6 +176,7 @@ public class SelectAlgorithm {
 # Posição Ótima de Oleoduto
 
 ## Método:
+
 1. Calcular média das coordenadas x dos poços
 2. Calcular média das coordenadas y dos poços
 3. A posição ótima é (média_x, média_y)
@@ -203,3 +206,4 @@ public class OptimalPipelineLocation {
         System.out.printf("Posição ótima: (%.2f, %.2f)", optimal.x, optimal.y);
     }
 }
+```

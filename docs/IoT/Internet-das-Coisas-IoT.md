@@ -85,12 +85,10 @@ timeline
 ### Problemas Atuais
 
 1. **Segurança**:
-
    - Ataques DDoS via botnets IoT (Ex: Mirai)
    - Solução: Hardware Secure Elements (ex: ESP32-WROOM com AES-256)
 
 2. **Interoperabilidade**:
-
    - Conflito entre padrões (Zigbee vs Z-Wave)
    - Iniciativas como **Project CHIP** (Matter)
 

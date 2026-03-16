@@ -1,6 +1,7 @@
 # Formato WebP
 
 ## Introdução
+
 O **WebP** é um formato de imagem moderno desenvolvido pelo Google que oferece **compressão com e sem perdas**, **suporte a transparência** e **animações**. Projetado como alternativa eficiente aos formatos JPEG e PNG, destaca-se por reduzir significativamente o tamanho dos arquivos mantendo qualidade visual.
 
 ---
@@ -8,6 +9,7 @@ O **WebP** é um formato de imagem moderno desenvolvido pelo Google que oferece 
 ## Características do Formato WebP
 
 ### Compressão Avançada
+
 - **Compressão com perdas**:
   - Algoritmo superior ao JPEG, com arquivos **30% menores** em média.
   - Ideal para fotografias e imagens complexas.
@@ -16,19 +18,24 @@ O **WebP** é um formato de imagem moderno desenvolvido pelo Google que oferece 
   - Recomendado para gráficos e ilustrações.
 
 ### Transparência Alpha
+
 - Suporta **canal alfa** (como PNG), permitindo transparências suaves e sobreposições perfeitas em diferentes fundos.
 
 ### Animações
+
 - Permite criar **sequências animadas** em um único arquivo, similar ao APNG e GIF, mas com melhor compressão.
 
 ### Compatibilidade
+
 - Suportado por **todos os navegadores modernos** (Chrome, Firefox, Edge, Safari, Opera).
 - Otimizado para **dispositivos móveis** e aplicações web.
 
 ---
 
 ## Implementação em Python
+
 Exemplo de manipulação de imagens WebP usando a biblioteca **Pillow (PIL)**:
+
 ```python
 from PIL import Image
 
@@ -54,16 +61,17 @@ imagem.close()
 
 ## Comparação com Outros Formatos
 
-| Característica       | WebP                     | JPEG                     | PNG                      | GIF                      |
-|----------------------|--------------------------|--------------------------|--------------------------|--------------------------|
-| **Compressão**       | Com/Sem perdas           | Com perdas               | Sem perdas               | Sem perdas               |
-| **Transparência**    | Alpha-channel            | ❌ Não                   | Alpha-channel            | 1 cor transparente       |
-| **Animações**        | ✅ Sim                   | ❌ Não                   | ❌ Não                   | ✅ Sim                   |
-| **Tamanho Arquivo**  | Menor (vs JPEG/PNG)      | Médio                    | Grande                   | Grande (para animações)  |
+| Característica      | WebP                | JPEG       | PNG           | GIF                     |
+| ------------------- | ------------------- | ---------- | ------------- | ----------------------- |
+| **Compressão**      | Com/Sem perdas      | Com perdas | Sem perdas    | Sem perdas              |
+| **Transparência**   | Alpha-channel       | ❌ Não     | Alpha-channel | 1 cor transparente      |
+| **Animações**       | ✅ Sim              | ❌ Não     | ❌ Não        | ✅ Sim                  |
+| **Tamanho Arquivo** | Menor (vs JPEG/PNG) | Médio      | Grande        | Grande (para animações) |
 
 ---
 
 ## Casos de Uso Ideais
+
 - **WebP com perdas**:
   - Fotografias em sites.
   - Banners e imagens de produtos.
@@ -77,6 +85,7 @@ imagem.close()
 ---
 
 ## Considerações Finais
+
 - **Vantagens do WebP**:
   - **Eficiência**: Arquivos menores aceleram o carregamento de páginas.
   - **Versatilidade**: Combina recursos de JPEG, PNG e GIF em um único formato.

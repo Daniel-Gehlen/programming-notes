@@ -5,13 +5,11 @@ Para determinar um limite superior assintótico para a recorrência `T(n) = 3T(n
 ## Passo-a-Passo:
 
 1. **Construa a árvore de recursão**
-
    - Raiz: `T(n)`
    - Cada nó tem 3 filhos: `T(n/2)`
    - Adicione `+n` em cada nível
 
 2. **Calcule os custos por nível**
-
    - Nível 0: `n`
    - Nível 1: `3*(n/2)`
    - Nível 2: `9*(n/4)`
@@ -88,6 +86,7 @@ T(n-2a) T(a) ...
 **Árvore**:
 
 **Caso Balanceado (α = 1/2)**:
+
 ```
                 T(n)                 [cn]
                /    \
@@ -98,11 +97,13 @@ T(n-2a) T(a) ...
 ```
 
 **Análise (α = 1/2)**:
+
 - Cada nível tem custo cn
 - Altura da árvore: log₂n
 - **Solução**: O(n log n)
 
 **Caso Geral (α constante)**:
+
 ```
                 T(n)                 [cn]
                /    \
@@ -112,10 +113,10 @@ T(n-2a) T(a) ...
 ```
 
 **Análise (α constante)**:
+
 - Cada nível tem custo ≈ cn
 - Altura da árvore: logₐn ou log₁₋ₐn (dependendo de qual é maior)
 - Como α é constante, a altura é O(log n)
 - **Solução**: O(n log n)
 
 **Observação importante**: A solução O(n log n) vale para qualquer α constante entre 0 e 1. Se α não for constante (por exemplo, α = 1/n), a análise seria diferente.
-

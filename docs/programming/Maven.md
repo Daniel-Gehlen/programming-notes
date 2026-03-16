@@ -5,21 +5,27 @@ Maven é uma ferramenta de automação de build e gerenciamento de projetos ampl
 ## Funcionalidades Principais do Maven:
 
 ### Gerenciamento de Dependências
+
 : Maven gerencia automaticamente as dependências do projeto, permitindo que você especifique bibliotecas externas necessárias (JARs) e versionamentos no arquivo `pom.xml` (Project Object Model).
 
 ### Ciclo de Vida de Build Padrão
+
 : Maven define um ciclo de vida de build padrão com fases como compilação, teste, empacotamento, instalação e deploy. Cada fase executa um conjunto específico de tarefas pré-configuradas.
 
 ### Convenção sobre Configuração
+
 : Maven segue o princípio de "convenção sobre configuração", o que significa que muitos aspectos do build são pré-configurados com base em convenções padrão. Isso simplifica a configuração inicial e reduz a complexidade.
 
 ### Repositórios
+
 : Maven utiliza repositórios para armazenar bibliotecas e plugins. O repositório central do Maven (Maven Central Repository) é um repositório público que contém uma vasta quantidade de bibliotecas Java prontas para uso.
 
 ### Plugins
+
 : Maven é altamente extensível através de plugins. Os plugins fornecem funcionalidades adicionais e podem ser configurados para executar tarefas específicas durante o ciclo de vida de build.
 
 ### Relatórios de Projeto
+
 : Maven gera automaticamente relatórios detalhados sobre o projeto, incluindo informações sobre dependências, testes unitários, cobertura de código, entre outros. Esses relatórios são úteis para monitoramento e análise do projeto.
 
 ## Estrutura do Projeto Maven:

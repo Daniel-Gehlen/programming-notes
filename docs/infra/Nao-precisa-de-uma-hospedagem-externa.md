@@ -58,20 +58,17 @@ Se o Odoo será usado apenas por você e **não precisa estar sempre online**:
 ### **Opções Recomendadas:**
 
 1. **Rodar Localmente no Computador**
-
    - Instale o Odoo no seu PC (Windows/Linux/macOS).
    - Acesse via `http://localhost:8069`.
    - ✅ **Prós:** Zero custo, fácil configuração.
    - ❌ **Contras:** Sem acesso remoto.
 
 2. **Servidor na Nuvem (Ligar/Desligar Sob Demanda)**
-
    - Use **DigitalOcean**, **AWS**, etc.
    - Ligue o servidor apenas quando necessário.
    - ✅ **Prós:** Acesso remoto, paga apenas pelo uso.
 
 3. **Computador como Servidor Local/Remoto**
-
    - Reaproveite um PC antigo com Linux.
    - Configure acesso via rede local ou VPN para remoto.
 

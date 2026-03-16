@@ -142,7 +142,6 @@ public class GerenciadorTarefas {
 ## Melhorias Sugeridas
 
 1. **Persistência de Dados**
-
    - Salvar tarefas em arquivo JSON
 
    ```java

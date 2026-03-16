@@ -3,17 +3,14 @@
 ## Principais tópicos abordados:
 
 1. **Reconstrução de Imagens 3D**
-
    - Transformação de imagens 2D para representações 3D
    - Métodos e técnicas para criar visualizações mais realistas
 
 2. **Tecnologias de Sensoriamento 3D**
-
    - **Microsoft Kinect**: Dispositivo que usa sensores de profundidade para captura 3D
    - **Sensoriamento a Laser**: Tecnologia para captura precisa de dados espaciais e criação de nuvens de pontos
 
 3. **Conceitos Fundamentais**
-
    - **Nuvem de Pontos**: Conjunto de pontos no espaço 3D representando superfícies de objetos/ambientes
    - **Imagens 3D**: Representações tridimensionais derivadas de nuvens de pontos ou processos de reconstrução
 

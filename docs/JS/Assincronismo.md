@@ -573,9 +573,7 @@ const buscaUsuarioMemoizada = memoizeAsync(function (id, callback) {
 buscaUsuarioMemoizada(1, (erro, usuario) => console.log("1:", usuario));
 // Segunda vez usa cache
 setTimeout(() => {
-  buscaUsuarioMemoizada(1, (erro, usuario) =>
-    console.log("2 (cache):", usuario)
-  );
+  buscaUsuarioMemoizada(1, (erro, usuario) => console.log("2 (cache):", usuario));
 }, 1500);
 ```
 
@@ -903,19 +901,13 @@ Promise.all([promise1, promise2, promise3])
 // Exemplo prático
 function buscarUsuario(id) {
   return new Promise((resolve) => {
-    setTimeout(
-      () => resolve({ id, nome: `Usuário ${id}` }),
-      Math.random() * 1000
-    );
+    setTimeout(() => resolve({ id, nome: `Usuário ${id}` }), Math.random() * 1000);
   });
 }
 
 function buscarProduto(id) {
   return new Promise((resolve) => {
-    setTimeout(
-      () => resolve({ id, nome: `Produto ${id}` }),
-      Math.random() * 1000
-    );
+    setTimeout(() => resolve({ id, nome: `Produto ${id}` }), Math.random() * 1000);
   });
 }
 
@@ -986,9 +978,7 @@ Promise.any(promises2)
   });
 
 // Promise.resolve() - cria promise já resolvida
-Promise.resolve("valor imediato").then((valor) =>
-  console.log("Resolvido:", valor)
-);
+Promise.resolve("valor imediato").then((valor) => console.log("Resolvido:", valor));
 
 // Promise.reject() - cria promise já rejeitada
 Promise.reject(new Error("erro imediato")).catch((erro) =>
@@ -1005,10 +995,7 @@ class API {
   static buscarRecursoComTimeout(id, timeout = 5000) {
     const recursoPromise = this.buscarRecurso(id);
     const timeoutPromise = new Promise((_, reject) => {
-      setTimeout(
-        () => reject(new Error(`Timeout ao buscar recurso ${id}`)),
-        timeout
-      );
+      setTimeout(() => reject(new Error(`Timeout ao buscar recurso ${id}`)), timeout);
     });
 
     return Promise.race([recursoPromise, timeoutPromise]);
@@ -1085,11 +1072,7 @@ function retryWithPromise(fn, maxRetries = 3, delay = 1000) {
           console.log(`Tentativa ${attempts} falhou: ${error.message}`);
 
           if (attempts >= maxRetries) {
-            reject(
-              new Error(
-                `Falhou após ${maxRetries} tentativas: ${error.message}`
-              )
-            );
+            reject(new Error(`Falhou após ${maxRetries} tentativas: ${error.message}`));
           } else {
             setTimeout(attempt, delay * attempts); // Backoff exponencial
           }
@@ -1129,16 +1112,11 @@ function withTimeout(promise, timeoutMs, timeoutMessage = "Timeout excedido") {
     timeoutId = setTimeout(() => reject(new Error(timeoutMessage)), timeoutMs);
   });
 
-  return Promise.race([
-    promise.finally(() => clearTimeout(timeoutId)),
-    timeoutPromise,
-  ]);
+  return Promise.race([promise.finally(() => clearTimeout(timeoutId)), timeoutPromise]);
 }
 
 // Uso
-const slowPromise = new Promise((resolve) =>
-  setTimeout(() => resolve("Dados lentos"), 2000)
-);
+const slowPromise = new Promise((resolve) => setTimeout(() => resolve("Dados lentos"), 2000));
 
 withTimeout(slowPromise, 1000, "Operação muito lenta")
   .then((dados) => console.log("Recebido:", dados))
@@ -1388,9 +1366,7 @@ class PromiseEventEmitter {
     }
 
     const listeners = this.events.get(event);
-    const promises = listeners.map((listener) =>
-      Promise.resolve(listener(data))
-    );
+    const promises = listeners.map((listener) => Promise.resolve(listener(data)));
 
     return Promise.all(promises);
   }
@@ -1634,9 +1610,7 @@ async function processarItem(item) {
 
 // Uso
 processarArray([1, 2, 3, 4, 5]).then((r) => console.log("Sequencial:", r));
-processarArrayParalelo([1, 2, 3, 4, 5]).then((r) =>
-  console.log("Paralelo:", r)
-);
+processarArrayParalelo([1, 2, 3, 4, 5]).then((r) => console.log("Paralelo:", r));
 
 // Retry pattern com async/await
 async function retryAsync(fn, maxAttempts = 3, delay = 1000) {
@@ -1655,9 +1629,7 @@ async function retryAsync(fn, maxAttempts = 3, delay = 1000) {
     }
   }
 
-  throw new Error(
-    `Falhou após ${maxAttempts} tentativas. Último erro: ${lastError.message}`
-  );
+  throw new Error(`Falhou após ${maxAttempts} tentativas. Último erro: ${lastError.message}`);
 }
 
 // Uso
@@ -1677,11 +1649,7 @@ retryAsync(
 );
 
 // Timeout pattern com async/await
-async function withTimeoutAsync(
-  promise,
-  timeoutMs,
-  timeoutMessage = "Timeout"
-) {
+async function withTimeoutAsync(promise, timeoutMs, timeoutMessage = "Timeout") {
   let timeoutId;
 
   const timeoutPromise = new Promise((_, reject) => {
@@ -1748,11 +1716,7 @@ class CircuitBreaker {
     if (this.failureCount >= this.failureThreshold) {
       this.state = "OPEN";
       this.nextAttempt = Date.now() + this.resetTimeout;
-      console.log(
-        `Circuit breaker OPEN até ${new Date(
-          this.nextAttempt
-        ).toLocaleTimeString()}`
-      );
+      console.log(`Circuit breaker OPEN até ${new Date(this.nextAttempt).toLocaleTimeString()}`);
     }
   }
 }
@@ -1926,9 +1890,9 @@ async function tarefaConcorrente(id) {
 }
 
 // Executar 10 tarefas com no máximo 3 simultâneas
-Promise.all(
-  Array.from({ length: 10 }, (_, i) => tarefaConcorrente(i + 1))
-).then(() => console.log("Todas tarefas completas"));
+Promise.all(Array.from({ length: 10 }, (_, i) => tarefaConcorrente(i + 1))).then(() =>
+  console.log("Todas tarefas completas")
+);
 
 // Async mutex (exclusão mútua)
 class AsyncMutex {
@@ -1977,19 +1941,15 @@ async function acessarRecurso(id) {
     const valorAtual = recursoCompartilhado;
     await new Promise((resolve) => setTimeout(resolve, 100));
     recursoCompartilhado = valorAtual + 1;
-    console.log(
-      `Processo ${id} atualizou recurso para ${recursoCompartilhado}`
-    );
+    console.log(`Processo ${id} atualizou recurso para ${recursoCompartilhado}`);
     return recursoCompartilhado;
   });
 }
 
 // Testar condição de corrida
-Promise.all([acessarRecurso(1), acessarRecurso(2), acessarRecurso(3)]).then(
-  () => {
-    console.log("Valor final:", recursoCompartilhado);
-  }
-);
+Promise.all([acessarRecurso(1), acessarRecurso(2), acessarRecurso(3)]).then(() => {
+  console.log("Valor final:", recursoCompartilhado);
+});
 
 // Async barreira
 class AsyncBarrier {
@@ -2115,9 +2075,7 @@ async function fazerRequisicao(id) {
 
 // Fazer 6 requisições com rate limiting
 Promise.all(
-  Array.from({ length: 6 }, (_, i) =>
-    limiter.execute(() => fazerRequisicao(i + 1))
-  )
+  Array.from({ length: 6 }, (_, i) => limiter.execute(() => fazerRequisicao(i + 1)))
 ).then((resultados) => {
   console.log("Todas requisições completas:", resultados);
 });
@@ -2776,12 +2734,8 @@ class TaskScheduler {
     return Array.from(this.tasks.entries()).map(([id, task]) => ({
       id,
       type: task.type,
-      nextExecution: task.nextExecution
-        ? new Date(task.nextExecution).toLocaleTimeString()
-        : "N/A",
-      timeRemaining: task.nextExecution
-        ? Math.max(0, task.nextExecution - Date.now())
-        : "N/A",
+      nextExecution: task.nextExecution ? new Date(task.nextExecution).toLocaleTimeString() : "N/A",
+      timeRemaining: task.nextExecution ? Math.max(0, task.nextExecution - Date.now()) : "N/A",
     }));
   }
 }
@@ -2796,10 +2750,7 @@ const tarefa1 = scheduler.schedule(
   "Olá do futuro!"
 );
 
-const tarefa2 = scheduler.schedulePeriodic(
-  () => console.log("Tarefa periódica executada"),
-  1000
-);
+const tarefa2 = scheduler.schedulePeriodic(() => console.log("Tarefa periódica executada"), 1000);
 
 console.log("Tarefas agendadas:", scheduler.listTasks());
 
@@ -2831,12 +2782,15 @@ function throttle(func, limit) {
       inThrottle = true;
     } else {
       clearTimeout(lastFunc);
-      lastFunc = setTimeout(function () {
-        if (Date.now() - lastRan >= limit) {
-          func.apply(context, args);
-          lastRan = Date.now();
-        }
-      }, limit - (Date.now() - lastRan));
+      lastFunc = setTimeout(
+        function () {
+          if (Date.now() - lastRan >= limit) {
+            func.apply(context, args);
+            lastRan = Date.now();
+          }
+        },
+        limit - (Date.now() - lastRan)
+      );
     }
   };
 }
@@ -3398,9 +3352,7 @@ class EventLoopMonitor {
       const max = Math.max(...this.samples);
       const min = Math.min(...this.samples);
 
-      console.log(
-        `Event Loop: Avg=${avg.toFixed(2)}ms, Min=${min}ms, Max=${max}ms`
-      );
+      console.log(`Event Loop: Avg=${avg.toFixed(2)}ms, Min=${min}ms, Max=${max}ms`);
 
       if (max > 100) {
         console.warn("Event loop lento detectado!");
@@ -3601,11 +3553,7 @@ class TaskSchedulerWithPriority {
   }
 
   remove(taskId) {
-    const queues = [
-      this.highPriorityQueue,
-      this.normalPriorityQueue,
-      this.lowPriorityQueue,
-    ];
+    const queues = [this.highPriorityQueue, this.normalPriorityQueue, this.lowPriorityQueue];
 
     for (const queue of queues) {
       const index = queue.findIndex((t) => t.id === taskId);
@@ -4086,11 +4034,7 @@ class HTTPClient {
       response = await this.applyResponseInterceptors(response);
 
       if (!response.ok) {
-        throw new HTTPError(
-          response.status,
-          response.statusText,
-          await response.text()
-        );
+        throw new HTTPError(response.status, response.statusText, await response.text());
       }
 
       return response;
@@ -4257,9 +4201,7 @@ async function fetchWithRetry(url, options = {}, maxRetries = 3, delay = 1000) {
     }
   }
 
-  throw new Error(
-    `Falhou após ${maxRetries} tentativas. Último erro: ${lastError.message}`
-  );
+  throw new Error(`Falhou após ${maxRetries} tentativas. Último erro: ${lastError.message}`);
 }
 
 // Uso
@@ -4425,11 +4367,7 @@ function prefetchResources(urls) {
 }
 
 // Uso
-prefetchResources([
-  "/api/dados",
-  "/imagens/background.jpg",
-  "/estilos/extra.css",
-]).then(() => {
+prefetchResources(["/api/dados", "/imagens/background.jpg", "/estilos/extra.css"]).then(() => {
   console.log("Recursos pré-carregados");
 });
 
@@ -4531,10 +4469,7 @@ async function batchRequests(urls, batchSize = 5) {
 }
 
 // Uso
-const urls = Array.from(
-  { length: 20 },
-  (_, i) => `https://api.exemplo.com/item/${i + 1}`
-);
+const urls = Array.from({ length: 20 }, (_, i) => `https://api.exemplo.com/item/${i + 1}`);
 batchRequests(urls, 5).then((results) => {
   console.log("Batch results:", results);
 });

@@ -29,5 +29,5 @@ Aqui está uma lista de plataformas para encontrar oportunidades de trabalho rem
 - **Remote OK**
   [https://remoteok.io/](https://remoteok.io/)
 
-- **Remessa Online** *(para recebimentos internacionais)*
+- **Remessa Online** _(para recebimentos internacionais)_
   [https://www.remessaonline.com.br/](https://www.remessaonline.com.br/)

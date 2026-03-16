@@ -3,28 +3,36 @@
 ## Definição e Propriedades Fundamentais
 
 ### a. Conceito de k-ordenamento
+
 Um arranjo é **k-ordenado** quando cada elemento é maior ou igual à média de seus `k` vizinhos imediatos. Formalmente:
+
 ```
 ∀i, A[i] ≥ (A[i-1] + A[i-2] + ... + A[i-k]) / k
 ```
 
 ### b. Exemplo de Permutação 2-ordenada
+
 Para n=10:
+
 ```
 1, 3, 2, 5, 4, 7, 6, 9, 8, 10
 ```
+
 - Cada elemento é ≥ que seus 2 antecessores imediatos
 - Não está totalmente ordenado (2 > 3 é falso)
 
 ## Teorema de Caracterização
 
 ### c. Prova da Condição Necessária e Suficiente
+
 Um arranjo de tamanho `n` é k-ordenado **se e somente se**:
+
 ```
 A[i] ≤ A[i+k] para todo i ∈ [1, n-k]
 ```
 
 **Prova em Duas Partes**:
+
 1. **Necessidade**: Se k-ordenado ⇒ A[i] ≤ A[i+k]
    - Por contradição: se A[i] > A[i+k], viola a definição para posição i+k
 
@@ -34,6 +42,7 @@ A[i] ≤ A[i+k] para todo i ∈ [1, n-k]
 ## Algoritmo Ótimo para k-ordenamento
 
 ### d. Algoritmo com Árvore Balanceada (O(n log k))
+
 ```java
 import java.util.TreeSet;
 
@@ -67,12 +76,14 @@ public class KOrderSorter {
 ```
 
 **Complexidade**:
+
 - Inserção/remoção no TreeSet: O(log k)
 - n operações ⇒ O(n log k)
 
 ## Algoritmo Linear para k Constante
 
 ### e. Versão com Counting Sort (O(n) quando k=O(1))
+
 ```java
 public static void linearKOrder(int[] arr, int k) {
     int[] buffer = new int[k];
@@ -98,15 +109,17 @@ public static void linearKOrder(int[] arr, int k) {
 ## Limites Inferiores e Superiores
 
 ### f. Análise Assintótica
-| Cenário               | Complexidade | Justificativa                      |
-|-----------------------|--------------|------------------------------------|
-| k variável            | Ω(n log k)   | Redução para ordenação convencional|
-| k constante           | O(n)         | Algoritmos especializados          |
-| k = Θ(n)             | Θ(n log n)   | Caso geral de ordenação            |
+
+| Cenário     | Complexidade | Justificativa                       |
+| ----------- | ------------ | ----------------------------------- |
+| k variável  | Ω(n log k)   | Redução para ordenação convencional |
+| k constante | O(n)         | Algoritmos especializados           |
+| k = Θ(n)    | Θ(n log n)   | Caso geral de ordenação             |
 
 ## Aplicação Prática: Streaming de Dados
 
 **Caso de Uso**: Processamento contínuo de dados em janela deslizante:
+
 ```java
 class DataStreamProcessor {
     private final TreeSet<Double> window;
@@ -132,8 +145,8 @@ class DataStreamProcessor {
 
 ## Tabela Comparativa de Algoritmos
 
-| Algoritmo          | Melhor Caso | Pior Caso | Espaço  | Ideal para          |
-|--------------------|------------|----------|--------|--------------------|
-| Árvore Balanceada  | O(n log k) | O(n log k) | O(k)   | k médio/grande      |
-| Counting Sort      | O(n)       | O(n+k)    | O(k)   | k pequeno/constante|
-| Merge Sort Adaptado| O(n log n) | O(n log n) | O(n)   | k próximo de n      |
+| Algoritmo           | Melhor Caso | Pior Caso  | Espaço | Ideal para          |
+| ------------------- | ----------- | ---------- | ------ | ------------------- |
+| Árvore Balanceada   | O(n log k)  | O(n log k) | O(k)   | k médio/grande      |
+| Counting Sort       | O(n)        | O(n+k)     | O(k)   | k pequeno/constante |
+| Merge Sort Adaptado | O(n log n)  | O(n log n) | O(n)   | k próximo de n      |

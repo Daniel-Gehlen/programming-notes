@@ -3,31 +3,25 @@
 ## Níveis de Análise
 
 1. **Léxico (Análise Lexical)**
-
    - Identifica e categoriza tokens básicos (palavras-chave, identificadores, operadores).
    - Exemplo (Python): `x = 42` → Tokens: `x`, `=`, `42`.
 
 2. **Sintaxe (Análise Sintática)**
-
    - Organiza tokens em estruturas hierárquicas (gramática).
    - Exemplo: `x = 42` → Declaração de atribuição.
 
 3. **Semântica**
-
    - Verifica significado e validade das estruturas.
    - Exemplo: Valida se `x` existe e se `42` é um valor válido.
 
 4. **Geração de Código Intermediário**
-
    - Traduz para representação intermediária.
    - Exemplo: `x = 42` → `LOAD_CONST 42`, `STORE_NAME x`.
 
 5. **Otimização de Código**
-
    - Melhora eficiência sem alterar funcionalidade.
 
 6. **Geração de Código Final**
-
    - Converte para código de máquina/bytecode.
 
 7. **Linkagem**

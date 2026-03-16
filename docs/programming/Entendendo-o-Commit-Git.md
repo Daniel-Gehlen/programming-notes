@@ -285,7 +285,6 @@ A "staging area" (ou "index") é um local intermediário onde você coloca as al
 ## Fluxo de Trabalho Básico
 
 1. **Modificação de Arquivos na Working Tree**:
-
    - Você faz alterações nos arquivos no working directory.
    - Use `git status` para ver quais arquivos foram modificados:
      ```bash
@@ -293,7 +292,6 @@ A "staging area" (ou "index") é um local intermediário onde você coloca as al
      ```
 
 2. **Adicionar Alterações à Staging Area**:
-
    - Para preparar os arquivos para o commit, você os adiciona à staging area:
      ```bash
      git add arquivo1.txt
@@ -319,7 +317,6 @@ A "staging area" (ou "index") é um local intermediário onde você coloca as al
    Isso mostrará quais arquivos foram modificados, quais estão na staging area e quais estão prontos para commit.
 
 2. **Modificar Arquivos**:
-
    - Suponha que você edite `arquivo1.txt` e `arquivo2.txt`.
 
 3. **Adicionar Arquivos à Staging Area**:
@@ -393,7 +390,6 @@ git gc
 ## Opções Comuns do Git GC
 
 - `--prune=<date>`:
-
   - Remove objetos que não foram referenciados desde uma data específica.
   - **Exemplo**: Remover objetos não referenciados há mais de 30 dias:
     ```bash
@@ -401,7 +397,6 @@ git gc
     ```
 
 - `--aggressive`:
-
   - Executa uma garbage collection mais agressiva e completa, que pode levar mais tempo, mas resulta em maior otimização.
   - **Exemplo**:
     ```bash
@@ -478,7 +473,6 @@ Git LFS é um sistema que substitui arquivos grandes no repositório com ponteir
 Para começar a usar o Git LFS, você precisa instalá-lo e inicializá-lo no seu repositório:
 
 1. **Instalar o Git LFS**:
-
    - Você pode baixar e instalar o Git LFS a partir de [https://git-lfs.github.com/](https://git-lfs.github.com/) ou usar um gerenciador de pacotes:
      - **Para macOS**:
        ```bash
@@ -498,7 +492,6 @@ Para começar a usar o Git LFS, você precisa instalá-lo e inicializá-lo no se
 ## Configuração e Uso do Git LFS
 
 1. **Rastrear Arquivos Grandes**:
-
    - Para começar a rastrear um tipo específico de arquivo (por exemplo, todos os arquivos `.psd`), você usa o comando `git lfs track`:
      ```bash
      git lfs track "*.psd"
@@ -506,7 +499,6 @@ Para começar a usar o Git LFS, você precisa instalá-lo e inicializá-lo no se
      Isso adiciona uma entrada ao arquivo `.gitattributes` no repositório, indicando que todos os arquivos com essa extensão devem ser gerenciados pelo LFS.
 
 2. **Adicionar Arquivos ao Repositório**:
-
    - Adicione os arquivos grandes ao repositório como faria normalmente:
      ```bash
      git add .gitattributes
@@ -613,19 +605,15 @@ Em projetos de desenvolvimento de software, as "issues" (problemas ou tarefas) s
 ## Como Usar Issues de Forma Eficiente
 
 1. **Criar Issues Claras e Detalhadas**:
-
    - Certifique-se de que o título e a descrição sejam claros e detalhados, fornecendo toda a informação necessária para que alguém possa começar a trabalhar na issue.
 
 2. **Priorizar Issues**:
-
    - Use labels e milestones para priorizar issues e garantir que as tarefas mais críticas sejam abordadas primeiro.
 
 3. **Atribuir Responsabilidades**:
-
    - Atribua issues a membros específicos da equipe para clareza sobre quem é responsável por resolver cada problema.
 
 4. **Monitorar e Atualizar o Status**:
-
    - Mantenha o status das issues atualizado para refletir o progresso e ajude a equipe a entender o que está em andamento.
 
 5. **Usar Templates**:

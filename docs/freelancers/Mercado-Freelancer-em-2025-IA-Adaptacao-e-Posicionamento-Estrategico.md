@@ -73,17 +73,14 @@ Vamos explorar os pontos-chave da transformação do mercado freelancer em 2025,
 ### ✅ **Luta Vencedora**: Competir por **Resultado/Valor**
 
 1. **Pare de vender horas, venda resultados**
-
    - Antes: "Desenvolvo site por R$5.000"
    - Agora: "Aumento conversões em 30% com site otimizado + automação de leads"
 
 2. **Use IA como Trampolim, não Concorrente**
-
    - IA para tarefas repetitivas (código boilerplate, relatórios)
    - Humano para estratégia, criatividade, relacionamento
 
 3. **Especialize-se na Interseção**
-
    - Exemplo: "Especialista em automação de e-commerce com IA" é mais valioso que "desenvolvedor web genérico".
 
 4. **Foque no Gargalo Humano**

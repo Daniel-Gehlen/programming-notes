@@ -3,10 +3,12 @@
 ## 1. Counting Sort (Ordenação por Contagem)
 
 ### Conceito
+
 - **Não comparativo**: Ordena elementos contando ocorrências de chaves únicas
 - **Ideal para**: Dados com faixa limitada de valores (ex: 0-100)
 
 ### Implementação Java
+
 ```java
 public static int[] countingSort(int[] arr, int maxVal) {
     int[] count = new int[maxVal + 1];
@@ -37,10 +39,12 @@ public static int[] countingSort(int[] arr, int maxVal) {
 ## 2. Radix Sort
 
 ### Conceito
+
 - **Ordenação por dígitos**: Processa dígitos menos significativos para os mais significativos
 - **Usa counting sort** como sub-rotina para cada dígito
 
 ### Implementação Java
+
 ```java
 public static void radixSort(int[] arr) {
     int max = Arrays.stream(arr).max().getAsInt();
@@ -76,10 +80,12 @@ private static void countingSortByDigit(int[] arr, int exp) {
 ## 3. Bucket Sort
 
 ### Conceito
+
 - **Distribui elementos** em baldes (buckets) e ordena individualmente
 - **Ideal para**: Dados uniformemente distribuídos
 
 ### Implementação Java
+
 ```java
 public static void bucketSort(float[] arr) {
     ArrayList<Float>[] buckets = new ArrayList[10];
@@ -110,6 +116,7 @@ public static void bucketSort(float[] arr) {
 ```
 
 **Complexidade**:
+
 - Melhor caso: O(n + k)
 - Pior caso: O(n²) se todos elementos caírem no mesmo balde
 
@@ -169,9 +176,9 @@ private static int quickSelect(int[] arr, int left, int right, int k) {
 
 ## Tabela Comparativa
 
-| Algoritmo       | Melhor Caso | Pior Caso | Estável | Espaço Auxiliar |
-|----------------|------------|----------|--------|----------------|
-| Counting Sort  | O(n + k)   | O(n + k) | Sim    | O(n + k)       |
-| Radix Sort     | O(dn)      | O(dn)    | Sim    | O(n + b)       |
-| Bucket Sort    | O(n + k)   | O(n²)    | Sim    | O(n + k)       |
-| QuickSelect    | O(n)       | O(n²)    | Não    | O(1)           |
+| Algoritmo     | Melhor Caso | Pior Caso | Estável | Espaço Auxiliar |
+| ------------- | ----------- | --------- | ------- | --------------- |
+| Counting Sort | O(n + k)    | O(n + k)  | Sim     | O(n + k)        |
+| Radix Sort    | O(dn)       | O(dn)     | Sim     | O(n + b)        |
+| Bucket Sort   | O(n + k)    | O(n²)     | Sim     | O(n + k)        |
+| QuickSelect   | O(n)        | O(n²)     | Não     | O(1)            |

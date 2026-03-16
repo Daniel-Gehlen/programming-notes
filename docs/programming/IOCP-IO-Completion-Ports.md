@@ -15,15 +15,12 @@ Mecanismo de alta performance do Windows para operações de I/O assíncronas, e
    ```
 
 2. **Associação de Sockets/Handles**
-
    - Sockets são vinculados à porta via `CreateIoCompletionPort`.
 
 3. **Início de Operações Assíncronas**
-
    - Funções como `WSARecv` (rede) ou `ReadFile` (arquivos) iniciam I/O não-bloqueante.
 
 4. **Fila de Resultados**
-
    - Operações concluídas são enfileiradas na porta.
 
 5. **Processamento por Threads**

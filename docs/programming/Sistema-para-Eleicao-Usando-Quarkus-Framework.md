@@ -3,13 +3,16 @@
 ## Orientações Gerais
 
 ### Planejamento do Escopo
+
 **Definição do Escopo:**
+
 - Candidatos são listados, cadastrados e editados
 - Todos os candidatos registrados participam de uma eleição quando iniciada
 - Candidatos recebem votos de eleitores
 - Resultado disponível em tempo real
 
 **Requisitos não funcionais:**
+
 - Confiabilidade
 - Disponibilidade
 - Interoperabilidade
@@ -73,7 +76,9 @@
 ## Desenvolvimento
 
 ### Gerenciamento de Candidatos - Serviço
+
 **Conceitos:**
+
 - Domain Model
 - Java Record
 - Test Driven Development
@@ -82,25 +87,33 @@
 - Repository Pattern
 
 ### Gerenciamento de Candidatos - Repositório
+
 **Conceitos:**
+
 - Flyway Migrations
 - Testcontainers
 - Hibernate ORM
 
 ### API JSON Rest Services
+
 **Conceitos:**
+
 - REST JSON
 - OpenAPI/Swagger UI
 - Integration Testing
 
 ### Mensageria com Redis PUBSUB
+
 **Alternativas:**
+
 - RabbitMQ
 - SNS/SQS
 - Kafka
 
 ### Programação Reativa
+
 **Bibliotecas:**
+
 - ReactiveX (RxJava)
 - Project Reactor
 - Vert.X
@@ -111,19 +124,23 @@
 ## Demonstração e Desafios
 
 ### Desafios para Developers:
+
 1. Adicionar métricas com Grafana
 2. Implementar CRUD completo para candidatos
 3. Migrar para REST Data with Panache
 4. Tornar aplicações mais reativas
 
 ### Desafios para DevOps:
+
 1. Configurar réplica de leitura no MariaDB
 2. Planejar migração para Kubernetes
 
 ### Desafios para DevSecOps:
+
 1. Modelagem de Ameaças para DDoS
 
 ### Outros Desafios:
+
 - Documentar ADRs para prevenção de fraudes
 - Modelar análise preditiva de resultados
 - Criar roadmap de funcionalidades
@@ -131,6 +148,7 @@
 ---
 
 ## Leitura Recomendada
+
 - Domain Driven Design
 - Java Records
 - Test Driven Development

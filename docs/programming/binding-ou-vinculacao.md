@@ -7,6 +7,7 @@ O termo "binding" (vinculação) possui diferentes significados em computação,
 Processo de associar identificadores (variáveis, funções) a valores ou endereços de memória.
 
 ### Tipos de Binding:
+
 - **Estático**:
   - Ocorre em tempo de compilação
   - Exemplos: variáveis globais, funções em escopo global
@@ -19,6 +20,7 @@ Processo de associar identificadores (variáveis, funções) a valores ou endere
 Associação de endereços IP e portas a sockets para comunicação em rede.
 
 ### Características:
+
 - Permite comunicação entre processos via protocolos (TCP/IP)
 - Estabelece pontos de comunicação entre sistemas
 
@@ -27,6 +29,7 @@ Associação de endereços IP e portas a sockets para comunicação em rede.
 Conexão entre elementos de UI e dados/funções.
 
 ### Tipos Comuns:
+
 - **Data Binding**:
   - Vincula elementos UI a modelos de dados
   - Alterações são refletidas automaticamente
@@ -39,6 +42,7 @@ Conexão entre elementos de UI e dados/funções.
 Integração de componentes e serviços em aplicações distribuídas.
 
 ### Aplicações:
+
 - **Service Binding**:
   - Conecta clientes a serviços específicos
   - Comum em arquiteturas de microsserviços
@@ -47,7 +51,9 @@ Integração de componentes e serviços em aplicações distribuídas.
   - Garante interoperabilidade em sistemas complexos
 
 ## Conclusão
+
 Binding é um conceito fundamental que representa:
+
 - Processos de associação em diversos contextos
 - Mecanismos de conexão entre elementos computacionais
 - Padrões de integração em sistemas complexos

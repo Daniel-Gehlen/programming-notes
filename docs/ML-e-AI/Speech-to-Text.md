@@ -75,7 +75,6 @@
    ```
 
 2. **Para máxima precisão**:
-
    - Usar Whisper com modelo "large"
    - Pré-processar áudio (remover ruído)
 

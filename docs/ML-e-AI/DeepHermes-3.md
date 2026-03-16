@@ -35,7 +35,6 @@ O **DeepHermes-3** é um modelo de linguagem de última geração desenvolvido p
 ### Modos de Operação:
 
 1. **Modo Rápido**:
-
    - Respostas instantâneas
    - Ideal para consultas simples
 

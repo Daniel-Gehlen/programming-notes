@@ -5,7 +5,6 @@
 ## **Deep Learning e Machine Learning**
 
 - **Deep Learning**:
-
   - Subárea do _Machine Learning_ que utiliza **redes neurais profundas** (múltiplas camadas ocultas).
   - **Objetivo**: Modelar **padrões complexos** em dados (imagens, voz, texto).
 

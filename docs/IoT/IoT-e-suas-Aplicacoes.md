@@ -60,12 +60,10 @@
 ### Problemas Críticos
 
 1. **Big Data**:
-
    - Processamento de 1TB+/dia em fazendas inteligentes
    - Solução: Edge computing + Apache Kafka
 
 2. **Recomendações em Tempo Real**:
-
    - Algoritmos federados para privacidade
 
 3. **Interfaces Cérebro-Máquina**:

@@ -28,27 +28,22 @@ Compreender as melhores práticas e ferramentas AWS para migração, adoção e 
 ### 6 Perspectivas do CAF
 
 1. **Negócios**
-
    - Alinhamento estratégico TI-Negócios
    - ROI da nuvem
 
 2. **Pessoas**
-
    - Treinamento em habilidades cloud
    - Mudança cultural
 
 3. **Governança**
-
    - Controles de custo e compliance
    - Políticas de tagging
 
 4. **Plataforma**
-
    - Seleção de serviços AWS
    - Arquitetura multiconta
 
 5. **Segurança**
-
    - IAM, criptografia, monitoramento
    - Certificações de conformidade
 

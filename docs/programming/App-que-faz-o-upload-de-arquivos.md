@@ -60,11 +60,7 @@ const s3Client = new S3Client({
   },
 });
 
-export async function generateUploadUrl(
-  bucket: string,
-  filename: string,
-  filetype: string
-) {
+export async function generateUploadUrl(bucket: string, filename: string, filetype: string) {
   const command = new PutObjectCommand({
     Bucket: bucket,
     Key: filename,
@@ -99,9 +95,7 @@ router.post("/upload", async (req, res) => {
     const url = await generateUploadUrl("my-bucket", fileName, contentType);
     res.json({ url });
   } catch (err) {
-    res
-      .status(400)
-      .json({ error: err instanceof Error ? err.message : "Invalid request" });
+    res.status(400).json({ error: err instanceof Error ? err.message : "Invalid request" });
   }
 });
 

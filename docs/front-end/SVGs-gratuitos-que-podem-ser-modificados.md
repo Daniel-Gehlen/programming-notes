@@ -44,7 +44,6 @@ document.querySelectorAll('path[fill="#FF0000"]').forEach((el) => {
 ## 🎨 Ferramentas Recomendadas
 
 1. **Colorização Online**:
-
    - [unDraw Color Tool](https://undraw.co/illustrations) - Altere cores antes de baixar
    - [SVG Color Changer](https://svgcolor.changer.io/) - Ferramenta web simples
 
@@ -57,7 +56,6 @@ document.querySelectorAll('path[fill="#FF0000"]').forEach((el) => {
 ## 💡 Dicas Profissionais
 
 1. **Otimização**:
-
    - Use [SVGO](https://github.com/svg/svgo) para reduzir tamanho:
 
    ```bash
@@ -65,7 +63,6 @@ document.querySelectorAll('path[fill="#FF0000"]').forEach((el) => {
    ```
 
 2. **Acessibilidade**:
-
    - Sempre adicione:
 
    ```xml

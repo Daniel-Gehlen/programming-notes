@@ -1,14 +1,18 @@
 # Arquiteturas de Software em Java
 
 ## 1. Arquitetura Monolítica
+
 ### Descrição
+
 Aplicação onde todos os componentes estão agrupados em um único projeto.
 
 ### Exemplo Java
+
 - Spring Boot
 - Jakarta EE
 
 ### Características
+
 ✅ Fácil desenvolvimento inicial
 ✅ Único artefato (.jar/.war)
 ❌ Difícil escalabilidade horizontal
@@ -28,6 +32,7 @@ public class UserController {
 ```
 
 ### Fluxo
+
 ```
 [UI] → [Controller] → [Service] → [Repository] → [Database]
 ```
@@ -35,14 +40,18 @@ public class UserController {
 ---
 
 ## 2. Arquitetura de Microserviços
+
 ### Descrição
+
 Sistema dividido em serviços independentes.
 
 ### Exemplo Java
+
 - Spring Boot/Micronaut/Quarkus
 - Comunicação via REST/gRPC/Kafka
 
 ### Características
+
 ✅ Escalabilidade independente
 ✅ Poliglotismo (várias linguagens)
 ❌ Complexidade operacional
@@ -62,6 +71,7 @@ public class ProductController {
 ```
 
 ### Fluxo
+
 ```
 [Client] → [API Gateway] → [Service A] ↔ [Service B]
                    ↑
@@ -71,14 +81,18 @@ public class ProductController {
 ---
 
 ## 3. Arquitetura em Camadas
+
 ### Descrição
+
 Separação clara em camadas funcionais.
 
 ### Exemplo Java
+
 - Spring (MVC)
 - Hibernate/JPA
 
 ### Características
+
 ✅ Organização clara
 ✅ Facilita testes unitários
 ❌ Risco de acoplamento entre camadas
@@ -99,6 +113,7 @@ public class UserService {
 ```
 
 ### Fluxo
+
 ```
 [UI] → [Application] → [Business] → [Persistence] → [DB]
 ```
@@ -106,14 +121,18 @@ public class UserService {
 ---
 
 ## 4. Arquitetura Orientada a Serviços (SOA)
+
 ### Descrição
+
 Serviços reutilizáveis para múltiplas aplicações.
 
 ### Exemplo Java
+
 - Apache CXF
 - Spring WS
 
 ### Características
+
 ✅ Reutilização de serviços
 ❌ Overhead de protocolos como SOAP
 
@@ -130,14 +149,18 @@ public class CustomerService {
 ---
 
 ## 5. Arquitetura Orientada a Eventos
+
 ### Descrição
+
 Sistema baseado em produção/consumo de eventos.
 
 ### Exemplo Java
+
 - Apache Kafka
 - Project Reactor
 
 ### Características
+
 ✅ Alta escalabilidade
 ✅ Desacoplamento
 ❌ Complexidade de debug
@@ -153,6 +176,7 @@ public class EventConsumer {
 ```
 
 ### Fluxo
+
 ```
 [Producer] → [Broker] → [Consumer]
 ```
@@ -160,14 +184,18 @@ public class EventConsumer {
 ---
 
 ## 6. Arquitetura Hexagonal
+
 ### Descrição
+
 Núcleo isolado com adaptadores para I/O.
 
 ### Exemplo Java
+
 - Spring DI
 - Interfaces/Ports
 
 ### Características
+
 ✅ Alta testabilidade
 ✅ Flexibilidade tecnológica
 ❌ Curva de aprendizado
@@ -186,6 +214,7 @@ public class OrderServiceImpl implements OrderService {
 ```
 
 ### Fluxo
+
 ```
 [REST] → [Core] ← [DB]
 ```
@@ -193,14 +222,18 @@ public class OrderServiceImpl implements OrderService {
 ---
 
 ## 7. Arquitetura Serverless
+
 ### Descrição
+
 Funções executadas sob demanda.
 
 ### Exemplo Java
+
 - AWS Lambda
 - Google Cloud Functions
 
 ### Características
+
 ✅ Sem gerenciamento de infra
 ✅ Escala automática
 ❌ Cold starts
@@ -215,6 +248,7 @@ public class Handler implements RequestHandler<Map<String, String>, String> {
 ```
 
 ### Fluxo
+
 ```
 [Trigger] → [Function] → [Response]
 ```
@@ -222,14 +256,18 @@ public class Handler implements RequestHandler<Map<String, String>, String> {
 ---
 
 ## 8. Arquitetura CQRS
+
 ### Descrição
+
 Separação entre comandos (escrita) e consultas (leitura).
 
 ### Exemplo Java
+
 - Spring Data
 - Axon Framework
 
 ### Características
+
 ✅ Otimização de leituras
 ❌ Sincronização complexa
 
@@ -241,6 +279,7 @@ public class CreateOrderCommand {
 ```
 
 ### Fluxo
+
 ```
 [Command] → [Write Model] → [Event Store]
 [Query] → [Read Model] ← [Read DB]
@@ -249,10 +288,11 @@ public class CreateOrderCommand {
 ---
 
 ## Comparativo Rápido
-| Arquitetura       | Melhor Para          | Complexidade | Escalabilidade |
-|-------------------|----------------------|--------------|----------------|
-| Monolítica        | Projetos pequenos    | Baixa        | Limitada       |
-| Microserviços     | Sistemas grandes     | Alta         | Excelente      |
-| Camadas           | Aplicações tradicionais | Média     | Moderada       |
-| Event-Driven      | Sistemas em tempo real | Alta      | Excelente      |
-| Serverless        | Funções esporádicas  | Variável     | Automática     |
+
+| Arquitetura   | Melhor Para             | Complexidade | Escalabilidade |
+| ------------- | ----------------------- | ------------ | -------------- |
+| Monolítica    | Projetos pequenos       | Baixa        | Limitada       |
+| Microserviços | Sistemas grandes        | Alta         | Excelente      |
+| Camadas       | Aplicações tradicionais | Média        | Moderada       |
+| Event-Driven  | Sistemas em tempo real  | Alta         | Excelente      |
+| Serverless    | Funções esporádicas     | Variável     | Automática     |

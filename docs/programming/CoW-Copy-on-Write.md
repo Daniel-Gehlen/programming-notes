@@ -7,7 +7,6 @@ Técnica de otimização que adia a cópia de dados até o momento da primeira m
 ## Mecanismo de Funcionamento
 
 1. **Compartilhamento Inicial**
-
    - Processos/estruturas compartilham os mesmos dados
    - Exemplo: `fork()` no Linux - pai e filho compartilham páginas de memória
 

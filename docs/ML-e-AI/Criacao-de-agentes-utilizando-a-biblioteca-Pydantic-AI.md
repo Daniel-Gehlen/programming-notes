@@ -281,13 +281,11 @@ async def get_recommendations(user_id: str):
 ## Práticas Recomendadas
 
 1. **Segurança**:
-
    - Valide todas as entradas do usuário
    - Use Pydantic para sanitização de dados
    - Limite escopos de API keys
 
 2. **Performance**:
-
    - Implemente cache estratégico
    - Use chamadas assíncronas
    - Monitore latências com Logfire

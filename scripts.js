@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     });
 
-    window.addEventListener("popstate", (event) => {
+    window.addEventListener("popstate", () => {
       if (!window.location.hash) {
         showWelcomePage();
       } else {
@@ -92,9 +92,7 @@ async function buildSearchIndex(structure) {
 
   for (const [folder, files] of Object.entries(structure)) {
     for (const file of files) {
-      const encodedPath = `${encodeFolderName(folder)}/${encodeURIComponent(
-        file
-      )}`;
+      const encodedPath = `${encodeFolderName(folder)}/${encodeURIComponent(file)}`;
       let success = false;
 
       try {
@@ -110,7 +108,7 @@ async function buildSearchIndex(structure) {
           });
           success = true;
         }
-      } catch (error) {
+      } catch {
         console.log(`Falha ao indexar: ${encodedPath}`);
       }
 
@@ -133,7 +131,7 @@ async function buildSearchIndex(structure) {
               });
               break;
             }
-          } catch (error) {
+          } catch {
             console.log(`Falha ao indexar variante: ${variant}/${file}`);
           }
         }
@@ -144,9 +142,7 @@ async function buildSearchIndex(structure) {
   searchIndex = tempIndex;
   searchIndexBuilt = true;
 
-  console.log(
-    `Índice de busca construído com ${searchIndex.length} documentos`
-  );
+  console.log(`Índice de busca construído com ${searchIndex.length} documentos`);
 }
 
 function normalizeStructure(structure) {
@@ -201,8 +197,8 @@ function renderMenu(structure, openAll = false) {
                             (file) => `
                             <li>
                                 <a href="#" class="doc-link" data-path="${encodedFolder}/${encodeURIComponent(
-                              file
-                            )}">
+                                  file
+                                )}">
                                     ${formatName(file.replace(".md", ""))}
                                 </a>
                             </li>
@@ -245,7 +241,7 @@ function formatName(name) {
   return name
     .replace(/-/g, " ")
     .replace(/\b\w/g, (l) => l.toUpperCase())
-    .replace(/C\#/g, "C#")
+    .replace(/C#/g, "C#")
     .replace(/Ai/g, "AI")
     .replace(/Ml/g, "ML")
     .replace(/Data Base/g, "Data-Base");
@@ -253,8 +249,7 @@ function formatName(name) {
 
 async function loadDocument(path) {
   const docContent = document.getElementById("doc-content");
-  docContent.innerHTML =
-    '<div class="loading">📖 Carregando documento...</div>';
+  docContent.innerHTML = '<div class="loading">📖 Carregando documento...</div>';
 
   if (!path.endsWith(".md")) {
     path += ".md";
@@ -265,19 +260,16 @@ async function loadDocument(path) {
   const file = decodeURIComponent(parts[1]);
 
   let success = false;
-  let finalPath = path;
 
   try {
-    const encodedPath =
-      encodeFolderName(folder) + "/" + encodeURIComponent(file);
+    const encodedPath = encodeFolderName(folder) + "/" + encodeURIComponent(file);
     const response = await fetch(`docs/${encodedPath}`);
     if (response.ok) {
       const markdown = await response.text();
       renderDocument(markdown, path);
       success = true;
-      finalPath = encodedPath;
     }
-  } catch (error) {
+  } catch {
     console.log(`Falha no caminho original: ${path}`);
   }
 
@@ -292,11 +284,10 @@ async function loadDocument(path) {
           const markdown = await response.text();
           renderDocument(markdown, path);
           success = true;
-          finalPath = variantPath;
           console.log(`Sucesso com variante: ${variantPath}`);
           break;
         }
-      } catch (error) {
+      } catch {
         console.log(`Falha na variante: ${variant}/${file}`);
       }
     }
@@ -313,10 +304,7 @@ async function loadDocument(path) {
           ${
             FOLDER_VARIANTS[folder]
               ? FOLDER_VARIANTS[folder]
-                  .map(
-                    (variant) =>
-                      `<li>docs/${variant}/${encodeURIComponent(file)}</li>`
-                  )
+                  .map((variant) => `<li>docs/${variant}/${encodeURIComponent(file)}</li>`)
                   .join("")
               : ""
           }
@@ -365,7 +353,6 @@ function showWelcomePage() {
 
 function setupSearch() {
   const searchInput = document.getElementById("search-input");
-  let searchTimeout = null;
 
   searchInput.addEventListener("input", async (e) => {
     const searchTerm = e.target.value.toLowerCase().trim();
@@ -431,10 +418,7 @@ function displaySearchResults(results, searchTerm) {
   for (const doc of results) {
     const contentLower = doc.content;
     const termPos = contentLower.indexOf(searchTerm);
-    let snippet = doc.content.substring(
-      Math.max(0, termPos - 60),
-      termPos + 60
-    );
+    let snippet = doc.content.substring(Math.max(0, termPos - 60), termPos + 60);
 
     snippet = snippet.replace(
       new RegExp(searchTerm, "gi"),
@@ -444,9 +428,7 @@ function displaySearchResults(results, searchTerm) {
     html += `
             <div class="search-result">
                 <h3>
-                    <a href="#" class="doc-link" data-path="${
-                      doc.originalPath
-                    }">
+                    <a href="#" class="doc-link" data-path="${doc.originalPath}">
                         ${formatName(doc.file.replace(".md", ""))}
                     </a>
                     <small>(${formatName(doc.folder)})</small>

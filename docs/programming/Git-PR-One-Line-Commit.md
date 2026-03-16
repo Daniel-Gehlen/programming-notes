@@ -11,7 +11,6 @@
    ```
 
 2. **Editar Arquivo**
-
    - Abrir o arquivo no editor
    - Modificar apenas a linha necessária
 
@@ -38,7 +37,6 @@
    ```
 
 6. **Abrir Pull Request**
-
    - Título claro: "fix: aumenta timeout da API para 3s"
    - Descrição completa:
 
@@ -175,12 +173,10 @@ git bisect run ./teste-bisect.sh
 ## Boas Práticas
 
 1. **Commits Granulares**:
-
    - Alterações pequenas e focadas
    - Mensagens claras no presente
 
 2. **PRs Eficientes**:
-
    - Referenciar issues relacionadas
    - Incluir dados de teste
    - Screenshots para mudanças visuais

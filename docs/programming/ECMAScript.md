@@ -122,26 +122,26 @@ try...catch...finally, throw
 
 ```javascript
 // Construtores embutidos
-Object, Array, Function, String, Number;
-Boolean, Symbol, BigInt, Date, RegExp;
-Error, EvalError, RangeError, ReferenceError;
-SyntaxError, TypeError, URIError;
+(Object, Array, Function, String, Number);
+(Boolean, Symbol, BigInt, Date, RegExp);
+(Error, EvalError, RangeError, ReferenceError);
+(SyntaxError, TypeError, URIError);
 
 // Tipos primitivos
-undefined, null, boolean, number, string;
-symbol, bigint;
+(undefined, null, boolean, number, string);
+(symbol, bigint);
 ```
 
 ### 📦 **OBJETO GLOBAL E SEUS MÉTODOS**
 
 ```javascript
 // Funções globais
-isNaN(), isFinite(), parseFloat(), parseInt();
-eval(), encodeURI(), decodeURI();
-encodeURIComponent(), decodeURIComponent();
+(isNaN(), isFinite(), parseFloat(), parseInt());
+(eval(), encodeURI(), decodeURI());
+(encodeURIComponent(), decodeURIComponent());
 
 // Propriedades globais
-Infinity, NaN, undefined, globalThis;
+(Infinity, NaN, undefined, globalThis);
 ```
 
 ## 🎯 **OBJETO OBJECT**
@@ -233,18 +233,18 @@ RegExp.prototype
 
 ```javascript
 // Propriedades
-Math.PI, Math.E, Math.SQRT2;
+(Math.PI, Math.E, Math.SQRT2);
 
 // Métodos
-Math.abs(), Math.round(), Math.floor(), Math.ceil();
-Math.max(), Math.min(), Math.random(), Math.pow();
-Math.sqrt(), Math.log(), Math.sin(), Math.cos(), Math.tan();
+(Math.abs(), Math.round(), Math.floor(), Math.ceil());
+(Math.max(), Math.min(), Math.random(), Math.pow());
+(Math.sqrt(), Math.log(), Math.sin(), Math.cos(), Math.tan());
 ```
 
 ## 🎭 **OBJETO JSON**
 
 ```javascript
-JSON.parse(), JSON.stringify();
+(JSON.parse(), JSON.stringify());
 ```
 
 ## 🔄 **OBJETO PROMISE**
@@ -287,11 +287,11 @@ Promise.any(), Promise.resolve(), Promise.reject()
 
 ```javascript
 // Métodos estáticos
-Symbol.for(), Symbol.keyFor();
+(Symbol.for(), Symbol.keyFor());
 
 // Propriedades bem conhecidas
-Symbol.iterator, Symbol.asyncIterator;
-Symbol.toStringTag, Symbol.hasInstance;
+(Symbol.iterator, Symbol.asyncIterator);
+(Symbol.toStringTag, Symbol.hasInstance);
 ```
 
 ## 🔧 **OBJETO FUNCTION**
@@ -316,7 +316,7 @@ console.trace(), .assert(), .clear()
 ## ⏱️ **FUNÇÕES DE TEMPORIZAÇÃO (ambiente dependente)**
 
 ```javascript
-setTimeout(), setInterval(), clearTimeout(), clearInterval();
+(setTimeout(), setInterval(), clearTimeout(), clearInterval());
 // No Node.js: setImmediate(), clearImmediate()
 ```
 
@@ -358,32 +358,32 @@ static, get, set, #privateFields
 
 ```javascript
 // Proxy
-new Proxy(), Proxy.revocable();
+(new Proxy(), Proxy.revocable());
 
 // Reflect
-Reflect.get(), Reflect.set(), Reflect.has();
-Reflect.construct(), Reflect.apply();
+(Reflect.get(), Reflect.set(), Reflect.has());
+(Reflect.construct(), Reflect.apply());
 ```
 
 ## 📊 **TYPED ARRAYS (ArrayBuffers)**
 
 ```javascript
-Int8Array, Uint8Array, Uint8ClampedArray;
-Int16Array, Uint16Array, Int32Array, Uint32Array;
-Float32Array, Float64Array, BigInt64Array, BigUint64Array;
+(Int8Array, Uint8Array, Uint8ClampedArray);
+(Int16Array, Uint16Array, Int32Array, Uint32Array);
+(Float32Array, Float64Array, BigInt64Array, BigUint64Array);
 ```
 
 ## 🌍 **INTERNACIONALIZAÇÃO (Intl)**
 
 ```javascript
-Intl.DateTimeFormat(), Intl.NumberFormat();
-Intl.Collator(), Intl.ListFormat(), Intl.RelativeTimeFormat();
+(Intl.DateTimeFormat(), Intl.NumberFormat());
+(Intl.Collator(), Intl.ListFormat(), Intl.RelativeTimeFormat());
 ```
 
 ## 💾 **WEB STORAGE APIS (navegador)**
 
 ```javascript
-localStorage, sessionStorage;
+(localStorage, sessionStorage);
 ```
 
 ## 🌐 **WEB APIs (navegador - não são parte do ECMAScript)**
@@ -412,8 +412,8 @@ Web Workers, Service Workers, WebSockets, etc.
 
 ```javascript
 // Módulos principais
-fs, path, os, http, https, url, util, events, stream;
-child_process,
+(fs, path, os, http, https, url, util, events, stream);
+(child_process,
   cluster,
   crypto,
   zlib,
@@ -421,8 +421,8 @@ child_process,
   etc.process,
   Buffer,
   __dirname,
-  __filename;
-module, require(), exports;
+  __filename);
+(module, require(), exports);
 ```
 
 ## 📋 **RESUMO DA ORGANIZAÇÃO**

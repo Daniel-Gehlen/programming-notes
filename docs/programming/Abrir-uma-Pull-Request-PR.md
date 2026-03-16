@@ -14,6 +14,7 @@ A extensão **GitHub Pull Requests** é uma ferramenta poderosa para integrar o 
 ## Passo a Passo
 
 ### 1. Crie um novo branch (se ainda não fez isso)
+
 1. Abra o terminal no VS Code (`Ctrl + `` ou `Ctrl + Shift + P` e procure por **"Git: Create Branch"**).
 2. Crie um branch a partir do `main`:
    ```bash
@@ -22,6 +23,7 @@ A extensão **GitHub Pull Requests** é uma ferramenta poderosa para integrar o 
 3. Faça suas alterações no código e salve.
 
 ### 2. Commit e push das mudanças
+
 1. Adicione os arquivos alterados ao commit:
    ```bash
    git add .
@@ -36,6 +38,7 @@ A extensão **GitHub Pull Requests** é uma ferramenta poderosa para integrar o 
    ```
 
 ### 3. Abra a Pull Request no VS Code
+
 1. **Abra a aba de Controle de Código-Fonte**:
    - Clique no ícone de **controle de versão** no lado esquerdo do VS Code (ou pressione `Ctrl + Shift + G`).
 
@@ -56,6 +59,7 @@ A extensão **GitHub Pull Requests** é uma ferramenta poderosa para integrar o 
    - Revise as alterações e, quando tudo estiver pronto, clique em **Create Pull Request**.
 
 ### 4. Verifique no GitHub
+
 - Depois de criar a PR no VS Code, você pode verificá-la no repositório do GitHub para confirmar os detalhes ou ajustar qualquer informação.
 
 ---
@@ -63,6 +67,7 @@ A extensão **GitHub Pull Requests** é uma ferramenta poderosa para integrar o 
 ## Dica
 
 Se preferir, você pode abrir a PR diretamente no navegador após o `push`:
+
 1. Acesse o repositório no GitHub.
 2. O GitHub geralmente mostra uma sugestão automática para abrir uma PR entre o branch que você fez `push` e o `main`.
 3. Clique em **Compare & Pull Request**, preencha os detalhes e envie.

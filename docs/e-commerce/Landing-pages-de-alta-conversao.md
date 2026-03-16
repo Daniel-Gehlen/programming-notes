@@ -20,7 +20,6 @@
 ## Como Escolher o Template Ideal
 
 1. **Para projetos simples**:
-
    - HTML5 UP (puro HTML/CSS)
    - Jekyll Boilerplate (GitHub Pages)
 

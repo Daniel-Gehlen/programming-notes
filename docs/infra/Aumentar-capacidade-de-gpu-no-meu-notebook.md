@@ -10,7 +10,6 @@ Alguns computadores com configurações básicas, especialmente aqueles sem GPU 
 ### **2. Aumente a memória alocada para a GPU integrada (Intel HD/UHD)**
 
 - Muitos notebooks compartilham a RAM do sistema com a GPU integrada. Você pode tentar aumentar essa alocação na BIOS:
-
   1.  Reinicie o notebook e entre na BIOS (geralmente pressionando **F2** ou **Del** durante a inicialização).
   2.  Procure por opções como **"Graphics Settings"**, **"Video Memory"**, **"DVMT Pre-Allocated Memory"**.
   3.  Aumente o valor (se disponível) para **512MB** ou **1024MB** (dependendo do modelo).
@@ -34,7 +33,6 @@ Alguns computadores com configurações básicas, especialmente aqueles sem GPU 
 ### **5. Soluções externas (limitadas)**
 
 - **GPU Externa (eGPU):** Alguns notebooks com porta **Thunderbolt 3/4** suportam eGPUs (como uma NVIDIA GTX ou RTX em um gabinete externo). Verifique se seu modelo tem essa conexão.
-
   - Exemplo: **Razer Core X + Placa NVIDIA GTX 1650**.
   - **Problema:** A maioria dos mais antigos não tem Thunderbolt, tornando essa opção inviável.
 
@@ -422,12 +420,10 @@ Seu notebook tem um **Intel Core i5-6200U (Skylake, 2 núcleos/4 threads)**, **8
 ### **Compatibilidade e Desempenho**
 
 1. **Formato e Interface:**
-
    - Seu notebook tem um slot **M.2 SATA** (atualmente ocupado pelo SanDisk X400 256GB) **e um bay para SSD/HDD 2,5" SATA**.
    - Esse SSD SanDisk Plus 2,5" é **compatível** com o bay SATA do E5270 (substituiria um HDD ou seria um segundo armazenamento).
 
 2. **Velocidade:**
-
    - **Limitação SATA III:** Máximo de ~550MB/s (o mesmo do seu M.2 atual).
    - Não será mais rápido que seu SSD atual, apenas terá **mais capacidade (1TB)**.
 
@@ -456,7 +452,6 @@ Seu notebook tem um **Intel Core i5-6200U (Skylake, 2 núcleos/4 threads)**, **8
 ### **Recomendação Final**
 
 - **Se você quer MAIS ESPAÇO:**
-
   - Compre o **SanDisk Plus 1TB 2,5"** e use-o como armazenamento principal (substituindo o M.2 atual ou um HDD secundário).
   - **Link direto:** [Amazon - SanDisk SSD Plus 1TB](https://www.amazon.com.br/SanDisk-SSD-Plus-1TB/dp/B07D998212)
 
@@ -495,7 +490,6 @@ está no **formato físico e na instalação**, mas ambos usam a **mesma interfa
 ### **Qual Escolher para o Seu Dell Latitude E5270?**
 
 1. **Se você quer substituir o SSD atual (M.2 256GB) por um de 1TB:**
-
    - **Samsung 870 EVO M.2 SATA** é a melhor opção (usa o mesmo slot do seu SanDisk X400 atual).
    - **Vantagem:** Não ocupa o bay 2,5" (pode usar para um HDD/SSD extra).
    - **Desvantagem:** Preço mais alto (~R$ 500-600).
@@ -549,12 +543,10 @@ Se optar pelo **Samsung 870 EVO M.2**, você precisará:
 ### **O que REALMENTE Melhora Desempenho no Seu Caso?**
 
 1. **RAM (Prioridade Máxima):**
-
    - Adicionar +8GB (total 16GB) ajuda **Android Studio** e multitarefa.
    - Custo: ~R$ 150-200 ([exemplo Crucial 8GB DDR4](https://www.amazon.com.br/Crucial-CT8G4SFS8213-Memória-Notebook-260-Pinos/dp/B019FRDVV4)).
 
 2. **Cooler/Pasta Térmica:**
-
    - Seu CPU chega a **61°C** em uso normal (pode causar _throttling_).
    - Solução: Limpeza interna + pasta térmica ([Arctic MX-4](https://www.amazon.com.br/ARCTIC-MX-4-2019-Pasta-Térmica/dp/B07L9BDY3T)).
 
@@ -580,13 +572,11 @@ Com base nas informações fornecidas anteriormente, **sim**, é possível deter
 # **Análise Técnica da Expansão de RAM**
 
 1. **Configuração Atual (Confirmada no Seu Relatório):**
-
    - **1x módulo de 8GB DDR4 (2133 MHz)** no slot **DIMM A (BANK 0)**.
    - **1 slot vazio** (DIMM B / BANK 2).
    - **Máximo suportado pelo hardware:** **16GB** (2x8GB) – conforme [manual oficial da Dell](https://www.dell.com/support/manuals/pt-br/latitude-e5270-laptop/latitude-e5270-setupandspecifications/specifications?guid=guid-926f0777-4c81-4036-b845-3ba4b8d6a5b0&lang=pt-br).
 
 2. **Compatibilidade Física:**
-
    - Seu notebook usa módulos **DDR4 SODIMM** (formato de notebook, 260 pinos).
    - **Tamanho do módulo:** ~6.7 cm x 3 cm (padrão para DDR4 SODIMM).
    - **Espaço disponível:** O slot vazio (DIMM B) tem as mesmas dimensões do slot já ocupado (DIMM A).
@@ -600,12 +590,10 @@ Com base nas informações fornecidas anteriormente, **sim**, é possível deter
 ### **Passo a Passo para Adicionar +8GB**
 
 1. **Compre um módulo idêntico ou compatível:**
-
    - **Modelo recomendado:** [Crucial 8GB DDR4 2133MHz (CT8G4SFS8213)](https://www.amazon.com.br/Crucial-CT8G4SFS8213-Mem%C3%B3ria-Notebook-260-Pinos/dp/B019FRDVV4)
      - **Por quê?** Mesma frequência (2133 MHz), latência (CL15) e voltagem (1.2V) do módulo atual (Micron 8GB).
 
 2. **Instalação Física:**
-
    - Desligue o notebook e remova a bateria (se possível).
    - Abra a tampa traseira (parafusos na base).
    - Localize o **slot DIMM B (BANK 2)** – próximo ao slot já ocupado.
@@ -656,7 +644,6 @@ Pelos dados fornecidos, seu notebook tem:
 #### **Opções Analisadas:**
 
 1. **Corsair Value Select 8GB (2133MHz, CL15, CMSO8GX4M1A2133C15)**
-
    - **Prós:** Boa marca, compatível.
    - **Contras:** Pode não ser idêntica ao módulo atual (risco mínimo de incompatibilidade).
 

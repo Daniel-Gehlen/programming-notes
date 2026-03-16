@@ -6,7 +6,6 @@
 Rede social fictícia de posts curtos ("Whispers") com problemas de escalabilidade:
 
 - **Problemas**:
-
   - 70 invocações simultâneas de Lambda
   - Banco RDS não escalável
   - Necessidade de implementar "Tópicos em Alta"

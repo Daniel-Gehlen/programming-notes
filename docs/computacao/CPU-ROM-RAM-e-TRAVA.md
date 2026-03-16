@@ -30,12 +30,10 @@
 ## Relacionamento entre os Componentes
 
 1. **Inicialização do Sistema**:
-
    - CPU executa instruções do firmware na ROM para iniciar o sistema
    - Sistema carrega programas essenciais da ROM para a RAM
 
 2. **Execução de Programas**:
-
    - CPU acessa instruções e dados na RAM para executar programas
    - Programas podem acessar dados persistentes na ROM para configuração
 

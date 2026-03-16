@@ -3,6 +3,7 @@
 ## Implementação de Heap para Gestão de Tarefas
 
 ### Classe Principal: Gerenciador de Tarefas com Heap
+
 ```java
 import java.util.PriorityQueue;
 
@@ -80,15 +81,18 @@ public class GerenciadorHeapTarefas {
 ### Propriedades do Heap Explicadas
 
 #### 1. Altura do Heap
+
 ```java
 public static int calcularAlturaHeap(int n) {
     return (int) Math.ceil(Math.log(n + 1) / Math.log(2)) - 1;
 }
 ```
+
 - **Fórmula**: ⌈log₂(n+1)⌉ - 1
 - **Exemplo**: Heap com 10 elementos → altura = 3
 
 #### 2. Localização de Folhas
+
 ```java
 public static void identificarFolhas(int[] heap) {
     int n = heap.length;
@@ -102,6 +106,7 @@ public static void identificarFolhas(int[] heap) {
 ### Algoritmos Fundamentais
 
 #### MAX-HEAPIFY (Versão Iterativa)
+
 ```java
 public static void maxHeapify(int[] arr, int i, int heapSize) {
     while (true) {
@@ -125,6 +130,7 @@ public static void maxHeapify(int[] arr, int i, int heapSize) {
 ```
 
 #### BUILD-MIN-HEAP
+
 ```java
 public static void buildMinHeap(int[] arr) {
     for (int i = arr.length/2 - 1; i >= 0; i--) {
@@ -150,6 +156,7 @@ private static void minHeapify(int[] arr, int i, int heapSize) {
 ```
 
 ### Caso Prático: Fluxo de Trabalho Diário
+
 1. **Inicialização**: Heap vazio
 2. **Inserção**:
    - "Reunião com cliente (P5)" → Adiciona ao heap
@@ -159,10 +166,11 @@ private static void minHeapify(int[] arr, int i, int heapSize) {
 5. **Atualização**: Altera prioridade de "Debug código" para P6
 
 ### Complexidade Computacional
-| Operação        | Complexidade |
-|-----------------|--------------|
-| Inserção        | O(log n)     |
-| Remoção         | O(log n)     |
-| Consulta raiz   | O(1)         |
-| BUILD-HEAP      | O(n)         |
-| Heapify         | O(log n)     |
+
+| Operação      | Complexidade |
+| ------------- | ------------ |
+| Inserção      | O(log n)     |
+| Remoção       | O(log n)     |
+| Consulta raiz | O(1)         |
+| BUILD-HEAP    | O(n)         |
+| Heapify       | O(log n)     |

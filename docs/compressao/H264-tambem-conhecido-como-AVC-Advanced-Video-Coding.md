@@ -53,6 +53,7 @@ O **H.264 (AVC)** é um padrão de compressão de vídeo desenvolvido pelo **ITU
   # Codificar para H.264
   ffmpeg -i input.mp4 -c:v libx264 -crf 23 output.mp4
   ```
+
   - `-crf 23`: Balanço qualidade/tamanho (0=lossless, 51=pior qualidade).
 - **x264**: Biblioteca open-source para codificação H.264.
 - **libavcodec**: Suporte a múltiplos codecs (incluindo AVC).

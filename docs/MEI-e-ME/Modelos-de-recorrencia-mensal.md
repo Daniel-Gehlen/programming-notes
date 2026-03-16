@@ -37,12 +37,10 @@ Sugiro um **pacote recorrente de R$ 120/mês (12x R$ 120 = R$ 1.440/ano)**, que 
 ### **Cálculo das Probabilidades:**
 
 1. **Se o cliente aceitar R$ 120/mês:**
-
    - Você recebe **R$ 1.440/ano** (vs. mínimo atual de R$ 1.400).
    - Ele economiza **até R$ 520/ano** (no cenário de R$ 1.960).
 
 2. **Se negociar R$ 100/mês (R$ 1.200/ano):**
-
    - Você mantém o mínimo desejado.
    - Ele ainda economiza (comparado ao gasto máximo atual).
 
@@ -72,7 +70,6 @@ SERVIÇOS:
 MODELO PADRÃO (DIRETO):
 
 1. Plano mensal básico: R$50/mês
-
    - Inclui 3 cards novos (R$42) + taxa de operação (R$8)
    - Cards extras: R$14 cada
 

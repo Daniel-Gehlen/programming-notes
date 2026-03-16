@@ -3,7 +3,6 @@
 ## Passo a Passo para Encontrar Bibliotecas
 
 1. **Acesse a Plataforma**
-
    - Abra [Figma](https://www.figma.com/) no navegador
    - Faça login na sua conta
 
@@ -15,7 +14,6 @@
    ```
 
 3. **Estratégias de Busca**
-
    - **Termos recomendados**:
      - "Design System"
      - "UI Kit"

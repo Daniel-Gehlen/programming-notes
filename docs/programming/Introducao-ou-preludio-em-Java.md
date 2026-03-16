@@ -1,6 +1,7 @@
 # Introdução em Java: Prelúdio Musical
 
 ## Código de Exemplo
+
 ```java
 public class Prelude {
     public static void main(String[] args) {
@@ -34,19 +35,23 @@ public class Prelude {
 ## Conceitos de POO Aplicados
 
 ### 1. Encapsulamento
+
 - **Classe `Prelude`** agrupa métodos relacionados
 - Modificadores `private` para ocultação de implementação
 
 ### 2. Modularidade
-| Método                  | Responsabilidade Única                  |
-|-------------------------|----------------------------------------|
-| `displayWelcomeMessage` | Exibição mensagem inicial              |
-| `initializeComponents`  | Preparação dos recursos                |
-| `setupEnvironment`      | Configuração do sistema                |
+
+| Método                  | Responsabilidade Única    |
+| ----------------------- | ------------------------- |
+| `displayWelcomeMessage` | Exibição mensagem inicial |
+| `initializeComponents`  | Preparação dos recursos   |
+| `setupEnvironment`      | Configuração do sistema   |
 
 ### 3. Método Main
+
 - Ponto único de entrada (JVM)
 - Orquestra o fluxo do programa:
+
 ```mermaid
 graph TD
     A[Main] --> B[Welcome]
@@ -56,18 +61,21 @@ graph TD
 ```
 
 ## Analogia Musical
+
 - `displayWelcomeMessage()` → Abertura da sinfonia
 - `initializeComponents()` → Afinação dos instrumentos
 - `setupEnvironment()` → Preparação do palco
 - `displayOutroMessage()` → Transição para o 1º movimento
 
 ## Boas Práticas Demonstradas
+
 ✓ Nomes descritivos de métodos
 ✓ Separação de preocupações
 ✓ Comentários para áreas de implementação futura
 ✓ Saída formatada para melhor legibilidade
 
 > **Próximos Passos**: Este padrão pode ser estendido para:
+>
 > - Injeção de dependências
 > - Tratamento de erros
 > - Configurações externas via arquivos

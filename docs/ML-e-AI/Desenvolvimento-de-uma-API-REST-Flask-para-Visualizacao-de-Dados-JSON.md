@@ -1,14 +1,17 @@
 # Relatório sobre o Desenvolvimento de uma API REST Flask para Visualização de Dados JSON
 
 ## Introdução
+
 A criação de APIs (Application Programming Interfaces) é uma prática comum na construção de aplicações modernas, permitindo comunicação e interação eficientes entre diferentes sistemas. Neste relatório, discutiremos o desenvolvimento de uma API REST usando o framework Flask em Python, com o objetivo de visualizar dados em formato JSON.
 
 ## Tecnologias Utilizadas
 
 ### Linguagem de Programação
+
 - **Python 3.8+**
 
 ### Bibliotecas Principais
+
 ```python
 # Framework web
 from flask import Flask, jsonify, request, render_template_string
@@ -33,18 +36,23 @@ warnings.filterwarnings('ignore')
 ## Métodos
 
 ### 1. Instalação e Configuração do Flask
+
 Utilizamos o comando `!pip install flask` para instalar o Flask no ambiente de desenvolvimento.
 
 ### 2. Leitura de Dados JSON
+
 Carregamos dados de um arquivo JSON usando a biblioteca `json`.
 
 ### 3. Inicialização da Aplicação Flask
+
 Criamos uma instância da classe Flask.
 
 ### 4. Definição de Endpoints
+
 Estabelecemos endpoints como `/data` que retorna os dados JSON em formato HTML.
 
 ### 5. Visualização de Dados
+
 Utilizamos a biblioteca `IPython.display` para exibir a tabela HTML diretamente no notebook.
 
 ## Implementação Completa
@@ -257,11 +265,13 @@ if __name__ == '__main__':
 ```
 
 ## Resultados
+
 - Os dados JSON foram carregados com sucesso
 - Um endpoint `/data` foi desenvolvido que retorna os dados JSON em uma tabela HTML
 - A visualização de dados foi realizada diretamente no notebook, facilitando a análise e compreensão das informações
 
 ## Funcionalidades da API
+
 1. **Endpoint `/data`**: Retorna todos os dados em formato JSON
 2. **Endpoint `/data/html`**: Retorna os dados em formato HTML para visualização
 3. **Endpoint `/data/summary`**: Retorna estatísticas resumidas dos dados
@@ -269,6 +279,7 @@ if __name__ == '__main__':
 5. **Endpoint `/data/product/<product_name>`**: Filtra dados por produto
 
 ## Visualizações Incluídas
+
 1. Gráfico de barras de vendas por região
 2. Gráfico de barras de vendas por produto
 3. Histograma de distribuição de vendas
@@ -276,9 +287,11 @@ if __name__ == '__main__':
 5. Tabela HTML interativa com todos os dados
 
 ## Conclusão
+
 O uso do Flask facilitou o desenvolvimento de uma API REST simples para visualização de dados JSON. A estrutura modular e flexível do Flask permitiu a definição rápida de endpoints e a manipulação eficiente de dados. A visualização direta de dados no notebook aumenta a acessibilidade e usabilidade da API, tornando-a uma ferramenta útil para análise de dados.
 
 ## Estudo de Caso
+
 Imagine uma empresa de análise de dados que coleta informações de vendas de diferentes regiões. Usando a API desenvolvida, os analistas podem acessar e visualizar facilmente os dados de vendas em formato JSON. Isso permite análise exploratória rápida, identificação de tendências e padrões, e tomada de decisão baseada em dados de forma eficiente. Além disso, a empresa pode integrar esta API em seus sistemas internos para automatizar processos de análise e relatórios. Em resumo, a API Flask fornece uma solução flexível e escalável para visualização de dados, contribuindo para a eficácia das operações da empresa.
 
 **Repositório GitHub:** https://github.com/Daniel-Gehlen/PythonProgrammingProjects1/blob/main/Flask_API.ipynb

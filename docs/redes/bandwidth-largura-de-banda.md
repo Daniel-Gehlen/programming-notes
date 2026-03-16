@@ -19,7 +19,6 @@ A largura de banda refere-se à capacidade máxima de transferência de dados em
 ## Tipos de Largura de Banda
 
 1. **Largura de Banda de Canal**:
-
    - Capacidade máxima de um meio físico (ex.: cabo de rede, Wi-Fi).
    - Exemplo: Cabo Ethernet Cat6 tem largura de banda de até 10 Gbps.
 

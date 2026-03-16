@@ -1,9 +1,11 @@
 # Primeiros Passos Com Cypress
 
 ## Objetivo
+
 Fornecer a base necessária para criar seus primeiros testes automatizados usando o Cypress. Serão abordados o surgimento, vantagens, desvantagens e aspectos diferenciais em relação ao Selenium, além de conceitos iniciais para quem está começando a entender esse framework em crescimento no mercado.
 
 ## Pré-Requisitos
+
 - Fundamentos de qualidade de software
 - Fundamentos de automação de testes
 - Git
@@ -15,12 +17,14 @@ Fornecer a base necessária para criar seus primeiros testes automatizados usand
 ### Aula 1: O que é Cypress?
 
 #### Objetivos:
+
 - Contextualização sobre o surgimento do Cypress.
 - Instalação e configuração.
 - Abertura e execução de testes.
 - Conhecimento do projeto a ser automatizado.
 
 #### Etapa 1: Surgimento
+
 - **O que é Cypress?**
   - Ferramenta para criação, configuração, execução e depuração de testes automatizados.
   - Executa diretamente no browser, permitindo acesso a ferramentas e ações do navegador.
@@ -65,6 +69,7 @@ Fornecer a base necessária para criar seus primeiros testes automatizados usand
   - Detecção de testes não-confiáveis
 
 #### Etapa 2: Instalação e Configuração
+
 - **Requisitos**:
   - macOS 10.9+, Linux Ubuntu 12.04+, Windows 7+.
   - Node.js (14/16/18).
@@ -79,6 +84,7 @@ Fornecer a base necessária para criar seus primeiros testes automatizados usand
   - Use o comando `npx cypress open` para abrir o Cypress.
 
 #### Etapa 3: Executando Meu Primeiro Teste
+
 - **Launchpad**:
   - Guia para decisões e configurações.
   - Escolha do tipo de teste (E2E, Component).
@@ -92,6 +98,7 @@ Fornecer a base necessária para criar seus primeiros testes automatizados usand
   - Página 'Runs' e 'Debug' para integração com Cypress Cloud.
 
 #### Etapa 4: Conhecendo a Demo para Automação
+
 - **Processo de Acompanhamento**:
   - Utilize o site Automation Exercise para aprender.
   - Acesse a documentação do Cypress e o repositório do curso no GitHub para referência e código.
@@ -99,12 +106,14 @@ Fornecer a base necessária para criar seus primeiros testes automatizados usand
 ### Aula 2: Conceitos Iniciais para Automação E2E com Cypress
 
 #### Objetivos:
+
 - Acessar e interagir com elementos e requisições de uma página.
 - Fazer validações/asserções.
 - Entender o encadeamento de comandos.
 - Interagir via linha de comando.
 
 #### Etapa 1: Acessando e Interagindo com Elementos da Página
+
 - **Métodos Úteis**:
   - `get`, `find`, `contains`, `type`, `click`.
 
@@ -116,6 +125,7 @@ Fornecer a base necessária para criar seus primeiros testes automatizados usand
   - Métodos `intercept` e `request` para validações.
 
 #### Etapa 2: Entendendo Validações e Asserções
+
 - **O que são Asserções?**
   - Perguntas sobre atributos ou estados dos elementos.
 
@@ -127,6 +137,7 @@ Fornecer a base necessária para criar seus primeiros testes automatizados usand
   - `aliases` e `.then()` para compartilhar contextos e fixtures.
 
 #### Etapa 3: Entendendo Encadeamento de Comandos
+
 - **O que é Encadeamento?**
   - Uso aninhado de métodos, passagem de valores entre comandos.
 
@@ -135,6 +146,7 @@ Fornecer a base necessária para criar seus primeiros testes automatizados usand
   - Uso de `.then()` para acessar diretamente o sujeito repassado.
 
 #### Etapa 4: Cypress CLI
+
 - **Abrindo o App**:
   - Comando `npx cypress open`.
 
@@ -146,6 +158,7 @@ Fornecer a base necessária para criar seus primeiros testes automatizados usand
   - `cypress info`, `cypress verify`, `cypress version`.
 
 #### Etapa 5: Faça Você Mesmo!
+
 - **Desafio**:
   - Crie pelo menos 6 casos de teste.
   - Use no mínimo 8 comandos.

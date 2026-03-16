@@ -30,7 +30,6 @@ O notebook com Linux Mint e 8GB de RAM é perfeitamente adequado para desenvolvi
 ### Fase 2: Desenvolvimento do Primeiro App (4-8 horas)
 
 3. **Criar um projeto simples**:
-
    - Escolha "Empty Activity" como template
    - Nomeie o app como "MeuPrimeiroApp"
    - Use Java ou Kotlin (Kotlin é recomendado, mas Java é mais fácil para iniciantes)
@@ -42,7 +41,6 @@ O notebook com Linux Mint e 8GB de RAM é perfeitamente adequado para desenvolvi
 ### Fase 3: Testes Rigorosos (2-3 horas)
 
 5. **Estratégia de teste com 5 sigmas (99.99995% de confiabilidade)**:
-
    - Teste em múltiplos dispositivos virtuais (diferentes tamanhos de tela e versões Android)
    - Use o Android Studio Profiler para monitorar consumo de memória e CPU
    - Implemente testes unitários básicos:
@@ -71,7 +69,6 @@ O notebook com Linux Mint e 8GB de RAM é perfeitamente adequado para desenvolvi
 ### Fase 4: Preparação para Publicação (1-2 horas)
 
 7. **Gerar APK assinado**:
-
    - No Android Studio: Build > Generate Signed Bundle / APK
    - Crie uma chave de assinatura (guarde com segurança!)
    - Selecione o tipo de release e otimize para tamanho e performance
@@ -84,14 +81,12 @@ O notebook com Linux Mint e 8GB de RAM é perfeitamente adequado para desenvolvi
 ### Fase 5: Publicação na Play Store (1 hora)
 
 9. **Conta do Google Play Developer**:
-
    - A conta normalmente custa US$ 25, mas você pode:
      a) Participar do Google Play Indie Games Festival (às vezes oferecem códigos gratuitos)
      b) Procurar promoções da Google para isenção da taxa
      c) Considerar publicar inicialmente em lojas alternativas como F-Droid (gratuita)
 
 10. **Preparar assets para publicação**:
-
     - Capture screenshots do app (pode usar o emulador)
     - Escreva uma descrição simples
     - Defina a classificação etária e conteúdo
@@ -104,12 +99,10 @@ O notebook com Linux Mint e 8GB de RAM é perfeitamente adequado para desenvolvi
 ## Alternativas Caso Não Possa Pagar a Taxa da Play Store
 
 1. **Distribuição direta**:
-
    - Compartilhe o APK diretamente com usuários
    - Use serviços gratuitos como GitHub Releases para hospedar o APK
 
 2. **Lojas alternativas**:
-
    - F-Droid (especialmente para apps open source)
    - APKPure
    - Amazon Appstore (não requer taxa de inscrição)

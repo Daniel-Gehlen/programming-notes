@@ -66,16 +66,20 @@ public class OrganizadorDomestico {
    - Assim como você escolhe uma mesa de centro para começar a limpeza, o algoritmo seleciona um pivô (último elemento).
 
 2. **Separação de Itens**:
+
    ```java
    if (comodos[j] <= pivo) { ... }
    ```
+
    - Equivalente a separar objetos menores (à esquerda) e maiores (à direita) em relação ao ponto focal.
 
 3. **Organização Recursiva**:
+
    ```java
    organizarComodos(comodos, inicio, indicePivo - 1);
    organizarComodos(comodos, indicePivo + 1, fim);
    ```
+
    - Como limpar quadrantes da sala um de cada vez, repetindo o processo nas subáreas.
 
 4. **Resultado Final**:
@@ -83,11 +87,11 @@ public class OrganizadorDomestico {
 
 ## Complexidade e Desempenho
 
-| Cenário       | Complexidade | Analogia Doméstica                     |
-|---------------|--------------|----------------------------------------|
-| Melhor Caso   | O(n log n)   | Pivô divide áreas igualmente           |
-| Pior Caso     | O(n²)        | Pivô sempre seleciona área maior/menor |
-| Espaço        | O(log n)     | Pilha de tarefas pendentes             |
+| Cenário     | Complexidade | Analogia Doméstica                     |
+| ----------- | ------------ | -------------------------------------- |
+| Melhor Caso | O(n log n)   | Pivô divide áreas igualmente           |
+| Pior Caso   | O(n²)        | Pivô sempre seleciona área maior/menor |
+| Espaço      | O(log n)     | Pilha de tarefas pendentes             |
 
 ## Exemplo de Saída
 
@@ -99,6 +103,7 @@ Após organização: [1, 2, 3, 4, 5, 7, 8]
 ## Dicas para Melhorar a Implementação
 
 1. **Escolha Inteligente de Pivô**:
+
    ```java
    // Melhoria: pivô mediano de três
    int meio = inicio + (fim - inicio)/2;

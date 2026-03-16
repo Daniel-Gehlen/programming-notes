@@ -59,19 +59,15 @@ Profissionais de TI responsáveis pela infraestrutura computacional de organiza�
 ## **Especializações**
 
 1. **SysAdmin Geral**
-
    - Foco em servidores e infraestrutura física/virtual
 
 2. **Admin de Redes**
-
    - Especialista em roteamento, switching e segurança de rede
 
 3. **DBA (Database Admin)**
-
    - Otimização de queries, replicação, backup de bancos (MySQL, PostgreSQL)
 
 4. **DevOps Engineer**
-
    - Ponte entre desenvolvimento e operações (CI/CD, IaC)
 
 5. **Security Engineer**

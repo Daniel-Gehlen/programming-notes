@@ -68,6 +68,7 @@ WHERE Discontinued = 0
   ```powerquery
   = Table.SelectRows(#"Passo Anterior", each [Ano] = 2023)
   ```
+
   - Separe colunas de data/hora
 
 ### Erros de Importação

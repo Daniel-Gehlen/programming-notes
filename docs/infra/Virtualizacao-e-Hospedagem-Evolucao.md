@@ -11,7 +11,6 @@ Exploração da evolução das tecnologias de virtualização e hospedagem de se
 ### Características:
 
 - **Configuração Manual de Máquinas**:
-
   - Servidores físicos dedicados a funções específicas.
   - Instalação manual de sistemas operacionais e aplicativos.
   - Escalabilidade limitada e alto custo de manutenção.

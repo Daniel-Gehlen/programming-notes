@@ -3,12 +3,10 @@
 ## Principais tópicos abordados:
 
 1. **Deep Learning para PLN (Processamento de Linguagem Natural)**
-
    - Definição: Sistemas que interpretam texto e fala humana
    - Objetivo: Compreensão e processamento mais eficaz da linguagem natural
 
 2. **Aplicações Práticas de PLN**
-
    - Sistemas de recomendação personalizada
    - Comandos por voz e assistentes virtuais
    - Chatbots para atendimento automatizado

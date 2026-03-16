@@ -55,16 +55,13 @@ Você cria um sistema de **gestão financeira pessoal** e disponibiliza na inter
 ## 4. Como Estruturar Esse Modelo no MEI
 
 1. **Defina o Modelo de Negócio:**
-
    - Venda do sistema como um **produto pronto**.
    - Ofereça **suporte técnico** como serviço adicional (dentro do CNAE 6209-1/00).
 
 2. **Formalize as Atividades no MEI:**
-
    - Inclua os CNAEs mencionados acima (especialmente 6209-1/00 e 6319-4/00).
 
 3. **Organize a Venda Online:**
-
    - Use plataformas de pagamento (ex.: Mercado Pago, PagSeguro, Stripe) para vender licenças.
    - Configure um site ou plataforma para disponibilizar os downloads ou acessos.
 

@@ -45,7 +45,6 @@ Tempo_resposta ≈ (N_processos × Quantum) / N_núcleos
 ## Casos Especiais
 
 1. **Processos I/O-bound**:
-
    - Frequentemente liberam CPU voluntariamente
    - Podem receber quanta menores
 

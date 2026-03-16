@@ -12,12 +12,10 @@ O **throughput** em computação refere-se à quantidade de trabalho realizado e
 ### Aplicações
 
 1. **Redes de Computadores**:
-
    - Mede a quantidade de dados transferidos entre partes do sistema em um intervalo de tempo.
    - Exemplo: Largura de banda de uma conexão de rede, medida em bits por segundo (bps).
 
 2. **Sistemas de Armazenamento**:
-
    - Refere-se à velocidade de leitura/gravação de dados, geralmente em MB/s ou GB/s.
 
 3. **Computação em Nuvem**:
@@ -59,15 +57,12 @@ O **throughput** em computação refere-se à quantidade de trabalho realizado e
 ### Características
 
 1. **Entrada de Dados**:
-
    - Recebimento de dados externos (ex: dispositivos de entrada, sensores).
 
 2. **Redes de Computadores**:
-
    - Aceitação de pacotes em pontos de entrada como roteadores.
 
 3. **Balanceamento de Carga**:
-
    - Distribuição de tráfego entre servidores para melhorar desempenho.
 
 4. **Segurança**:

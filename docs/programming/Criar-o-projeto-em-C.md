@@ -70,7 +70,6 @@ class Program {
 ## Dicas Importantes
 
 1. **Atalhos VS Code**:
-
    - `Ctrl+Shift+P` > `.NET: New Project`
    - `F5` para debug
 

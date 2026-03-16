@@ -5,16 +5,13 @@
 ### Tipos de Caminhos
 
 1. **File Path**
-
    - Windows: `C:\Users\Nome\arquivo.txt`
    - Unix: `/home/nome/arquivo.txt`
 
 2. **URL Path**
-
    - `https://site.com/caminho/recurso`
 
 3. **Graph Path**
-
    - Sequência de vértices conectados em grafos
 
 4. **PATH (Variável de Ambiente)**
@@ -45,12 +42,10 @@
 ### Linha do Tempo
 
 1. **SCCS (1970s)**
-
    - Primeiro sistema da AT&T
    - Comandos: `sccs get`, `sccs delta`
 
 2. **RCS (1980s)**
-
    - Melhorias no branching:
      ```bash
      ci -l arquivo.txt  # Check-in
@@ -67,7 +62,6 @@
 ### Tipos de Merge
 
 1. **Fast-Forward**
-
    - Sem divergências:
      ```bash
      git merge feature

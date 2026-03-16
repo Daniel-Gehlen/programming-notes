@@ -147,9 +147,7 @@ Criei uma página HTML que organiza esses recursos com links diretos e breves de
     <div class="container">
       <header>
         <h1>Aprenda Programação com Blocos</h1>
-        <p class="subtitle">
-          Recursos gratuitos para iniciar na programação sem digitar código
-        </p>
+        <p class="subtitle">Recursos gratuitos para iniciar na programação sem digitar código</p>
       </header>
 
       <div class="resources-grid">
@@ -157,8 +155,8 @@ Criei uma página HTML que organiza esses recursos com links diretos e breves de
           <div class="card-content">
             <h3>Code.org</h3>
             <p>
-              Plataforma com cursos para todas as idades, desde o ensino
-              fundamental até conceitos mais avançados de ciência da computação.
+              Plataforma com cursos para todas as idades, desde o ensino fundamental até conceitos
+              mais avançados de ciência da computação.
             </p>
             <a href="https://code.org/" target="_blank">Acessar Site</a>
           </div>
@@ -168,8 +166,8 @@ Criei uma página HTML que organiza esses recursos com links diretos e breves de
           <div class="card-content">
             <h3>Scratch</h3>
             <p>
-              Crie histórias, jogos e animações compartilhe com outras pessoas
-              em toda a comunidade online.
+              Crie histórias, jogos e animações compartilhe com outras pessoas em toda a comunidade
+              online.
             </p>
             <a href="https://scratch.mit.edu/" target="_blank">Acessar Site</a>
           </div>
@@ -179,8 +177,8 @@ Criei uma página HTML que organiza esses recursos com links diretos e breves de
           <div class="card-content">
             <h3>Blockly Games</h3>
             <p>
-              Série de jogos educativos que ensinam programação. É destinado a
-              crianças que não têm experiência anterior em computação.
+              Série de jogos educativos que ensinam programação. É destinado a crianças que não têm
+              experiência anterior em computação.
             </p>
             <a href="https://blockly.games/" target="_blank">Acessar Site</a>
           </div>
@@ -190,12 +188,10 @@ Criei uma página HTML que organiza esses recursos com links diretos e breves de
           <div class="card-content">
             <h3>App Inventor</h3>
             <p>
-              Crie aplicativos Android funcionais usando blocos visuais. Requer
-              uma conta Google para acessar.
+              Crie aplicativos Android funcionais usando blocos visuais. Requer uma conta Google
+              para acessar.
             </p>
-            <a href="http://appinventor.mit.edu/" target="_blank"
-              >Acessar Site</a
-            >
+            <a href="http://appinventor.mit.edu/" target="_blank">Acessar Site</a>
           </div>
         </div>
 
@@ -203,8 +199,8 @@ Criei uma página HTML que organiza esses recursos com links diretos e breves de
           <div class="card-content">
             <h3>Alice</h3>
             <p>
-              Ambiente de programação 3D que facilita a criação de animações
-              para contar histórias, jogos ou vídeos.
+              Ambiente de programação 3D que facilita a criação de animações para contar histórias,
+              jogos ou vídeos.
             </p>
             <a href="https://www.alice.org/" target="_blank">Acessar Site</a>
           </div>
@@ -214,20 +210,18 @@ Criei uma página HTML que organiza esses recursos com links diretos e breves de
           <div class="card-content">
             <h3>Snap!</h3>
             <p>
-              Uma linguagem de programação visual baseada em blocos, inspirada
-              no Scratch, mas com recursos mais avançados.
+              Uma linguagem de programação visual baseada em blocos, inspirada no Scratch, mas com
+              recursos mais avançados.
             </p>
-            <a href="https://snap.berkeley.edu/" target="_blank"
-              >Acessar Site</a
-            >
+            <a href="https://snap.berkeley.edu/" target="_blank">Acessar Site</a>
           </div>
         </div>
       </div>
 
       <footer>
         <p>
-          Estes sites são totalmente gratuitos e confirmados. Ideal para
-          iniciantes, crianças e educadores.
+          Estes sites são totalmente gratuitos e confirmados. Ideal para iniciantes, crianças e
+          educadores.
         </p>
         <p>© 2023 - Recursos para Aprendizado de Programação</p>
       </footer>

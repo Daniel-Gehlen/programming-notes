@@ -90,7 +90,6 @@ Manufacturer à Myster de TRADICTO ONAL E AMÉRICA.
 - **Branco:** serve para determinar o arbitrário e não tocar entre as palavras.
 
 - **Repertório:**
-
   - Músicas sem partitura em comum. Escolhas de consequências simultâneas.
 
 - **Timbre → local ou instrumental**

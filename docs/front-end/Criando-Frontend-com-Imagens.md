@@ -58,10 +58,7 @@ scene.add(cube);
 ```javascript
 // Esfera 3D com iluminação
 const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {}, scene);
-const light = new BABYLON.HemisphericLight(
-  "light",
-  new BABYLON.Vector3(1, 1, 0)
-);
+const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
 ```
 
 ### Comparação 3D:
@@ -92,7 +89,6 @@ graph LR
 ## 💡 Dicas de Performance
 
 1. **Otimize assets**:
-
    - Use WebP para fotos
    - SVG para ícones e logos
    - Compressão texture para 3D

@@ -6,6 +6,7 @@ Manter ecossistemas de software vivos, seguros e alinhados às necessidades do n
 
 🔹 **O Ciclo da Auditoria Analítica**
 A auditoria que implemento não é burocrática — é uma investigação técnica que garante conformidade, segurança e performance:
+
 - **Planejamento:** Defino escopo, periodicidade e objetivos — o que auditar, quando e por quê.
 - **Coleta e análise:** Utilizo abordagens integradas ao sistema, explorando capacidades lógicas para máxima precisão.
 - **Reporte:** Entrego resultados acionáveis, com evidências e recomendações claras.
@@ -20,12 +21,14 @@ A auditoria que implemento não é burocrática — é uma investigação técni
 Quanto maior a integração com o sistema, mais profunda e preditiva a análise.
 
 🔹 **Manutenção e Reengenharia: O Ciclo de Vida do Software**
+
 - **Corretiva:** Resolvo bugs e falhas identificadas em operação.
 - **Adaptativa:** Ajusto o software a novas plataformas, legislações ou infraestrutura.
 - **Perfectiva (Reengenharia):** Reescrevo, modernizo e documento sistemas legados — aqueles códigos "confusos" ou sem documentação que ainda são críticos para o negócio.
 
 🔹 **O Desafio dos Sistemas Legados**
 Softwares antigos, muitas vezes com baixa qualidade de código, exigem estratégias específicas:
+
 - Avaliação de risco versus custo de substituição
 - Extração de regras de negócio implícitas
 - Modernização incremental sem parar operações

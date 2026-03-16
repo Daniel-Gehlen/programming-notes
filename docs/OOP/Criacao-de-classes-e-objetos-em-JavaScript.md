@@ -197,12 +197,10 @@ Quanto mais você **refatorar** código (ex: transformar funções soltas em cla
 
 1. **Identifique o Problema ou Domínio**
    Antes de criar classes, entenda **o que você está modelando**. Exemplo:
-
    - Se for um **sistema de biblioteca**, pense em entidades como `Livro`, `Usuário`, `Empréstimo`.
    - Se for um **jogo**, pense em `Personagem`, `Inimigo`, `Item`.
 
    **Perguntas-chave**:
-
    - Quais são os **objetos** principais?
    - Quais **propriedades** (atributos) e **ações** (métodos) eles têm?
 

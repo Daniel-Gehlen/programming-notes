@@ -1,6 +1,7 @@
 # Graph Algorithms Evolution
 
 ## Conceito de Grafos
+
 - **Definição**: Coleção de nós (vértices) conectados por arestas (links)
 - **Aplicações**: Redes sociais, comunicação, transporte
 - **Componentes**:
@@ -8,6 +9,7 @@
   - **Arestas**: Conexões entre entidades
 
 ## Exemplo de Grafo em Python
+
 ```python
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -22,7 +24,9 @@ plt.show()
 ---
 
 ## Primeira Geração: Relevância Simples
+
 ### Contagem de Links
+
 ```python
 web_pages = {
     'PageA': ['PageB', 'PageC'],
@@ -42,7 +46,9 @@ for links in web_pages.values():
 ---
 
 ## Segunda Geração: PageRank e HITS
+
 ### Algoritmo PageRank
+
 ```python
 def pagerank(G, iterations=100, d=0.85):
     N = len(G)
@@ -60,7 +66,9 @@ def pagerank(G, iterations=100, d=0.85):
 ---
 
 ## Terceira Geração: GraphJet (Twitter)
+
 ### Sistema de Recomendação Baseado em Grafos
+
 ```python
 class SimpleGraphJet:
     def __init__(self):
@@ -88,7 +96,9 @@ class SimpleGraphJet:
 ---
 
 ## Processamento Distribuído
+
 ### Exemplo MapReduce
+
 ```python
 from collections import defaultdict
 
@@ -112,6 +122,7 @@ reduced = reduce_func(mapped)
 ---
 
 ## Geração de IDs Únicos (Snowflake)
+
 ```python
 class SnowflakeGenerator:
     def __init__(self, datacenter_id, worker_id):
@@ -135,6 +146,7 @@ class SnowflakeGenerator:
 ---
 
 ## Similaridade de Cosseno
+
 ```python
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
@@ -148,7 +160,9 @@ cos_sim = cosine_similarity([vector1], [vector2])
 ---
 
 ## Conclusão
+
 Evolução dos algoritmos de grafos:
+
 1. Métodos simples de contagem
 2. Algoritmos como PageRank
 3. Sistemas distribuídos (Hadoop)

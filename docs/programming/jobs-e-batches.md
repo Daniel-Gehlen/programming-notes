@@ -43,7 +43,6 @@ graph TD
 ## Exemplos Práticos
 
 1. **Mainframes Financeiros**
-
    - Processamento noturno de transações
    - Atualização de bancos de dados em lote
 

@@ -916,10 +916,7 @@ class TouchGestureHandler {
   }
 
   init() {
-    this.element.addEventListener(
-      "touchstart",
-      this.handleTouchStart.bind(this)
-    );
+    this.element.addEventListener("touchstart", this.handleTouchStart.bind(this));
     this.element.addEventListener("touchmove", this.handleTouchMove.bind(this));
     this.element.addEventListener("touchend", this.handleTouchEnd.bind(this));
   }
@@ -1015,9 +1012,7 @@ class TouchGestureHandler {
 
 // Detectar suporte a touch
 const suportaTouch =
-  "ontouchstart" in window ||
-  navigator.maxTouchPoints > 0 ||
-  navigator.msMaxTouchPoints > 0;
+  "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 
 console.log("Suporte a touch:", suportaTouch);
 
@@ -1160,9 +1155,7 @@ function carregarRecursoDinamico(url, tipo) {
     }
 
     elemento.addEventListener("load", () => resolve(elemento));
-    elemento.addEventListener("error", () =>
-      reject(new Error(`Falha ao carregar ${url}`))
-    );
+    elemento.addEventListener("error", () => reject(new Error(`Falha ao carregar ${url}`)));
 
     if (tipo === "css") {
       document.head.appendChild(elemento);
@@ -1479,8 +1472,7 @@ class TabSystem {
     selectedTab.classList.add("active");
 
     // Mostrar painel correspondente
-    const panelId =
-      selectedTab.getAttribute("href") || selectedTab.dataset.target;
+    const panelId = selectedTab.getAttribute("href") || selectedTab.dataset.target;
     const panel = document.querySelector(panelId);
 
     if (panel) {
@@ -1625,11 +1617,9 @@ class ImagePreview {
             </div>
         `;
 
-    this.preview
-      .querySelector(".close-preview")
-      .addEventListener("click", () => {
-        this.hidePreview();
-      });
+    this.preview.querySelector(".close-preview").addEventListener("click", () => {
+      this.hidePreview();
+    });
 
     document.body.appendChild(this.preview);
   }
@@ -1719,10 +1709,7 @@ class TodoList {
     // Delegar todos eventos da lista
     this.container.addEventListener("click", this.handleClick.bind(this));
     this.container.addEventListener("change", this.handleChange.bind(this));
-    this.container.addEventListener(
-      "dblclick",
-      this.handleDoubleClick.bind(this)
-    );
+    this.container.addEventListener("dblclick", this.handleDoubleClick.bind(this));
   }
 
   handleClick(event) {
@@ -2118,12 +2105,7 @@ class FileUpload {
 
   validateFile(file) {
     const maxSize = 10 * 1024 * 1024; // 10MB
-    const allowedTypes = [
-      "image/jpeg",
-      "image/png",
-      "image/gif",
-      "application/pdf",
-    ];
+    const allowedTypes = ["image/jpeg", "image/png", "image/gif", "application/pdf"];
 
     if (file.size > maxSize) {
       alert(`Arquivo muito grande: ${file.name}`);
@@ -2338,9 +2320,7 @@ class ModalManager {
   handleDocumentKeydown(event) {
     // Fechar modal com ESC
     if (event.key === "Escape") {
-      const openModal = this.modals.find(
-        (modal) => modal.element.style.display === "block"
-      );
+      const openModal = this.modals.find((modal) => modal.element.style.display === "block");
       if (openModal) {
         this.closeModal(openModal.id);
       }
@@ -2761,12 +2741,10 @@ function handleEvent(event) {
   console.log("=== TARGET vs CURRENTTARGET ===");
 
   // Exemplo prático:
-  document
-    .querySelector(".container")
-    .addEventListener("click", function (event) {
-      console.log("currentTarget:", this); // .container (sempre)
-      console.log("target:", event.target); // Elemento real que foi clicado
-    });
+  document.querySelector(".container").addEventListener("click", function (event) {
+    console.log("currentTarget:", this); // .container (sempre)
+    console.log("target:", event.target); // Elemento real que foi clicado
+  });
 
   // Se .container tem um botão dentro:
   // Clicar no botão: target = button, currentTarget = .container
@@ -2916,10 +2894,7 @@ function handleDragEvent(event) {
 
     // Métodos do DataTransfer
     console.log('getData("text"):', event.dataTransfer.getData("text"));
-    console.log(
-      'getData("text/html"):',
-      event.dataTransfer.getData("text/html")
-    );
+    console.log('getData("text/html"):', event.dataTransfer.getData("text/html"));
 
     // Listar todos tipos disponíveis
     for (const type of event.dataTransfer.types) {
@@ -3038,10 +3013,7 @@ document.addEventListener("click", (event) => {
   console.log(
     "Elementos no caminho:",
     path.map(
-      (el) =>
-        el.tagName +
-        (el.id ? `#${el.id}` : "") +
-        (el.className ? `.${el.className}` : "")
+      (el) => el.tagName + (el.id ? `#${el.id}` : "") + (el.className ? `.${el.className}` : "")
     )
   );
 });
@@ -3178,9 +3150,7 @@ document.addEventListener("click", (event) => {
 
   console.log(`Posição relativa: ${relX}, ${relY}`);
   console.log(
-    `Dentro do elemento: ${
-      relX >= 0 && relX <= rect.width && relY >= 0 && relY <= rect.height
-    }`
+    `Dentro do elemento: ${relX >= 0 && relX <= rect.width && relY >= 0 && relY <= rect.height}`
   );
 });
 
@@ -3365,11 +3335,9 @@ class ComponentePersonalizado extends HTMLElement {
 customElements.define("meu-componente", ComponentePersonalizado);
 
 // Uso:
-document
-  .querySelector("meu-componente")
-  .addEventListener("botao-clicado", (event) => {
-    console.log("Botão do componente clicado:", event.detail);
-  });
+document.querySelector("meu-componente").addEventListener("botao-clicado", (event) => {
+  console.log("Botão do componente clicado:", event.detail);
+});
 ```
 
 ### Sistemas de Eventos Customizados
@@ -3414,9 +3382,7 @@ class EventBus {
       const listeners = Array.from(this.listeners.get(eventName));
 
       // Ordenar por prioridade
-      listeners.sort(
-        (a, b) => (b.options.priority || 0) - (a.options.priority || 0)
-      );
+      listeners.sort((a, b) => (b.options.priority || 0) - (a.options.priority || 0));
 
       for (const { callback, options } of listeners) {
         try {
@@ -3454,16 +3420,12 @@ class EventBus {
 
   // Verificar se tem listeners
   hasListeners(eventName) {
-    return (
-      this.listeners.has(eventName) && this.listeners.get(eventName).size > 0
-    );
+    return this.listeners.has(eventName) && this.listeners.get(eventName).size > 0;
   }
 
   // Contar listeners
   listenerCount(eventName) {
-    return this.listeners.has(eventName)
-      ? this.listeners.get(eventName).size
-      : 0;
+    return this.listeners.has(eventName) ? this.listeners.get(eventName).size : 0;
   }
 }
 
@@ -3662,11 +3624,9 @@ asyncEvents.emit("data:fetched", { id: 1, value: "teste" }).then((results) => {
 });
 
 // Disparar paralelo
-asyncEvents
-  .emitParallel("data:fetched", { id: 2, value: "teste2" })
-  .then((results) => {
-    console.log("Resultados paralelos:", results);
-  });
+asyncEvents.emitParallel("data:fetched", { id: 2, value: "teste2" }).then((results) => {
+  console.log("Resultados paralelos:", results);
+});
 
 // Sistema de eventos com middlewares
 class MiddlewareEventSystem {
@@ -3823,10 +3783,7 @@ historyEvents.emit("user:action", { action: "logout", user: "joao" });
 historyEvents.emit("user:action", { action: "login", user: "maria" });
 
 console.log("Histórico completo:", historyEvents.getHistory());
-console.log(
-  "Histórico de login:",
-  historyEvents.getHistory({ eventName: "user:action" })
-);
+console.log("Histórico de login:", historyEvents.getHistory({ eventName: "user:action" }));
 
 // Replay eventos desde timestamp específico
 const replayCount = historyEvents.replay("user:action", Date.now() - 10000);
@@ -3862,11 +3819,9 @@ class NotificationSystemWithEvents {
     this.container.appendChild(notification);
 
     // Adicionar listeners
-    notification
-      .querySelector(".notification-close")
-      .addEventListener("click", () => {
-        this.hide(notification);
-      });
+    notification.querySelector(".notification-close").addEventListener("click", () => {
+      this.hide(notification);
+    });
 
     notification.addEventListener("click", (event) => {
       if (!event.target.matches(".notification-close")) {
@@ -3974,17 +3929,13 @@ class VideoPlayerWithEvents extends HTMLElement {
     this.video.addEventListener("ended", () => this.onEnded());
 
     // Configurar controles
-    this.shadowRoot
-      .querySelector(".play-pause")
-      .addEventListener("click", () => {
-        this.togglePlay();
-      });
+    this.shadowRoot.querySelector(".play-pause").addEventListener("click", () => {
+      this.togglePlay();
+    });
 
-    this.shadowRoot
-      .querySelector(".volume")
-      .addEventListener("input", (event) => {
-        this.video.volume = event.target.value;
-      });
+    this.shadowRoot.querySelector(".volume").addEventListener("input", (event) => {
+      this.video.volume = event.target.value;
+    });
   }
 
   // Eventos customizados
@@ -4010,9 +3961,7 @@ class VideoPlayerWithEvents extends HTMLElement {
     const current = this.formatTime(this.video.currentTime);
     const duration = this.formatTime(this.video.duration);
 
-    this.shadowRoot.querySelector(
-      ".time"
-    ).textContent = `${current} / ${duration}`;
+    this.shadowRoot.querySelector(".time").textContent = `${current} / ${duration}`;
 
     // Evento de progresso
     if (this.video.duration) {
@@ -4213,9 +4162,7 @@ class ValidatedForm extends HTMLFormElement {
       case "password":
         return value.length >= 8;
       case "match":
-        const otherInput = this.querySelector(
-          `[name="${input.dataset.match}"]`
-        );
+        const otherInput = this.querySelector(`[name="${input.dataset.match}"]`);
         return otherInput && value === otherInput.value;
       default:
         return true;
@@ -4376,12 +4323,10 @@ class ShoppingCart extends HTMLElement {
         (item) => `
             <div class="cart-item" data-id="${item.id}">
                 <span class="item-name">${item.product.name}</span>
-                <input type="number" class="item-quantity" value="${
-                  item.quantity
-                }" min="1">
-                <span class="item-price">R$ ${(
-                  item.product.price * item.quantity
-                ).toFixed(2)}</span>
+                <input type="number" class="item-quantity" value="${item.quantity}" min="1">
+                <span class="item-price">R$ ${(item.product.price * item.quantity).toFixed(
+                  2
+                )}</span>
                 <button class="remove-item">×</button>
             </div>
         `

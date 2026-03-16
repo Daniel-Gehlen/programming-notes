@@ -83,10 +83,7 @@ class EstadoProblema {
 
   aplicarOperacao(operacao) {
     // Simula a aplicação de uma operação do conjunto I
-    const novoEstado = new EstadoProblema({ ...this.dados }, [
-      ...this.historico,
-      operacao.nome,
-    ]);
+    const novoEstado = new EstadoProblema({ ...this.dados }, [...this.historico, operacao.nome]);
 
     // Aplica transformação nos dados
     operacao.aplicar(novoEstado.dados);

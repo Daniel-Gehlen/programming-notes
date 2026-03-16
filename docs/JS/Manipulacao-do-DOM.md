@@ -288,8 +288,7 @@ console.log(div.innerHTML); // "<span>Conteúdo</span>"
 console.log(div.outerHTML); // "<div class="exemplo"><span>Conteúdo</span></div>"
 
 // Segurança com innerHTML
-const userInput =
-  '<script>alert("XSS")</script><img src=x onerror=alert("XSS")>';
+const userInput = '<script>alert("XSS")</script><img src=x onerror=alert("XSS")>';
 const div2 = document.createElement("div");
 
 // PERIGOSO:
@@ -606,13 +605,9 @@ for (const attr of elemento.attributes) {
 }
 
 // Verificação de atributos especiais
-const temAria = Array.from(elemento.attributes).some((attr) =>
-  attr.name.startsWith("aria-")
-);
+const temAria = Array.from(elemento.attributes).some((attr) => attr.name.startsWith("aria-"));
 
-const temData = Array.from(elemento.attributes).some((attr) =>
-  attr.name.startsWith("data-")
-);
+const temData = Array.from(elemento.attributes).some((attr) => attr.name.startsWith("data-"));
 ```
 
 ### Style Attribute
@@ -803,10 +798,7 @@ elemento.after(document.createElement("div"), "Texto depois");
 
 // replaceWith - substituir elemento (ES2017)
 const velhoElemento = document.querySelector(".antigo");
-velhoElemento.replaceWith(
-  document.createElement("div"),
-  document.createTextNode("Substituído")
-);
+velhoElemento.replaceWith(document.createElement("div"), document.createTextNode("Substituído"));
 
 // Comparação com métodos antigos:
 // Novo (ES2017):              // Antigo:
@@ -1497,21 +1489,14 @@ while ((textNode = iterator.nextNode())) {
 // Filtros predefinidos:
 const apenasParagrafos = {
   acceptNode: function (node) {
-    return node.nodeName === "P"
-      ? NodeFilter.FILTER_ACCEPT
-      : NodeFilter.FILTER_SKIP;
+    return node.nodeName === "P" ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
   },
 };
 
 // Exemplo prático: coletar todos textos
 function coletarTextos(elemento) {
   const textos = [];
-  const walker = document.createTreeWalker(
-    elemento,
-    NodeFilter.SHOW_TEXT,
-    null,
-    false
-  );
+  const walker = document.createTreeWalker(elemento, NodeFilter.SHOW_TEXT, null, false);
 
   let node;
   while ((node = walker.nextNode())) {
@@ -1584,12 +1569,7 @@ if (selecao.rangeCount > 0) {
   selecao.addRange(range); // Selecionar nosso range
 
   // Ou
-  selecao.setBaseAndExtent(
-    elementoInicio,
-    offsetInicio,
-    elementoFim,
-    offsetFim
-  );
+  selecao.setBaseAndExtent(elementoInicio, offsetInicio, elementoFim, offsetFim);
 }
 
 // Operações com range
@@ -1701,10 +1681,7 @@ function fragmentParaString(fragment) {
 
 // Uso com template literals
 function criarFragment(strings, ...values) {
-  const html = strings.reduce(
-    (result, str, i) => result + str + (values[i] || ""),
-    ""
-  );
+  const html = strings.reduce((result, str, i) => result + str + (values[i] || ""), "");
 
   const template = document.createElement("template");
   template.innerHTML = html;

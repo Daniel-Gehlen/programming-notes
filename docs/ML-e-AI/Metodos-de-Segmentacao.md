@@ -28,17 +28,14 @@
 ## Observações:
 
 1. **Abordagem didática**:
-
    - Apresenta tanto métodos clássicos (Watershed) quanto modernos (SegNet)
    - Explica claramente a diferença entre segmentação semântica e por instância
 
 2. **Pontos fortes**:
-
    - Combinação equilibrada de teoria e aplicações práticas
    - Destaque para arquiteturas especializadas como SegNet
 
 3. **Sugestões de melhoria**:
-
    - Incluir exemplos visuais comparando os métodos
    - Adicionar métricas de avaliação (ex: IoU, Dice coefficient)
    - Mencionar outras arquiteturas relevantes (UNet, Mask R-CNN)

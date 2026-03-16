@@ -117,72 +117,58 @@ Teste de Usabilidade é uma técnica de pesquisa usada para avaliar um produto o
 As heurísticas de Nielsen são diretrizes para encontrar soluções e melhorar a usabilidade de uma interface. Elas servem para identificar e resolver problemas de usabilidade em sistemas e produtos digitais.
 
 1. **Feedback**
-
    - **Descrição**: O sistema deve informar continuamente ao usuário sobre o que ele está fazendo.
    - **Objetivo**: Garantir que o usuário saiba o status das suas ações e do sistema.
 
 2. **Visibilidade do Estado do Sistema**
-
    - **Descrição**: O sistema deve manter o usuário informado sobre o estado atual e as mudanças, idealmente dentro de 10 segundos para manter a atenção.
    - **Objetivo**: Manter a atenção e a orientação do usuário.
 
 3. **Falar a Linguagem do Usuário**
-
    - **Descrição**: A terminologia deve ser baseada na linguagem do usuário, não orientada ao sistema. As informações devem ser organizadas conforme o modelo mental do usuário.
    - **Objetivo**: Facilitar a compreensão e a navegação.
 
 4. **Equivalência entre o Sistema e o Mundo Real**
-
    - **Descrição**: Usar saídas claramente demarcadas para facilitar a interação.
    - **Objetivo**: Facilitar a interação do usuário com a interface.
 
 5. **Liberdade e Controle do Usuário**
-
    - **Descrição**: O usuário deve controlar o sistema, podendo abortar tarefas ou desfazer operações e retornar ao estado anterior.
    - **Objetivo**: Oferecer flexibilidade e controle ao usuário.
 
 6. **Consistência**
-
    - **Descrição**: Um comando ou ação deve ter sempre o mesmo efeito; a mesma operação deve ser apresentada de forma consistente.
    - **Objetivo**: Facilitar o reconhecimento e a memorização.
 
 7. **Criando Padrões**
-
    - **Descrição**: As operações devem ser apresentadas na mesma localização e forma para facilitar o reconhecimento.
    - **Objetivo**: Garantir consistência e previsibilidade.
 
 8. **Prevenir Erros**
-
    - **Descrição**: Evitar situações que possam causar erros.
    - **Objetivo**: Reduzir a probabilidade de erro do usuário.
 
 9. **Minimizar o Risco de Erro**
-
    - **Descrição**: Conhecer as situações que mais provocam erros e ajustar a interface para evitar esses erros.
    - **Objetivo**: Prevenir erros antes que ocorram.
 
 10. **Minimizar a Sobrecarga**
-
     - **Descrição**: Mostrar os elementos de diálogo de forma que o usuário possa fazer suas escolhas sem precisar lembrar comandos específicos.
     - **Objetivo**: Reduzir a sobrecarga cognitiva do usuário.
 
 11. **Diminuição da Sobrecarga de Memória do Usuário**
-
     - **Descrição**: Evitar exigir que o usuário memorize informações.
     - **Objetivo**: Tornar a interface mais intuitiva e acessível.
 
 12. **Atalhos**
-
     - **Descrição**: Oferecer atalhos para usuários experientes, como abreviações e teclas de função, para realizar operações mais rapidamente.
     - **Objetivo**: Facilitar a navegação e a eficiência para usuários avançados.
 
 13. **Diálogos**
-
     - **Descrição**: Apresentar apenas a informação necessária no momento; utilizar linguagem simples e natural.
     - **Objetivo**: Tornar a comunicação clara e direta.
 
 14. **Boas Mensagens de Erro**
-
     - **Descrição**: Mensagens de erro devem ser claras, sem códigos, e ajudar o usuário a entender e resolver o problema.
     - **Objetivo**: Facilitar a resolução de problemas e evitar a frustração do usuário.
 

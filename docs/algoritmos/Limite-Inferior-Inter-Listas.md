@@ -3,6 +3,7 @@
 ## Análise Teórica
 
 ### Parte a: Número de Divisões Possíveis
+
 Para dividir uma lista ordenada de `2n` números em duas sublistas ordenadas de tamanho `n` cada:
 
 - **Número de divisões únicas**: `C(2n, n) = (2n)!/(n! × n!)`
@@ -18,6 +19,7 @@ Para dividir uma lista ordenada de `2n` números em duas sublistas ordenadas de 
   - (e permutações simétricas)
 
 ### Parte b: Árvore de Decisão
+
 Qualquer algoritmo de intercalação deve realizar:
 
 - **Limite inferior de comparações**:
@@ -29,7 +31,9 @@ Qualquer algoritmo de intercalação deve realizar:
   - Altura mínima: `⌈log₂(C(2n, n))⌉ ≈ 2n - o(n)`
 
 ### Parte c: Elementos Consecutivos
+
 Quando elementos consecutivos vêm de listas diferentes:
+
 - **Comparação obrigatória**: Não é possível determinar sua ordem relativa sem comparação explícita.
 - **Exemplo**:
   Lista A: [a]
@@ -37,7 +41,9 @@ Quando elementos consecutivos vêm de listas diferentes:
   Necessário comparar `a` e `b` mesmo se `a ≤ c ≤ b` para algum `c` não presente.
 
 ### Parte d: Limite Inferior Rigoroso
+
 Para intercalar duas listas de tamanho `n`:
+
 - **Mínimo de comparações**:
   ```math
   2n - 1 \text{ (caso ótimo)}
@@ -50,6 +56,7 @@ Para intercalar duas listas de tamanho `n`:
 ## Algoritmo Prático: Merge Sort Adaptado
 
 ### Implementação em Java (Corrigida)
+
 ```java
 import java.util.*;
 
@@ -89,6 +96,7 @@ public class MergeLists {
 ```
 
 ### Complexidade
+
 - **Intercalação (merge)**: `O(n)` comparações por nível
 - **Total do Merge Sort**: `O(n log n)` operações
 - **Limite inferior atingido**: O merge sort é assintoticamente ótimo para comparações.
@@ -98,6 +106,7 @@ public class MergeLists {
 ## Aplicação: Organização de Listas de Compras
 
 ### Fluxo do Algoritmo
+
 1. **Entrada**: Lista desordenada (ex.: ["Ovos", "Leite", "Maçãs"])
 2. **Divisão**:
    - Divide recursivamente até sublistas unitárias
@@ -106,6 +115,7 @@ public class MergeLists {
 4. **Saída**: Lista ordenada (ex.: ["Leite", "Maçãs", "Ovos"])
 
 ### Exemplo Visual
+
 ```
 Lista original: [4, 2, 5, 1]
 Divisão:        [4, 2]  [5, 1]
@@ -117,6 +127,7 @@ Intercalação final: [1, 2, 4, 5]
 ---
 
 ## Conclusão
+
 - **Teórico**: O limite inferior `Ω(2n - 1)` comparações para intercalação é rigoroso e alcançável.
 - **Prático**: Algoritmos como Merge Sort implementam a intercalação de forma otimizada, com complexidade `Θ(n log n)` no pior caso.
 - **Aplicação**: Estruturas de dados ordenadas (ex.: bancos de dados) utilizam esses princípios para operações eficientes de junção.

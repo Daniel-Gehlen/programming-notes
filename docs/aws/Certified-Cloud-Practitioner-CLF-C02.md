@@ -57,12 +57,10 @@
 ### Plano de 4 Semanas
 
 1. **Semana 1-2**: Fundamentos AWS + Domínio 1
-
    - Assistir [AWS Cloud Practitioner Essentials](https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/)
    - Criar conta Free Tier
 
 2. **Semana 3**: Domínios 2 e 3
-
    - Praticar com IAM, S3, EC2
    - Estudar [Whitepapers de Segurança](https://aws.amazon.com/security/)
 

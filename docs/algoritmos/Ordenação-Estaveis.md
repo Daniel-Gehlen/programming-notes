@@ -3,7 +3,6 @@
 ## Algoritmos Estáveis vs Não-Estáveis
 
 - **Estáveis**:
-
   - Ordenação por Inserção (Insertion Sort)
   - Ordenação por Intercalação (Merge Sort)
 
@@ -16,7 +15,6 @@
 ### Esquema de Indexação
 
 1. **Atribuição de Índices**:
-
    - Atribua um índice único para cada elemento antes da ordenação
    - O índice representa a posição original na lista não-ordenada
 

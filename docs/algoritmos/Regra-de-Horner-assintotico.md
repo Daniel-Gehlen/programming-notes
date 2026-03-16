@@ -1,12 +1,15 @@
 # Regra de Horner assintótico
 
 ## Questão a:
+
 Para analisar o tempo de execução assintótico do fragmento de código que implementa a regra de Horner, observamos que o loop `while` das linhas 3 a 5 executa `n` iterações, onde `n` é o número de coeficientes do polinômio. Assim, o tempo de execução é **O(n)**, onde `n` é o número de coeficientes do polinômio.
 
 ## Questão b:
+
 O algoritmo ingênuo de avaliação polinomial calcula cada termo do polinômio desde o início. Se tivermos um polinômio de grau `m`, o tempo de execução desse algoritmo será **O(m·n)**, onde `n` é o número de coeficientes do polinômio e `m` é o grau do polinômio.
 
 **Pseudocódigo do algoritmo ingênuo:**
+
 ```
 Função avaliar_polinomio(coeficientes[], x):
     resultado = 0
@@ -14,9 +17,11 @@ Função avaliar_polinomio(coeficientes[], x):
         resultado = resultado * x + coeficiente
     retornar resultado
 ```
+
 Comparado à regra de Horner, o algoritmo ingênuo tem um desempenho inferior em termos de tempo de execução.
 
 ## Questão c:
+
 Para provar que a expressão é um loop invariante, seguimos a estrutura padrão de prova de loop invariante:
 
 1. **Inicialização:** No início, o valor de `y` é zero e `i` é o grau do polinômio, portanto, a expressão é verdadeira.
@@ -24,11 +29,13 @@ Para provar que a expressão é um loop invariante, seguimos a estrutura padrão
 3. **Terminação:** O loop termina quando `i` alcança -1, ou seja, quando todos os coeficientes do polinômio foram processados. Nesse ponto, a expressão é `y = a[0]*x^0`, que é igual ao valor do polinômio avaliado em `x`.
 
 ## Questão d:
+
 O fragmento de código dado avalia corretamente um polinômio porque segue a regra de Horner, que é uma maneira eficiente de avaliar polinômios.
 
 ## Questão Inversões:
 
 **a.** As cinco inversões do arranjo `(2, 3, 8, 6, 1)` são:
+
 - (2,1)
 - (3,1)
 - (8,6)
@@ -49,15 +56,18 @@ Suponha que uma pessoa esteja planejando suas finanças para o próximo ano e de
 `{1000, 1200, 1100, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100}`
 
 **Cálculo para julho (mês 7) usando a regra de Horner:**
+
 ```
 y = a[11] × 7 + a[10]
 y = 2100 × 7 + 2000
 y = 14700 + 2000
 y = 16700
 ```
+
 Portanto, o valor das despesas em julho seria **$16.700**.
 
 **Implementação em Java:**
+
 ```java
 public class HornerRule {
     public static double evaluatePolynomial(double[] coefficients, double x) {
@@ -78,6 +88,7 @@ public class HornerRule {
     }
 }
 ```
+
 Este código calcula eficientemente as despesas em um mês específico usando a regra de Horner.
 
 **Relação com Inversões:**
