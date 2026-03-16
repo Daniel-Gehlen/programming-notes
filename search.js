@@ -1,4 +1,4 @@
-import { formatName, encodeFolderName } from "./utils.js";
+import { formatName, encodeFolderName, Logger } from "./utils.js";
 import { getCache } from "./api.js";
 import { FOLDER_VARIANTS } from "./constants.js";
 
@@ -7,7 +7,7 @@ let searchIndexBuilt = false;
 
 export async function buildSearchIndex(structure) {
   if (searchIndexBuilt) return;
-  console.log("Iniciando construção do índice de busca...");
+  Logger.info("Iniciando construção do índice de busca...");
 
   const tempIndex = [];
   const docCache = getCache();
@@ -58,7 +58,7 @@ export async function buildSearchIndex(structure) {
 
   searchIndex = tempIndex;
   searchIndexBuilt = true;
-  console.log(`Índice de busca construído com ${searchIndex.length} documentos`);
+  Logger.info(`Índice de busca construído com ${searchIndex.length} documentos`);
 }
 
 export function performSearch(searchTerm) {
