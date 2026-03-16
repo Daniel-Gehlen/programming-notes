@@ -141,6 +141,7 @@ O evento Backend Rinha foi um concurso online onde desenvolvedores competiram pa
    ```
 
 7. **Testar o Servidor** (usando `wrk`):
+
    ```bash
    wrk -t12 -c400 -d30s -s post.lua http://127.0.0.1:8080/insert
    ```
