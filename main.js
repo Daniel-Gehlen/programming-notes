@@ -1,7 +1,15 @@
 import { fetchStructure, fetchDocument } from "./api.js";
 import { FOLDER_VARIANTS, REVERSE_FOLDER_MAPPING } from "./constants.js";
 import { sanitizeInput, Logger } from "./utils.js";
-import { renderMenu, renderDocument, showWelcomePage, showLoading, showError } from "./ui.js";
+import {
+  renderMenu,
+  renderDocument,
+  showWelcomePage,
+  showLoading,
+  showError,
+  setupThemeToggle,
+  setupScrollTop,
+} from "./ui.js";
 import {
   buildSearchIndex,
   performSearch,
@@ -30,6 +38,8 @@ async function init() {
 
     renderMenu(normalizedStructure, loadDoc);
     setupSearch();
+    setupThemeToggle();
+    setupScrollTop();
 
     if (window.location.hash) {
       const path = decodeURIComponent(window.location.hash.substring(1));
@@ -74,7 +84,7 @@ async function loadDoc(path) {
     );
 
     const html = marked.parse(processedMarkdown);
-    renderDocument(content, html, handleCopy);
+    renderDocument(content, html, handleCopy, path);
   } catch (error) {
     showError(error.message, path);
   }
