@@ -505,8 +505,11 @@ body {
 #doc-content table {
   width: 100%;
   border-collapse: collapse;
-  background-color: white;
+  background-color: var(--glass-bg);
   min-width: 600px;
+  color: var(--color-text-dark);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 #doc-content table th {
@@ -520,16 +523,20 @@ body {
 
 #doc-content table td {
   padding: 0.75rem 1rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border);
   vertical-align: top;
 }
 
 #doc-content table tr:nth-child(even) {
-  background-color: #f8fafc;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+[data-theme="dark"] #doc-content table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 #doc-content table tr:hover {
-  background-color: #f1f5f9;
+  background-color: rgba(var(--h-primary), var(--s-primary), var(--l-primary), 0.1);
 }
 
 .sidebar::-webkit-scrollbar {
