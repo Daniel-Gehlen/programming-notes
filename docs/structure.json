@@ -481,7 +481,9 @@
     "Deteccao-de-Objetos-com-YOLO-no-Dataset-COCO.md",
     "LLMs.txt.md",
     "Como-Usar-IA-com-Disciplina-de-Engenharia.md",
-    "Skills-para-Antigravity.md"
+    "Skills-para-Antigravity.md",
+    "RAG-Guia-Pratico-Alimentando-IA-com-Dados-Proprios.md",
+    "Como-um-LLM-Funciona-Explicacao-Tecnica.md"
   ],
   "multiplataforma": [
     "App-multiplataforma-Flet-em-Python.md"
