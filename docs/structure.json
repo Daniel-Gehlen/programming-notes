@@ -187,16 +187,17 @@
   ],
   "Cyber-Security": [
     "Ataques-do-Tipo-Man-in-the-Middle.md",
+    "Auditoria-de-Sistemas-Conformidade.md",
     "Ciberseguranca.md",
     "Criptografar-um-diretorio-no-Windows.md",
     "Ecossistemas-NET-vs-Java.md",
     "Engenharia-Social.md",
     "Enumeracao-de-Portas-e-Servicos-Vulneraveis.md",
     "Exploracao-de-Falhas-em-Sistemas.md",
+    "Hacking-na-Programacao.md",
     "OSINT-Inteligencia-de-Fontes-Abertas.md",
     "Pos-Exploracao-em-Sistemas.md",
-    "Varreduras-de-rede.md",
-    "Hacking-na-Programacao.md"
+    "Varreduras-de-rede.md"
   ],
   "Data-Base": [
     "SQLite-nao-requer-um-servidor.md"
