@@ -7,7 +7,7 @@ export function renderMenu(structure, onLinkClick, openAll = false) {
   const sortedFolders = Object.keys(structure).sort();
 
   for (const folder of sortedFolders) {
-    const files = structure[folder].sort();
+    const items = structure[folder];
     const encodedFolder = encodeFolderName(folder);
 
     html += `
@@ -15,19 +15,7 @@ export function renderMenu(structure, onLinkClick, openAll = false) {
                 <details ${openAll ? "open" : ""}>
                     <summary>${formatName(folder)}</summary>
                     <ul>
-                        ${files
-                          .map(
-                            (file) => `
-                            <li>
-                                <a href="#" class="doc-link" data-path="${encodedFolder}/${encodeURIComponent(
-                                  file
-                                )}">
-                                    ${formatName(file.replace(".md", ""))}
-                                </a>
-                            </li>
-                        `
-                          )
-                          .join("")}
+                        ${renderFolderContent(items, encodedFolder)}
                     </ul>
                 </details>
             </li>
@@ -43,6 +31,42 @@ export function renderMenu(structure, onLinkClick, openAll = false) {
       onLinkClick(link.dataset.path);
     });
   });
+}
+
+function renderFolderContent(items, parentPath) {
+  const strings = items.filter(item => typeof item === "string").sort();
+  const objects = items.filter(item => typeof item === "object" && item !== null).sort((a, b) => Object.keys(a)[0].localeCompare(Object.keys(b)[0]));
+
+  let html = "";
+  
+  for (const file of strings) {
+    html += `
+      <li>
+          <a href="#" class="doc-link" data-path="${parentPath}/${encodeURIComponent(file)}">
+              ${formatName(file.replace(".md", ""))}
+          </a>
+      </li>
+    `;
+  }
+
+  for (const obj of objects) {
+    const subfolder = Object.keys(obj)[0];
+    const subfiles = obj[subfolder];
+    const encodedSubfolder = encodeURIComponent(subfolder);
+    
+    html += `
+      <li class="folder">
+          <details>
+              <summary>${formatName(subfolder)}</summary>
+              <ul>
+                  ${renderFolderContent(subfiles, `${parentPath}/${encodedSubfolder}`)}
+              </ul>
+          </details>
+      </li>
+    `;
+  }
+
+  return html;
 }
 
 export function renderDocument(markdown, htmlContent, onCopy, path, onLinkClick) {
@@ -130,13 +154,19 @@ function renderBreadcrumbs(path) {
 
   const parts = path.split("/");
   const folder = formatName(decodeURIComponent(parts[0]));
-  const file = formatName(decodeURIComponent(parts[1]).replace(".md", ""));
+  const file = formatName(decodeURIComponent(parts[parts.length - 1]).replace(".md", ""));
 
-  breadcrumbsContainer.innerHTML = `
-    <span>📚 Notas</span>
-    <span>${folder}</span>
-    <span>${file}</span>
-  `;
+  let breadcrumbsHtml = `<span>📚 Notas</span><span>${folder}</span>`;
+  
+  if (parts.length > 2) {
+    for (let i = 1; i < parts.length - 1; i++) {
+        breadcrumbsHtml += `<span>${formatName(decodeURIComponent(parts[i]))}</span>`;
+    }
+  }
+  
+  breadcrumbsHtml += `<span>${file}</span>`;
+
+  breadcrumbsContainer.innerHTML = breadcrumbsHtml;
 
   const docContent = document.getElementById("doc-content");
   docContent.insertBefore(breadcrumbsContainer, docContent.firstChild);
