@@ -113,6 +113,17 @@ export function renderDocument(markdown, htmlContent, onCopy, path, onLinkClick)
   });
 
   if (window.hljs) window.hljs.highlightAll();
+
+  // Scroll automatically to content on mobile after clicking a link
+  if (window.innerWidth <= 968) {
+    const sidebarContent = document.getElementById("sidebar-content");
+    if (sidebarContent.classList.contains("open")) {
+       sidebarContent.classList.remove("open");
+    }
+    setTimeout(() => {
+      document.getElementById("doc-content").scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
+  }
 }
 
 export function showWelcomePage() {
@@ -256,4 +267,14 @@ export function setupScrollTop() {
   btn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+}
+
+export function setupMobileMenu() {
+  const btn = document.getElementById("mobile-menu-btn");
+  const content = document.getElementById("sidebar-content");
+  if (btn && content) {
+    btn.addEventListener("click", () => {
+      content.classList.toggle("open");
+    });
+  }
 }
