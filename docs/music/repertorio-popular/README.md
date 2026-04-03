@@ -4,7 +4,8 @@ Este diretório contém cifras e letras de músicas populares brasileiras e inte
 
 ## Músicas Disponíveis
 
-1. [Aprendendo a Jogar](Aprendendo%20a%20Jogar.md) - Elis Regina
+1. [A Rã](A%20Rã.md) - Caetano Veloso
+2. [Aprendendo a Jogar](Aprendendo%20a%20Jogar.md) - Elis Regina
 2. [Benvinda](Benvinda.md) - Chico Buarque
 3. [Bésame Mucho](Besame%20mucho.md) - Trio Los Panchos
 4. [Chega de Saudade](Chega%20de%20saudade.md) - Vinicius de Moraes / João Gilberto
@@ -21,7 +22,7 @@ Este diretório contém cifras e letras de músicas populares brasileiras e inte
 15. [Samba e Amor](Samba%20e%20amor.md) - Chico Buarque
 16. [Um Girassol da Cor do Seu Cabelo](UM%20GIRASSOL%20DA%20COR%20DO%20SEU%20CABELO.md) - Lô Borges / Milton Nascimento
 17. [Você Não Sabe Amar](Você%20Não%20Sabe%20Amar.md) - Chico Buarque
-18. [Wave](Wave.md) - Tom Jobim
+19. [Wave](Wave.md) - Tom Jobim
 
 ## Formato dos Arquivos
 
