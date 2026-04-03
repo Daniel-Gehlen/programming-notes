@@ -6,7 +6,7 @@
 
 ```
     Cm7           F7/A         Ab6  G7(b13)
-Eu faço samba e amor até mais tar......de
+Eu faço samba e amor até mais tarde
 
 Cm7            F7/A       C/Bb
 E tenho muito sono de manhã
@@ -18,7 +18,7 @@ Escuto a correria da cidade que arde
 E apressa o dia de  amanhã
 
     Cm7         F7/A         Ab6  G7(b13)
-De madrugada a gente inda se a.........ma
+De madrugada a gente inda se ama
 
      Cm7     F7/A       C/Bb
 E a fábrica começa a buzinar
@@ -42,7 +42,7 @@ Eu faço samba e amor a noite inteira
 Não tenho a quem prestar satisfação
 
     Cm7           F7/A         Ab6  G7(b13)
-Eu faço samba e amor até mais tar......de
+Eu faço samba e amor até mais tarde
 
    Cm7         F7/A         C/Bb
 E tenho muito mais o que fazer
@@ -68,4 +68,4 @@ E tenho muito sono de manhã
 
 ---
 
-*Fonte: Cifra Club - Chico Buarque*
+*Cifras editadas por mim - Chico Buarque*

@@ -20,4 +20,4 @@ Bm                         Em
 
 ---
 
-*Fonte: Cifra Club - Nelson Gonçalves*
+*Cifras editadas por mim - Nelson Gonçalves*

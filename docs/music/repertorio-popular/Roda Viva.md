@@ -71,4 +71,4 @@ Mas eis que chega a roda viva e carrega a saudade prá lá
 
 ---
 
-*Fonte: Cifra Club - Chico Buarque*
+*Cifras editadas por mim - Chico Buarque*

@@ -59,4 +59,4 @@ Final: Qui..zás, qui..zás, qui..zás!
 
 ---
 
-*Fonte: Cifra Club - Trio Los Panchos*
+*Cifras editadas por mim - Trio Los Panchos*

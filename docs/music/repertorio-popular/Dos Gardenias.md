@@ -19,4 +19,4 @@ Ponles toda tu atencion que seran tu corazon y el mio
 
 ---
 
-*Fonte: Cifra Club - Buena Vista Social Club*
+*Cifras editadas por mim - Buena Vista Social Club*

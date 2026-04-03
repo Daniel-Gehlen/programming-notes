@@ -82,4 +82,4 @@ F  F7  A#/F  A#m/F       F  Abm6  Gm7  Gb7M  F7M(6)
 
 ---
 
-*Fonte: Cifra Club - Pixinguinha*
+*Cifras editadas por mim - Pixinguinha*
