@@ -516,7 +516,31 @@
     "Historia-da-Musica-Ocidental-Periodo-Medieval.md",
     "Compendio-de-Estudos-Musicais-Da-Idade-Media-ao-Seculo-XX.md",
     "Compendio-de-Estudos-Musicais-Do-Classicismo-ao-Pos-Modernismo.md",
-    "PROMPT-COMPLETO-DE-REINSTALACAO-AUDIO-PRODUCTION-LINUX-MINT.md"
+    "PROMPT-COMPLETO-DE-REINSTALACAO-AUDIO-PRODUCTION-LINUX-MINT.md",
+    {
+      "repertorio-popular": [
+        "A Rã.md",
+        "Aprendendo a Jogar.md",
+        "Benvinda.md",
+        "Besame mucho.md",
+        "Chega de saudade.md",
+        "Dos Gardenias.md",
+        "El amor.md",
+        "Fly me to the moon.md",
+        "NADA SERÁ COMO ANTES.md",
+        "Naquela estação.md",
+        "Negue.md",
+        "Pixinguinha.md",
+        "Quizas.md",
+        "README.md",
+        "Roda Viva.md",
+        "Samba e amor.md",
+        "UM GIRASSOL DA COR DO SEU CABELO.md",
+        "Você Não Sabe Amar.md",
+        "Wave.md",
+        "la cartera.md"
+      ]
+    }
   ],
   "observability": [
     "Prometheus-Grafana.md"

@@ -123,7 +123,12 @@ function normalizeStructure(structure) {
 
     if (!normalized[normalizedFolder]) normalized[normalizedFolder] = [];
     for (const file of files) {
-      if (!normalized[normalizedFolder].includes(file)) {
+      if (typeof file === "string") {
+        if (!normalized[normalizedFolder].includes(file)) {
+          normalized[normalizedFolder].push(file);
+        }
+      } else {
+        // It's an object acting as a subfolder
         normalized[normalizedFolder].push(file);
       }
     }

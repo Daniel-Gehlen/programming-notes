@@ -20,13 +20,13 @@ export async function fetchDocument(path) {
 
   const parts = path.split("/");
   const folder = decodeFolderName(parts[0]);
-  const fileName = parts[1];
-
-  if (!fileName || fileName === "undefined") {
+  
+  if (parts.length < 2 || parts[parts.length - 1] === "undefined") {
     throw new Error(`Arquivo inválido no caminho: ${path}`);
   }
 
-  const file = decodeURIComponent(fileName);
+  // O resto dos segmentos são subpastas e o arquivo
+  const pathParts = parts.slice(1).map(decodeURIComponent);
 
   // Check cache
   const cached = docCache.get(path);
@@ -34,7 +34,7 @@ export async function fetchDocument(path) {
 
   // Try original path
   try {
-    const encodedPath = encodeFolderName(folder) + "/" + encodeURIComponent(file);
+    const encodedPath = encodeFolderName(folder) + "/" + pathParts.map(encodeURIComponent).join("/");
     const response = await fetch(`docs/${encodedPath}`);
     if (response.ok) {
       const content = await response.text();
@@ -50,7 +50,7 @@ export async function fetchDocument(path) {
     for (const variant of FOLDER_VARIANTS[folder]) {
       try {
         if (variant === encodeFolderName(folder)) continue;
-        const variantPath = `${variant}/${encodeURIComponent(file)}`;
+        const variantPath = `${variant}/${pathParts.map(encodeURIComponent).join("/")}`;
         const response = await fetch(`docs/${variantPath}`);
         if (response.ok) {
           const content = await response.text();

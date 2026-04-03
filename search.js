@@ -12,48 +12,59 @@ export async function buildSearchIndex(structure) {
   const tempIndex = [];
   const docCache = getCache();
 
-  for (const [folder, files] of Object.entries(structure)) {
-    for (const file of files) {
-      const encodedPath = `${encodeFolderName(folder)}/${encodeURIComponent(file)}`;
-      let content = null;
+  async function processFiles(filesList, currentFolder, encodedPathPrefix) {
+    for (const item of filesList) {
+      if (typeof item === "string") {
+        const file = item;
+        const encodedPath = `${encodedPathPrefix}/${encodeURIComponent(file)}`;
+        let content = null;
 
-      try {
-        const response = await fetch(`docs/${encodedPath}`);
-        if (response.ok) {
-          content = await response.text();
-          docCache.set(encodedPath, content);
+        try {
+          const response = await fetch(`docs/${encodedPath}`);
+          if (response.ok) {
+            content = await response.text();
+            docCache.set(encodedPath, content);
+          }
+        } catch {
+          /* ignore */
         }
-      } catch {
-        /* ignore */
-      }
 
-      if (!content && FOLDER_VARIANTS[folder]) {
-        for (const variant of FOLDER_VARIANTS[folder]) {
-          if (variant === encodeFolderName(folder)) continue;
-          try {
-            const variantPath = `${variant}/${encodeURIComponent(file)}`;
-            const response = await fetch(`docs/${variantPath}`);
-            if (response.ok) {
-              content = await response.text();
-              docCache.set(variantPath, content);
-              break;
+        if (!content && encodedPathPrefix.indexOf("/") === -1 && FOLDER_VARIANTS[currentFolder]) {
+          for (const variant of FOLDER_VARIANTS[currentFolder]) {
+            if (variant === encodeFolderName(currentFolder)) continue;
+            try {
+              const variantPath = `${variant}/${encodeURIComponent(file)}`;
+              const response = await fetch(`docs/${variantPath}`);
+              if (response.ok) {
+                content = await response.text();
+                docCache.set(variantPath, content);
+                break;
+              }
+            } catch {
+              /* ignore */
             }
-          } catch {
-            /* ignore */
           }
         }
-      }
 
-      if (content) {
-        tempIndex.push({
-          folder,
-          file,
-          path: encodedPath,
-          originalPath: `${folder}/${file}`,
-          content: content.toLowerCase(),
-        });
+        if (content) {
+          tempIndex.push({
+            folder: currentFolder,
+            file,
+            path: encodedPath,
+            originalPath: decodeURIComponent(encodedPath),
+            content: content.toLowerCase(),
+          });
+        }
+      } else if (typeof item === "object" && item !== null) {
+        const subfolder = Object.keys(item)[0];
+        const subfiles = item[subfolder];
+        await processFiles(subfiles, subfolder, `${encodedPathPrefix}/${encodeURIComponent(subfolder)}`);
       }
     }
+  }
+
+  for (const [folder, files] of Object.entries(structure)) {
+    await processFiles(files, folder, encodeFolderName(folder));
   }
 
   searchIndex = tempIndex;
