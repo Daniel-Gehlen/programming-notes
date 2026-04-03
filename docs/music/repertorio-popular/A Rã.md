@@ -1,6 +1,6 @@
 # A Rã
 
-**Artista:** Caetano Veloso
+**Artista:** João Donato / Caetano Veloso
 
 ## Letra
 
@@ -32,4 +32,4 @@ De uma rã.
 
 ---
 
-*Fonte: Caetano Veloso*
+*Cifras editadas por mim - João Donato / Caetano Veloso*

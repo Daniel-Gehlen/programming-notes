@@ -386,12 +386,15 @@ body {
   background-color: var(--color-code-bg);
   padding: 1.5rem;
   border-radius: 0.75rem;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: visible;
   margin: 1.5rem 0;
   border: 1px solid var(--color-border);
   color: #f8f9fa;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Never wrap — scroll horizontally instead */
+  white-space: pre;
 }
 
 #doc-content pre code {
@@ -399,13 +402,13 @@ body {
   padding: 0;
   color: inherit;
   font-family: "Fira Code", monospace;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   white-space: pre !important;
   word-wrap: normal !important;
   word-break: keep-all !important;
   overflow-wrap: normal !important;
-  display: inline-block;
-  min-width: min-content;
+  display: block;
+  min-width: max-content;
 }
 
 #doc-content code:not(pre code) {
