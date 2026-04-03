@@ -9,6 +9,7 @@ import {
   showError,
   setupThemeToggle,
   setupScrollTop,
+  setupMobileMenu,
 } from "./ui.js";
 import {
   buildSearchIndex,
@@ -40,6 +41,7 @@ async function init() {
     setupSearch();
     setupThemeToggle();
     setupScrollTop();
+    setupMobileMenu();
 
     const hash = window.location.hash.substring(1);
     if (hash && hash.includes("/")) {
