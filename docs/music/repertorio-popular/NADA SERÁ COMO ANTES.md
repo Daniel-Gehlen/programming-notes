@@ -19,4 +19,4 @@ Sei que nada será como antes, amanhã
 
 ---
 
-*Fonte: Cifra Club - Milton Nascimento*
+*Cifras editadas por mim - Milton Nascimento*

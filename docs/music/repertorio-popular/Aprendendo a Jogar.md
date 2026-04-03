@@ -20,4 +20,4 @@ Nem sempre perdendo
 
 ---
 
-*Fonte: Cifra Club - Elis Regina*
+*Cifras editadas por mim - Elis Regina*

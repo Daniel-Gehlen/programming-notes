@@ -142,4 +142,4 @@ No meu co____ração
 
 ---
 
-*Fonte: Cifra Club - Chico Buarque*
+*Cifras editadas por mim - Chico Buarque*

@@ -19,7 +19,7 @@ Vendo um céu     fugir
 Também      não dava    mais para tentar
 
   G7(4)(9)  G7(9)  Gm7   C7(13) C7(b13)
-Lhe con...vencer a não partir
+Lhe convencer a não partir
 
    F7M Bbm6/Db     F7M Bbm6/Db        F7M
 E agora       tudo bem        você partiu

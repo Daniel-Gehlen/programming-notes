@@ -57,9 +57,9 @@ B7                      E7        A7                D ,C
 Não quero mais    esse negócio de você     longe de mim
 
         B7              E7        A7               D      A
-Vamos deixar    desse negócio de você     viver sem mim...
+Vamos deixar    desse negócio de você     viver sem mim
 ```
 
 ---
 
-*Fonte: Cifra Club - Vinicius de Moraes / João Gilberto*
+*Cifras editadas por mim - Vinicius de Moraes / João Gilberto*

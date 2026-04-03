@@ -402,6 +402,10 @@ body {
   font-size: 0.9rem;
   white-space: pre !important;
   word-wrap: normal !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  display: inline-block;
+  min-width: min-content;
 }
 
 #doc-content code:not(pre code) {

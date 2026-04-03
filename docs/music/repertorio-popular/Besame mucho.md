@@ -42,9 +42,9 @@ C#7/9+            F#7
 muy lejos de aquí.
 
 Bm             Em
-Bésame, bésame mucho...
+Bésame, bésame mucho
 ```
 
 ---
 
-*Fonte: Cifra Club - Trio Los Panchos*
+*Cifras editadas por mim - Trio Los Panchos*

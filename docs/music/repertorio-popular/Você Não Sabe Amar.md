@@ -56,4 +56,4 @@ Que fosse   esse seu fim
 
 ---
 
-*Fonte: Cifra Club - Chico Buarque*
+*Cifras editadas por mim - Chico Buarque*
