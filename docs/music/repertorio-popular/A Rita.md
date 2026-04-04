@@ -9,4 +9,3 @@
 ```
 
 ---
-*Importado automaticamente - A Rita (PROCURAR).docx*

@@ -1,6 +1,5 @@
 # W O Brasil
 
-**Fonte:** Importado automaticamente do arquivo original
 
 ## Letra e Cifra
 
@@ -8,7 +7,7 @@
 W
 /Brasil (Chama o Síndico)
 Jorge Ben Jor
-                    
+
 115bpm
 Alô, Alô W o Brasil
 Alô, Alô W o Brasil...
@@ -16,7 +15,7 @@ Jacarezinho! Avião!
 Jacarezinho! Avião!
 Cuidado com o disco voador
 Tira essa escada daí
-Essa escada é 
+Essa escada é
 prá
  ficar
 Aqui fora
@@ -40,7 +39,7 @@ Jacarezinho! Avião!
 Jacarezinho! Avião!
 Cuidado com o disco voador
 Tira essa escada daí
-Essa escada é 
+Essa escada é
 prá
  ficar
 Aqui fora
@@ -77,9 +76,9 @@ Amor! Dor! Dor!
 Lá da rampa mandaram avisar
 Que todo dinheiro será devolvido
 Quando setembro chegar
-Num envelope azul 
+Num envelope azul
 indigo
-Num envelope azul 
+Num envelope azul
 indigo
 Chama o síndico,
 Tim Maia! Tim Maia!
@@ -89,7 +88,7 @@ Alô, Alô W o Brasil...
 Da Central passando
 Pela Mangueira
 Dando uma volta na Pavuna
-E chegando 
+E chegando
 em
  Madureira
 É lá!
@@ -102,14 +101,14 @@ Não venha de helicóptero
 Alô, Alô tia Léia
 Se tiver ventando muito
 Não venha de helicóptero...
-Alô 
+Alô
 Alô
 , W o Brasil
-Alô 
+Alô
 Alô
 , W o Brasil...
 -Alô telefonista
-Me desperte às 
+Me desperte às
 7:15
  por favor
 Rádio táxi 9 e meia
@@ -121,7 +120,7 @@ Jacarezinho! Avião!
 Jacarezinho! Avião!
 Cuidado com o disco voador
 Tira essa escada daí
-Essa escada é 
+Essa escada é
 prá
  ficar
 Aqui fora
@@ -132,4 +131,3 @@ Tim Maia!...
 ```
 
 ---
-*Importado automaticamente - W O Brasil....docx*

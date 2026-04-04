@@ -32,4 +32,4 @@ De uma rã.
 
 ---
 
-*Cifras editadas por mim - João Donato / Caetano Veloso*
+

@@ -1,12 +1,88 @@
-# Come Together Beatles Gm
+---
 
-**Fonte:** Importado automaticamente do arquivo original
+### Come Together
 
-## Letra e Cifra
+**Artist:** The Beatles
 
 ```
-; Root Entry !"#$%&'()*+,./0235 FMicrosoft Word-Dokument MSWordDocWord.Document.89q [hh Estilo padro1$*$3B*OJQJCJmHsHKHPJnHtH^JaJ_H9LLTtulo 1@& &FOJQJCJ05PJ^JaJ0\LLTtulo 2@& &FOJQJCJ$5PJ^JaJ$\PUPLink da Internet B* phmHsH>*nHtH_HDDTtulo x$OJQJCJPJ^JaJ8B8Corpo do texto x"/""Lista^J@"2@Legenda xx$CJ6^JaJ](B(ndice$^JXRXTexto prformatado OJQJCJPJ^JaJU $ K r l| | EQX ai_musica ai_artista^`P^@`@^`0^```^`^`^`^``^0`0P GTimes New Roman5Symbol3&Arial5SimSun5MangalGMicrosoft YaHei5Mangal?5Courier New75NSimSunBh3G)??)??' 0 0DyKyKRhttp://www.cifraclub.com.br/the-beatles/Oh+'0|8 @ LXd p0@@@j7`a@.+,D.+,\M 0|Caolan80 D2F$j0bCome Together HYPERLINK "http://www.cifraclub.com.br/the-beatles/"The Beatles A5 E|----------------------------------------- B|----------------------------------------- G|----------------------------------------- D|----------7~------------7~--------------- A|-9-9--7/9--~---9-9--7/9--~--------------- E|-7-7-----------7-7----------------------- P.M.. P.M.. Primeira parte: G5 Here come old flat top, he come Grooving up slowly, he got Joo Joo eyeball, he one Holy roller, he got D5 Hair down to his knee; C5 Got to be a joker, he just do what he please. (Repete Intro) G5 He wear no shoe shine, he got Toe jam football, he got Monkey finger, he shoot Coca-cola, He say D5 "I know you, you know me." C5 One thing I can tell you is you got to be free Refro: E5 D5 C5 D5 Come Together, Right now, over me (Repete-Intro) G5 He bag production, he got Wal-rus gumboot, he got O-no sideboard, he one Spinal cracker, he got D5 Feet down below his knee C5 Hold you in his armchair, you can feel his disease Refro: E5 D5 C5 D5 Come Together, Right now, over me (Repete-Intro) Solo: G5 He roller coaster, he got Early warning, he got Muddy water, he one Mo-jo filter he say D5 " One and one and one is three." C5 Got to be good looking cause he so hard to see Refro: E5 D5 C5 D5 Come Together, Right now, over me (Repete Intro) (Solo final - Com Slide): f l " $ ( . 2 4 : < > @ D J N P n t v x z | "(f,04* Z ~ (,:LP\`hlCJ5aJCJaJ>*50JjUUYlptJxPTVXZ\^`bp"$&*0b,04$(Dx|CJ5aJCJaJH h p $hx.6, \ *,<vLzRTVXZ\^`br "$&,d.6&(Fz|". A!n"n#$3P(20%. A!n"n#$3P(2(2 0%. A!n"n#$3P(2(2 0%. A!n"n#$3P(20 0Root Entry F CompObjjOle 1TableG Data -SummaryInformation(1WordDocument DocumentSummaryInformation84t
+A5
+E|-----------------------------------------
+B|-----------------------------------------
+G|-----------------------------------------
+D|----------7~------------7~---------------
+A|-9-9--7/9--~---9-9--7/9--~---------------
+E|-7-7-----------7-7-----------------------
+ P.M..              P.M..
+
+G5
+Here come old flat top, he come
+Grooving up slowly, he got
+Joo Joo eyeball, he one
+Holy roller, he got
+
+D5
+Hair down to his knee;
+
+C5
+Got to be a joker, he just do what he please.
+
+(Repete Intro)
+
+G5
+He wear no shoe shine, he got
+Toe jam football, he got
+Monkey finger, he shoot
+Coca-cola, He say
+
+D5
+"I know you, you know me."
+
+C5
+One thing I can tell you is you got to be free
+
+        E5      D5    C5  D5
+Come Together, Right now, over me
+
+(Repete Intro)
+
+G5
+He bag production, he got
+Wal-rus gumboot, he got
+O-no sideboard, he one
+Spinal cracker, he got
+
+D5
+Feet down below his knee
+
+C5
+Hold you in his armchair, you can feel his disease
+
+        E5      D5    C5  D5
+Come Together, Right now, over me
+
+(Repete Intro)
+
+(Solo)
+
+G5
+He roller coaster, he got
+Early warning, he got
+Muddy water, he one
+Mo-jo filter he say
+
+D5
+"One and one and one is three."
+
+C5
+Got to be good looking cause he so hard to see
+
+        E5      D5    C5  D5
+Come Together, Right now, over me
+
+(Repete Intro)
+
+(Solo final - Com Slide)
 ```
 
 ---
-*Importado automaticamente - Come Together Beatles Gm.doc*
+
