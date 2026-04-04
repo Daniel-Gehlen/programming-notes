@@ -57,4 +57,3 @@ Mas, aprendendo a jogar
 
 ---
 
-*Cifras editadas por mim - Guilherme Arantes / Elis Regina*

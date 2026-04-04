@@ -46,5 +46,3 @@ Bésame, bésame mucho
 ```
 
 ---
-
-*Cifras editadas por mim - Trio Los Panchos*

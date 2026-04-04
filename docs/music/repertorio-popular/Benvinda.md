@@ -78,5 +78,3 @@ No meu coração
 ```
 
 ---
-
-*Cifras editadas por mim - Chico Buarque*

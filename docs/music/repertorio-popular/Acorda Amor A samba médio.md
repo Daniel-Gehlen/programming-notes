@@ -1,12 +1,63 @@
-# Acorda Amor A samba médio
+---
 
-**Fonte:** Importado automaticamente do arquivo original
+### Acorda Amor
 
-## Letra e Cifra
+**Artist:** Chico Buarque
+**Key:** A
 
 ```
-; Root Entry !"#$%&'()*+,./0235 FMicrosoft Word-Dokument MSWordDocWord.Document.89q [hh Estilo padro1$*$3B*OJQJCJmHsHKHPJnHtH^JaJ_H9LLTtulo 1@& &FOJQJCJ05PJ^JaJ0\LLTtulo 2@& &FOJQJCJ$5PJ^JaJ$\PUPLink da Internet B* phmHsH>*nHtH_HDDTtulo x$OJQJCJPJ^JaJ8B8Corpo do texto x"/""Lista^J@"2@Legenda xx$CJ6^JaJ](B(ndice$^JXRXTexto prformatado OJQJCJPJ^JaJW$$$K$r$fT TESX ai_musica ai_artistact_cifra__^`P^@`@^`0^```^`^`^`^``^0`0P GTimes New Roman5Symbol3&Arial5SimSun5MangalGMicrosoft YaHei5Mangal?5Courier New75NSimSunBh3G>))>))' 0 0DyKyKVhttp://www.cifraclub.com.br/chico-buarque/Oh+'0|8 @ LXd p0@@@(a@.+,D.+,\M 0TCaolan80 $ D2FbxBbAcorda Amor HYPERLINK "http://www.cifraclub.com.br/chico-buarque/"Chico Buarque (De: Leonel Paiva & Julinho da Adelaide) Intr.: ( 53_51_63_53 53_51_63_61 ) 3 vezes A6 Ebm7(b5) Ab7(b13) C#m7 Acorda amor Eu tive um pesadelo agora Em/G F#7 Bm7 E7(9) Em7 A7(#5) Sonhei que tinha gente l fora Batendo no porto, que aflio Dm7 Dm6 C#m7 F#7(9) B7(9) Era a dura, numa muito escura viatura Minha nossa santa criatura E7(9) A7 A7(#5) Chame, chame, chame l Chame, chame o ladro, chame o ladro Ebm7(b5) Ab7(b13) C#m7 Acorda amor No mais pesadelo nada Em/G F#7 Bm7 E7(9) Em7 A7(#5) Tem gente j no vo de escada Fazendo confuso, que aflio Dm7 Dm6 C#m7 F#7(9) B7(9) So os homens E eu aqui parado de pijama Eu no gosto de passar vexame E7(9) A7 A7(#5) Chame, chame, chame l Chame o ladro, chame o ladro Ebm7(b5) Ab7(b13) C#m7 Se eu demorar uns me___ses Em/G F#7 Bm7 E7(9) Em7 A7(#5) Convm, s ve___zes, voc sofrer Dm7 Dm6 C#m7 Mas depois de um ano eu no vin___do F#m7 B7/4(9) B7(9) Bm7(b5) Bb7(#11) Ponha a roupa de domin_______go E po_____de me esquecer A6 Ebm7(b5) Ab7(b13) C#m7 Acorda amor Que o bicho brabo e no sossega Em/G F#7 Bm7 E7(9) Em7 A7(#5) Se voc corre o bicho pega Se fica, no sei no Ateno Dm7 Dm6 C#m7 F#7(9) B7(9) No demora Dia desses chega a sua hora No discuta toa, no reclame E7(9) A7 A7(#5) Chame, chame l, chame, chame Chame o ladro, chame o ladro, chame o ladro Ebm7(b5) / Ab7(b13) / C#m7 / Em/G F#7 Bm7 / E7(9) / Em7 (No esquea a escova, o sabonete e o violo) n r ( 2 6 < V \ r | LTdj~ 2<DJ^dzNVlrfv"(:DRXZf50JjUU_f\dzRVhx *06LRbl,4DJrzr|~T5E j l * Nph j 4PxdfhLNP".d|~RT". A!n"n#$3P(20%. A!n"n#$3P(2(2 0%. A!n"n#$3P(2(2 0%. A!n"n#$3P(20 0Root Entry F CompObjjOle 1Table] Data -SummaryInformation(1WordDocument $DocumentSummaryInformation84t
+A6              Ebm7(b5)     Ab7(b13)      C#m7
+Acorda amor Eu tive um pesadelo agora
+
+Em/G        F#7        Bm7      E7(9)      Em7       A7(#5)
+Sonhei que tinha gente lá fora Batendo no portão, que aflição
+
+Dm7      Dm6        C#m7        F#7(9)      B7(9)
+Era a dura, numa muito escura viatura Minha nossa santa criatura
+
+E7(9)      A7       A7(#5)
+Chame, chame, chame lá Chame, chame o ladrão, chame o ladrão
+
+Ebm7(b5)     Ab7(b13)      C#m7
+Acorda amor Não é mais pesadelo nada
+
+Em/G        F#7        Bm7      E7(9)      Em7       A7(#5)
+Tem gente já no vão de escada Fazendo confusão, que aflição
+
+Dm7      Dm6        C#m7        F#7(9)      B7(9)
+São os homens E eu aqui parado de pijama Eu não gosto de passar vexame
+
+E7(9)      A7       A7(#5)
+Chame, chame, chame lá Chame o ladrão, chame o ladrão
+
+Ebm7(b5)     Ab7(b13)      C#m7
+Se eu demorar uns meses
+
+Em/G        F#7        Bm7      E7(9)      Em7       A7(#5)
+Convém, às vezes, você sofrer
+
+Dm7      Dm6        C#m7
+Mas depois de um ano eu não vindo
+
+F#m7        B7/4(9)     B7(9)      Bm7(b5)      Bb7(#11)
+Ponha a roupa de domingo E pode me esquecer
+
+A6              Ebm7(b5)     Ab7(b13)      C#m7
+Acorda amor Que o bicho é brabo e não sossega
+
+Em/G        F#7        Bm7      E7(9)      Em7       A7(#5)
+Se você corre o bicho pega Se fica, não sei não Atenção
+
+Dm7      Dm6        C#m7        F#7(9)      B7(9)
+Não demora Dia desses chega a sua hora Não discuta à toa, não reclame
+
+E7(9)      A7       A7(#5)
+Chame, chame lá, chame, chame Chame o ladrão, chame o ladrão, chame o ladrão
+
+Ebm7(b5)   /   Ab7(b13)   /   C#m7   /   Em/G   F#7   Bm7   /   E7(9)   /
+
+Em7
+(Não esqueça a escova, o sabonete e o violão)
 ```
 
 ---
-*Importado automaticamente - Acorda Amor A samba médio.doc*
