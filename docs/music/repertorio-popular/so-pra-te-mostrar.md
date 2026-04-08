@@ -1,90 +1,45 @@
 # Só pra te mostrar
 
-**Fonte:** Importado automaticamente do arquivo original
+**Artista:** Os Paralamas do Sucesso
 
 ## Letra e Cifra
 
 ```
 Só Prá Te Mostrar
 Os Paralamas do Sucesso
-Intro: 
-G
- 
-A/G
- 
-Cm/G
- 
-G
- 
-           
-G
-            
-A/G
+Intro: G A/G Cm/G G
+
+           G            A/G
 Não quero nada que não venha de nós dois
-             
-Cm/G
+             Cm/G
 Não creio em nada
-                
-G
+                G
 Do que eu conheci antes de te conhecer
-  
-Em7
-            
-A7/9
+  Em7            A7/9
 Queria tanto te trazer aqui
-   
-Cm/Eb
-                         
-G
-Prá te mostrar,só prá te mostrar porque
-    
-Cm7
-               
-G/B
+   Cm/Eb                         G
+Prá te mostrar, só prá te mostrar porque
+
+    Cm7               G/B
 Não há nada que ponha tudo em seu lugar
-   
-Cm7
-               
-Em7
-    
-A/G
-  
-Cm/G
-  
-G
+   Cm7               Em7    A/G  Cm/G  G
 Eu sei, o meu lugar está aí
-         
-Em7
-         
-A7/9
+
+         Em7         A7/9
 Não vejo nada mesmo quando acendo a luz
-             
-Cm/Eb
+             Cm/Eb
 Não creio em nada
-       
-G
-                               
-Em7
+       G                               Em7
 Mesmo que me provem certo como dois e dois
-                              
-A7/9
+                              A7/9
 As plantas crescem em nosso jardim
- 
-Cm/Eb
-                           
-G
-Prá te mostrar,só prá te mostrar porque
-    
-Cm7
-               
-G/B
+ Cm/Eb                           G
+Prá te mostrar, só prá te mostrar porque
+
+    Cm7               G/B
 Não há nada que ponha tudo em seu lugar
-       
-Cm7
-             
-G
-Eu sei ,o meu lugar está aí
-93
+       Cm7             G
+Eu sei, o meu lugar está aí
 ```
 
 ---

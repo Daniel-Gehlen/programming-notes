@@ -1,92 +1,56 @@
 # Proibida pra mim
 
+**Artista:** Zeca Baleiro
+
 ## Letra e Cifra
 
 ```
 Proibida Pra Mim
 Zeca Baleiro
-G
 
-D
+G                    D
   Ela achou o meu cabelo engraçado
-Em
-
-C
+Em              C
   Proibida pra mim no way
-G
-
-D
+G                  D
   Disse que não podia ficar
-Em
-
-C
+Em                        C
   Mas levou a sério o que eu falei
-G
-
-D
+G                       D
   Eu vou fazer tudo que eu puder
-Em
-
-C
+Em                       C
   Eu vou roubar essa mulher pra mim
-G
-
-D
+G                    D
   Posso te ligar a qualquer hora
-Em
-
-C
+Em            C
   Mas eu nem sei o seu nome
+
 (refrão)
-G
-
-D
+G                       D
   Se não eu quem vai fazer você feliz?
-Em
-
-C
+Em                      C
   Se não eu quem vai fazer você feliz?
-
-G
-
-D
-
-Em
-
-C
+  G      D   Em   C
 Guerra..
-G
 
-D
+G                   D
   Eu me flagrei pensando em você
-Em
-
-C
+Em                       C
   Em tudo que eu queria te dizer
-G
-
-D
+G                       D
   Em uma noite especialmente boa
-Em
-
-C
+Em                              C
   Não há nada mais que a gente possa fazer
-G
-
-D
+G                          D
   Eu vou fazer de tudo que eu puder
-Em
-
-C
+Em                       C
   Eu vou roubar essa mulher pra mim
-G
-
-D
+G                    D
   Posso te ligar a qualquer hora
-Em
-
-C
+Em            C
   Mas eu nem sei o seu nome
+
+(refrão)
 ```
 
 ---

@@ -1,116 +1,50 @@
 # Cigana
 
-**Fonte:** Importado automaticamente do arquivo original
+**Artista:** Raça Negra
 
 ## Letra e Cifra
 
 ```
 Cigana
 Raça Negra
- (
-intro
-)
-  
-C
- 
-E7
- 
-Am
- 
-C7
- 
-F
- 
-C
- 
-Dm
- 
-G7
-C
-                    
-E7
-       
-Am
-         
-Gm
- 
-C7
+(intro)  C E7 Am C7 F C Dm G7
+
+C                    E7       Am         Gm C7
 Não deixe o tempo acabar com nosso amor
-F7
-                 
-G7
-          
-C
-              
-C7
+F7                 G7          C              C7
 Eu faço tudo e o impossível e você não dá valor
-F7
-               
-G7
+F7               G7
 Te amo como um louco
-Em
-                 
-Am
+Em                 Am
 Estou morrendo aos poucos
-Dm
-            
-G7
+Dm            G7
 Você parece estar feliz
-Gm
-            
-C7
+Gm            C7
 Pisando sobre mim
-F7
-          
-G7
-    
-Em
+F7          G7    Em
 Desesperadamente
-               
-Am
+               Am
 Eu choro por você
-Dm
-            
-G7
-      
-C
-             
-G7
+Dm            G7      C             G7
 Meu coração carece do seu amor (do seu amor)
-       
-C
+       C
 Então vem (então vem)
-            
-E7
+            E7
 Maltrata de vez (maltrata de vez)
-             
-F7
-              
-G7
-               
-C
+             F7              G7               C
 Estou com saudade e a sua maldade me faz delirar
-       
-G7
+       G7
 Te perder
-      
-C
+
+      C
 Te perder
-                 
-E7
+                 E7
 Eu não vou resistir (eu não vou resistir)
-           
-F7
-                
-G7
-                 
-C
-Eu vivo sofrendo estou te querendo nasci 
-prá
- você
-  
-G7
+           F7                G7                 C
+Eu vivo sofrendo estou te querendo nasci prá você
+  G7
 Cigana
+
 (repete tudo)
 ```
 

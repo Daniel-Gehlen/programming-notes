@@ -1,133 +1,71 @@
 # Você não me ensinou a te esquecer
 
-**Fonte:** Importado automaticamente do arquivo original
+**Artista:** Caetano Veloso
 
 ## Letra e Cifra
 
 ```
 Você Não Me Ensinou a Te Esquecer
 Caetano Veloso
- (
-intro
-) 
-Cm7
-  
-Ab7M
-  
-G7
-    
-Cm7
+(intro) Cm7  Ab7M  G7
+
+    Cm7
 Não vejo mais você faz tanto tempo
 D7/C
 Que vontade que eu sinto
-Fm7
-                                    
-G7
+Fm7                                    G7
 De olhar em seus olhos ganhar seus abraços
-   
-Cm7
-             
-G5+/7
- 
-G7
+   Cm7             G5+/7 G7
 E verdade eu não minto
-(verso 
-2
-)
-   
-Cm7
+
+(verso 2)
+   Cm7
 E nesse desespero em que me vejo
- 
-D7/C
+ D7/C
 Já cheguei a tal ponto
-Fm7
-                         
-G7
+Fm7                         G7
 De me trocar diversas vezes por você
-    
-Cm7
-            
-C7
+    Cm7            C7
 Só pra vê se te encontro
-Fm7
-                    
-Bb7
+
+Fm7                    Bb7
 Você bem que podia perdoar
-     
-G7
-                   
-Cm7
+     G7                   Cm7
 E só mais uma vez me aceitar
-Fm7
-                      
-G7
+Fm7                      G7
 Prometo agora vou fazer por onde
-              
-Cm7
-  
-C7
-Nunca mais 
-perde-la
-Ab
-     
-Bb7
-                
-G7
+              Cm7  C7
+Nunca mais perdê-la
+
+Ab     Bb7                G7
 Agora que faço eu da vida sem você
-Cm7
-                   
-Fm7
+Cm7                   Fm7
 Você não me ensinou a te esquecer
-G7
-                  
-Cm7
+G7                  Cm7
 Você só me ensinou a te querer
-               
-C7
+               C7
 E te querendo eu vou tentando te encontrar
-          
-Ab
+          Ab
 Vou me perdendo
-         
-Bb7
-                         
-G7
+         Bb7                         G7
 Buscando em outros braços seus abraços
-Cm7
-                        
-Fm7
+Cm7                        Fm7
 Perdido no vazio de outros passos
- 
-G7
-                    
-Cm7
-Do abismo em que
-  
-você se retirou
-                        
-C7
+ G7                    Cm7
+Do abismo em que você se retirou
+                        C7
 E me atirou e me deixou aqui sozinho
-Ab
-     
-Bb7
-                
-G7
+
+Ab     Bb7                G7
 Agora que faço eu na vida sem você
-Cm7
-                  
-Fm7
+Cm7                  Fm7
 Você não me ensinou a te esquecer
-G7
-                  
-Cm7
+G7                  Cm7
 Você só me ensinou a te querer
-                                  (
-Cm7
-)
+                         (Cm7)
 E te querendo eu vou tentando me encontrar
-(repete verso 
-2
-)
+
+(repete verso 2)
 ```
 
 ---

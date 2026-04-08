@@ -1,207 +1,65 @@
 # Pra você guardei o amor
 
+**Artista:** Nando Reis
+
 ## Letra e Cifra
 
 ```
-Nando Reis
 Pra Você Guardei o Amor
-Intro
-:
-D
+Nando Reis
+Intro: D  A   Bm  Bm7/A  G  D9/F#  Em7  A7   A7/4  A7
 
-A
-
-Bm
-
-Bm7/A
-
-G
-
-D9/F#
-
-Em7
-
-A7
-
-A7/4
-
-A7
-
-D
-
-A
+  D                          A
 Pra você guardei o amor que nunca soube dar
-
-Bm
+            Bm
 O amor que tive e vi, sem me deixar
-
-Bm7/A
-
-G
-
-D9/F#
-Sen______tir
-, sem conseguir provar
-
-Em7
-
-A7
-
-A7/4
-
-A7
+ Bm7/A    G                        D9/F#
+Sen______tir, sem conseguir provar
+    Em7              A7  A7/4   A7
 Sem entregar e repartir
 
-D
-
-A
+  D                          A
 Pra você guardei o amor que sempre quis mostrar
-
-Bm
-O amor que vive em mim
-, vem
- visitar
-
-Bm7/A
-
-G
-
-D9/F#
-Sor______rir
-, vem
- colorir, solar
-
-Em7
-
-A7
-
-A7/4
-
-A7
+            Bm
+O amor que vive em mim, vem visitar
+ Bm7/A    G                      D9/F#
+Sor______rir, vem colorir, solar
+    Em7               A7  A7/4  A7
 Vem esquentar e permitir
 
-D
-
-A
+  D                            A
 Quem acolher o que ele tem e trás
-
-Bm
+                         Bm
 Quem entender o que ele diz no giz
-
-Bm7/A
-
-G
-
-D9/F#
-do
- gesto, o jeito      pronto num piscar dos cílios
-
-Em7
-
-A7
-
-A7/4
-
-A7
+                Bm7/A    G                          D9/F#
+do gesto, o jeito      pronto num piscar dos cílios
+  Em7                       A7  A7/4    A7
 Que o convite do silêncio exibe em cada olhar
+
 Refrão:
-
-D
-
-A
-
-Bm
-
-Bm7/A
-
-G
-
-D9/F#
-Guardei, sem ter porque, nem por razão, ou coisa outra
-qual____quer
-
-Em7
-
-A7
-
-G
-
-A7
+     D                A             Bm                   Bm7/A   G   D9/F#
+Guardei, sem ter porque, nem por razão, ou coisa outra qual____quer
+  Em7                     A7             G               A7
 Além de não saber como fazer pra ter um jeito meu de me mostrar
-
-D
-
-A
-
-Bm
-
-Bm7/A
-
-G
-
-D9/F#
-Achei vendo em você, explicação nenhuma isso
-re____quer
-
-Em7
-
-A7
-
-G
-
-A7
+   D              A          Bm               Bm7/A  G    D9/F#
+Achei vendo em você, explicação nenhuma isso re____quer
+          Em7                 A7             G            A7
 Se o coração bater forte e arder, no fogo o gelo vai queimar
 
-D
-
-A
+  D                         A
 Pra você guardei o amor que aprendi vem dos meus pais
-
-Bm
-
-Bm7/A
-
-G
-
-D9/F#
-
-Em7
-O amor que tive e recebi e     hoje posso dar livre e
-fe______liz
-
-A
-
-A7/4
-
-A7
+    Bm                   Bm7/A  G                      D9/F#   Em7
+O amor que tive e recebi e     hoje posso dar livre e fe______liz
+                                A          A7/4       A7
 Céu, cheiro e o ar na cor que o arco íris risca ao levitar
 
-D
-
-A
-Vou nascer de novo, lápis, edifício,
-tevere
-, ponte
-
-Bm
+ D                         A
+Vou nascer de novo, lápis, edifício, tevere, ponte
+ Bm
 Desenhar no seu quadril
+ Bm7/A  G                       D9/F#  Em7                             A7     A7/4  A7
+Meus   lábios beijam signos feito     se nos trilho a infância terço o berço do seu lar.
 
-Bm7/A
-
-G
-
-D9/F#
-
-Em7
-
-A7
-
-A7/4
-
-A7
-Meus
-
-lábios beijam signos feito     se nos trilho a infância terço o berço do seu lar.
 (refrão)
 (repete tudo)
 ```

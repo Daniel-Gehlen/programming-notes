@@ -1,159 +1,94 @@
 # Pacato cidadão
 
+**Artista:** Skank
+
 ## Letra e Cifra
 
 ```
 Pacato Cidadão
 Skank
-[
-Verso
-1
-:]
+95bpm
 
-A
+[Verso 1:]
+
+              A
 O pacato cidadão
-Te chamei
- a atenção
+Te chamei a atenção
 Não foi a toa não
-
-D
-C'est
-
-fini
-
-la
- utopia. Mas
-a guerra todo
+                 D
+C'est fini la utopia. Mas a guerra todo
 E
 Dia
-
-A
+          A
 Dia a dia não
-E tracei a vida
-inteira planos tão incríveis
-Tramo a luz do sol, a luz do
-sol
-
-D
-
-E
+E tracei a vida inteira planos tão incríveis
+Tramo a luz do sol, a luz do sol
+              D               E
 Apoiado em poesia e em tecnologia
-
-A
+               A
 Agora a luz do sol
+
 [Refrão:]
-
-A
+           A
 Pacato cidadão
 O pacato da civilização
 Pacato cidadão
 O pacato da civilização
-[Verso
-1
-:]
-95
-[Verso 2
-:]
 
-D
-
-A
-Pra que tanta tevê, tanto tempo pra
-peder
-
-D
+[Verso 2:]
+        D                       A
+Pra que tanta tevê, tanto tempo pra perder
+               D
 Qualquer coisa que se queira
-
-A
+          A
 Saber querer
-
-D
+            D
 Tudo bem dissipação
-
-A
-De vez em quando é
-bão
-
-D
+           A
+De vez em quando é bão
+           D
 Misturar o brasileiro
-E
+E          A
+ com o alemão
 
-A
-
-com
- o alemão
 [Refrão:]
-[Verso
-1
-:]
-[Verso
-3
-:]
+[Verso 1:]
 
-D
+[Verso 3:]
+           D
 Pra que tanta sujeira
-
-A
+         A
 Nas ruas e nos rios
-
-D
+                D
 Qualquer coisa que se suje
-
-A
+           A
 Tem que limpar
-
-D
+            D
 Se você não gosta dele
-
-A
+          A
 Diga logo a verdade
-
-D
+                D
 Sem perder a cabeça
-E
-
-A
+E                A
  Sem perder a amizade
-(
-intro
-)
-A
-[
-Refrão
-:]
-[Verso
-1
-:]
 
-[Verso
-4
-:]
+(intro) A
 
-D
+[Refrão:]
+[Verso 1:]
 
-A
-Consertar o rádio e o casamento
-
-D
-
-A
+[Verso 4:]
+            D             A
+Conservar o rádio e o casamento
+           D                     A
 Corre a felicidade no asfalto cinzento
-
-D
-
-A
+                D              A
 Abolir a escravidão do caboclo brasileiro
-
-D
+            D
 Duma mão educação
-E
-
-A
-
-na
- outra dinheiro
-
-A
+E           A
+ na outra dinheiro
+           A
 Pacato cidadão
 Ô pacato da civilização...
 ```

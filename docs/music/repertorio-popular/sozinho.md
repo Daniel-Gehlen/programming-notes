@@ -1,210 +1,72 @@
 # Sozinho
 
-**Fonte:** Importado automaticamente do arquivo original
+**Artista:** Caetano Veloso
 
 ## Letra e Cifra
 
 ```
 Sozinho
 Caetano Veloso
-D6(9)
-           
-A7/C#
-        (
-B9
- 
-Bm
-)     
-Bm
- 
-Bm7
- Às vezes no silêncio da noite
-Em
-             
-Em/D
-       
-A7/C#
-   
-A7
- Eu fico imaginando nós dois
-D6(9)
-            
-A7/C#
-       
-B9
- 
-Bm
-     
-Bm
-    
-B7(4)
- 
-Bm
- Eu fico ali sonhando acordado,       
-jun
- - 
-tan
- - 
-do
-  
-Em
-           
-Em/D
-        
-A7/C#
-  
-A7
-        
-Bm
- O antes o agora e o depois        A|
--
-0
--
-1
--
-2
--
-|
-Bm
-                
-F#m7
-         
-G7M
- Por que você me deixa tão solto?
-Bm
-                 
-F#m7
-       
-Bm
-/E
- Por que você não cola em mim?
-Bm
-               
-F#m7
-        
-G7M
- 
-Tô
- me sentindo muito sozinho
-D6(9)
-               
-A7/C#
-       
-G7M
- Não sou nem quero ser o seu dono
-Em
-                    
-Em/D
-        
-A7/C#
-  
-A7
- É que um carinho às vezes cai bem
-D6(9)
-                
-A7/C#
-      
-B9
- 
-Bm
-    
-Bm
-    
-B7(4)
- 
-Bm
- Eu tenho os meus desejos e planos      se - 
-cre
- -
-  
-tos
-Em
-              
-Em/D
-         
-A7/C#
-      
-A7
- Só abro pra você mais ninguém
-(passagem 
-1
-)
-Bm
-                  
-F#m7
-     
-G7M
- Porque você me 
-esquece
- e some
-Bm
-                  
-F#m7
-         
-Bm
-/E
- E se eu me interessar por alguém
-Bm
-              
-F#m7
-         
-G7M
- E se ela de repente me ganha
-  
-D6(9)
-                  
-A7/C#
-            
-G7M
-Quando a gente gosta é claro que a gente cuida
- 
-Em
-              
-Em/D
-                 
-C
-Fala que me ama só que é da boca pra fora
-D6(9)
-              
-A7/C#
-         
-Bm
-Ou você me engana ou não está madura
-(passagem 
-2
-)
-G/A
-              
-D6(9)
-               
-G/A
-Onde está você agora
-  
-D6(9)
-                  
-A7/C#
-            
-G7M
-Quando a gente gosta é claro que a gente cuida
- 
-Em
-              
-Em/D
-                 
-C
-Fala que me ama só que é da boca pra fora
-D6(9)
-              
-A7/C#
-         
-Bm
-         
-G
-Ou você me engana ou não está madura (passagem 
-2
-)
-G/A
-Onde está você agora?
+
+(intro) Cm7  Ab7M  G7
+
+    Cm7
+Não vejo mais você faz tanto tempo
+D7/C
+Que vontade que eu sinto
+Fm7                                    G7
+De olhar em seus olhos ganhar seus abraços
+   Cm7             G5+/7 G7
+E verdade eu não minto
+
+(verso 2)
+   Cm7
+E nesse desespero em que me vejo
+ D7/C
+Já cheguei a tal ponto
+Fm7                         G7
+De me trocar diversas vezes por você
+    Cm7            C7
+Só pra vê se te encontro
+
+Fm7                    Bb7
+Você bem que podia perdoar
+     G7                   Cm7
+E só mais uma vez me aceitar
+Fm7                      G7
+Prometo agora vou fazer por onde
+              Cm7  C7
+Nunca mais perdê-la
+
+Ab     Bb7                G7
+Agora que faço eu da vida sem você
+Cm7                   Fm7
+Você não me ensinou a te esquecer
+G7                  Cm7
+Você só me ensinou a te querer
+               C7
+E te querendo eu vou tentando te encontrar
+          Ab
+Vou me perdendo
+         Bb7                         G7
+Buscando em outros braços seus abraços
+Cm7                        Fm7
+Perdido no vazio de outros passos
+ G7                    Cm7
+Do abismo em que você se retirou
+                        C7
+E me atirou e me deixou aqui sozinho
+
+Ab     Bb7                G7
+Agora que faço eu na vida sem você
+Cm7                  Fm7
+Você não me ensinou a te esquecer
+G7                  Cm7
+Você só me ensinou a te querer
+                         (Cm7)
+E te querendo eu vou tentando me encontrar
+
+(repete verso 2)
 ```
 
 ---
