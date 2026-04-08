@@ -1,0 +1,1 @@
+# Issue: Fix 404 Errors and Sync structure.json\n\nSymptoms: Multiple 404 errors in music repertoire.\nRoot cause: Filename mismatch and outdated structure.json.\nResolution: Synchronized JSON with disk and renamed mismatched files.
