@@ -1,0 +1,39 @@
+(intro 2x) G7M
+
+
+E se eu fugir e sair por ai na noitada 
+Me acabando de rir 
+E se eu disser que não digo, e não ligo, e que fico
+É que eu sambo direitinho, assim bem miudinho,
+Cê não sabe acompanhar
+Vou arrancar sua blusa e pôr no meu cabide só pra pendurar
+Quero ver se você tem atitude
+E se vai me encarar
+
+E se eu sumir dos lugares, dos bares, esquinas
+E ninguém me encontrar
+E se me virem sambando até de madrugada
+E você for até lá
+
+
+É que eu sambo direitinho assim bem miudinho,
+Sei que você vai gostar
+Vou arrancar sua blusa e pôr no meu cabide só pra pendurar
+
+Quero ver se você tem atitude e se vai me encarar
+
+
+
+
+
+Quero ver chegar junto pra me juntar 
+Me fazer sentir mais vivo
+Me apertar o corpo e a alma
+Me fazendo suar
+Quero beijos sem tréguas
+Quero sete mil léguas sem descansar
+Quero ver se você tem atitude e se vai me encarar. (3x) final
+Me acabando de rir
+E se eu disser que não digo, e não ligo, e que fico
+E que só vou aprontar
+É que eu mando direitinho, assim bem miudinho, ( BLUSA)
