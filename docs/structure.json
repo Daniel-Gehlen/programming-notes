@@ -519,6 +519,43 @@
         "Compendio-de-Estudos-Musicais-Do-Classicismo-ao-Pos-Modernismo.md",
         "PROMPT-COMPLETO-DE-REINSTALACAO-AUDIO-PRODUCTION-LINUX-MINT.md",
         {
+            "reaper": [
+                "1-as-4-fases-da-producao-musical.md",
+                "2-tres-elementos-principais-da-producao-musical.md",
+                "3-tres-aspectos-principais-da-configuracao-do-projeto.md",
+                "4-fases-da-producao-musical.md",
+                "5-instrumentos-virtuais-no-home-studio.md",
+                "6-o-que-sao-plugins.md",
+                "7-configuracoes-antes-de-gravar.md",
+                "8-pre-producao.md",
+                "9-gravacao-de-contrabaixo.md",
+                "10-gravacao-com-microfone.md",
+                "11-fase-de-gravacao.md",
+                "12-edicao-apos-a-gravacao.md",
+                "13-edicao-de-audio-vs-edicao-MIDI.md",
+                "14-importancia-da-afinacao.md",
+                "15-limpeza-do-audio.md",
+                "16-mixagem.md",
+                "17-organizacao-do-projeto.md",
+                "18-preparacao-para-mixagem.md",
+                "19-numeros-vs-logica.md",
+                "20-processamento-na-mixagem.md",
+                "21-abordagem-pratica-para-EQ.md",
+                "22-compressor.md",
+                "23-compressao-na-pratica.md",
+                "24-processadores-complementares.md",
+                "25-aprimoramento-criativo-na-mixagem.md",
+                "26-template-com-auxiliares-sends.md",
+                "27-fase-final-da-producao-musical.md",
+                "28-EQ-e-compressor-na-master.md",
+                "29-ajustes-finais-da-masterizacao.md",
+                "30-ajustes-de-ultima-hora.md",
+                "31-download-dos-plugins.md",
+                "32-producao-com-equipamento-minimo.md",
+                "33-distribuir-a-musica.md"
+            ]
+        },
+        {
             "repertorio-popular": [
                 "acenda-o-farol.md",
                 "acorda-amor.md",
@@ -906,7 +943,8 @@
         "Guia-de-Tabela-Verdade-Analytics.md",
         "Otimizacao-de-Memoria-e-Dispositivos.md",
         "Governanca-de-TI-e-Maturidade.md",
-        "algebra-booleana-na-computacao.md"
+        "algebra-booleana-na-computacao.md",
+        "guia-de-estruturas-de-dados.md"
     ],
     "JS": [
         "Fundamentos-da-linguagem.md",
