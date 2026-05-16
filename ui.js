@@ -144,16 +144,16 @@ function renderNavigationArrows(path, onLinkClick) {
   
   let html = "";
   if (prevLink) {
-    html += `<button class="nav-btn prev-btn" data-path="${prevLink.dataset.path}">
-               &larr; ${prevLink.textContent.trim()}
+    html += `<button class="nav-btn prev-btn" data-path="${prevLink.dataset.path}" title="${prevLink.textContent.trim()}">
+               <span class="nav-icon">&larr;</span> <span class="nav-text">${prevLink.textContent.trim()}</span>
              </button>`;
   } else {
-    html += `<div></div>`;
+    html += `<div style="width: 1px"></div>`;
   }
   
   if (nextLink) {
-    html += `<button class="nav-btn next-btn" data-path="${nextLink.dataset.path}">
-               ${nextLink.textContent.trim()} &rarr;
+    html += `<button class="nav-btn next-btn" data-path="${nextLink.dataset.path}" title="${nextLink.textContent.trim()}">
+               <span class="nav-text">${nextLink.textContent.trim()}</span> <span class="nav-icon">&rarr;</span>
              </button>`;
   }
   
