@@ -34,8 +34,8 @@ export function renderMenu(structure, onLinkClick, openAll = false) {
 }
 
 function renderFolderContent(items, parentPath) {
-  const strings = items.filter(item => typeof item === "string").sort();
-  const objects = items.filter(item => typeof item === "object" && item !== null).sort((a, b) => Object.keys(a)[0].localeCompare(Object.keys(b)[0]));
+  const strings = items.filter(item => typeof item === "string").sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+  const objects = items.filter(item => typeof item === "object" && item !== null).sort((a, b) => Object.keys(a)[0].localeCompare(Object.keys(b)[0], undefined, { numeric: true, sensitivity: 'base' }));
 
   let html = "";
   
