@@ -206,20 +206,65 @@ function renderBreadcrumbs(path) {
   breadcrumbsContainer.className = "breadcrumbs";
 
   const parts = path.split("/");
-  const folder = formatName(decodeURIComponent(parts[0]));
-  const file = formatName(decodeURIComponent(parts[parts.length - 1]).replace(".md", ""));
-
-  let breadcrumbsHtml = `<span>📚 Notas</span><span>${folder}</span>`;
   
-  if (parts.length > 2) {
-    for (let i = 1; i < parts.length - 1; i++) {
-        breadcrumbsHtml += `<span>${formatName(decodeURIComponent(parts[i]))}</span>`;
-    }
+  // 📚 Notas (Root)
+  const rootSpan = document.createElement("span");
+  rootSpan.textContent = "📚 Notas";
+  rootSpan.style.cursor = "pointer";
+  rootSpan.title = "Voltar ao Início";
+  
+  // Mouse hover effect
+  rootSpan.onmouseover = () => rootSpan.style.color = "var(--color-primary)";
+  rootSpan.onmouseout = () => rootSpan.style.color = "";
+  
+  rootSpan.addEventListener("click", () => {
+    window.history.pushState("", document.title, window.location.pathname + window.location.search);
+    showWelcomePage();
+  });
+  breadcrumbsContainer.appendChild(rootSpan);
+
+  // Folders
+  for (let i = 0; i < parts.length - 1; i++) {
+    const folderName = formatName(decodeURIComponent(parts[i]));
+    
+    const folderSpan = document.createElement("span");
+    folderSpan.textContent = folderName;
+    folderSpan.style.cursor = "pointer";
+    folderSpan.title = "Abrir pasta " + folderName;
+    
+    // Mouse hover effect
+    folderSpan.onmouseover = () => folderSpan.style.color = "var(--color-primary)";
+    folderSpan.onmouseout = () => folderSpan.style.color = "";
+    
+    folderSpan.addEventListener("click", () => {
+      // Abre o sidebar no mobile
+      const sidebarContent = document.getElementById("sidebar-content");
+      if (sidebarContent && !sidebarContent.classList.contains("open")) {
+        sidebarContent.classList.add("open");
+      }
+      
+      // Procura a pasta no menu e a expande
+      const summaries = document.querySelectorAll("#menu-hierarquia details summary");
+      summaries.forEach(summary => {
+        if (summary.textContent.trim() === folderName) {
+          summary.parentElement.open = true;
+          summary.scrollIntoView({ behavior: "smooth", block: "center" });
+          
+          // Destaque visual temporário
+          const originalColor = summary.style.color;
+          summary.style.color = "var(--color-primary)";
+          setTimeout(() => { summary.style.color = originalColor; }, 1500);
+        }
+      });
+    });
+    breadcrumbsContainer.appendChild(folderSpan);
   }
-  
-  breadcrumbsHtml += `<span>${file}</span>`;
 
-  breadcrumbsContainer.innerHTML = breadcrumbsHtml;
+  // File (Current Page)
+  const file = formatName(decodeURIComponent(parts[parts.length - 1]).replace(".md", ""));
+  const fileSpan = document.createElement("span");
+  fileSpan.textContent = file;
+  breadcrumbsContainer.appendChild(fileSpan);
 
   const docContent = document.getElementById("doc-content");
   docContent.insertBefore(breadcrumbsContainer, docContent.firstChild);
