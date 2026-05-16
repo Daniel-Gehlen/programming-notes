@@ -663,3 +663,38 @@ body {
     font-size: 0.7rem;
   }
 }
+
+/* Navigation Arrows */
+.doc-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.nav-btn {
+  background: var(--glass-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  max-width: 45%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-btn:hover {
+  background: var(--color-highlight);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.nav-btn.next-btn {
+  text-align: right;
+}

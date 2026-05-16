@@ -112,6 +112,8 @@ export function renderDocument(markdown, htmlContent, onCopy, path, onLinkClick)
     }
   });
 
+  renderNavigationArrows(path, onLinkClick);
+
   if (window.hljs) window.hljs.highlightAll();
 
   // Scroll automatically to content on mobile after clicking a link
@@ -124,6 +126,46 @@ export function renderDocument(markdown, htmlContent, onCopy, path, onLinkClick)
       document.getElementById("doc-content").scrollIntoView({ behavior: "smooth", block: "start" });
     }, 100);
   }
+}
+
+function renderNavigationArrows(path, onLinkClick) {
+  const links = Array.from(document.querySelectorAll('#menu-hierarquia .doc-link'));
+  const currentIndex = links.findIndex(link => decodeURIComponent(link.dataset.path) === decodeURIComponent(path));
+  
+  if (currentIndex === -1) return;
+
+  const prevLink = currentIndex > 0 ? links[currentIndex - 1] : null;
+  const nextLink = currentIndex < links.length - 1 ? links[currentIndex + 1] : null;
+
+  if (!prevLink && !nextLink) return;
+
+  const navContainer = document.createElement("div");
+  navContainer.className = "doc-navigation";
+  
+  let html = "";
+  if (prevLink) {
+    html += `<button class="nav-btn prev-btn" data-path="${prevLink.dataset.path}">
+               &larr; ${prevLink.textContent.trim()}
+             </button>`;
+  } else {
+    html += `<div></div>`;
+  }
+  
+  if (nextLink) {
+    html += `<button class="nav-btn next-btn" data-path="${nextLink.dataset.path}">
+               ${nextLink.textContent.trim()} &rarr;
+             </button>`;
+  }
+  
+  navContainer.innerHTML = html;
+  
+  navContainer.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      onLinkClick(btn.dataset.path);
+    });
+  });
+
+  document.getElementById("doc-content").appendChild(navContainer);
 }
 
 export function showWelcomePage() {
