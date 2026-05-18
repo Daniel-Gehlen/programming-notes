@@ -331,7 +331,7 @@ body {
 
 /* Theme Toggle */
 .theme-toggle {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 1.5rem;
   background: var(--glass-bg);
@@ -347,7 +347,7 @@ body {
   justify-content: center;
   transition: var(--transition);
   box-shadow: var(--shadow);
-  z-index: 100;
+  z-index: 1010;
 }
 
 .theme-toggle:hover {
@@ -564,7 +564,8 @@ body {
 }
 
 #doc-content table {
-  width: 100%;
+  width: max-content;
+  min-width: 100%;
   border-collapse: collapse;
   background-color: var(--glass-bg);
   color: var(--color-text-dark);
@@ -713,6 +714,7 @@ body {
   .sidebar-header {
     margin-bottom: 0;
     border-bottom: none;
+    padding-right: 120px; /* Prevent title overlap with floating buttons */
   }
 
   .sidebar-content {
@@ -726,8 +728,31 @@ body {
     display: block;
   }
 
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1010;
+  }
+
   .mobile-menu-btn {
-    display: block;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 1rem;
+    right: 4.5rem;
+    width: 40px;
+    height: 40px;
+    background: var(--glass-bg);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-dark);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    z-index: 1010;
+    transition: var(--transition);
   }
 }
 
