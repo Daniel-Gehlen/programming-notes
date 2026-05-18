@@ -564,8 +564,8 @@ body {
 }
 
 #doc-content table {
-  width: max-content;
-  min-width: 100%;
+  width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
   background-color: var(--glass-bg);
   color: var(--color-text-dark);
@@ -583,14 +583,12 @@ body {
   text-align: left;
   padding: 0.75rem 1rem;
   border: 1px solid var(--color-border);
-  white-space: nowrap;
 }
 
 #doc-content table td {
   padding: 0.75rem 1rem;
   border: 1px solid var(--color-border);
   vertical-align: top;
-  white-space: nowrap;
 }
 
 #doc-content table tr:nth-child(even) {
