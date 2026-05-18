@@ -564,14 +564,13 @@ body {
 }
 
 #doc-content table {
-  width: auto;
+  width: max-content;
   min-width: 100%;
   border-collapse: collapse;
   background-color: var(--glass-bg);
   color: var(--color-text-dark);
   border-radius: 0.5rem;
   overflow: hidden;
-  table-layout: auto;
 }
 
 #doc-content table th {
