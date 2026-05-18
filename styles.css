@@ -564,8 +564,8 @@ body {
 }
 
 #doc-content table {
-  width: 100%;
-  min-width: 600px;
+  width: max-content;
+  min-width: 100%;
   border-collapse: collapse;
   background-color: var(--glass-bg);
   color: var(--color-text-dark);
