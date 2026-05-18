@@ -213,6 +213,7 @@ body {
   flex: 1;
   padding: 2.5rem;
   max-width: 1000px;
+  min-width: 0;
   margin: 0 auto;
   background-color: var(--color-bg);
 }
@@ -554,19 +555,25 @@ body {
 /* Melhorias para tabelas Markdown */
 .table-container {
   overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
   margin: 1.5rem 0;
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  -webkit-overflow-scrolling: touch;
 }
 
 #doc-content table {
-  width: 100%;
+  width: max-content;
+  min-width: 100%;
   border-collapse: collapse;
   background-color: var(--glass-bg);
-  min-width: 600px;
   color: var(--color-text-dark);
   border-radius: 0.5rem;
   overflow: hidden;
+  word-break: normal;
+  overflow-wrap: normal;
+  word-wrap: normal;
 }
 
 #doc-content table th {
@@ -576,12 +583,14 @@ body {
   text-align: left;
   padding: 0.75rem 1rem;
   border: 1px solid var(--color-border);
+  white-space: nowrap;
 }
 
 #doc-content table td {
   padding: 0.75rem 1rem;
   border: 1px solid var(--color-border);
   vertical-align: top;
+  white-space: nowrap;
 }
 
 #doc-content table tr:nth-child(even) {
