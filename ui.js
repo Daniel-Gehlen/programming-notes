@@ -75,6 +75,7 @@ export function renderDocument(markdown, htmlContent, onCopy, path, onLinkClick)
 
   renderBreadcrumbs(path);
   renderTOC(markdown);
+  wrapTablesInAccordion(docContent);
 
   docContent.querySelectorAll("pre").forEach((pre) => {
     if (!pre.querySelector(".copy-btn")) {
@@ -166,6 +167,47 @@ function renderNavigationArrows(path, onLinkClick) {
   });
 
   document.getElementById("doc-content").appendChild(navContainer);
+}
+
+function wrapTablesInAccordion(docContent) {
+  docContent.querySelectorAll(".table-container").forEach((container, idx) => {
+    // Try to get title from nearest preceding heading
+    let title = `Tabela ${idx + 1}`;
+    let sibling = container.previousElementSibling;
+    while (sibling) {
+      if (/^H[1-6]$/.test(sibling.tagName)) {
+        title = sibling.textContent.trim();
+        break;
+      }
+      sibling = sibling.previousElementSibling;
+    }
+
+    const accordion = document.createElement("div");
+    accordion.className = "table-accordion collapsed";
+
+    const header = document.createElement("button");
+    header.className = "table-accordion-header";
+    header.setAttribute("aria-expanded", "false");
+    header.innerHTML = `
+      <span class="table-accordion-icon">📊</span>
+      <span class="table-accordion-title">${title}</span>
+      <span class="table-accordion-toggle">▶ EXPANDIR</span>
+    `;
+
+    container.parentNode.insertBefore(accordion, container);
+    accordion.appendChild(header);
+    accordion.appendChild(container);
+
+    header.addEventListener("click", () => {
+      const collapsed = accordion.classList.contains("collapsed");
+      accordion.classList.toggle("collapsed", !collapsed);
+      accordion.classList.toggle("expanded", collapsed);
+      header.setAttribute("aria-expanded", String(collapsed));
+      header.querySelector(".table-accordion-toggle").textContent = collapsed
+        ? "▼ RECOLHER"
+        : "▶ EXPANDIR";
+    });
+  });
 }
 
 export function showWelcomePage() {
