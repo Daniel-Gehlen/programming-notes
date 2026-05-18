@@ -83,12 +83,11 @@ async function loadDoc(path) {
     const { content } = await fetchDocument(path);
     window.history.replaceState({}, "", `#${encodeURIComponent(path)}`);
 
-    const processedMarkdown = content.replace(
-      /<table>[\s\S]*?<\/table>/g,
+    const rawHtml = marked.parse(content);
+    const html = rawHtml.replace(
+      /<table[\s\S]*?<\/table>/gi,
       (match) => `<div class="table-container">${match}</div>`
     );
-
-    const html = marked.parse(processedMarkdown);
     renderDocument(content, html, handleCopy, path, loadDoc);
   } catch (error) {
     showError(error.message, path);

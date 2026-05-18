@@ -241,6 +241,9 @@ body {
 #doc-content {
   line-height: 1.8;
   font-size: 1.05rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 #doc-content h1 {
@@ -272,6 +275,7 @@ body {
   font-size: 0.85rem;
   color: #64748b;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   align-items: center;
 }
