@@ -212,6 +212,7 @@ body {
 .content {
   flex: 1;
   padding: 2.5rem;
+  padding-bottom: 8rem;
   max-width: 1000px;
   min-width: 0;
   margin: 0 auto;
@@ -395,6 +396,7 @@ body {
 #doc-content pre {
   background-color: var(--color-code-bg);
   padding: 1.5rem;
+  padding-right: 6.5rem;
   border-radius: 0.75rem;
   overflow-x: hidden;
   overflow-y: visible;
@@ -720,8 +722,12 @@ body {
   .sidebar {
     width: 100%;
     height: auto;
-    position: relative;
+    max-height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
     padding-bottom: 1rem;
+    z-index: 1000;
   }
 
   .sidebar-header {
@@ -770,6 +776,7 @@ body {
 
   .content {
     padding: 1.5rem;
+    padding-bottom: 8rem;
     width: 100%;
     max-width: 100%;
   }
@@ -794,6 +801,7 @@ body {
 
   .content {
     padding: 1rem;
+    padding-bottom: 8rem;
     width: 100%;
     max-width: 100%;
   }
@@ -804,6 +812,7 @@ body {
 
   #doc-content pre {
     padding: 1rem;
+    padding-right: 5.5rem;
     margin: 1rem 0;
   }
 
@@ -895,4 +904,22 @@ body {
     max-width: 130px;
     padding: 0.5rem 0.75rem;
   }
+}
+
+/* Garantir que todos os textos quebrem linha e respeitem a largura horizontal da tela no mobile */
+#doc-content h1,
+#doc-content h2,
+#doc-content h3,
+#doc-content h4,
+#doc-content h5,
+#doc-content h6,
+#doc-content p,
+#doc-content li,
+#doc-content a,
+#doc-content span,
+#doc-content code:not(pre code) {
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  max-width: 100%;
 }
