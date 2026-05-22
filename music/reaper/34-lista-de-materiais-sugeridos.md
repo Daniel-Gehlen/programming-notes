@@ -17,16 +17,14 @@
 | **Focusrite Scarlett Solo (4ª Geração)** | 1 entrada mic (pré com 69dB de ganho), 1 entrada instrumento Hi-Z, conversores RedNet (120dB dynamic range), Air mode com Presence e Harmonic Drive, Auto Gain, Clip Safe, saída de fone redesignada  | ~$139 |
 | **Focusrite Scarlett 2i2 (4ª Geração)** | 2 entradas mic remote-controlled (69dB de ganho cada), 2 entradas instrumento, mesmos recursos da Solo + loopback  | ~$199 |
 
-> **Sobre a "interface vermelha conhecida"**: É a **Focusrite Scarlett** (modelos Solo ou 2i2), facilmente reconhecível pelo acabamento vermelho característico que acompanha a linha desde suas primeiras gerações .
-
-### 3. Microfones (todos os citados no PDF e vídeos)
+### 3. Microfones
 
 | Modelo | Tipo | Características | Preço (USD) |
 |--------|------|----------------|-------------|
-| **AKG P3S** | Dinâmico | Resposta 40Hz-20kHz, sensibilidade acima da média, bom para home studio [citation:27 do PDF] | ~$59 |
-| **Shure SM57 / SM58** | Dinâmico | Clássicos da indústria, resposta 40Hz-20kHz, construção robusta [citation:27 do PDF] | ~$99 |
-| **Audio-Technica AT2020** | Condensador | Resposta 20Hz-20kHz, cápsula 16", SPL Max 144dB, curva equilibrada [citation:26 do PDF] | ~$99 |
-| **MXL V67G** | Condensador | Resposta 30Hz-20kHz, cápsula 32", SPL Max 130dB, curva equilibrada [citation:26 do PDF] | ~$119 |
+| **AKG P3S** | Dinâmico | Resposta 40Hz-20kHz, sensibilidade acima da média, bom para home studio | ~$59 |
+| **Shure SM57 / SM58** | Dinâmico | Clássicos da indústria, resposta 40Hz-20kHz, construção robusta | ~$99 |
+| **Audio-Technica AT2020** | Condensador | Resposta 20Hz-20kHz, cápsula 16", SPL Max 144dB, curva equilibrada | ~$99 |
+| **MXL V67G** | Condensador | Resposta 30Hz-20kHz, cápsula 32", SPL Max 130dB, curva equilibrada | ~$119 |
 | **Focusrite CM25 MkIII** | Condensador | Incluso nos Studio Packs da Focusrite Scarlett 4ª Geração  | (parte do pack) |
 
 ### 4. Instrumentos Musicais
@@ -38,7 +36,7 @@
 | **Violão de Nylon** | **EKO** | **NXT N100CWE (Nylon Cutaway Electro)** | Tampo Spruce (agudos claros) + fundo e laterais Mogno (médios quentes e graves encorpados). Sistema eletrônico EKO G03 com EQ de 3 bandas. Cutaway para acesso às casas altas. |
 
 
-### 5. Teclados Controladores MIDI (todos os citados no PDF)
+### 5. Teclados Controladores MIDI
 
 | Modelo | Nº Teclas | Características | Preço (USD) |
 |--------|-----------|-----------------|-------------|
@@ -66,15 +64,15 @@
 
 ### 8. Acessórios e Monitoração
 
-| Item | Modelo Sugerido (conforme PDF) | Observação |
+| Item | Modelo Sugerido | Observação |
 |------|-------------------------------|------------|
-| **Fone de ouvido** | Edifier H840 / AKG K52 / Superlux HD 681 | Resposta de frequência adequada, perfil Reference 4 disponível em alguns [citation:28-29 do PDF] |
-| **Monitor (caixa)** | Edifier R1700BT / PreSonus Eris E5 / JBL 305P MkII | Recomendado ativo, entrada balanceada e blindagem magnética [citation:30-31 do PDF] |
+| **Fone de ouvido** | Edifier H840 / AKG K52 / Superlux HD 681 | Resposta de frequência adequada, perfil Reference 4 |
+| **Monitor (caixa)** | Edifier R1700BT / PreSonus Eris E5 / JBL 305P MkII | Recomendado ativo, entrada balanceada e blindagem magnética |
 | **Pedal de sustain** | Genérico (switch momentâneo) | Para teclado controlador - permite sustentar notas |
 | **Pop Filter** | Genérico (nylon ou metal) | Para gravação de voz - reduz plosivas (P, B, T) |
 | **Shock Mount** | Específico para cada microfone | Isola vibrações mecânicas do microfone |
 | **Pedestal** | Genérico (base circular ou tripé) | Para microfones - altura ajustável |
-| **Reflection Filter** | (acessório citado no PDF) | Minimiza influência da sala na captação [citation:20 do PDF] |
+| **Reflection Filter** | | Minimiza influência da sala na captação |
 
 
 ## 📊 RESUMO POR FAIXA DE INVESTIMENTO
@@ -98,18 +96,3 @@
 | **Teclado MIDI** | Waldman Krypton 61 | ~$270 |
 | **Fone** | Edifier H840 / AKG K52 | ~$44-55 |
 | **Monitor** | Edifier R1700BT / PreSonus Eris E5 | ~$270-300 |
-
-
-## 💡 OBSERVAÇÕES FINAIS
-
-1. **Interfaces de áudio** agora incluem: a **Behringer UM2** (citada no curso), a linha **M-Audio M-Track Solo/Duo** (mesma categoria de investimento) e a **Focusrite Scarlett** (a "interface vermelhinha conhecida" - modelos Solo e 2i2 disponíveis em packs com fone e microfone) 
-
-2. **Microfones** listados conforme aparecem nas tabelas comparativas do PDF: AKG P3S (dinâmico), Shure SM57/SM58 (dinâmicos), Audio-Technica AT2020 (condensador), MXL V67G (condensador) [citation:26-27 do PDF]
-
-3. **Teclados controladores** listados conforme aparecem no PDF: AMW Mini 32 Black, AMW A49, Waldman Krypton 61 [citation:32-33 do PDF]
-
-4. **Cordas** com tensões especificadas: guitarra **0.9** (tensão leve, fácil de tocar); contrabaixo **tensão média/leve** (confortável); violão de nylon **tensão média** (equilíbrio)
-
-5. **A Série Ash (Swamp Ash) da SX** é o destaque nos instrumentos de corda (contrabaixo Precision e guitarra Telecaster), proporcionando o timbre clássico brilhante e com muito sustain
-
-6. **Acessórios** incluem agora também Shock Mount e Reflection Filter, mencionados no PDF [citation:20 do PDF]
