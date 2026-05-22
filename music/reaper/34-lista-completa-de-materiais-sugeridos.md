@@ -1,4 +1,4 @@
-## 🎸 LISTA SUGERIDA DE MATERIAIS
+## 🎸  LISTA SUGERIDA DE MATERIAIS
 
 ### 1. Computador e Sistema
 
